@@ -25,9 +25,14 @@ body.sidebar-hidden .md-typeset {
   max-width: 90ch;
 }
 
-/* --- Content max-width --- */
+/* --- Fluid layout: no max-width cap --- */
 .md-grid {
-  max-width: 1400px;
+  max-width: 100%;
+}
+
+/* Remove gap above main content area */
+.md-main__inner {
+  margin-top: 0;
 }
 
 /* --- Wider left sidebar --- */
@@ -35,6 +40,16 @@ body.sidebar-hidden .md-typeset {
   .md-sidebar--primary {
     width: 18rem;
   }
+}
+
+/* Extend both sidebars background to fill available height */
+.md-sidebar {
+  height: 100%;
+}
+
+/* Hide redundant site title from nav (already in header) */
+.md-nav--primary > .md-nav__title {
+  display: none;
 }
 
 /* --- Nav content: fill the full sidebar width --- */
@@ -246,6 +261,10 @@ body.sidebar-hidden .md-typeset {
 /* Footer */
 [data-md-color-scheme="slate"] .md-footer {
   border-top: 1px solid #3d3420;
+}
+
+[data-md-color-scheme="slate"] .md-footer-meta {
+  background-color: #060500;
 }
 
 /* Scrollbar */
@@ -580,6 +599,7 @@ body.sidebar-hidden .md-typeset {
 }
 
 [data-md-color-scheme="default"] .md-footer-meta {
+  background-color: #e8e0d0;
   color: #5a4828;
 }
 
