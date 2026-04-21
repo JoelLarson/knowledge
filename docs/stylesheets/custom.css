@@ -350,12 +350,14 @@ body.sidebar-hidden .md-typeset {
 [data-md-color-scheme="default"] .md-header .md-ellipsis,
 [data-md-color-scheme="default"] .md-header .md-logo,
 [data-md-color-scheme="default"] .md-header .md-icon,
-[data-md-color-scheme="default"] .md-header .md-header__button {
+[data-md-color-scheme="default"] .md-header .md-header__button,
+[data-md-color-scheme="default"] .md-header .md-search__icon {
   color: #f4ede0;
 }
 
 [data-md-color-scheme="default"] .md-header .md-logo svg,
-[data-md-color-scheme="default"] .md-header .md-icon svg {
+[data-md-color-scheme="default"] .md-header .md-icon svg,
+[data-md-color-scheme="default"] .md-header .md-search__icon svg {
   fill: #f4ede0;
 }
 
