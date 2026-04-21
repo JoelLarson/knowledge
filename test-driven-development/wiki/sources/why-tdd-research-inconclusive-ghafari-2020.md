@@ -9,6 +9,11 @@ sources: ["raw/Why Research on TDD is Inconclusive - Ghafari 2020.md"]
 
 ESEM 2020 meta-analysis identifying five categories of factors that make TDD research results contradictory and inconclusive: TDD definition, participants, task, type of project, and comparison baseline.
 
+## Publication Details
+
+- **DOI:** [10.1145/3382494.3410687](https://doi.org/10.1145/3382494.3410687)
+- **Published in:** ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM), 2020
+
 ## Citation
 
 Ghafari, M., Gross, T., Fucci, D., & Felderer, M. (2020). Why Research on Test-Driven Development is Inconclusive? In _ESEM '20: ACM/IEEE International Symposium on Empirical Software Engineering and Measurement_, Bari, Italy. ACM.

@@ -9,6 +9,11 @@ sources: ["raw/Dissection of TDD - Fucci et al 2017.md"]
 
 IEEE Transactions on Software Engineering paper analyzing 82 data points from 39 professionals. Key finding: the granularity and uniformity of test-code cycles matter more for quality and productivity than test-first sequencing.
 
+## Publication Details
+
+- **DOI:** [10.1109/TSE.2016.2616877](https://doi.org/10.1109/TSE.2016.2616877)
+- **Published in:** IEEE Transactions on Software Engineering, 2017
+
 ## Citation
 
 Fucci, D., Erdogmus, H., Turhan, B., Oivo, M., & Juristo, N. (2017). A Dissection of the Test-Driven Development Process: Does It Really Matter to Test-First or to Test-Last? _IEEE Transactions on Software Engineering_, 43(7), 597-614.

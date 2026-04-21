@@ -9,6 +9,11 @@ sources: ["raw/Realizing Quality Improvement Through TDD - Nagappan et al 2008.m
 
 Industrial case study of four teams (one IBM, three Microsoft) that adopted TDD, finding 40-90% defect density reduction with a subjectively estimated 15-35% increase in development time.
 
+## Publication Details
+
+- **DOI:** [10.1007/s10664-008-9062-z](https://doi.org/10.1007/s10664-008-9062-z)
+- **Published in:** Empirical Software Engineering, 2008
+
 ## Citation
 
 Nagappan, N., Maximilien, E.M., Bhat, T., & Williams, L. (2008). Realizing quality improvement through test driven development: results and experiences of four industrial teams. _Empirical Software Engineering_, 13, 289-302.

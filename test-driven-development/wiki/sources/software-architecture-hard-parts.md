@@ -9,6 +9,12 @@ sources: [raw/Software Architecture_ The Hard Parts.md]
 
 A 2021 book on trade-off analysis for distributed architectures, covering service decomposition, data management, and architectural governance. Relevant to TDD through its treatment of fitness functions (automated architecture verification), modularity drivers (including testability), and coupling analysis frameworks.
 
+## Publication Details
+
+- **ISBN-13:** 9781492086895
+- **Publisher:** O'Reilly
+- **Buy from publisher:** [O'Reilly](https://www.oreilly.com/library/view/software-architecture-the/9781492086888/)
+
 ## Core Thesis
 
 Architecture has no "best practices" — only trade-offs. The architect's job is to find the *least worst* combination of trade-offs. The book provides frameworks for analyzing these trade-offs systematically, grounded in a running case study (Sysops Squad) that decomposes a monolith into services.

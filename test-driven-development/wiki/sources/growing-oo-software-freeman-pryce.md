@@ -9,6 +9,12 @@ sources: ["raw/Growing Object-Oriented Software, Guided by Tests - Steve Freeman
 
 The definitive text on the London/Mockist school of TDD. Demonstrates how mock objects are not merely a testing convenience but a design tool that drives the discovery of object roles, responsibilities, and communication protocols.
 
+## Publication Details
+
+- **ISBN-13:** 9780321503626
+- **Publisher:** Addison-Wesley
+- **Buy from publisher:** [Addison-Wesley](https://www.pearson.com/en-us/subject-catalog/p/growing-object-oriented-software-guided-by-tests/P200000009298/9780321503626)
+
 ## Book Metadata
 
 - **Authors:** [Steve Freeman](../entities/steve-freeman.md), [Nat Pryce](../entities/nat-pryce.md)

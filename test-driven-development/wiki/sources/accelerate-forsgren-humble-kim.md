@@ -9,6 +9,12 @@ sources: ["raw/Accelerate The Science of Lean Software and DevOps Building and S
 
 Accelerate presents four years of DORA research (2014-2017) proving that software delivery performance -- measured by four key metrics -- predicts organizational performance, and that 24 specific capabilities (including test automation, CI, and trunk-based development) drive that performance.
 
+## Publication Details
+
+- **ISBN-13:** 9781942788331
+- **Publisher:** IT Revolution Press
+- **Buy from publisher:** [IT Revolution Press](https://itrevolution.com/product/accelerate/)
+
 ## Book Overview
 
 - **Authors**: Nicole Forsgren (PhD, CEO of DORA), [Jez Humble](../entities/jez-humble.md) (co-author of Continuous Delivery), Gene Kim (co-author of The Phoenix Project)

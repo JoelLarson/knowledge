@@ -9,6 +9,12 @@ sources: [raw/clean-code-robert-martin.md]
 
 Robert C. Martin's handbook on writing clean, maintainable code. Covers naming, functions, formatting, error handling, testing, and design principles.
 
+## Publication Details
+
+- **ISBN-13:** 9780132350884
+- **Publisher:** Pearson
+- **Buy from publisher:** [Pearson](https://www.pearson.com/en-us/subject-catalog/p/clean-code-a-handbook-of-agile-software-craftsmanship/P200000009044/9780136083252)
+
 ## Bibliographic Info
 
 - **Author:** Robert C. Martin ("Uncle Bob") and Object Mentors team

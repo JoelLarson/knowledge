@@ -9,6 +9,11 @@ sources: [raw/dave-farley-302-tdd-and-bdd-design-through-testing/]
 
 A structured video course by Dave Farley covering TDD, BDD, design, refactoring, and legacy systems. Emphasizes TDD as a design tool, not merely a testing strategy.
 
+## Course Details
+
+- **Platform:** Continuous Delivery Training
+- **Access course:** [cd.training](https://courses.cd.training/courses/tdd-bdd-design-through-testing)
+
 ## Course URL
 `https://courses.cd.training/courses/take/tdd-bdd-design-through-testing`
 

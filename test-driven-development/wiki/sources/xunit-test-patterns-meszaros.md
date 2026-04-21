@@ -9,6 +9,12 @@ sources: [raw/xUnit Test Patterns_ Refactoring Test Code - by Gerard Meszaros - 
 
 The definitive pattern catalog for xUnit-based test automation. Meszaros formalizes vocabulary (SUT, DOC, test double taxonomy), catalogs test smells, and provides 68+ patterns for writing maintainable automated tests.
 
+## Publication Details
+
+- **ISBN-13:** 9780131495050
+- **Publisher:** Addison-Wesley
+- **Buy from publisher:** [Addison-Wesley](https://www.pearson.com/en-us/subject-catalog/p/xunit-test-patterns-refactoring-test-code/P200000009298/)
+
 ## Book Metadata
 
 - **Author:** Gerard Meszaros

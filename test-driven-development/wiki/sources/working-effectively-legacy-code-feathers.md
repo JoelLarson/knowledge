@@ -9,6 +9,12 @@ sources: [raw/Working.Effectively.with.Legacy.Code.md]
 
 The canonical book on getting pre-existing, untested code under test so it can be safely changed. Provides a systematic framework (the [Legacy Code Change Algorithm](../concepts/legacy-code-change-algorithm.md)) and a catalog of 25 [Dependency-Breaking Techniques](../concepts/dependency-breaking-techniques.md) for making legacy code testable.
 
+## Publication Details
+
+- **ISBN-13:** 9780131177055
+- **Publisher:** Pearson/Prentice Hall
+- **Buy from publisher:** [Pearson/Prentice Hall](https://www.pearson.com/en-us/subject-catalog/p/working-effectively-with-legacy-code/P200000008984/9780131177055)
+
 ## Book Metadata
 
 - **Title:** Working Effectively with Legacy Code

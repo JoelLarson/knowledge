@@ -9,6 +9,12 @@ sources: ["raw/Unit Testing Principles Practices Patterns - Vladimir Khorikov 20
 
 A rigorous, first-principles treatment of unit testing that introduces the four pillars of a good test as a universal evaluation framework, takes a clear stance favoring the classical (Chicago) school over the London school, and provides a taxonomy of testing styles (output-based, state-based, communication-based) ranked by quality.
 
+## Publication Details
+
+- **ISBN-13:** 9781617296277
+- **Publisher:** Manning
+- **Buy from publisher:** [Manning](https://www.manning.com/books/unit-testing)
+
 ## Book Structure
 
 The book is organized into four parts across 11 chapters:

@@ -9,6 +9,11 @@ sources: [raw/code-samples/fowler-theatrical-players/]
 
 A multi-language refactoring kata created by Emily Bache, based on the example from Chapter 1 of Martin Fowler's _Refactoring_ (2nd edition). Excellent practice ground for combining approval testing with TDD refactoring.
 
+## Source Details
+
+- **Repository:** [emilybache/Theatrical-Players-Refactoring-Kata](https://github.com/emilybache/Theatrical-Players-Refactoring-Kata)
+- **Based on:** Chapter 1 of Refactoring (2nd Edition) by Martin Fowler
+
 ## Origin
 
 Martin Fowler's book uses a Theatrical Players billing system as the worked example in Chapter 1. Emily Bache extracted this into a public kata repository with implementations in many languages. See [Refactoring (Fowler)](refactoring-martin-fowler.md).

@@ -9,6 +9,12 @@ sources: [raw/tdd-by-example-kent-beck-v2.md]
 
 The definitive foundational text on TDD by its primary inventor. Two worked examples plus a comprehensive patterns catalog.
 
+## Publication Details
+
+- **ISBN-13:** 9780321146533
+- **Publisher:** Addison-Wesley
+- **Buy from publisher:** [Addison-Wesley](https://www.pearson.com/en-us/subject-catalog/p/test-driven-development-by-example/P200000009260/9780321146533)
+
 ## Bibliographic Info
 
 - **Author:** Kent Beck

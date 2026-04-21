@@ -9,6 +9,12 @@ sources: [raw/Implementing Domain-Driven Design.md]
 
 The practical companion to Evans' foundational DDD text, by [Vaughn Vernon](../entities/vaughn-vernon.md). Focuses on implementation details including testing aggregates, domain events, CQRS, event sourcing, and bounded context integration.
 
+## Publication Details
+
+- **ISBN-13:** 9780321834577
+- **Publisher:** Addison-Wesley
+- **Buy from publisher:** [Addison-Wesley](https://www.pearson.com/en-us/subject-catalog/p/implementing-domain-driven-design/P200000009616/9780133039887)
+
 ## Bibliographic Info
 
 - **Author:** Vaughn Vernon

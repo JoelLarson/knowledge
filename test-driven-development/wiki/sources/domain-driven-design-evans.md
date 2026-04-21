@@ -9,6 +9,12 @@ sources: [raw/Domain-Driven Design_ Tackling Complexity in the Heart of Software
 
 The foundational DDD text by [Eric Evans](../entities/eric-evans.md). Introduces ubiquitous language, bounded contexts, aggregates, value objects, and refactoring toward deeper insight. Relevant to TDD because it defines the natural boundaries and vocabulary for tests.
 
+## Publication Details
+
+- **ISBN-13:** 9780321125217
+- **Publisher:** Addison-Wesley
+- **Buy from publisher:** [Addison-Wesley](https://www.pearson.com/en-us/subject-catalog/p/domain-driven-design-tackling-complexity-in-the-heart-of-software/P200000009297/)
+
 ## Bibliographic Info
 
 - **Author:** Eric Evans

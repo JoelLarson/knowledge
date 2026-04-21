@@ -9,6 +9,12 @@ sources: [raw/art-of-clean-code.md]
 
 Christian Mayer's practical guide to eliminating complexity and writing clean code. Covers principles from complexity management, the 80/20 principle, to Unix design philosophy.
 
+## Publication Details
+
+- **ISBN-13:** 9781718502185
+- **Publisher:** No Starch Press
+- **Buy from publisher:** [No Starch Press](https://nostarch.com/art-clean-code)
+
 ## Bibliographic Info
 
 - **Author:** Christian Mayer (founder of Finxter.com)

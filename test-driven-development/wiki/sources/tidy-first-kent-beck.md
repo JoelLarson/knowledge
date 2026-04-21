@@ -9,6 +9,12 @@ sources: [raw/Tidy First.md]
 
 Kent Beck's 2023 book on small structural improvements ("tidyings") that a programmer can make before, after, or instead of behavior changes. The first volume in a planned series on empirical software design, it connects the refactor step of [Red-Green-Refactor](../concepts/red-green-refactor.md) to economics (discounted cash flows, optionality) and to the foundational coupling/cohesion theory from Yourdon and Constantine's *Structured Design*.
 
+## Publication Details
+
+- **ISBN-13:** 9781098151249
+- **Publisher:** O'Reilly
+- **Buy from publisher:** [O'Reilly](https://www.oreilly.com/library/view/tidy-first/9781098151232/)
+
 ## Core Thesis
 
 Software creates value in two ways: what it does today (behavior) and the possibility of new things it can do tomorrow (options). Structure changes don't alter behavior but create or destroy options. The question "Tidy first?" is an economic question: does investing in structure now pay off through cheaper behavior changes?

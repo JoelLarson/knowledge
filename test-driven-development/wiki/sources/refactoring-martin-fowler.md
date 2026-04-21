@@ -9,6 +9,12 @@ sources: [raw/refactoring-martin-fowler.md]
 
 The canonical reference on refactoring by Martin Fowler, with contributions from Kent Beck. The second edition (2019) uses JavaScript and introduces the Theatrical Players example that became a widely-used refactoring kata.
 
+## Publication Details
+
+- **ISBN-13:** 9780134757599
+- **Publisher:** Addison-Wesley
+- **Buy from publisher:** [Addison-Wesley](https://www.pearson.com/en-us/subject-catalog/p/refactoring-improving-the-design-of-existing-code/P200000000254/9780134757704)
+
 ## Bibliographic Info
 
 - **Author:** Martin Fowler (with contributions by Kent Beck)

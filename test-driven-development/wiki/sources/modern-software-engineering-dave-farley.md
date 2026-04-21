@@ -9,6 +9,12 @@ sources: [raw/modern-software-engineering-dave-farley.md]
 
 Dave Farley's comprehensive framework for software engineering as an empirical, feedback-driven discipline. Provides the theoretical underpinning for why TDD and related practices produce better software.
 
+## Publication Details
+
+- **ISBN-13:** 9780137314911
+- **Publisher:** Addison-Wesley
+- **Buy from publisher:** [Addison-Wesley](https://www.pearson.com/en-us/subject-catalog/p/modern-software-engineering-doing-what-works-to-build-better-software-faster/P200000009466/9780137314867)
+
 ## Bibliographic Info
 
 - **Author:** David Farley
