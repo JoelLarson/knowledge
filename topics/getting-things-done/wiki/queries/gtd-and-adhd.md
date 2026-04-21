@@ -11,17 +11,17 @@ GTD applies to ADHD as an external attention and commitment-management scaffold:
 
 ## Synthesis
 
-ADHD commonly makes GTD both more valuable and harder to maintain. The value comes from reducing mental load: capture gets commitments out of the head, clarification turns vague demands into concrete [[next-actions]], and review rebuilds trust when attention has moved elsewhere. The difficulty is that the system itself can become too elaborate, stale, or overloaded if review is skipped. See [[adhd-and-gtd]] for the durable concept page.
+ADHD commonly makes GTD both more valuable and harder to maintain. The value comes from reducing mental load: capture gets commitments out of the head, clarification turns vague demands into concrete [Next Actions](../concepts/next-actions.md), and review rebuilds trust when attention has moved elsewhere. The difficulty is that the system itself can become too elaborate, stale, or overloaded if review is skipped. See [ADHD and GTD](../concepts/adhd-and-gtd.md) for the durable concept page.
 
-The strongest ADHD fit is the [[trusted-system]] principle. A person with ADHD may not reliably keep every commitment active in memory, so an external system must be complete enough, visible enough, and reviewed often enough that the brain can stop rehearsing it.
+The strongest ADHD fit is the [Trusted System](../concepts/trusted-system.md) principle. A person with ADHD may not reliably keep every commitment active in memory, so an external system must be complete enough, visible enough, and reviewed often enough that the brain can stop rehearsing it.
 
 The main adaptations are:
 
 - capture fast, with low friction
 - clarify later, but on a real cadence
 - keep next actions small and verb-first
-- separate active commitments from [[someday-maybe]] ideas
-- use [[review]] as system repair, not self-judgment
+- separate active commitments from [Someday/Maybe](../concepts/someday-maybe.md) ideas
+- use [Review](../concepts/review.md) as system repair, not self-judgment
 - keep the toolchain boring enough to keep using
 
 ## Practical Pattern
@@ -42,10 +42,10 @@ The GTD podcast material explicitly treats ADHD and mental health as individual 
 
 ## Related Pages
 
-- [[gtd]]
-- [[capture-clarify-organize-reflect-engage]]
-- [[trusted-system]]
-- [[next-actions]]
-- [[review]]
-- [[weekly-review-checklist]]
-- [[someday-maybe]]
+- [GTD](../concepts/gtd.md)
+- [Capture, Clarify, Organize, Reflect, Engage](../concepts/capture-clarify-organize-reflect-engage.md)
+- [Trusted System](../concepts/trusted-system.md)
+- [Next Actions](../concepts/next-actions.md)
+- [Review](../concepts/review.md)
+- [Weekly Review Checklist](../concepts/weekly-review-checklist.md)
+- [Someday/Maybe](../concepts/someday-maybe.md)

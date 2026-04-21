@@ -15,11 +15,11 @@ This source is a saved Wikipedia article summarizing *Getting Things Done* as a 
 - A compact explanation of the "open loops" idea: stress comes from unclear commitments held in mind.
 - A strong statement that GTD depends on recording commitments externally and converting them into explicit action structures.
 
-## Groundloop-Relevant Takeaways
+## Key Takeaways
 
-- Groundloop should explicitly treat itself as a trusted external system layered on top of Todoist.
-- The product's value proposition is not just suggestion quality; it is reducing cognitive load by making ambiguous task state explicit.
-- The app should preserve a clear boundary between captured input and clarified action state.
+- GTD depends on being a trusted external system that makes ambiguous task state explicit.
+- The value proposition is reducing cognitive load, not just suggestion quality.
+- A clear boundary should be preserved between captured input and clarified action state.
 
 ## Limits
 
@@ -27,6 +27,6 @@ This source is derivative and high level. It is useful for synthesis and termino
 
 ## Related Pages
 
-- [[gtd]]
-- [[trusted-system]]
-- [[capture-clarify-organize-reflect-engage]]
+- [GTD](../concepts/gtd.md)
+- [Trusted System](../concepts/trusted-system.md)
+- [Capture, Clarify, Organize, Reflect, Engage](../concepts/capture-clarify-organize-reflect-engage.md)

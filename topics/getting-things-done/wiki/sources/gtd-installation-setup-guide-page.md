@@ -15,12 +15,12 @@ This source is the official GTD setup-guide product page. Even without ingesting
 - Support for separating methodology from tool-specific implementation patterns.
 - A reminder that setup quality influences whether the system remains trustworthy.
 
-## Groundloop-Relevant Takeaways
+## Key Takeaways
 
-- Groundloop should eventually document how its GTD ontology maps to Todoist structures and review routines.
+- The GTD ontology should be documented in terms of how it maps to concrete tool structures and review routines.
 - implementation guidance belongs alongside the methodology, not hidden in prompts
 
 ## Related Pages
 
-- [[setup-guides]]
-- [[trusted-system]]
+- [Setup Guides](../concepts/setup-guides.md)
+- [Trusted System](../concepts/trusted-system.md)

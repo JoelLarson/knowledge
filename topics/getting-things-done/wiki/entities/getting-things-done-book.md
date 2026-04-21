@@ -1,13 +1,13 @@
 ---
 title: Getting Things Done (book)
 type: entity
-tags: [book, gtd, productivity]
+tags: [gtd, getting-things-done-book]
 created: 2026-04-08
 updated: 2026-04-08
 sources: [raw/Getting Things Done - David Allen.pdf, raw/Getting Things Done by David Allen.pdf, raw/ef8af1_7fb55adc8de9488cade9a7da39003ce1.pdf]
 ---
 
-*Getting Things Done* is the primary textual source for the GTD system. Multiple copies of the book are present in `raw/`, and together they provide the strongest reference base for Groundloop's workflow assumptions.
+*Getting Things Done* is the primary textual source for the GTD system. Multiple copies of the book are present in `raw/`, and together they provide the strongest reference base for GTD workflow assumptions.
 
 ## Why It Matters
 
@@ -23,5 +23,5 @@ sources: [raw/Getting Things Done - David Allen.pdf, raw/Getting Things Done by 
 
 ## Related Pages
 
-- [[gtd]]
-- [[david-allen]]
+- [GTD](../concepts/gtd.md)
+- [David Allen](david-allen.md)

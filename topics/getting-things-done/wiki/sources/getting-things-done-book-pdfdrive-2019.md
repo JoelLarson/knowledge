@@ -13,19 +13,19 @@ This source is a third digital copy of *Getting Things Done*. It overlaps heavil
 
 - Confirmation of the original GTD framing and chapter structure.
 - Additional evidence that the book centers on explicit capture, processing, review, and action choice.
-- Redundant source support for the core vocabulary Groundloop should use.
+- Redundant source support for the core GTD vocabulary.
 
-## Groundloop-Relevant Takeaways
+## Key Takeaways
 
-- Groundloop's first version should focus on operationalizing the canonical GTD workflow rather than inventing new ontology.
+- GTD's first focus should be on operationalizing the canonical workflow rather than inventing new ontology.
 - Repeated source agreement suggests the core GTD vocabulary is stable enough to encode as enums and policies.
 
 ## Relationship To Other Sources
 
-This source appears to be another copy of the same underlying book captured in [[getting-things-done-book-calibre-2021]] and [[getting-things-done-book-calibre-2023]].
+This source appears to be another copy of the same underlying book captured in [Getting Things Done (calibre 2021 PDF)](getting-things-done-book-calibre-2021.md) and [Getting Things Done (calibre 2023 PDF)](getting-things-done-book-calibre-2023.md).
 
 ## Related Pages
 
-- [[gtd]]
-- [[capture-clarify-organize-reflect-engage]]
-- [[getting-things-done-book]]
+- [GTD](../concepts/gtd.md)
+- [Capture, Clarify, Organize, Reflect, Engage](../concepts/capture-clarify-organize-reflect-engage.md)
+- [Getting Things Done (book)](../entities/getting-things-done-book.md)

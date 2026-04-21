@@ -7,7 +7,7 @@ updated: 2026-04-08
 sources: []
 ---
 
-This is the append-only operational log for the Groundloop wiki.
+This is the append-only operational log for the GTD wiki.
 
 ## [2026-04-08] init | Bootstrap wiki
 

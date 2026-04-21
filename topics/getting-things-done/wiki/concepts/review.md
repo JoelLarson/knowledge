@@ -16,14 +16,6 @@ Review is the maintenance loop that keeps a GTD system trustworthy. Without regu
 - ensure every active outcome has a next action
 - identify stale, vague, or misplaced items
 
-## Groundloop Implications
-
-- `review` should be a first-class loop, not an afterthought
-- unchanged items reviewed yesterday usually belong in the next review cadence, not in repeated capture triage
-- weekly review reports are likely more valuable than aggressive automation
-- the review loop should be shaped by a stable checklist instead of freeform summarization
-- supplementary podcast and video material reinforces that review problems are persistent and practical, not merely theoretical
-
 ## Candidate Review Checks
 
 - projects missing next actions
@@ -34,7 +26,7 @@ Review is the maintenance loop that keeps a GTD system trustworthy. Without regu
 
 ## Related Pages
 
-- [[gtd]]
-- [[projects]]
-- [[trusted-system]]
-- [[weekly-review-checklist]]
+- [GTD](gtd.md)
+- [Projects](projects.md)
+- [Trusted System](trusted-system.md)
+- [Weekly Review Checklist](weekly-review-checklist.md)

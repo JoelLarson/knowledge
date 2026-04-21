@@ -11,14 +11,14 @@ ADHD and GTD connect around externalized attention management: GTD turns loose c
 
 ## Core Fit
 
-The strongest overlap is with the [[trusted-system]] idea. If attention is fragmented or working memory is unreliable, the GTD system becomes a stable place to park open loops until they can be clarified, reviewed, and acted on.
+The strongest overlap is with the [Trusted System](trusted-system.md) idea. If attention is fragmented or working memory is unreliable, the GTD system becomes a stable place to park open loops until they can be clarified, reviewed, and acted on.
 
 Useful GTD elements for ADHD include:
 
 - low-friction capture for thoughts before they disappear
-- [[next-actions]] that remove hidden planning from execution
-- [[review]] as a reset loop when the system has gone stale
-- [[someday-maybe]] as a pressure valve for high idea volume
+- [Next Actions](next-actions.md) that remove hidden planning from execution
+- [Review](review.md) as a reset loop when the system has gone stale
+- [Someday/Maybe](someday-maybe.md) as a pressure valve for high idea volume
 - clear separation between active commitments and possible future work
 
 ## Failure Modes
@@ -31,9 +31,9 @@ Start with one inbox, one next-action list, one someday/maybe list, and one revi
 
 ## Related Pages
 
-- [[gtd]]
-- [[trusted-system]]
-- [[next-actions]]
-- [[review]]
-- [[someday-maybe]]
+- [GTD](gtd.md)
+- [Trusted System](trusted-system.md)
+- [Next Actions](next-actions.md)
+- [Review](review.md)
+- [Someday/Maybe](someday-maybe.md)
 - [GTD And ADHD](../queries/gtd-and-adhd.md)

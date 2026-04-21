@@ -17,16 +17,6 @@ Getting Things Done (GTD) is a workflow methodology for converting ambiguous com
 - Represent actionable work as projects, next actions, waiting-for items, or calendar commitments.
 - Maintain the whole system through regular review.
 
-## Why It Matters For Groundloop
-
-Groundloop is not trying to replace GTD with an agent. It is trying to operationalize the clarification and review parts of GTD inside a constrained Todoist-centered pipeline.
-
-## Groundloop Mapping
-
-- Todoist holds the user's task system of record.
-- Groundloop provides machine memory, classification, rewrite suggestions, audit trails, and review reports.
-- The app should support GTD decisions, not silently make them on the user's behalf.
-
 ## Related Pages
 
 - [Getting Things Done (calibre 2023 PDF)](../sources/getting-things-done-book-calibre-2023.md)
@@ -34,8 +24,8 @@ Groundloop is not trying to replace GTD with an agent. It is trying to operation
 - [Getting Things Done (PDFDrive 2019 PDF)](../sources/getting-things-done-book-pdfdrive-2019.md)
 - [Getting Things Done (Wikipedia article)](../sources/getting-things-done-wikipedia.md)
 - [GTD Workflow Map image](../sources/gtd-workflow-map.md)
-- [[capture-clarify-organize-reflect-engage]]
-- [[next-actions]]
-- [[projects]]
-- [[review]]
-- [[trusted-system]]
+- [Capture, Clarify, Organize, Reflect, Engage](capture-clarify-organize-reflect-engage.md)
+- [Next Actions](next-actions.md)
+- [Projects](projects.md)
+- [Review](review.md)
+- [Trusted System](trusted-system.md)

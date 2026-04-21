@@ -18,19 +18,8 @@ The system fails if it is:
 - stale
 - surprising
 
-## Groundloop Implications
-
-- no hidden mutations
-- strict audit trails for every write
-- deterministic policy filters
-- review cadence over autonomy theater
-
-## Architectural Consequence
-
-Groundloop should add clarity and memory while preserving Todoist as the visible task system of record. If Groundloop makes opaque changes, it undermines the trusted-system property it is supposed to improve.
-
 ## Related Pages
 
-- [[gtd]]
-- [[review]]
-- [[capture-clarify-organize-reflect-engage]]
+- [GTD](gtd.md)
+- [Review](review.md)
+- [Capture, Clarify, Organize, Reflect, Engage](capture-clarify-organize-reflect-engage.md)

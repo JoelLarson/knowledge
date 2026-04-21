@@ -15,9 +15,9 @@ This source is a GTD workflow map image that visually compresses the method into
 - A strong visual distinction between defining work, predefined work, and reviewing work.
 - A reminder that GTD is a pipeline from ambiguous inputs to explicit buckets.
 
-## Groundloop-Relevant Takeaways
+## Key Takeaways
 
-- Groundloop should model inbox handling as a clarification flow, not as an end-state classification.
+- Inbox handling should be modeled as a clarification flow, not as an end-state classification.
 - `inbox` should be treated as source state, while `next_action`, `waiting_for`, `reference`, `someday`, and similar labels represent clarified outcomes.
 - Review and action choice should remain separate layers in the system.
 
@@ -27,8 +27,8 @@ The image is useful as a decision map but not as a detailed textual source. It w
 
 ## Related Pages
 
-- [[gtd]]
-- [[capture-clarify-organize-reflect-engage]]
-- [[next-actions]]
-- [[waiting-for]]
-- [[someday-maybe]]
+- [GTD](../concepts/gtd.md)
+- [Capture, Clarify, Organize, Reflect, Engage](../concepts/capture-clarify-organize-reflect-engage.md)
+- [Next Actions](../concepts/next-actions.md)
+- [Waiting For](../concepts/waiting-for.md)
+- [Someday/Maybe](../concepts/someday-maybe.md)

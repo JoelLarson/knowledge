@@ -15,13 +15,7 @@ Waiting-for items are actionable commitments blocked on another person, team, or
 - phrasing like "waiting," "hear back," or "pending"
 - comments or descriptions that imply an outstanding handoff
 
-## Groundloop Implications
-
-- `waiting_for` should be a first-class classification
-- review should look for likely waiting-for items that are still represented as ordinary actions
-- the app should prefer suggestions and labels over autonomous structural changes
-
 ## Related Pages
 
-- [[next-actions]]
-- [[review]]
+- [Next Actions](next-actions.md)
+- [Review](review.md)

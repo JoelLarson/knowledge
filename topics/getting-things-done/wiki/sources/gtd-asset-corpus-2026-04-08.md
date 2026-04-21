@@ -27,15 +27,15 @@ This source represents a fetched corpus of GTD-related assets, including officia
 - evidence that GTD is routinely translated into concrete tool setups
 - broader historical context showing GTD as both a methodology and an ecosystem
 
-## Groundloop-Relevant Takeaways
+## Key Takeaways
 
-- Groundloop should treat review as a first-class loop with operational checklists, not a vague reporting feature.
-- The app will eventually need a clear mapping from GTD states to real task-system structures.
+- Review should be treated as a first-class loop with operational checklists, not a vague reporting feature.
+- GTD states need a clear mapping to real task-system structures.
 - A source corpus can include both canonical texts and supporting implementation material without collapsing them into one layer.
 
 ## Related Pages
 
-- [[gtd]]
-- [[review]]
-- [[setup-guides]]
-- [[weekly-review-checklist]]
+- [GTD](../concepts/gtd.md)
+- [Review](../concepts/review.md)
+- [Setup Guides](../concepts/setup-guides.md)
+- [Weekly Review Checklist](../concepts/weekly-review-checklist.md)

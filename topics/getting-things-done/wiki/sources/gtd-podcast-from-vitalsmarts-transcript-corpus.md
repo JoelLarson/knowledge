@@ -27,15 +27,15 @@ This source is a large transcript corpus from the GTD podcast as published throu
 - this corpus should not outrank the book or official written checklist material when the sources disagree
 - the best use of this corpus is triangulation and practical nuance, not canonical definition
 
-## Groundloop-Relevant Takeaways
+## Key Takeaways
 
-- repeated questions suggest `next_action`, `projects`, `waiting_for`, and `weekly_review` deserve especially strong deterministic support
+- repeated questions suggest next actions, projects, waiting-for, and weekly review deserve especially strong deterministic support
 - user friction clusters around maintenance and interpretation, not just capture
-- implementation guidance should explain the method in plain operational terms, not rely only on prompts
+- implementation guidance should explain the method in plain operational terms
 
 ## Related Pages
 
-- [[gtd]]
-- [[review]]
-- [[weekly-review-checklist]]
-- [[setup-guides]]
+- [GTD](../concepts/gtd.md)
+- [Review](../concepts/review.md)
+- [Weekly Review Checklist](../concepts/weekly-review-checklist.md)
+- [Setup Guides](../concepts/setup-guides.md)

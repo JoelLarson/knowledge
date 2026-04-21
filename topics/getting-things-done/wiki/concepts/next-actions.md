@@ -24,14 +24,8 @@ These are weak next actions:
 - vague intentions like "work on proposal"
 - disguised projects like "launch website"
 
-## Groundloop Implications
-
-- rewrite suggestions should preferentially move vague tasks toward verb-first next actions
-- `next_action` classification should be backed by deterministic sanity checks in code
-- if a task cannot be made concrete safely, it should fall back to `unclear` or project-related support state
-
 ## Related Pages
 
-- [[gtd]]
-- [[projects]]
-- [[waiting-for]]
+- [GTD](gtd.md)
+- [Projects](projects.md)
+- [Waiting For](waiting-for.md)

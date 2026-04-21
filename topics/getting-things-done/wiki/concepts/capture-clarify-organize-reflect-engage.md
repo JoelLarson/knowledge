@@ -17,12 +17,6 @@ The GTD workflow is a staged pipeline: capture inputs, clarify meaning, organize
 - Reflect: review the system often enough to trust it.
 - Engage: choose what to do based on context, time, energy, and priority.
 
-## Groundloop Mapping
-
-- `capture` loop covers capture plus first-pass clarification.
-- `review` loop covers reflect plus system hygiene checks.
-- `execution` should remain low priority in v1 because GTD action choice is high-trust and context dependent.
-
 ## Design Consequences
 
 - `inbox` is a source state, not a semantic class.
@@ -31,7 +25,7 @@ The GTD workflow is a staged pipeline: capture inputs, clarify meaning, organize
 
 ## Related Pages
 
-- [[gtd]]
-- [[review]]
-- [[trusted-system]]
-- [[next-actions]]
+- [GTD](gtd.md)
+- [Review](review.md)
+- [Trusted System](trusted-system.md)
+- [Next Actions](next-actions.md)

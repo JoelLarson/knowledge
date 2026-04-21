@@ -7,7 +7,7 @@ updated: 2026-04-11
 sources: []
 ---
 
-This is the catalog for the Groundloop wiki. As sources are ingested, this page should point to every durable page worth consulting.
+This is the catalog for the GTD wiki. As sources are ingested, this page should point to every durable page worth consulting.
 
 ## Overview
 
@@ -46,7 +46,7 @@ This is the catalog for the Groundloop wiki. As sources are ingested, this page 
 ## Entities
 
 - [David Allen](entities/david-allen.md) — Originating author of the GTD methodology (2 sources, 2026-04-08)
-- [Getting Things Done (book)](entities/getting-things-done-book.md) — Primary textual source for the GTD workflow Groundloop is adapting (3 sources, 2026-04-08)
+- [Getting Things Done (book)](entities/getting-things-done-book.md) — Primary textual source for the GTD workflow (3 sources, 2026-04-08)
 
 ## Queries
 

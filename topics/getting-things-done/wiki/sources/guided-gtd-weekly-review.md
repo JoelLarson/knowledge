@@ -13,9 +13,9 @@ This source is an official GTD article focused specifically on the weekly review
 
 - Official emphasis on review as a critical success factor.
 - Support for treating review as a structured ritual with repeatable steps.
-- Strong alignment with Groundloop's planned daily and weekly review loops.
+- Strong alignment with regular daily and weekly review loops.
 
-## Groundloop-Relevant Takeaways
+## Key Takeaways
 
 - weekly review should have a durable checklist and stable output shape
 - review should explicitly surface stale commitments, waiting-for follow-up, and dormant projects
@@ -23,6 +23,6 @@ This source is an official GTD article focused specifically on the weekly review
 
 ## Related Pages
 
-- [[review]]
-- [[weekly-review-checklist]]
-- [[trusted-system]]
+- [Review](../concepts/review.md)
+- [Weekly Review Checklist](../concepts/weekly-review-checklist.md)
+- [Trusted System](../concepts/trusted-system.md)

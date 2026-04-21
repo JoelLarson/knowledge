@@ -27,14 +27,14 @@ This source is a transcript corpus from GTD-branded YouTube material. It appears
 - subtitle formatting noise
 - better suited for reinforcing concepts than defining them
 
-## Groundloop-Relevant Takeaways
+## Key Takeaways
 
 - short-form GTD explanation patterns may help with report phrasing and user-facing explanations
-- natural planning and weekly review deserve explicit representation in the product design and wiki
+- natural planning and weekly review deserve explicit representation in system design and documentation
 
 ## Related Pages
 
-- [[gtd]]
-- [[review]]
-- [[weekly-review-checklist]]
-- [[projects]]
+- [GTD](../concepts/gtd.md)
+- [Review](../concepts/review.md)
+- [Weekly Review Checklist](../concepts/weekly-review-checklist.md)
+- [Projects](../concepts/projects.md)

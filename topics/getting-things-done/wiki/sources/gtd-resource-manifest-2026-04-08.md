@@ -15,14 +15,14 @@ This source is a curated manifest of GTD-related materials gathered from Wikiped
 - A clear distinction between primary GTD materials and derivative ecosystem commentary.
 - Provenance for the `raw/gtd-assets/` fetch bundle.
 
-## Groundloop-Relevant Takeaways
+## Key Takeaways
 
 - The GTD source base is broader than the original book: official weekly review materials and setup guides matter for implementation details.
 - Review deserves special emphasis because the official resource bundle gives it standalone treatment.
-- Tool-specific setup guides suggest Groundloop should eventually document how its GTD model maps into concrete task-system affordances.
+- Tool-specific setup guides show the importance of documenting how GTD maps into concrete task-system affordances.
 
 ## Related Pages
 
-- [[gtd]]
-- [[review]]
-- [[gtd-asset-corpus-2026-04-08]]
+- [GTD](../concepts/gtd.md)
+- [Review](../concepts/review.md)
+- [GTD Asset Corpus (2026-04-08)](gtd-asset-corpus-2026-04-08.md)

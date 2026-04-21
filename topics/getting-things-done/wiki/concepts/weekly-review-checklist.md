@@ -15,22 +15,15 @@ The GTD weekly review is structured enough to think of it as a checklist rather 
 - Get Current
 - Get Creative
 
-## Groundloop Mapping
-
-- Get Clear maps to inbox processing and uncaptured input detection.
-- Get Current maps to stale-task checks, waiting-for review, and project hygiene.
-- Get Creative maps to someday/maybe resurfacing and broader synthesis in weekly reports.
-
 ## Design Implications
 
 - review output should be structured, not just narrative
 - weekly review should have stable sections and deterministic signals
-- this checklist can serve as the backbone for Groundloop's weekly report template
 
 ## Related Pages
 
-- [[review]]
-- [[capture-clarify-organize-reflect-engage]]
-- [[projects]]
-- [[waiting-for]]
-- [[someday-maybe]]
+- [Review](review.md)
+- [Capture, Clarify, Organize, Reflect, Engage](capture-clarify-organize-reflect-engage.md)
+- [Projects](projects.md)
+- [Waiting For](waiting-for.md)
+- [Someday/Maybe](someday-maybe.md)

@@ -16,9 +16,9 @@ This source is a digital PDF copy of David Allen's *Getting Things Done*. It cap
 - The idea that stress comes from open loops without defined outcomes or actions.
 - A strong argument for maintaining a trusted external system instead of holding commitments in working memory.
 
-## Groundloop-Relevant Takeaways
+## Key Takeaways
 
-- Groundloop should treat inbox processing as clarifying undefined "stuff" into explicit states and actions.
+- Inbox processing is the act of clarifying undefined "stuff" into explicit states and actions.
 - A deterministic rule layer aligns with GTD's insistence on explicit decisions, not vague intention.
 - The weekly review is not optional housekeeping; it is a core system-maintenance loop.
 - Rewrite suggestions should optimize for concrete, verb-first next actions.
@@ -33,10 +33,10 @@ The table of contents foregrounds three GTD areas:
 
 ## Related Pages
 
-- [[gtd]]
-- [[capture-clarify-organize-reflect-engage]]
-- [[next-actions]]
-- [[review]]
-- [[trusted-system]]
-- [[getting-things-done-book]]
-- [[david-allen]]
+- [GTD](../concepts/gtd.md)
+- [Capture, Clarify, Organize, Reflect, Engage](../concepts/capture-clarify-organize-reflect-engage.md)
+- [Next Actions](../concepts/next-actions.md)
+- [Review](../concepts/review.md)
+- [Trusted System](../concepts/trusted-system.md)
+- [Getting Things Done (book)](../entities/getting-things-done-book.md)
+- [David Allen](../entities/david-allen.md)

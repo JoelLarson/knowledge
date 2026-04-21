@@ -26,16 +26,16 @@ This source is an official checklist for the GTD weekly review. It is one of the
 - review project and larger outcome lists
 - review someday/maybe
 
-## Groundloop-Relevant Takeaways
+## Key Takeaways
 
 - review should use deterministic checks before any optional model summarization
-- Groundloop's review loop should explicitly account for waiting-for, projects, and someday/maybe states
+- the review loop should explicitly account for waiting-for, projects, and someday/maybe states
 - the system should preserve the distinction between clearing inputs, current commitments, and creative horizon scanning
 
 ## Related Pages
 
-- [[review]]
-- [[weekly-review-checklist]]
-- [[projects]]
-- [[waiting-for]]
-- [[someday-maybe]]
+- [Review](../concepts/review.md)
+- [Weekly Review Checklist](../concepts/weekly-review-checklist.md)
+- [Projects](../concepts/projects.md)
+- [Waiting For](../concepts/waiting-for.md)
+- [Someday/Maybe](../concepts/someday-maybe.md)
