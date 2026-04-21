@@ -49,6 +49,19 @@
   }
 }
 
+/* --- Nav content: fill the full sidebar width --- */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary .md-sidebar__scrollwrap,
+  .md-sidebar--primary .md-sidebar__inner {
+    width: 100%;
+  }
+
+  .md-sidebar--primary .md-nav--primary,
+  .md-sidebar--primary .md-nav--primary .md-nav {
+    width: 100%;
+  }
+}
+
 /* --- Nav items: prevent truncation --- */
 [data-md-color-scheme="slate"] .md-nav__link {
   white-space: normal;
