@@ -15,14 +15,9 @@
   margin-bottom: 1.25em;
 }
 
-/* --- Constrain content width for readable line length (~70ch) --- */
-.md-typeset {
-  max-width: 70ch;
-}
-
-/* Widen content when sidebar is hidden */
-body.sidebar-hidden .md-typeset {
-  max-width: 90ch;
+/* --- Let content fill available width --- */
+.md-content__inner.md-typeset {
+  max-width: none;
 }
 
 /* --- Fluid layout: no max-width cap --- */
