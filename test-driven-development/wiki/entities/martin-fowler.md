@@ -28,14 +28,14 @@ Fowler's _Refactoring_ 2nd edition uses the Theatrical Players billing system as
 
 ## Sources in this Wiki
 
-- [[refactoring-martin-fowler]] — canonical refactoring catalog
-- [[fowler-theatrical-players-kata]] — code kata derived from his example
+- [Refactoring (Fowler)](../sources/refactoring-martin-fowler.md) — canonical refactoring catalog
+- [Theatrical Players Kata](../sources/fowler-theatrical-players-kata.md) — code kata derived from his example
 
 ## Related Pages
 
-- [[refactoring]]
-- [[approval-testing]]
-- [[kent-beck]]
-- [[dave-farley]]
-- [[robert-martin]]
-- [[emily-bache]]
+- [Refactoring](../concepts/refactoring.md)
+- [Approval Testing](../concepts/approval-testing.md)
+- [Kent Beck](kent-beck.md)
+- [Dave Farley](dave-farley.md)
+- [Robert C. Martin](robert-martin.md)
+- [Emily Bache](emily-bache.md)

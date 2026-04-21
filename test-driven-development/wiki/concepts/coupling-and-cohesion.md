@@ -28,7 +28,7 @@ If a change to E1 forces a change to E2, they are coupled with respect to that c
 
 ### Constantine's Equivalence
 
-[[kent-beck]]'s formalization of the Yourdon/Constantine insight:
+[Kent Beck](../entities/kent-beck.md)'s formalization of the Yourdon/Constantine insight:
 
 ```
 cost(software) ~= cost(change) ~= cost(big changes) ~= coupling
@@ -41,7 +41,7 @@ The cost of software is approximately the cost of its coupling. This is because:
 
 ### Coupling at Architecture Scale
 
-[[software-architecture-hard-parts]] distinguishes:
+[Software Architecture: The Hard Parts](../sources/software-architecture-hard-parts.md) distinguishes:
 - **Static coupling** — how things are wired together (dependencies, databases, frameworks). Measurable at compile time.
 - **Dynamic coupling** — how things call each other at runtime. Three dimensions: communication (sync/async), consistency (atomic/eventual), coordination (orchestrated/choreographed).
 
@@ -58,7 +58,7 @@ Coupled elements should be subelements of the same containing element. That's th
 
 ### High Functional Cohesion
 
-In architecture, high functional cohesion overlaps with DDD's [[bounded-context]]: behavior and data that implement a particular domain workflow belong together.
+In architecture, high functional cohesion overlaps with DDD's [Bounded Context](bounded-context.md): behavior and data that implement a particular domain workflow belong together.
 
 ## How TDD Reveals Coupling Problems
 
@@ -68,7 +68,7 @@ Test pain is a coupling signal. When tests are difficult to write, it usually me
 |-----------|-----------------|
 | Excessive setup / too many mocks | Too many dependencies — class does too much |
 | Fragile tests (break when unrelated code changes) | Hidden coupling between components |
-| Slow tests (need real database/network) | Missing abstractions at boundaries ([[ports-and-adapters]]) |
+| Slow tests (need real database/network) | Missing abstractions at boundaries ([Ports and Adapters](ports-and-adapters.md)) |
 | Can't test a class in isolation | Tight coupling to concrete implementations |
 | Test requires private access | Cohesion problem — internals doing too much |
 
@@ -93,7 +93,7 @@ When the environment is volatile and uncertain, options are more valuable, so de
 
 ## Connection to Simple Design
 
-[[simple-design]]'s four rules attack coupling and cohesion:
+[Simple Design](simple-design.md)'s four rules attack coupling and cohesion:
 1. **Passes tests** — tests expose coupling
 2. **Reveals intention** — good names create cohesive abstractions
 3. **No duplication** — duplication is coupling (change one, must change the other)
@@ -101,7 +101,7 @@ When the environment is volatile and uncertain, options are more valuable, so de
 
 ## Connection to Tidyings
 
-Several [[tidyings]] directly address coupling and cohesion:
+Several [Tidyings](tidyings.md) directly address coupling and cohesion:
 - **Cohesion Order** — move coupled elements closer together
 - **Extract Helper** — create cohesive subelements
 - **One Pile** — collapse over-fragmented code to find better cohesion boundaries
@@ -110,15 +110,15 @@ Several [[tidyings]] directly address coupling and cohesion:
 
 ## Related Pages
 
-- [[tidyings]]
-- [[tidy-first-kent-beck]]
-- [[software-architecture-hard-parts]]
-- [[simple-design]]
-- [[refactoring]]
-- [[dependency-injection]]
-- [[ports-and-adapters]]
-- [[bounded-context]]
-- [[solid-principles]]
-- [[kent-beck]]
-- [[neal-ford]]
-- [[fitness-functions]]
+- [Tidyings](tidyings.md)
+- [Tidy First? (Beck)](../sources/tidy-first-kent-beck.md)
+- [Software Architecture: The Hard Parts](../sources/software-architecture-hard-parts.md)
+- [Simple Design](simple-design.md)
+- [Refactoring](refactoring.md)
+- [Dependency Injection](dependency-injection.md)
+- [Ports and Adapters](ports-and-adapters.md)
+- [Bounded Context](bounded-context.md)
+- [SOLID Principles](solid-principles.md)
+- [Kent Beck](../entities/kent-beck.md)
+- [Neal Ford](../entities/neal-ford.md)
+- [Fitness Functions](fitness-functions.md)

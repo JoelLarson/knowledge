@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: ["raw/Unit Testing Principles Practices Patterns - Vladimir Khorikov 2020.md"]
 ---
 
-[[vladimir-khorikov]]'s taxonomy of unit testing styles, ranked by quality using the [four pillars framework](four-pillars-of-good-tests.md). Output-based testing produces the best tests; state-based is second; communication-based is the most fragile and costly.
+[Vladimir Khorikov](../entities/vladimir-khorikov.md)'s taxonomy of unit testing styles, ranked by quality using the [four pillars framework](four-pillars-of-good-tests.md). Output-based testing produces the best tests; state-based is second; communication-based is the most fragile and costly.
 
 ## The Three Styles
 
@@ -114,12 +114,12 @@ When functional architecture doesn't fit, state-based testing is the second-best
 
 ## Related Pages
 
-- [[four-pillars-of-good-tests]]
-- [[test-fragility]]
-- [[mocking]]
-- [[humble-object]]
-- [[chicago-vs-london]]
-- [[tdd-in-functional-programming]]
-- [[ports-and-adapters]]
-- [[unit-testing-khorikov]]
-- [[vladimir-khorikov]]
+- [Four Pillars of a Good Test](four-pillars-of-good-tests.md)
+- [Test Fragility](test-fragility.md)
+- [Mocking](mocking.md)
+- [Humble Object](humble-object.md)
+- [Chicago vs. London Schools](chicago-vs-london.md)
+- [TDD in Functional Programming](tdd-in-functional-programming.md)
+- [Ports and Adapters](ports-and-adapters.md)
+- [Unit Testing (Khorikov)](../sources/unit-testing-khorikov.md)
+- [Vladimir Khorikov](../entities/vladimir-khorikov.md)

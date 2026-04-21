@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: [raw/Implementing Domain-Driven Design.md]
 ---
 
-The practical companion to Evans' foundational DDD text, by [[vaughn-vernon]]. Focuses on implementation details including testing aggregates, domain events, CQRS, event sourcing, and bounded context integration.
+The practical companion to Evans' foundational DDD text, by [Vaughn Vernon](../entities/vaughn-vernon.md). Focuses on implementation details including testing aggregates, domain events, CQRS, event sourcing, and bounded context integration.
 
 ## Bibliographic Info
 
@@ -115,14 +115,14 @@ Vernon bridges DDD and TDD more explicitly than Evans:
 
 ## Related Pages
 
-- [[vaughn-vernon]]
-- [[domain-driven-design-evans]]
-- [[aggregates]]
-- [[domain-events]]
-- [[bounded-context]]
-- [[value-objects]]
-- [[domain-model-testing]]
-- [[ubiquitous-language]]
-- [[ports-and-adapters]]
-- [[test-first]]
-- [[red-green-refactor]]
+- [Vaughn Vernon](../entities/vaughn-vernon.md)
+- [Domain-Driven Design (Evans)](domain-driven-design-evans.md)
+- [Aggregates](../concepts/aggregates.md)
+- [Domain Events](../concepts/domain-events.md)
+- [Bounded Context](../concepts/bounded-context.md)
+- [Value Objects](../concepts/value-objects.md)
+- [Domain Model Testing](../concepts/domain-model-testing.md)
+- [Ubiquitous Language](../concepts/ubiquitous-language.md)
+- [Ports and Adapters](../concepts/ports-and-adapters.md)
+- [Test First](../concepts/test-first.md)
+- [Red-Green-Refactor](../concepts/red-green-refactor.md)

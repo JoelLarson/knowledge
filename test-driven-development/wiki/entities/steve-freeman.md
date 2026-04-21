@@ -13,7 +13,7 @@ Steve Freeman is co-author of [Growing Object-Oriented Software, Guided by Tests
 
 - **GOOS** — co-authored the defining text of the London/Mockist school of TDD (2009)
 - **Mock objects** — co-created the mock objects technique and wrote the XP2000 paper with Tim Mackinnon and Philip Craig
-- **jMock** — co-designed the jMock framework with [[nat-pryce]], introducing the expressive expectations API
+- **jMock** — co-designed the jMock framework with [Nat Pryce](nat-pryce.md), introducing the expressive expectations API
 - **London Extreme Tuesday Club (XTC)** — founding member of the community that incubated mock objects and London-school TDD
 - **"Needs-driven development"** — coined this term for the outside-in, mock-driven design approach
 - **2006 Gordon Pask Award** — joint winner with Nat Pryce for contributions to agile development
@@ -34,10 +34,10 @@ Steve Freeman is co-author of [Growing Object-Oriented Software, Guided by Tests
 
 ## Related Pages
 
-- [[nat-pryce]]
-- [[london-school-tdd]]
-- [[outside-in-tdd]]
-- [[mocking]]
-- [[walking-skeleton]]
-- [[growing-oo-software-freeman-pryce]]
-- [[kent-beck]]
+- [Nat Pryce](nat-pryce.md)
+- [London School TDD](../concepts/london-school-tdd.md)
+- [Outside-In TDD](../concepts/outside-in-tdd.md)
+- [Mocking](../concepts/mocking.md)
+- [Walking Skeleton](../concepts/walking-skeleton.md)
+- [Growing OO Software (Freeman & Pryce)](../sources/growing-oo-software-freeman-pryce.md)
+- [Kent Beck](kent-beck.md)

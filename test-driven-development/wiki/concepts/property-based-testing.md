@@ -65,7 +65,7 @@ The TDD cycle remains example-driven because examples are concrete and guide int
 
 ## Especially Powerful For
 
-### [[value-objects]]
+### [Value Objects](value-objects.md)
 Value objects are ideal for property-based testing because they are immutable and have algebraic properties:
 - Money addition is commutative and associative
 - Creating a value object from its components and extracting them back yields the same components
@@ -83,7 +83,7 @@ For any valid input, `parse(format(x)) == x`. For invalid inputs, the parser sho
 ### State Machines
 Generate random sequences of valid operations and verify that invariants hold after each transition. This is model-based testing.
 
-## Property-Based Testing vs. [[parameterized-tests]]
+## Property-Based Testing vs. [Parameterized Tests](parameterized-tests.md)
 
 | Parameterized Tests | Property-Based Tests |
 |--------------------|---------------------|
@@ -103,9 +103,9 @@ Both reduce test duplication but serve different purposes. Use parameterized tes
 
 ## Related Pages
 
-- [[value-objects]]
-- [[good-test-properties]]
-- [[parameterized-tests]]
-- [[tdd-in-functional-programming]]
-- [[domain-model-testing]]
-- [[test-organization-patterns]]
+- [Value Objects](value-objects.md)
+- [Good Test Properties](good-test-properties.md)
+- [Parameterized Tests](parameterized-tests.md)
+- [TDD in Functional Programming](tdd-in-functional-programming.md)
+- [Domain Model Testing](domain-model-testing.md)
+- [Test Organization Patterns](test-organization-patterns.md)

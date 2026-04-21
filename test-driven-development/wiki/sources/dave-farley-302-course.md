@@ -18,7 +18,7 @@ A structured video course by Dave Farley covering TDD, BDD, design, refactoring,
 Course preview; positions TDD/BDD as a design-through-testing approach.
 
 ### Module 2: Introduction to TDD
-- [[red-green-refactor]] as the TDD mantra
+- [Red-Green-Refactor](../concepts/red-green-refactor.md) as the TDD mantra
 - TDD vs. [unit testing](../concepts/tdd-vs-unit-testing.md)
 - TDD as "talent amplifier"
 - [Properties of good tests](../concepts/good-test-properties.md) vs. unit-testing-after
@@ -26,7 +26,7 @@ Course preview; positions TDD/BDD as a design-through-testing approach.
 ### Module 3: How to Write Great Tests
 - Properties of good tests (UMRANGS+F: Understandable, Maintainable, Repeatable, Atomic, Necessary, Granular, Fast, and First)
 - Three types of tests in TDD
-- [Dependency injection](../concepts/dependency-injection.md) and [[mocking]]
+- [Dependency injection](../concepts/dependency-injection.md) and [Mocking](../concepts/mocking.md)
 - Testing at the edges
 
 ### Module 4: TDD and BDD
@@ -67,13 +67,13 @@ Farley argues TDD is a hygiene standard for professional software development, a
 
 ## Related Pages
 
-- [[red-green-refactor]]
-- [[bdd]]
-- [[good-test-properties]]
-- [[refactoring]]
-- [[legacy-code]]
-- [[tdd-smells]]
-- [[atdd]]
-- [[dependency-injection]]
-- [[mocking]]
-- [[dave-farley]]
+- [Red-Green-Refactor](../concepts/red-green-refactor.md)
+- [BDD](../concepts/bdd.md)
+- [Good Test Properties](../concepts/good-test-properties.md)
+- [Refactoring](../concepts/refactoring.md)
+- [Legacy Code](../concepts/legacy-code.md)
+- [TDD Smells](../concepts/tdd-smells.md)
+- [ATDD](../concepts/atdd.md)
+- [Dependency Injection](../concepts/dependency-injection.md)
+- [Mocking](../concepts/mocking.md)
+- [Dave Farley](../entities/dave-farley.md)

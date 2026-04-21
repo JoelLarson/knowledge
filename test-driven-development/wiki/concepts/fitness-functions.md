@@ -85,19 +85,19 @@ Fitness functions support the four DORA metrics:
 ## Connection to TDD Practice
 
 Fitness functions extend the TDD mindset beyond unit and acceptance tests:
-- [[red-green-refactor]] governs code-level design
+- [Red-Green-Refactor](red-green-refactor.md) governs code-level design
 - Fitness functions govern architecture-level design
 - Both use fast automated feedback to prevent drift
 - Both encode decisions as executable specifications
 
-When practicing TDD, developers naturally write tests that serve as atomic fitness functions: tests that verify [[dependency-injection]] is used correctly, that [[ports-and-adapters]] boundaries are respected, that coupling between modules stays within bounds. Making this explicit through dedicated fitness function libraries (ArchUnit, NetArchTest) elevates it from implicit to intentional.
+When practicing TDD, developers naturally write tests that serve as atomic fitness functions: tests that verify [Dependency Injection](dependency-injection.md) is used correctly, that [Ports and Adapters](ports-and-adapters.md) boundaries are respected, that coupling between modules stays within bounds. Making this explicit through dedicated fitness function libraries (ArchUnit, NetArchTest) elevates it from implicit to intentional.
 
 ## Related Pages
 
-- [[software-architecture-hard-parts]]
-- [[neal-ford]]
-- [[continuous-delivery]]
-- [[ports-and-adapters]]
-- [[coupling-and-cohesion]]
-- [[bounded-context]]
-- [[integration-testing]]
+- [Software Architecture: The Hard Parts](../sources/software-architecture-hard-parts.md)
+- [Neal Ford](../entities/neal-ford.md)
+- [Continuous Delivery](continuous-delivery.md)
+- [Ports and Adapters](ports-and-adapters.md)
+- [Coupling and Cohesion](coupling-and-cohesion.md)
+- [Bounded Context](bounded-context.md)
+- [Integration Testing](integration-testing.md)

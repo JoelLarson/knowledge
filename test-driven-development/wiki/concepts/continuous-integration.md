@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: ["raw/Accelerate The Science of Lean Software and DevOps Building and Scaling High Performing Technology Organizations by Nicole Forsgren Jez Humble Gene Kim.md", "raw/modern-software-engineering-dave-farley.md"]
 ---
 
-Continuous integration (CI) is the practice of merging all developer working copies to a shared mainline frequently -- at least daily -- with each change triggering an automated build and test process. The DORA research ([[accelerate-forsgren-humble-kim]]) identifies CI as one of 24 key capabilities that drive software delivery performance.
+Continuous integration (CI) is the practice of merging all developer working copies to a shared mainline frequently -- at least daily -- with each change triggering an automated build and test process. The DORA research ([Accelerate](../sources/accelerate-forsgren-humble-kim.md)) identifies CI as one of 24 key capabilities that drive software delivery performance.
 
 ## Core Practices
 
@@ -35,7 +35,7 @@ TDD provides exactly what CI needs:
 
 | CI Requirement | What TDD Provides |
 |---------------|-------------------|
-| Fast automated tests | [[red-green-refactor]] produces tests that run in milliseconds |
+| Fast automated tests | [Red-Green-Refactor](red-green-refactor.md) produces tests that run in milliseconds |
 | Comprehensive coverage | Every behavior is specified by a test before implementation |
 | Reliable tests | Tests written against behavior (not implementation) produce fewer false positives |
 | Small, integrable commits | TDD's small steps produce small, focused commits ideal for frequent merging |
@@ -52,7 +52,7 @@ This is the death spiral that CI is designed to prevent -- but only TDD produces
 
 ## CI as Part of Continuous Delivery
 
-CI is one of eight [[continuous-delivery]] capabilities identified by DORA. The deployment pipeline extends CI:
+CI is one of eight [Continuous Delivery](continuous-delivery.md) capabilities identified by DORA. The deployment pipeline extends CI:
 
 ```
 Commit Stage          -> fast unit tests, compilation, static analysis (CI)
@@ -61,16 +61,16 @@ Performance Stage     -> load testing, capacity verification
 Production            -> deployment (automated or with manual gate)
 ```
 
-The commit stage (CI proper) must complete in minutes -- [[dave-farley]] recommends under 5 minutes. This is only achievable with the kind of fast unit tests that TDD produces.
+The commit stage (CI proper) must complete in minutes -- [Dave Farley](../entities/dave-farley.md) recommends under 5 minutes. This is only achievable with the kind of fast unit tests that TDD produces.
 
 ## CI and Refactoring
 
-Long-lived branches discourage [[refactoring]] because:
+Long-lived branches discourage [Refactoring](refactoring.md) because:
 - Refactoring touches many files, increasing merge conflict probability
 - The longer a branch lives, the more the trunk has diverged
 - Developers avoid refactoring to minimize merge pain
 
-Trunk-based development with CI removes this obstacle. Small refactorings merge immediately, keeping the codebase healthy. This is essential for the "refactor" step of [[red-green-refactor]].
+Trunk-based development with CI removes this obstacle. Small refactorings merge immediately, keeping the codebase healthy. This is essential for the "refactor" step of [Red-Green-Refactor](red-green-refactor.md).
 
 ## CI and Architecture
 
@@ -79,7 +79,7 @@ The Accelerate research found that loosely coupled architecture is the biggest c
 - Deploys don't require coordinating with other teams
 - Failures are localized and quickly diagnosed
 
-This maps directly to TDD design principles: [[dependency-injection]], [[ports-and-adapters]], and [[test-doubles]] enable both testability and deployability.
+This maps directly to TDD design principles: [Dependency Injection](dependency-injection.md), [Ports and Adapters](ports-and-adapters.md), and [Test Doubles](test-doubles.md) enable both testability and deployability.
 
 ## Common Anti-Patterns
 
@@ -90,13 +90,13 @@ This maps directly to TDD design principles: [[dependency-injection]], [[ports-a
 
 ## Related Pages
 
-- [[accelerate-forsgren-humble-kim]]
-- [[dora-metrics]]
-- [[test-automation-at-scale]]
-- [[continuous-delivery]]
-- [[red-green-refactor]]
-- [[refactoring]]
-- [[extreme-programming]]
-- [[dave-farley]]
-- [[jez-humble]]
-- [[continuous-delivery]]
+- [Accelerate](../sources/accelerate-forsgren-humble-kim.md)
+- [DORA Metrics](dora-metrics.md)
+- [Test Automation at Scale](test-automation-at-scale.md)
+- [Continuous Delivery](continuous-delivery.md)
+- [Red-Green-Refactor](red-green-refactor.md)
+- [Refactoring](refactoring.md)
+- [Extreme Programming](extreme-programming.md)
+- [Dave Farley](../entities/dave-farley.md)
+- [Jez Humble](../entities/jez-humble.md)
+- [Continuous Delivery](continuous-delivery.md)

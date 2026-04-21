@@ -20,7 +20,7 @@ The strongest empirical finding across TDD research is that TDD-like practices r
 - 76% defect reduction (Microsoft MSN web services)
 - 91% defect reduction (Microsoft Visual Studio)
 
-These are large effects. However, the comparison baseline was traditional development (not iterative test-last), and the study design was case study, not controlled experiment. See [[tdd-quality-improvement-nagappan-2008]] for details.
+These are large effects. However, the comparison baseline was traditional development (not iterative test-last), and the study design was case study, not controlled experiment. See [TDD Quality Improvement (Nagappan 2008)](../sources/tdd-quality-improvement-nagappan-2008.md) for details.
 
 Multiple systematic reviews confirm a positive quality effect:
 - Turhan et al. (2010): moderate positive effect on external quality
@@ -32,7 +32,7 @@ Multiple systematic reviews confirm a positive quality effect:
 - **Granularity:** shorter cycles (5-10 minutes) correlate with higher quality
 - **Uniformity:** keeping a consistent rhythm correlates with higher quality
 
-This confirms Beck's "baby steps" advice and the ratchet metaphor empirically. See [[tdd-process-granularity]] for the full treatment.
+This confirms Beck's "baby steps" advice and the ratchet metaphor empirically. See [TDD Process Granularity](tdd-process-granularity.md) for the full treatment.
 
 ### TDD Increases Initial Development Time
 Nagappan et al. reported a 15-35% increase in development time (management estimates). This is consistent across the literature -- TDD requires more upfront effort. The counterargument, supported by the same teams, is that reduced maintenance costs offset this.
@@ -61,7 +61,7 @@ Studies measuring coupling, cohesion, and complexity show mixed results. Shull e
 
 ## Why Results Vary
 
-Ghafari et al. 2020 identified five categories of confounding factors that explain why TDD studies contradict each other. See [[why-tdd-research-inconclusive-ghafari-2020]] for the full analysis.
+Ghafari et al. 2020 identified five categories of confounding factors that explain why TDD studies contradict each other. See [Why TDD Research is Inconclusive (Ghafari 2020)](../sources/why-tdd-research-inconclusive-ghafari-2020.md) for the full analysis.
 
 ### 1. TDD Definition
 There is no shared definition. Some studies include refactoring as essential; others ignore it. Beller et al. (2019) found only 2.2% of real developer sessions follow strict TDD patterns. Studies may be comparing different things under the same label.
@@ -73,7 +73,7 @@ Most study participants are TDD novices -- ranging from a few hours to a few mon
 Synthetic coding katas dominate, even in industrial studies. Real-world tasks (brownfield, maintenance, bug-fixing) are underrepresented. TDD may perform differently on different task types.
 
 ### 4. Project Type
-Greenfield projects dominate the research. Brownfield/legacy projects are barely studied, despite being the majority of professional work. See [[legacy-code]] for TDD strategies in this context.
+Greenfield projects dominate the research. Brownfield/legacy projects are barely studied, despite being the majority of professional work. See [Legacy Code](legacy-code.md) for TDD strategies in this context.
 
 ### 5. Comparison Baseline
 The choice of what TDD is compared against determines results:
@@ -112,13 +112,13 @@ The defect reduction always exceeds the time increase, often by a factor of 2-4x
 
 ## Related Pages
 
-- [[tdd-process-granularity]] -- the key finding on cycle size vs. ordering
-- [[tdd-quality-improvement-nagappan-2008]] -- the Microsoft/IBM industrial case study
-- [[dissection-of-tdd-fucci-2017]] -- process dimension analysis
-- [[why-tdd-research-inconclusive-ghafari-2020]] -- why studies disagree
-- [[red-green-refactor]] -- the cycle whose granularity matters
-- [[test-first]] -- the ordering dimension that may be less important than assumed
-- [[tdd-vs-unit-testing]] -- TDD as design technique vs. testing technique
-- [[legacy-code]] -- the understudied brownfield context
-- [[mutation-testing]] -- mutation score as an alternative quality metric to code coverage
-- [[nicole-forsgren]] -- key researcher behind the DORA program's empirical evidence on delivery performance
+- [TDD Process Granularity](tdd-process-granularity.md) -- the key finding on cycle size vs. ordering
+- [TDD Quality Improvement (Nagappan 2008)](../sources/tdd-quality-improvement-nagappan-2008.md) -- the Microsoft/IBM industrial case study
+- [Dissection of TDD (Fucci 2017)](../sources/dissection-of-tdd-fucci-2017.md) -- process dimension analysis
+- [Why TDD Research is Inconclusive (Ghafari 2020)](../sources/why-tdd-research-inconclusive-ghafari-2020.md) -- why studies disagree
+- [Red-Green-Refactor](red-green-refactor.md) -- the cycle whose granularity matters
+- [Test First](test-first.md) -- the ordering dimension that may be less important than assumed
+- [TDD vs. Unit Testing](tdd-vs-unit-testing.md) -- TDD as design technique vs. testing technique
+- [Legacy Code](legacy-code.md) -- the understudied brownfield context
+- [Mutation Testing](mutation-testing.md) -- mutation score as an alternative quality metric to code coverage
+- [Nicole Forsgren](../entities/nicole-forsgren.md) -- key researcher behind the DORA program's empirical evidence on delivery performance

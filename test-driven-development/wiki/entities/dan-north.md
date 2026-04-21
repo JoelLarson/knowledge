@@ -11,7 +11,7 @@ Dan North is the primary creator of Behaviour-Driven Development (BDD), alongsid
 
 ## Key Contributions
 
-- **Behaviour-Driven Development (BDD)** — the insight that "test" should be "specification," "test case" should be "scenario," and tests should use the word "should" to force behavioral thinking. See [[bdd]].
+- **Behaviour-Driven Development (BDD)** — the insight that "test" should be "specification," "test case" should be "scenario," and tests should use the word "should" to force behavioral thinking. See [BDD](../concepts/bdd.md).
 - **Given/When/Then** — the scenario structuring pattern that separates context, action, and assertion. Widely adopted beyond BDD itself (used in Gherkin/Cucumber).
 - **JBehave** — the first BDD framework (Java), created to demonstrate the vocabulary shift.
 - **"Introducing BDD" blog post (2006)** — the original BDD manifesto.
@@ -36,8 +36,8 @@ BDD is a refinement of TDD, not a replacement:
 
 ## Related Pages
 
-- [[bdd]]
-- [[atdd]]
-- [[ubiquitous-language]]
-- [[dave-farley]]
-- [[dave-farley-302-course]]
+- [BDD](../concepts/bdd.md)
+- [ATDD](../concepts/atdd.md)
+- [Ubiquitous Language](../concepts/ubiquitous-language.md)
+- [Dave Farley](dave-farley.md)
+- [Dave Farley 302 Course](../sources/dave-farley-302-course.md)

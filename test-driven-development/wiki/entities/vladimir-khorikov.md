@@ -14,8 +14,8 @@ Software engineer, Microsoft MVP, and Pluralsight author. Author of *Unit Testin
 - **[Four Pillars of a Good Test](../concepts/four-pillars-of-good-tests.md)** — A universal evaluation framework: Protection against regressions, Resistance to refactoring, Fast feedback, Maintainability. The test's value is the product of its scores; zero in any pillar means zero value.
 - **[Testing Styles Taxonomy](../concepts/output-vs-state-vs-communication-testing.md)** — Classified unit testing into output-based (best), state-based, and communication-based (worst), ranked using the four pillars.
 - **[Test Fragility Analysis](../concepts/test-fragility.md)** — Identified coupling to implementation details as the sole cause of false positives, and resistance to refactoring as the non-negotiable pillar.
-- **Mocking philosophy** — Only mock unmanaged dependencies whose side effects are visible externally. Intra-system communications are implementation details and should not be mocked. See [[mocking]].
-- **Classical school advocacy** — Explicitly favors the Chicago/classical school over the London/mockist school, arguing that ubiquitous mocking destroys resistance to refactoring. See [[chicago-vs-london]].
+- **Mocking philosophy** — Only mock unmanaged dependencies whose side effects are visible externally. Intra-system communications are implementation details and should not be mocked. See [Mocking](../concepts/mocking.md).
+- **Classical school advocacy** — Explicitly favors the Chicago/classical school over the London/mockist school, arguing that ubiquitous mocking destroys resistance to refactoring. See [Chicago vs. London Schools](../concepts/chicago-vs-london.md).
 - **Four types of code** — Categorizes code by complexity/domain significance vs number of collaborators, producing four quadrants: domain model (unit test), controllers (integration test), trivial code (don't test), overcomplicated code (refactor).
 - **Generalized [Humble Object](../concepts/humble-object.md)** — Extended the pattern beyond Meszaros's original scope, identifying it as the unifying principle behind hexagonal architecture, functional architecture, MVC/MVP, and DDD aggregates.
 
@@ -38,12 +38,12 @@ Software engineer, Microsoft MVP, and Pluralsight author. Author of *Unit Testin
 
 ## Related Pages
 
-- [[unit-testing-khorikov]]
-- [[four-pillars-of-good-tests]]
-- [[test-fragility]]
-- [[output-vs-state-vs-communication-testing]]
-- [[chicago-vs-london]]
-- [[mocking]]
-- [[humble-object]]
-- [[gerard-meszaros]]
-- [[kent-beck]]
+- [Unit Testing (Khorikov)](../sources/unit-testing-khorikov.md)
+- [Four Pillars of a Good Test](../concepts/four-pillars-of-good-tests.md)
+- [Test Fragility](../concepts/test-fragility.md)
+- [Output vs State vs Communication Testing](../concepts/output-vs-state-vs-communication-testing.md)
+- [Chicago vs. London Schools](../concepts/chicago-vs-london.md)
+- [Mocking](../concepts/mocking.md)
+- [Humble Object](../concepts/humble-object.md)
+- [Gerard Meszaros](gerard-meszaros.md)
+- [Kent Beck](kent-beck.md)

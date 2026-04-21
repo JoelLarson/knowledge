@@ -43,7 +43,7 @@ Common pitfalls: loss of motivation, distraction, running over time, wrong assum
 14. You Ain't Gonna Need It (YAGNI)
 15. Don't use too many levels of indentation
 16. Use metrics
-17. Boy Scout Rule and [[refactoring]]
+17. Boy Scout Rule and [Refactoring](../concepts/refactoring.md)
 
 ### Chapter 5: Premature Optimization Is the Root of All Evil
 Six types: code functions, features, planning, scalability, onboarding, meetings. Measure before optimizing.
@@ -59,11 +59,11 @@ Testing appears explicitly as Principle 11 in the clean code principles. The Boy
 
 ## Related Pages
 
-- [[refactoring]]
-- [[test-first]]
-- [[solid-principles]]
-- [[legacy-code]]
-- [[tdd-smells]]
-- [[bdd]]
-- [[good-test-properties]]
-- [[clean-code-robert-martin]]
+- [Refactoring](../concepts/refactoring.md)
+- [Test First](../concepts/test-first.md)
+- [SOLID Principles](../concepts/solid-principles.md)
+- [Legacy Code](../concepts/legacy-code.md)
+- [TDD Smells](../concepts/tdd-smells.md)
+- [BDD](../concepts/bdd.md)
+- [Good Test Properties](../concepts/good-test-properties.md)
+- [Clean Code](clean-code-robert-martin.md)

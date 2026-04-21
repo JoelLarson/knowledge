@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: [raw/dave-farley-302-tdd-and-bdd-design-through-testing/, raw/Domain-Driven Design_ Tackling Complexity in the Heart of Software.md, raw/Implementing Domain-Driven Design.md]
 ---
 
-Ubiquitous Language is a concept from [[eric-evans]]'s Domain-Driven Design: use the same vocabulary in code, tests, conversations, and documentation that the problem domain uses. A change in the language is a change in the model. Deeply connected to [[bdd]] — tests named in the ubiquitous language are both better specifications and better documentation.
+Ubiquitous Language is a concept from [Eric Evans](../entities/eric-evans.md)'s Domain-Driven Design: use the same vocabulary in code, tests, conversations, and documentation that the problem domain uses. A change in the language is a change in the model. Deeply connected to [BDD](bdd.md) — tests named in the ubiquitous language are both better specifications and better documentation.
 
 ## Core Idea (Evans)
 
@@ -54,7 +54,7 @@ Key practices:
 
 ## Connection to BDD and ATDD
 
-[[bdd]] was born from finding better words for TDD. [Acceptance tests](atdd.md) are most valuable when expressed in the ubiquitous language:
+[BDD](bdd.md) was born from finding better words for TDD. [Acceptance tests](atdd.md) are most valuable when expressed in the ubiquitous language:
 
 ```
 // In the language of traders:
@@ -77,7 +77,7 @@ When language feels awkward or forced, that's a signal the model needs work. Dom
 
 ## Scope: Bounded Contexts
 
-The ubiquitous language applies within a [[bounded-context]]. Different contexts have different dialects. The word "Account" in a billing context means something different than in an authentication context. Tests should use the language of their specific bounded context.
+The ubiquitous language applies within a [Bounded Context](bounded-context.md). Different contexts have different dialects. The word "Account" in a billing context means something different than in an authentication context. Tests should use the language of their specific bounded context.
 
 ## Naming Guidelines (Farley)
 
@@ -96,21 +96,21 @@ The ubiquitous language applies within a [[bounded-context]]. Different contexts
 
 ## Connection to Refactoring
 
-Rename Variable/Function/Class is the most common [[refactoring]] move. Moving code toward ubiquitous language through renaming is often the highest-impact refactoring available.
+Rename Variable/Function/Class is the most common [Refactoring](refactoring.md) move. Moving code toward ubiquitous language through renaming is often the highest-impact refactoring available.
 
 Evans elevates this to "refactoring toward deeper insight" — as the team gains new understanding, the model (and its language) evolves. Tests provide the safety net for this evolution.
 
 ## Related Pages
 
-- [[bdd]]
-- [[atdd]]
-- [[refactoring]]
-- [[bounded-context]]
-- [[aggregates]]
-- [[domain-model-testing]]
-- [[domain-driven-design-evans]]
-- [[implementing-ddd-vernon]]
-- [[eric-evans]]
-- [[vaughn-vernon]]
-- [[dave-farley-302-course]]
-- [[clean-code-robert-martin]]
+- [BDD](bdd.md)
+- [ATDD](atdd.md)
+- [Refactoring](refactoring.md)
+- [Bounded Context](bounded-context.md)
+- [Aggregates](aggregates.md)
+- [Domain Model Testing](domain-model-testing.md)
+- [Domain-Driven Design (Evans)](../sources/domain-driven-design-evans.md)
+- [Implementing DDD (Vernon)](../sources/implementing-ddd-vernon.md)
+- [Eric Evans](../entities/eric-evans.md)
+- [Vaughn Vernon](../entities/vaughn-vernon.md)
+- [Dave Farley 302 Course](../sources/dave-farley-302-course.md)
+- [Clean Code](../sources/clean-code-robert-martin.md)

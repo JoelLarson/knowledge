@@ -11,7 +11,7 @@ A multi-language refactoring kata created by Emily Bache, based on the example f
 
 ## Origin
 
-Martin Fowler's book uses a Theatrical Players billing system as the worked example in Chapter 1. Emily Bache extracted this into a public kata repository with implementations in many languages. See [[refactoring-martin-fowler]].
+Martin Fowler's book uses a Theatrical Players billing system as the worked example in Chapter 1. Emily Bache extracted this into a public kata repository with implementations in many languages. See [Refactoring (Fowler)](refactoring-martin-fowler.md).
 
 ## The Problem Domain
 
@@ -35,7 +35,7 @@ statement()        — monolithic function with switch on play type
 
 ## Testing Approach: Approval Testing
 
-Fowler notes that the first step in refactoring is always establishing tests. Emily Bache used [[approval-testing]] for this kata. Approval tests:
+Fowler notes that the first step in refactoring is always establishing tests. Emily Bache used [Approval Testing](../concepts/approval-testing.md) for this kata. Approval tests:
 - Capture a "golden" output for the current code
 - Re-run and compare on every change
 - Pass if output is identical; fail if anything changes
@@ -62,9 +62,9 @@ The repository provides starting points in: C, C++, C#, Dart, Delphi, Go, Java, 
 
 ## Related Pages
 
-- [[approval-testing]]
-- [[refactoring]]
-- [[refactoring-martin-fowler]]
-- [[red-green-refactor]]
-- [[martin-fowler]]
-- [[emily-bache]]
+- [Approval Testing](../concepts/approval-testing.md)
+- [Refactoring](../concepts/refactoring.md)
+- [Refactoring (Fowler)](refactoring-martin-fowler.md)
+- [Red-Green-Refactor](../concepts/red-green-refactor.md)
+- [Martin Fowler](../entities/martin-fowler.md)
+- [Emily Bache](../entities/emily-bache.md)

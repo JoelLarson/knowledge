@@ -95,10 +95,10 @@ A special Test Helper that provides pre-built, commonly-needed test objects. A f
 
 ## Related Pages
 
-- [[four-phase-test]]
-- [[test-fixture-strategies]]
-- [[test-smells-catalog]]
-- [[good-test-properties]]
-- [[xunit]]
-- [[parameterized-tests]]
-- [[xunit-test-patterns-meszaros]]
+- [Four-Phase Test](four-phase-test.md)
+- [Test Fixture Strategies](test-fixture-strategies.md)
+- [Test Smells Catalog](test-smells-catalog.md)
+- [Good Test Properties](good-test-properties.md)
+- [xUnit](../entities/xunit.md)
+- [Parameterized Tests](parameterized-tests.md)
+- [xUnit Test Patterns (Meszaros)](../sources/xunit-test-patterns-meszaros.md)

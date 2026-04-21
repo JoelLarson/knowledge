@@ -7,15 +7,15 @@ updated: 2026-04-20
 sources: [raw/tdd-by-example-kent-beck-v2.md]
 ---
 
-Ward Cunningham is the inventor of the wiki (WikiWikiWeb), co-creator of Extreme Programming with [[kent-beck]], and the person who coined the "technical debt" metaphor. His collaborative work with Beck in Smalltalk directly contributed to the emergence of TDD.
+Ward Cunningham is the inventor of the wiki (WikiWikiWeb), co-creator of Extreme Programming with [Kent Beck](kent-beck.md), and the person who coined the "technical debt" metaphor. His collaborative work with Beck in Smalltalk directly contributed to the emergence of TDD.
 
 ## Key Contributions
 
 - **Wiki (WikiWikiWeb)** — invented the concept of collaborative, interlinked web pages (1995); the original platform for sharing XP and pattern knowledge
-- **Extreme Programming** — co-created XP with Kent Beck; TDD is one of XP's core practices (see [[extreme-programming]])
+- **Extreme Programming** — co-created XP with Kent Beck; TDD is one of XP's core practices (see [Extreme Programming](../concepts/extreme-programming.md))
 - **CRC Cards** — Class-Responsibility-Collaboration cards, a technique for collaborative object design (co-created with Beck)
 - **Technical Debt** — coined the metaphor (1992) describing the cost of deferred design work; TDD helps manage technical debt by keeping code clean through continuous refactoring
-- **FIT (Framework for Integrated Test)** — created a framework for expressing acceptance tests in tabular form, influencing [[atdd]] practices
+- **FIT (Framework for Integrated Test)** — created a framework for expressing acceptance tests in tabular form, influencing [ATDD](../concepts/atdd.md) practices
 - **GOOS endorsement** — endorsed Growing Object-Oriented Software, connecting his influence to the London School approach
 
 ## Key Ideas
@@ -24,7 +24,7 @@ Ward Cunningham is the inventor of the wiki (WikiWikiWeb), co-creator of Extreme
 
 > "Shipping first-time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite."
 
-TDD is one of the primary tools for "paying back" technical debt through continuous refactoring in the third step of [[red-green-refactor]].
+TDD is one of the primary tools for "paying back" technical debt through continuous refactoring in the third step of [Red-Green-Refactor](../concepts/red-green-refactor.md).
 
 ### Collaboration and Knowledge Sharing
 
@@ -36,9 +36,9 @@ The Beck-Cunningham collaboration in Smalltalk during the late 1980s and early 1
 
 ## Related Pages
 
-- [[kent-beck]]
-- [[extreme-programming]]
-- [[red-green-refactor]]
-- [[atdd]]
-- [[london-school-tdd]]
-- [[tdd-by-example-kent-beck]]
+- [Kent Beck](kent-beck.md)
+- [Extreme Programming](../concepts/extreme-programming.md)
+- [Red-Green-Refactor](../concepts/red-green-refactor.md)
+- [ATDD](../concepts/atdd.md)
+- [London School TDD](../concepts/london-school-tdd.md)
+- [TDD by Example (Beck)](../sources/tdd-by-example-kent-beck.md)

@@ -20,7 +20,7 @@ A pure function's output depends only on its inputs and produces no side effects
 - Trivial parallelization of test suites
 
 ### No Mocking Needed
-In OO TDD, much complexity comes from replacing collaborators with [[test-doubles]]. In FP:
+In OO TDD, much complexity comes from replacing collaborators with [Test Doubles](test-doubles.md). In FP:
 - Functions take data in, return data out — no collaborators to mock
 - Side effects are pushed to the edges (IO boundaries)
 - Core logic is pure and testable without any doubles
@@ -45,7 +45,7 @@ When data cannot be mutated, you never need to worry about:
 
 ## The Chicago/London Debate Dissolves
 
-In functional programming, the [[chicago-vs-london]] distinction largely disappears:
+In functional programming, the [Chicago vs. London Schools](chicago-vs-london.md) distinction largely disappears:
 - No objects means no "communication between objects" to test (London concern)
 - No mutable state means state verification is just comparing return values (Chicago concern)
 - The test simply calls a function and asserts on the result
@@ -53,7 +53,7 @@ In functional programming, the [[chicago-vs-london]] distinction largely disappe
 
 ## Property-Based Testing as Natural Complement
 
-[[property-based-testing]] is particularly natural in FP because:
+[Property-Based Testing](property-based-testing.md) is particularly natural in FP because:
 - Pure functions have mathematical properties (commutativity, associativity, idempotency)
 - Algebraic data types provide natural generators
 - Equational reasoning is built into the programming model
@@ -79,7 +79,7 @@ Push all IO to the outermost layer. Core logic is pure and unit-testable. The th
 Encode side effects in the type system (IO monad, ZIO, cats-effect). Test by interpreting effects against a test runtime rather than the real world.
 
 ### Functional Core, Imperative Shell
-The architecture pattern where the functional core contains all business logic (tested with unit tests) and the imperative shell handles IO (tested with integration tests). Analogous to [[ports-and-adapters]] in OO.
+The architecture pattern where the functional core contains all business logic (tested with unit tests) and the imperative shell handles IO (tested with integration tests). Analogous to [Ports and Adapters](ports-and-adapters.md) in OO.
 
 ## Examples by Language
 
@@ -105,10 +105,10 @@ The architecture pattern where the functional core contains all business logic (
 
 ## Related Pages
 
-- [[property-based-testing]]
-- [[chicago-vs-london]]
-- [[test-doubles]]
-- [[ports-and-adapters]]
-- [[value-objects]]
-- [[good-test-properties]]
-- [[simple-design]]
+- [Property-Based Testing](property-based-testing.md)
+- [Chicago vs. London Schools](chicago-vs-london.md)
+- [Test Doubles](test-doubles.md)
+- [Ports and Adapters](ports-and-adapters.md)
+- [Value Objects](value-objects.md)
+- [Good Test Properties](good-test-properties.md)
+- [Simple Design](simple-design.md)

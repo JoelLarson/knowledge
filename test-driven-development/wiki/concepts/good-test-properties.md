@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: [raw/dave-farley-302-tdd-and-bdd-design-through-testing/, raw/clean-code-robert-martin.md, "raw/Unit Testing Principles Practices Patterns - Vladimir Khorikov 2020.md"]
 ---
 
-The properties that define a high-quality automated test. Farley identifies eight dimensions; Martin's F.I.R.S.T. is a related formulation. [[test-first]] development naturally produces tests with superior scores across all these dimensions vs. test-after unit testing.
+The properties that define a high-quality automated test. Farley identifies eight dimensions; Martin's F.I.R.S.T. is a related formulation. [Test First](test-first.md) development naturally produces tests with superior scores across all these dimensions vs. test-after unit testing.
 
 ## Farley's Eight Properties (UMRANGS+F)
 
@@ -47,7 +47,7 @@ Tests are used as a development tool — run after every change, potentially tho
 **TDD advantage:** Isolation pressure (needed for Repeatable/Atomic) eliminates real I/O. No real databases, files, network. Tests run in milliseconds, not seconds.
 
 ### First (written before code)
-The most important dimension — the distinguishing characteristic of TDD vs. unit testing. Writing the test first changes the design of both the test and the code. See [[test-first]].
+The most important dimension — the distinguishing characteristic of TDD vs. unit testing. Writing the test first changes the design of both the test and the code. See [Test First](test-first.md).
 
 ## F.I.R.S.T. (Robert Martin)
 
@@ -77,7 +77,7 @@ This is the cost of missing simple, granular, fast test coverage.
 
 ## Meszaros's Goals of Test Automation
 
-[[gerard-meszaros]] frames test quality as a set of goals in [[xunit-test-patterns-meszaros|xUnit Test Patterns]]:
+[Gerard Meszaros](../entities/gerard-meszaros.md) frames test quality as a set of goals in [xUnit Test Patterns](../sources/xunit-test-patterns-meszaros.md):
 
 **Project Goals:**
 - Tests as Specification — executable definition of behavior
@@ -98,7 +98,7 @@ These goals complement Farley's UMRANGS+F and Martin's F.I.R.S.T. with a more sy
 
 ## Khorikov's Four Pillars (Alternative Framework)
 
-[[vladimir-khorikov]] offers a different analytical framework in [Unit Testing: Principles, Practices, and Patterns](../sources/unit-testing-khorikov.md) — the [[four-pillars-of-good-tests|four pillars of a good test]]:
+[Vladimir Khorikov](../entities/vladimir-khorikov.md) offers a different analytical framework in [Unit Testing: Principles, Practices, and Patterns](../sources/unit-testing-khorikov.md) — the [four pillars of a good test](four-pillars-of-good-tests.md):
 
 1. **Protection against regressions** — how well the test catches bugs
 2. **Resistance to refactoring** — how few false positives (false alarms) the test produces
@@ -122,19 +122,19 @@ The four pillars framework is more analytical: it explicitly models the trade-of
 
 ## Related Pages
 
-- [[test-first]]
-- [[tdd-vs-unit-testing]]
-- [[tdd-smells]]
-- [[test-smells-catalog]]
-- [[mocking]]
-- [[dependency-injection]]
-- [[four-phase-test]]
-- [[art-of-clean-code-mayer]]
-- [[dave-farley-302-course]]
-- [[clean-code-robert-martin]]
-- [[xunit-test-patterns-meszaros]]
-- [[four-pillars-of-good-tests]]
-- [[test-fragility]]
-- [[unit-testing-khorikov]]
-- [[vladimir-khorikov]]
-- [[mutation-testing]] -- validates test quality by measuring whether tests actually detect injected faults
+- [Test First](test-first.md)
+- [TDD vs. Unit Testing](tdd-vs-unit-testing.md)
+- [TDD Smells](tdd-smells.md)
+- [Test Smells Catalog](test-smells-catalog.md)
+- [Mocking](mocking.md)
+- [Dependency Injection](dependency-injection.md)
+- [Four-Phase Test](four-phase-test.md)
+- [The Art of Clean Code](../sources/art-of-clean-code-mayer.md)
+- [Dave Farley 302 Course](../sources/dave-farley-302-course.md)
+- [Clean Code](../sources/clean-code-robert-martin.md)
+- [xUnit Test Patterns (Meszaros)](../sources/xunit-test-patterns-meszaros.md)
+- [Four Pillars of a Good Test](four-pillars-of-good-tests.md)
+- [Test Fragility](test-fragility.md)
+- [Unit Testing (Khorikov)](../sources/unit-testing-khorikov.md)
+- [Vladimir Khorikov](../entities/vladimir-khorikov.md)
+- [Mutation Testing](mutation-testing.md) -- validates test quality by measuring whether tests actually detect injected faults

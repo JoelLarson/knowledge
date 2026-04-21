@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: [raw/dave-farley-302-tdd-and-bdd-design-through-testing/, "raw/Growing Object-Oriented Software, Guided by Tests - Steve Freeman, Nat Pryce.md"]
 ---
 
-Ports and Adapters (also called Hexagonal Architecture, coined by [Alistair Cockburn](../entities/alistair-cockburn.md)) is an architectural pattern where the application core is isolated from external concerns through ports (interfaces) and adapters (implementations). This pattern is a natural consequence of TDD and a prerequisite for effective [[dependency-injection]].
+Ports and Adapters (also called Hexagonal Architecture, coined by [Alistair Cockburn](../entities/alistair-cockburn.md)) is an architectural pattern where the application core is isolated from external concerns through ports (interfaces) and adapters (implementations). This pattern is a natural consequence of TDD and a prerequisite for effective [Dependency Injection](dependency-injection.md).
 
 ## Core Structure
 
@@ -33,7 +33,7 @@ The pattern makes code testable by construction:
 - Tests inject test doubles (mocks, stubs, fakes) through the same ports
 - No test needs a real database, filesystem, or network
 
-This is [[dependency-injection]] at the architectural level.
+This is [Dependency Injection](dependency-injection.md) at the architectural level.
 
 ## Ports and Adapters for Tests (Farley)
 
@@ -49,7 +49,7 @@ The four-layer acceptance test structure (test cases → DSL → translation lay
 - **Interface Segregation** — ports should be narrow, focused on what the consumer needs
 - **Open/Closed** — new adapters can be added without modifying the core
 
-See [[solid-principles]].
+See [SOLID Principles](solid-principles.md).
 
 ## GOOS: Ports and Adapters as Natural Architecture
 
@@ -79,7 +79,7 @@ GOOS's "context independence" principle says objects should not know about the s
 
 ## DDD's Anti-Corruption Layer
 
-In Domain-Driven Design, the Anti-Corruption Layer (ACL) is a specialized application of Ports and Adapters at [[bounded-context]] boundaries. When your domain model must integrate with an external system or a different bounded context, the ACL translates between models.
+In Domain-Driven Design, the Anti-Corruption Layer (ACL) is a specialized application of Ports and Adapters at [Bounded Context](bounded-context.md) boundaries. When your domain model must integrate with an external system or a different bounded context, the ACL translates between models.
 
 Evans defines it as "a mechanism that translates conceptual objects and actions from one model and protocol to another." It is implemented as a combination of Facades, Adapters, and translators — the same adapter pattern at a strategic level.
 
@@ -90,7 +90,7 @@ The ACL is a natural test seam:
 - **Contract-test the ACL** against the remote system's API to verify the translation
 - **Integration-test through the ACL** to verify end-to-end communication
 
-Vernon recommends implementing ACLs as Domain Services or behind Repository interfaces. Either way, they follow the port/adapter pattern and are substitutable with [[test-doubles]] in tests.
+Vernon recommends implementing ACLs as Domain Services or behind Repository interfaces. Either way, they follow the port/adapter pattern and are substitutable with [Test Doubles](test-doubles.md) in tests.
 
 ### Example Architecture
 
@@ -105,24 +105,24 @@ Your Bounded Context
 
 This extends hexagonal architecture from "isolate from infrastructure" to "isolate from other domains" — a higher-level application of the same principle.
 
-See [[bounded-context]], [[domain-driven-design-evans]], [[implementing-ddd-vernon]].
+See [Bounded Context](bounded-context.md), [Domain-Driven Design (Evans)](../sources/domain-driven-design-evans.md), [Implementing DDD (Vernon)](../sources/implementing-ddd-vernon.md).
 
 ## Related Pages
 
-- [[alistair-cockburn]]
-- [[dependency-injection]]
-- [[solid-principles]]
-- [[atdd]]
-- [[strangler-pattern]]
-- [[mocking]]
-- [[test-doubles]]
-- [[tell-dont-ask]]
-- [[london-school-tdd]]
-- [[outside-in-tdd]]
-- [[bounded-context]]
-- [[aggregates]]
-- [[domain-model-testing]]
-- [[dave-farley-302-course]]
-- [[growing-oo-software-freeman-pryce]]
-- [[domain-driven-design-evans]]
-- [[implementing-ddd-vernon]]
+- [Alistair Cockburn](../entities/alistair-cockburn.md)
+- [Dependency Injection](dependency-injection.md)
+- [SOLID Principles](solid-principles.md)
+- [ATDD](atdd.md)
+- [Strangler Pattern](strangler-pattern.md)
+- [Mocking](mocking.md)
+- [Test Doubles](test-doubles.md)
+- [Tell, Don't Ask](tell-dont-ask.md)
+- [London School TDD](london-school-tdd.md)
+- [Outside-In TDD](outside-in-tdd.md)
+- [Bounded Context](bounded-context.md)
+- [Aggregates](aggregates.md)
+- [Domain Model Testing](domain-model-testing.md)
+- [Dave Farley 302 Course](../sources/dave-farley-302-course.md)
+- [Growing OO Software (Freeman & Pryce)](../sources/growing-oo-software-freeman-pryce.md)
+- [Domain-Driven Design (Evans)](../sources/domain-driven-design-evans.md)
+- [Implementing DDD (Vernon)](../sources/implementing-ddd-vernon.md)

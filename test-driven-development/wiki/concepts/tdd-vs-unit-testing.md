@@ -27,7 +27,7 @@ In TDD, a "unit" is better thought of as a **unit of behavior** — some observa
 
 ## Why Unit Testing After the Fact Underperforms
 
-Evaluating traditional unit testing against [[good-test-properties]]:
+Evaluating traditional unit testing against [Good Test Properties](good-test-properties.md):
 
 | Property | Unit Testing After | TDD |
 |----------|-------------------|-----|
@@ -45,7 +45,7 @@ The most common misapplication of unit testing is measuring coverage. Teams may 
 
 > "I once consulted for a team... more than a third of their tests had no assertions in them whatsoever." — Dave Farley
 
-See [[tdd-smells]] (The Liar).
+See [TDD Smells](tdd-smells.md) (The Liar).
 
 ## How TDD Produces Better Designs
 
@@ -72,10 +72,10 @@ A TDD system: far more habitable; easier to change; tests stay relevant through 
 
 ## Related Pages
 
-- [[test-first]]
-- [[red-green-refactor]]
-- [[good-test-properties]]
-- [[tdd-empirical-evidence]] -- empirical research confirms TDD-like practices reduce defects 40-90% vs. traditional development
-- [[tdd-smells]]
-- [[bdd]]
-- [[dave-farley-302-course]]
+- [Test First](test-first.md)
+- [Red-Green-Refactor](red-green-refactor.md)
+- [Good Test Properties](good-test-properties.md)
+- [TDD Empirical Evidence](tdd-empirical-evidence.md) -- empirical research confirms TDD-like practices reduce defects 40-90% vs. traditional development
+- [TDD Smells](tdd-smells.md)
+- [BDD](bdd.md)
+- [Dave Farley 302 Course](../sources/dave-farley-302-course.md)

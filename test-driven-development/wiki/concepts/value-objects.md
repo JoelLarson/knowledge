@@ -65,7 +65,7 @@ Value objects have no dependencies to mock. They don't call services, don't acce
 
 ## Value Objects as Aggregate Components
 
-Value objects are frequently attributes of Entities and [[aggregates]]. They encapsulate domain logic that would otherwise bloat the entity:
+Value objects are frequently attributes of Entities and [Aggregates](aggregates.md). They encapsulate domain logic that would otherwise bloat the entity:
 
 - An Order (entity) has a `ShippingAddress` (value object)
 - A Product (entity) has a `Price` (value object) with currency conversion logic
@@ -86,18 +86,18 @@ Value objects are often the first things you TDD in a domain model because:
 1. They have no dependencies — no setup complexity
 2. They have clear, expressible behavior — easy to name tests
 3. They form a foundation other objects build upon
-4. They demonstrate the [[ubiquitous-language]] in its purest form
+4. They demonstrate the [Ubiquitous Language](ubiquitous-language.md) in its purest form
 
 Start with value objects, then build entities that use them, then compose into aggregates.
 
 ## Related Pages
 
-- [[aggregates]]
-- [[domain-model-testing]]
-- [[domain-events]]
-- [[ubiquitous-language]]
-- [[good-test-properties]]
-- [[domain-driven-design-evans]]
-- [[implementing-ddd-vernon]]
-- [[property-based-testing]]
-- [[tdd-by-example-kent-beck]]
+- [Aggregates](aggregates.md)
+- [Domain Model Testing](domain-model-testing.md)
+- [Domain Events](domain-events.md)
+- [Ubiquitous Language](ubiquitous-language.md)
+- [Good Test Properties](good-test-properties.md)
+- [Domain-Driven Design (Evans)](../sources/domain-driven-design-evans.md)
+- [Implementing DDD (Vernon)](../sources/implementing-ddd-vernon.md)
+- [Property-Based Testing](property-based-testing.md)
+- [TDD by Example (Beck)](../sources/tdd-by-example-kent-beck.md)

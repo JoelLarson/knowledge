@@ -7,14 +7,14 @@ updated: 2026-04-20
 sources: [raw/Working.Effectively.with.Legacy.Code.md]
 ---
 
-A catalog of 24 techniques from [[michael-feathers]]' [Working Effectively with Legacy Code](../sources/working-effectively-legacy-code-feathers.md) for breaking dependencies so that code can be placed under test. These are refactorings designed to be performed **without tests**, in the service of putting tests in place.
+A catalog of 24 techniques from [Michael Feathers](../entities/michael-feathers.md)' [Working Effectively with Legacy Code](../sources/working-effectively-legacy-code-feathers.md) for breaking dependencies so that code can be placed under test. These are refactorings designed to be performed **without tests**, in the service of putting tests in place.
 
 ## Key Principles
 
 - These techniques preserve behavior but may make design temporarily uglier
 - They are performed conservatively — small, careful steps to minimize error risk
 - The goal is testability, not beauty. Beauty comes later, once tests are in place
-- Many rely on exploiting [[seams]] that already exist in the code
+- Many rely on exploiting [Seams](seams.md) that already exist in the code
 
 > "Safety first. Once you have tests in place, you can make invasive changes much more confidently."
 
@@ -22,7 +22,7 @@ A catalog of 24 techniques from [[michael-feathers]]' [Working Effectively with 
 
 ### Extract Interface
 
-Create an interface from an existing class, then have the original implement it. Enables substitution of fakes/mocks through [[dependency-injection]]. The most commonly used technique.
+Create an interface from an existing class, then have the original implement it. Enables substitution of fakes/mocks through [Dependency Injection](dependency-injection.md). The most commonly used technique.
 
 ### Subclass and Override Method
 
@@ -121,7 +121,7 @@ In languages like Ruby or Python, redefine methods at runtime for testing.
 | Dependency on third-party API | Adapt Parameter, Extract Interface |
 | Long method too tangled to test | Break Out Method Object, Expose Static Method |
 | Can't run a method in tests | Extract and Override Call, Subclass and Override |
-| Adding new behavior safely | [[sprout-method]], Wrap Method |
+| Adding new behavior safely | [Sprout Method](sprout-method.md), Wrap Method |
 | Non-OO code (C) | Replace Function with Function Pointer, Preprocessing seams |
 
 ## The Surgery Metaphor
@@ -132,13 +132,13 @@ These techniques may leave the code temporarily less clean. That's acceptable. T
 
 ## Related Pages
 
-- [[legacy-code-change-algorithm]]
-- [[seams]]
-- [[legacy-code]]
-- [[characterization-tests]]
-- [[sprout-method]]
-- [[dependency-injection]]
-- [[test-doubles]]
-- [[refactoring]]
-- [[michael-feathers]]
-- [[working-effectively-legacy-code-feathers]]
+- [Legacy Code Change Algorithm](legacy-code-change-algorithm.md)
+- [Seams](seams.md)
+- [Legacy Code](legacy-code.md)
+- [Characterization Tests](characterization-tests.md)
+- [Sprout Method](sprout-method.md)
+- [Dependency Injection](dependency-injection.md)
+- [Test Doubles](test-doubles.md)
+- [Refactoring](refactoring.md)
+- [Michael Feathers](../entities/michael-feathers.md)
+- [Working Effectively with Legacy Code (Feathers)](../sources/working-effectively-legacy-code-feathers.md)

@@ -21,12 +21,12 @@ Code without tests is bad code regardless of how well-written it is. With tests,
 
 ## The Legacy Code Change Algorithm (Feathers)
 
-The systematic approach to making safe changes in legacy code. See [[legacy-code-change-algorithm]] for full details.
+The systematic approach to making safe changes in legacy code. See [Legacy Code Change Algorithm](legacy-code-change-algorithm.md) for full details.
 
 1. **Identify change points** — where does the change go?
 2. **Find test points** — where can you observe the effects?
-3. **Break dependencies** — using [[dependency-breaking-techniques]]
-4. **Write tests** — [[characterization-tests]] documenting actual behavior
+3. **Break dependencies** — using [Dependency-Breaking Techniques](dependency-breaking-techniques.md)
+4. **Write tests** — [Characterization Tests](characterization-tests.md) documenting actual behavior
 5. **Make changes and refactor** — with the safety net in place
 
 The day-to-day goal: make functional changes that deliver value **while bringing more of the system under test**. Over time, tested areas grow like islands rising from the ocean into continents.
@@ -70,7 +70,7 @@ Instead, make **tactical decisions**:
 ## Recommended Process (Farley)
 
 ### 1. Establish Defensive Tests
-Use [approval tests](approval-testing.md) or [[characterization-tests]] to capture the current behavior of the code you'll change. These tests don't verify correctness — they verify that your changes don't accidentally break existing behavior.
+Use [approval tests](approval-testing.md) or [Characterization Tests](characterization-tests.md) to capture the current behavior of the code you'll change. These tests don't verify correctness — they verify that your changes don't accidentally break existing behavior.
 
 Use coverage tools to confirm your tests cover the code you'll touch.
 
@@ -127,17 +127,17 @@ Small, continuous improvements compound. Don't attempt to fix everything at once
 
 ## Related Pages
 
-- [[legacy-code-change-algorithm]]
-- [[seams]]
-- [[characterization-tests]]
-- [[dependency-breaking-techniques]]
-- [[sprout-method]]
-- [[approval-testing]]
-- [[atdd]]
-- [[refactoring]]
-- [[strangler-pattern]]
-- [[tdd-smells]]
-- [[red-green-refactor]]
-- [[michael-feathers]]
-- [[working-effectively-legacy-code-feathers]]
-- [[dave-farley-302-course]]
+- [Legacy Code Change Algorithm](legacy-code-change-algorithm.md)
+- [Seams](seams.md)
+- [Characterization Tests](characterization-tests.md)
+- [Dependency-Breaking Techniques](dependency-breaking-techniques.md)
+- [Sprout Method](sprout-method.md)
+- [Approval Testing](approval-testing.md)
+- [ATDD](atdd.md)
+- [Refactoring](refactoring.md)
+- [Strangler Pattern](strangler-pattern.md)
+- [TDD Smells](tdd-smells.md)
+- [Red-Green-Refactor](red-green-refactor.md)
+- [Michael Feathers](../entities/michael-feathers.md)
+- [Working Effectively with Legacy Code (Feathers)](../sources/working-effectively-legacy-code-feathers.md)
+- [Dave Farley 302 Course](../sources/dave-farley-302-course.md)

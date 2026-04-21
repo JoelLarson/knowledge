@@ -109,9 +109,9 @@ This paper is essential reading for anyone citing TDD research. It explains *why
 
 ## Related Pages
 
-- [[tdd-empirical-evidence]] -- synthesis of what research says about TDD effectiveness
-- [[tdd-process-granularity]] -- the granularity factor is central to why results vary
-- [[tdd-quality-improvement-nagappan-2008]] -- industrial case study (subject to several factors identified here)
-- [[dissection-of-tdd-fucci-2017]] -- co-authored by Fucci; directly addresses comparison and definition factors
-- [[test-first]] -- the dimension that may be less important than assumed
-- [[legacy-code]] -- brownfield gap identified in this paper
+- [TDD Empirical Evidence](../concepts/tdd-empirical-evidence.md) -- synthesis of what research says about TDD effectiveness
+- [TDD Process Granularity](../concepts/tdd-process-granularity.md) -- the granularity factor is central to why results vary
+- [TDD Quality Improvement (Nagappan 2008)](tdd-quality-improvement-nagappan-2008.md) -- industrial case study (subject to several factors identified here)
+- [Dissection of TDD (Fucci 2017)](dissection-of-tdd-fucci-2017.md) -- co-authored by Fucci; directly addresses comparison and definition factors
+- [Test First](../concepts/test-first.md) -- the dimension that may be less important than assumed
+- [Legacy Code](../concepts/legacy-code.md) -- brownfield gap identified in this paper

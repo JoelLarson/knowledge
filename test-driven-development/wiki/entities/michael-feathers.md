@@ -16,12 +16,12 @@ Michael C. Feathers is a software consultant, author, and pioneer in the field o
 Published as part of the Robert C. Martin Series (Prentice Hall). The book provides:
 
 - **The definition of legacy code:** "Code without tests." By this definition, most production code is legacy code.
-- **The [[legacy-code-change-algorithm]]** — a five-step process for making safe changes in legacy systems
+- **The [Legacy Code Change Algorithm](../concepts/legacy-code-change-algorithm.md)** — a five-step process for making safe changes in legacy systems
 - **The [Seam Model](../concepts/seams.md)** — the concept that code has "seams" where behavior can be altered without editing. Types: object seams, link seams, preprocessing seams. The fundamental insight enabling legacy code testing.
 - **[Characterization Tests](../concepts/characterization-tests.md)** — tests that document what code actually does (not what it should do), providing a safety net before refactoring
 - **Sensing and Separation** — the two reasons to break dependencies: to observe effects (sensing) and to get code running in isolation (separation)
 - **[Sprout/Wrap techniques](../concepts/sprout-method.md)** — safe ways to add new tested code to legacy systems without modifying existing untested code
-- **[[dependency-breaking-techniques]]** — a catalog of 24 techniques for making code testable, designed to be performed without tests
+- **[Dependency-Breaking Techniques](../concepts/dependency-breaking-techniques.md)** — a catalog of 24 techniques for making code testable, designed to be performed without tests
 
 ### Philosophical Contributions
 
@@ -43,7 +43,7 @@ Feathers' work bridges the gap between ideal TDD practice (greenfield, test-firs
 3. Treat dependency breaking as a skill to be mastered
 4. Build momentum through gradual improvement
 
-Dave Farley builds on Feathers' approach in his [[dave-farley-302-course]] (TDD course), referencing his definition of legacy code and his techniques as the foundation for working with existing systems.
+Dave Farley builds on Feathers' approach in his [Dave Farley 302 Course](../sources/dave-farley-302-course.md) (TDD course), referencing his definition of legacy code and his techniques as the foundation for working with existing systems.
 
 ## Key Quote
 
@@ -51,18 +51,18 @@ Dave Farley builds on Feathers' approach in his [[dave-farley-302-course]] (TDD 
 
 ## Sources in this Wiki
 
-- [[working-effectively-legacy-code-feathers]] — full source summary
+- [Working Effectively with Legacy Code (Feathers)](../sources/working-effectively-legacy-code-feathers.md) — full source summary
 
 ## Related Pages
 
-- [[legacy-code]]
-- [[legacy-code-change-algorithm]]
-- [[seams]]
-- [[characterization-tests]]
-- [[dependency-breaking-techniques]]
-- [[sprout-method]]
-- [[approval-testing]]
-- [[strangler-pattern]]
-- [[refactoring]]
-- [[robert-martin]]
-- [[dave-farley-302-course]]
+- [Legacy Code](../concepts/legacy-code.md)
+- [Legacy Code Change Algorithm](../concepts/legacy-code-change-algorithm.md)
+- [Seams](../concepts/seams.md)
+- [Characterization Tests](../concepts/characterization-tests.md)
+- [Dependency-Breaking Techniques](../concepts/dependency-breaking-techniques.md)
+- [Sprout Method](../concepts/sprout-method.md)
+- [Approval Testing](../concepts/approval-testing.md)
+- [Strangler Pattern](../concepts/strangler-pattern.md)
+- [Refactoring](../concepts/refactoring.md)
+- [Robert C. Martin](robert-martin.md)
+- [Dave Farley 302 Course](../sources/dave-farley-302-course.md)

@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: [raw/Working.Effectively.with.Legacy.Code.md]
 ---
 
-A technique for adding new behavior to [[legacy-code]] safely: write new code in a new method with tests, then call it from the old untested code. From [[michael-feathers]]' [Working Effectively with Legacy Code](../sources/working-effectively-legacy-code-feathers.md), Chapter 6.
+A technique for adding new behavior to [Legacy Code](legacy-code.md) safely: write new code in a new method with tests, then call it from the old untested code. From [Michael Feathers](../entities/michael-feathers.md)' [Working Effectively with Legacy Code](../sources/working-effectively-legacy-code-feathers.md), Chapter 6.
 
 ## Core Idea
 
@@ -112,11 +112,11 @@ Sprout techniques represent a pragmatic compromise: when you can't afford to get
 
 ## Related Pages
 
-- [[legacy-code]]
-- [[legacy-code-change-algorithm]]
-- [[dependency-breaking-techniques]]
-- [[seams]]
-- [[characterization-tests]]
-- [[refactoring]]
-- [[michael-feathers]]
-- [[working-effectively-legacy-code-feathers]]
+- [Legacy Code](legacy-code.md)
+- [Legacy Code Change Algorithm](legacy-code-change-algorithm.md)
+- [Dependency-Breaking Techniques](dependency-breaking-techniques.md)
+- [Seams](seams.md)
+- [Characterization Tests](characterization-tests.md)
+- [Refactoring](refactoring.md)
+- [Michael Feathers](../entities/michael-feathers.md)
+- [Working Effectively with Legacy Code (Feathers)](../sources/working-effectively-legacy-code-feathers.md)

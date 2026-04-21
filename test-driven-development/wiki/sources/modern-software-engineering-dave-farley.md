@@ -48,16 +48,16 @@ The Dave Farley 302 course explicitly references "the modern software engineerin
 
 ## Related Pages
 
-- [[refactoring]]
-- [[red-green-refactor]]
-- [[dependency-injection]]
-- [[good-test-properties]]
-- [[tdd-vs-unit-testing]]
-- [[bdd]]
-- [[atdd]]
-- [[legacy-code]]
-- [[continuous-delivery]]
-- [[solid-principles]]
-- [[ports-and-adapters]]
-- [[dave-farley]]
-- [[dave-farley-302-course]]
+- [Refactoring](../concepts/refactoring.md)
+- [Red-Green-Refactor](../concepts/red-green-refactor.md)
+- [Dependency Injection](../concepts/dependency-injection.md)
+- [Good Test Properties](../concepts/good-test-properties.md)
+- [TDD vs. Unit Testing](../concepts/tdd-vs-unit-testing.md)
+- [BDD](../concepts/bdd.md)
+- [ATDD](../concepts/atdd.md)
+- [Legacy Code](../concepts/legacy-code.md)
+- [Continuous Delivery](../concepts/continuous-delivery.md)
+- [SOLID Principles](../concepts/solid-principles.md)
+- [Ports and Adapters](../concepts/ports-and-adapters.md)
+- [Dave Farley](../entities/dave-farley.md)
+- [Dave Farley 302 Course](dave-farley-302-course.md)

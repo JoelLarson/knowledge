@@ -23,7 +23,7 @@ The definitive foundational text on TDD by its primary inventor. Two worked exam
 1. Write new code only if an automated test has failed.
 2. Eliminate duplication.
 
-These generate [[red-green-refactor]]: Red → Green → Refactor.
+These generate [Red-Green-Refactor](../concepts/red-green-refactor.md): Red → Green → Refactor.
 
 ## Key Ideas
 
@@ -73,14 +73,14 @@ Key questions addressed:
 
 ## Related Pages
 
-- [[red-green-refactor]]
-- [[test-first]]
-- [[refactoring]]
-- [[tdd-vs-unit-testing]]
-- [[mocking]]
-- [[test-doubles]]
-- [[dependency-injection]]
-- [[good-test-properties]]
-- [[extreme-programming]]
-- [[kent-beck]]
-- [[xunit]]
+- [Red-Green-Refactor](../concepts/red-green-refactor.md)
+- [Test First](../concepts/test-first.md)
+- [Refactoring](../concepts/refactoring.md)
+- [TDD vs. Unit Testing](../concepts/tdd-vs-unit-testing.md)
+- [Mocking](../concepts/mocking.md)
+- [Test Doubles](../concepts/test-doubles.md)
+- [Dependency Injection](../concepts/dependency-injection.md)
+- [Good Test Properties](../concepts/good-test-properties.md)
+- [Extreme Programming](../concepts/extreme-programming.md)
+- [Kent Beck](../entities/kent-beck.md)
+- [xUnit](../entities/xunit.md)

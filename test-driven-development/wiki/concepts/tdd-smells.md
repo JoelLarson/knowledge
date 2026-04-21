@@ -21,7 +21,7 @@ A test that passes all tests but makes no actual assertions. The coverage metric
 
 **Problem:** Gives the illusion of test coverage. Coverage tools say code was executed, but the test proves nothing.
 
-**Correction:** Delete these tests. Practice red-green-refactor (see red before green) — a test that was never failing cannot be meaningful. [[test-first]] development prevents this entirely.
+**Correction:** Delete these tests. Practice red-green-refactor (see red before green) — a test that was never failing cannot be meaningful. [Test First](test-first.md) development prevents this entirely.
 
 ## Excessive Setup
 
@@ -128,17 +128,17 @@ A test that asserts minor, easy-to-check side effects but never tests the core b
 
 ## See Also: Meszaros's Comprehensive Smell Catalog
 
-Farley's smells above focus on developer anti-patterns visible in individual tests. For a broader, more systematic taxonomy — including Behavior Smells (Erratic Test, Fragile Test, Slow Tests), Code Smells (Obscure Test, Conditional Test Logic), and Project Smells (High Test Maintenance Cost, Developers Not Writing Tests) — see [[test-smells-catalog]].
+Farley's smells above focus on developer anti-patterns visible in individual tests. For a broader, more systematic taxonomy — including Behavior Smells (Erratic Test, Fragile Test, Slow Tests), Code Smells (Obscure Test, Conditional Test Logic), and Project Smells (High Test Maintenance Cost, Developers Not Writing Tests) — see [Test Smells Catalog](test-smells-catalog.md).
 
 Meszaros treats smells as symptoms with multiple possible root causes, providing a diagnostic framework: detect the smell, diagnose the root cause, apply the appropriate pattern.
 
 ## Related Pages
 
-- [[test-smells-catalog]]
-- [[test-first]]
-- [[mocking]]
-- [[dependency-injection]]
-- [[good-test-properties]]
-- [[tdd-vs-unit-testing]]
-- [[dave-farley-302-course]]
-- [[xunit-test-patterns-meszaros]]
+- [Test Smells Catalog](test-smells-catalog.md)
+- [Test First](test-first.md)
+- [Mocking](mocking.md)
+- [Dependency Injection](dependency-injection.md)
+- [Good Test Properties](good-test-properties.md)
+- [TDD vs. Unit Testing](tdd-vs-unit-testing.md)
+- [Dave Farley 302 Course](../sources/dave-farley-302-course.md)
+- [xUnit Test Patterns (Meszaros)](../sources/xunit-test-patterns-meszaros.md)

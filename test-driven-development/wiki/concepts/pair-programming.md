@@ -34,7 +34,7 @@ The most natural pairing style for TDD practitioners:
 4. **Developer A** makes it pass (Green) and refactors
 5. Repeat
 
-This creates a game-like dynamic where each developer challenges the other with tests. It ensures both partners are engaged and that the [[red-green-refactor]] discipline is maintained. [[kent-beck]] wrote *TDD by Example* imagining pair programming sessions.
+This creates a game-like dynamic where each developer challenges the other with tests. It ensures both partners are engaged and that the [Red-Green-Refactor](red-green-refactor.md) discipline is maintained. [Kent Beck](../entities/kent-beck.md) wrote *TDD by Example* imagining pair programming sessions.
 
 ## Benefits
 
@@ -74,8 +74,8 @@ Pair programming reinforces TDD discipline because:
 
 ## Related Pages
 
-- [[extreme-programming]]
-- [[red-green-refactor]]
-- [[kent-beck]]
-- [[tdd-by-example-kent-beck]]
-- [[simple-design]]
+- [Extreme Programming](extreme-programming.md)
+- [Red-Green-Refactor](red-green-refactor.md)
+- [Kent Beck](../entities/kent-beck.md)
+- [TDD by Example (Beck)](../sources/tdd-by-example-kent-beck.md)
+- [Simple Design](simple-design.md)

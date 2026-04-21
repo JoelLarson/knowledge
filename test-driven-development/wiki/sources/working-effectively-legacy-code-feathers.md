@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: [raw/Working.Effectively.with.Legacy.Code.md]
 ---
 
-The canonical book on getting pre-existing, untested code under test so it can be safely changed. Provides a systematic framework (the [[legacy-code-change-algorithm]]) and a catalog of 25 [[dependency-breaking-techniques]] for making legacy code testable.
+The canonical book on getting pre-existing, untested code under test so it can be safely changed. Provides a systematic framework (the [Legacy Code Change Algorithm](../concepts/legacy-code-change-algorithm.md)) and a catalog of 25 [Dependency-Breaking Techniques](../concepts/dependency-breaking-techniques.md) for making legacy code testable.
 
 ## Book Metadata
 
@@ -32,17 +32,17 @@ The book is not about testing per se — it is about being able to **confidently
 
 2. **Cover and Modify vs. Edit and Pray** — Two approaches to changing code. "Edit and Pray" relies on care alone; "Cover and Modify" uses tests as a safety net. Tests act as a "software vise" holding behavior fixed while you change one thing at a time.
 
-3. **[[seams]]** — Places where you can alter behavior without editing code at that point. The fundamental mechanism for getting untestable code under test. Types: preprocessing seams, link seams, object seams.
+3. **[Seams](../concepts/seams.md)** — Places where you can alter behavior without editing code at that point. The fundamental mechanism for getting untestable code under test. Types: preprocessing seams, link seams, object seams.
 
 4. **Sensing and Separation** — The two reasons to break dependencies: *sensing* (accessing values our code computes) and *separation* (getting code into a test harness to run at all).
 
-5. **[[characterization-tests]]** — Tests that document what code actually does (not what it should do). The safety net you build before refactoring.
+5. **[Characterization Tests](../concepts/characterization-tests.md)** — Tests that document what code actually does (not what it should do). The safety net you build before refactoring.
 
-6. **Adding code safely** — [[sprout-method]], Sprout Class, Wrap Method, Wrap Class — techniques for adding new tested code to legacy systems without modifying untested code.
+6. **Adding code safely** — [Sprout Method](../concepts/sprout-method.md), Sprout Class, Wrap Method, Wrap Class — techniques for adding new tested code to legacy systems without modifying untested code.
 
 ## The Legacy Code Change Algorithm
 
-See [[legacy-code-change-algorithm]] for full details. The five steps:
+See [Legacy Code Change Algorithm](../concepts/legacy-code-change-algorithm.md) for full details. The five steps:
 
 1. Identify change points
 2. Find test points
@@ -58,7 +58,7 @@ See [[legacy-code-change-algorithm]] for full details. The five steps:
 
 ## Dependency-Breaking Techniques Catalog
 
-See [[dependency-breaking-techniques]] for the full catalog. Key techniques include:
+See [Dependency-Breaking Techniques](../concepts/dependency-breaking-techniques.md) for the full catalog. Key techniques include:
 
 - Adapt Parameter
 - Break Out Method Object
@@ -91,14 +91,14 @@ Good unit tests: (1) run fast, (2) help localize problems. A unit test that take
 
 ## Related Pages
 
-- [[legacy-code]]
-- [[legacy-code-change-algorithm]]
-- [[seams]]
-- [[characterization-tests]]
-- [[dependency-breaking-techniques]]
-- [[sprout-method]]
-- [[michael-feathers]]
-- [[refactoring]]
-- [[test-doubles]]
-- [[dependency-injection]]
-- [[robert-martin]]
+- [Legacy Code](../concepts/legacy-code.md)
+- [Legacy Code Change Algorithm](../concepts/legacy-code-change-algorithm.md)
+- [Seams](../concepts/seams.md)
+- [Characterization Tests](../concepts/characterization-tests.md)
+- [Dependency-Breaking Techniques](../concepts/dependency-breaking-techniques.md)
+- [Sprout Method](../concepts/sprout-method.md)
+- [Michael Feathers](../entities/michael-feathers.md)
+- [Refactoring](../concepts/refactoring.md)
+- [Test Doubles](../concepts/test-doubles.md)
+- [Dependency Injection](../concepts/dependency-injection.md)
+- [Robert C. Martin](../entities/robert-martin.md)

@@ -32,7 +32,7 @@ Khorikov's central framework. Every test can be evaluated on four attributes, an
 3. **Fast feedback** — how quickly the test executes
 4. **Maintainability** — how easy the test is to understand and run
 
-The first three are mutually exclusive: you can maximize only two at the expense of the third. Resistance to refactoring is non-negotiable (it is mostly binary), so the real trade-off is between protection against regressions and fast feedback. See [[four-pillars-of-good-tests]] for details.
+The first three are mutually exclusive: you can maximize only two at the expense of the third. Resistance to refactoring is non-negotiable (it is mostly binary), so the real trade-off is between protection against regressions and fast feedback. See [Four Pillars of a Good Test](../concepts/four-pillars-of-good-tests.md) for details.
 
 ### Classical vs London School Stance
 
@@ -42,7 +42,7 @@ Khorikov explicitly favors the classical (Chicago) school over the London (mocki
 - This leads to tests coupled to implementation details, which produces false positives and destroys resistance to refactoring
 - The classical school only substitutes shared dependencies (usually out-of-process), preserving resistance to refactoring
 
-See [[chicago-vs-london]] for the broader debate.
+See [Chicago vs. London Schools](../concepts/chicago-vs-london.md) for the broader debate.
 
 ### Mocking Philosophy: Only Mock Unmanaged Dependencies
 
@@ -55,7 +55,7 @@ Khorikov's mocking rule is precise and nuanced:
 - **Managed dependencies** (e.g., your application's own database) should use real instances in tests
 - **Unmanaged dependencies** (e.g., SMTP servers, message buses) should be replaced with mocks
 
-This leads to his key rule: **only mock unmanaged dependencies** whose side effects are visible to the external world. See [[mocking]] for the broader concept.
+This leads to his key rule: **only mock unmanaged dependencies** whose side effects are visible to the external world. See [Mocking](../concepts/mocking.md) for the broader concept.
 
 ### Testing Styles Taxonomy
 
@@ -65,11 +65,11 @@ Khorikov classifies unit testing into three styles, ranked by quality:
 2. **State-based** (second) — verify the state of the SUT after an operation; more coupling surface than output-based
 3. **Communication-based** (worst) — verify interactions via mocks; highest maintenance cost and most prone to false positives
 
-The classical school prefers state-based; the London school prefers communication-based; both use output-based. To get more output-based tests, push code toward functional architecture. See [[output-vs-state-vs-communication-testing]] for details.
+The classical school prefers state-based; the London school prefers communication-based; both use output-based. To get more output-based tests, push code toward functional architecture. See [Output vs State vs Communication Testing](../concepts/output-vs-state-vs-communication-testing.md) for details.
 
 ### Test Fragility and False Positives
 
-A central theme: tests that couple to implementation details are fragile. They produce false positives (fail when code is refactored but behavior is unchanged), which erodes trust in the test suite. The only remedy is to test observable behavior, not implementation steps. See [[test-fragility]].
+A central theme: tests that couple to implementation details are fragile. They produce false positives (fail when code is refactored but behavior is unchanged), which erodes trust in the test suite. The only remedy is to test observable behavior, not implementation steps. See [Test Fragility](../concepts/test-fragility.md).
 
 ### The Humble Object Pattern for Testability
 
@@ -102,13 +102,13 @@ Code is categorized on two axes: complexity/domain significance and number of co
 
 ## Related Pages
 
-- [[four-pillars-of-good-tests]]
-- [[test-fragility]]
-- [[output-vs-state-vs-communication-testing]]
-- [[chicago-vs-london]]
-- [[mocking]]
-- [[humble-object]]
-- [[integration-testing]]
-- [[good-test-properties]]
-- [[test-doubles]]
-- [[vladimir-khorikov]]
+- [Four Pillars of a Good Test](../concepts/four-pillars-of-good-tests.md)
+- [Test Fragility](../concepts/test-fragility.md)
+- [Output vs State vs Communication Testing](../concepts/output-vs-state-vs-communication-testing.md)
+- [Chicago vs. London Schools](../concepts/chicago-vs-london.md)
+- [Mocking](../concepts/mocking.md)
+- [Humble Object](../concepts/humble-object.md)
+- [Integration Testing](../concepts/integration-testing.md)
+- [Good Test Properties](../concepts/good-test-properties.md)
+- [Test Doubles](../concepts/test-doubles.md)
+- [Vladimir Khorikov](../entities/vladimir-khorikov.md)

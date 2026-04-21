@@ -49,22 +49,22 @@ Test Refactorings, xUnit Terminology, xUnit Family Members, Tools, Goals & Princ
 ## Key Contributions
 
 ### Formalized Test Double Taxonomy
-Meszaros defined the canonical vocabulary for [[test-doubles]]: Dummy Object, Test Stub, Test Spy, Mock Object, and Fake Object. This taxonomy resolved the confusion in earlier literature where "mock" was used loosely for all test doubles.
+Meszaros defined the canonical vocabulary for [Test Doubles](../concepts/test-doubles.md): Dummy Object, Test Stub, Test Spy, Mock Object, and Fake Object. This taxonomy resolved the confusion in earlier literature where "mock" was used loosely for all test doubles.
 
 ### Test Smell Catalog
-Extended the concept of "code smells" (from Fowler's Refactoring) to test code. See [[test-smells-catalog]] for the full catalog.
+Extended the concept of "code smells" (from Fowler's Refactoring) to test code. See [Test Smells Catalog](../concepts/test-smells-catalog.md) for the full catalog.
 
 ### SUT and DOC Terminology
 Formalized [System Under Test (SUT) and Depended-On Component (DOC)](../concepts/sut-and-doc.md) as standard vocabulary for discussing test structure.
 
 ### Four-Phase Test
-Defined the canonical test structure: Setup, Exercise, Verify, Teardown. See [[four-phase-test]].
+Defined the canonical test structure: Setup, Exercise, Verify, Teardown. See [Four-Phase Test](../concepts/four-phase-test.md).
 
 ### Humble Object Pattern
-A design-for-testability pattern that extracts logic from hard-to-test contexts (UI, threading, containers) into testable components. See [[humble-object]].
+A design-for-testability pattern that extracts logic from hard-to-test contexts (UI, threading, containers) into testable components. See [Humble Object](../concepts/humble-object.md).
 
 ### Fixture Strategy Patterns
-Comprehensive treatment of [[test-fixture-strategies]]: Fresh vs Shared Fixture, setup patterns (inline, implicit, delegated), teardown approaches.
+Comprehensive treatment of [Test Fixture Strategies](../concepts/test-fixture-strategies.md): Fresh vs Shared Fixture, setup patterns (inline, implicit, delegated), teardown approaches.
 
 ## Philosophy
 
@@ -80,12 +80,12 @@ Meszaros advocates:
 
 ## Related Pages
 
-- [[gerard-meszaros]]
-- [[test-doubles]]
-- [[test-smells-catalog]]
-- [[four-phase-test]]
-- [[test-fixture-strategies]]
-- [[sut-and-doc]]
-- [[humble-object]]
-- [[test-organization-patterns]]
-- [[xunit]]
+- [Gerard Meszaros](../entities/gerard-meszaros.md)
+- [Test Doubles](../concepts/test-doubles.md)
+- [Test Smells Catalog](../concepts/test-smells-catalog.md)
+- [Four-Phase Test](../concepts/four-phase-test.md)
+- [Test Fixture Strategies](../concepts/test-fixture-strategies.md)
+- [SUT and DOC](../concepts/sut-and-doc.md)
+- [Humble Object](../concepts/humble-object.md)
+- [Test Organization Patterns](../concepts/test-organization-patterns.md)
+- [xUnit](../entities/xunit.md)

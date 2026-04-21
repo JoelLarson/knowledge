@@ -13,7 +13,7 @@ Fixture strategy patterns from [xUnit Test Patterns](../sources/xunit-test-patte
 
 The fixture consists of all objects, data, and state required to run a test. This includes:
 - The SUT itself
-- Any [DOCs](sut-and-doc.md) (real or [[test-doubles]])
+- Any [DOCs](sut-and-doc.md) (real or [Test Doubles](test-doubles.md))
 - Database records, files, configurations
 - Any state the SUT depends on
 
@@ -44,7 +44,7 @@ Multiple tests reuse the same fixture instance.
 ## Fixture Design Patterns
 
 ### Minimal Fixture
-Use the smallest and simplest fixture possible. Include only what this specific test needs. Prevents the General Fixture smell (see [[test-smells-catalog]]).
+Use the smallest and simplest fixture possible. Include only what this specific test needs. Prevents the General Fixture smell (see [Test Smells Catalog](test-smells-catalog.md)).
 
 ### Standard Fixture
 Reuse the same fixture *design* (not instance) across many tests. Provides consistency without sharing state. Often implemented via Creation Methods.
@@ -133,9 +133,9 @@ Roll back the database transaction after the test. Leaves no trace in the databa
 
 ## Related Pages
 
-- [[four-phase-test]]
-- [[test-smells-catalog]]
-- [[sut-and-doc]]
-- [[test-doubles]]
-- [[good-test-properties]]
-- [[xunit-test-patterns-meszaros]]
+- [Four-Phase Test](four-phase-test.md)
+- [Test Smells Catalog](test-smells-catalog.md)
+- [SUT and DOC](sut-and-doc.md)
+- [Test Doubles](test-doubles.md)
+- [Good Test Properties](good-test-properties.md)
+- [xUnit Test Patterns (Meszaros)](../sources/xunit-test-patterns-meszaros.md)

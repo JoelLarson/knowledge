@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: [raw/xUnit Test Patterns_ Refactoring Test Code - by Gerard Meszaros - 2007.md]
 ---
 
-Parameterized tests run the same test logic with different input data, reducing duplication when verifying behavior across many cases. [[gerard-meszaros]] calls this the "Data-Driven Test" pattern in [xUnit Test Patterns](../sources/xunit-test-patterns-meszaros.md).
+Parameterized tests run the same test logic with different input data, reducing duplication when verifying behavior across many cases. [Gerard Meszaros](../entities/gerard-meszaros.md) calls this the "Data-Driven Test" pattern in [xUnit Test Patterns](../sources/xunit-test-patterns-meszaros.md).
 
 ## The Pattern
 
@@ -96,7 +96,7 @@ for _, tt := range tests {
 
 A good heuristic: if you find yourself copy-pasting a test and only changing data values, parameterize it. If each test tells a different story, keep them separate.
 
-## Connection to [[property-based-testing]]
+## Connection to [Property-Based Testing](property-based-testing.md)
 
 Parameterized tests and property-based tests both reduce duplication but differ fundamentally:
 - Parameterized: developer chooses specific cases (known requirements)
@@ -106,10 +106,10 @@ They complement each other. Use parameterized tests for known business rules and
 
 ## Related Pages
 
-- [[test-organization-patterns]]
-- [[four-phase-test]]
-- [[property-based-testing]]
-- [[good-test-properties]]
-- [[xunit]]
-- [[xunit-test-patterns-meszaros]]
-- [[gerard-meszaros]]
+- [Test Organization Patterns](test-organization-patterns.md)
+- [Four-Phase Test](four-phase-test.md)
+- [Property-Based Testing](property-based-testing.md)
+- [Good Test Properties](good-test-properties.md)
+- [xUnit](../entities/xunit.md)
+- [xUnit Test Patterns (Meszaros)](../sources/xunit-test-patterns-meszaros.md)
+- [Gerard Meszaros](../entities/gerard-meszaros.md)

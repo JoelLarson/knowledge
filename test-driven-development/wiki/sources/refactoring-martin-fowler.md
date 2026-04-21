@@ -55,13 +55,13 @@ The book contains an extensive catalog of named refactorings including:
 
 ## Connection to TDD
 
-Refactoring is the third step of [[red-green-refactor]]. You can only refactor safely when tests are in place. The Theatrical Players kata exists specifically to practice the TDD + refactoring combination with approval tests.
+Refactoring is the third step of [Red-Green-Refactor](../concepts/red-green-refactor.md). You can only refactor safely when tests are in place. The Theatrical Players kata exists specifically to practice the TDD + refactoring combination with approval tests.
 
 ## Related Pages
 
-- [[refactoring]]
-- [[red-green-refactor]]
-- [[approval-testing]]
-- [[fowler-theatrical-players-kata]]
-- [[martin-fowler]]
-- [[kent-beck]]
+- [Refactoring](../concepts/refactoring.md)
+- [Red-Green-Refactor](../concepts/red-green-refactor.md)
+- [Approval Testing](../concepts/approval-testing.md)
+- [Theatrical Players Kata](fowler-theatrical-players-kata.md)
+- [Martin Fowler](../entities/martin-fowler.md)
+- [Kent Beck](../entities/kent-beck.md)

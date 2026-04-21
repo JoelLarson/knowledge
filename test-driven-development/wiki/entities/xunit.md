@@ -50,25 +50,25 @@ The xUnit architecture defines:
 
 ## Meszaros's Pattern Language for xUnit
 
-[[gerard-meszaros]] wrote [xUnit Test Patterns](../sources/xunit-test-patterns-meszaros.md) (2007) — the definitive pattern catalog for xUnit-based test automation. While Beck created the architecture, Meszaros documented the *pattern language* that emerges from using it effectively:
+[Gerard Meszaros](gerard-meszaros.md) wrote [xUnit Test Patterns](../sources/xunit-test-patterns-meszaros.md) (2007) — the definitive pattern catalog for xUnit-based test automation. While Beck created the architecture, Meszaros documented the *pattern language* that emerges from using it effectively:
 
 - **68+ named patterns** organized by concern (strategy, basics, fixtures, verification, teardown, doubles, organization, database, testability, values)
 - **Test smell catalog** identifying common misuses of xUnit frameworks
 - **Formal vocabulary** (SUT, DOC, test double taxonomy) that standardized how the community discusses xUnit testing
-- **[[four-phase-test]]** as the canonical test method structure
-- **[[test-fixture-strategies]]** for managing test state
+- **[Four-Phase Test](../concepts/four-phase-test.md)** as the canonical test method structure
+- **[Test Fixture Strategies](../concepts/test-fixture-strategies.md)** for managing test state
 
 Martin Fowler wrote the foreword, calling it "the _Design Patterns_ of xUnit" — unlocking the hidden gems of test automation the way GoF unlocked OO design.
 
 ## Related Pages
 
-- [[kent-beck]]
-- [[gerard-meszaros]]
-- [[tdd-by-example-kent-beck]]
-- [[xunit-test-patterns-meszaros]]
-- [[test-first]]
-- [[red-green-refactor]]
-- [[mocking]]
-- [[test-doubles]]
-- [[four-phase-test]]
-- [[good-test-properties]]
+- [Kent Beck](kent-beck.md)
+- [Gerard Meszaros](gerard-meszaros.md)
+- [TDD by Example (Beck)](../sources/tdd-by-example-kent-beck.md)
+- [xUnit Test Patterns (Meszaros)](../sources/xunit-test-patterns-meszaros.md)
+- [Test First](../concepts/test-first.md)
+- [Red-Green-Refactor](../concepts/red-green-refactor.md)
+- [Mocking](../concepts/mocking.md)
+- [Test Doubles](../concepts/test-doubles.md)
+- [Four-Phase Test](../concepts/four-phase-test.md)
+- [Good Test Properties](../concepts/good-test-properties.md)

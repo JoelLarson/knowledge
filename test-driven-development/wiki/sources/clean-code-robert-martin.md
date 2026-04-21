@@ -67,17 +67,17 @@ Clean code is fundamentally about communication — code is read far more than i
 
 ## Connection to TDD
 
-The Three Laws in Chapter 9 are a formalization of [[test-first]] practice. The F.I.R.S.T. properties parallel Farley's [[good-test-properties]] framework. The emphasis on small functions with one responsibility directly supports testability.
+The Three Laws in Chapter 9 are a formalization of [Test First](../concepts/test-first.md) practice. The F.I.R.S.T. properties parallel Farley's [Good Test Properties](../concepts/good-test-properties.md) framework. The emphasis on small functions with one responsibility directly supports testability.
 
 ## Related Pages
 
-- [[test-first]]
-- [[good-test-properties]]
-- [[solid-principles]]
-- [[refactoring]]
-- [[tdd-smells]]
-- [[dependency-injection]]
-- [[mocking]]
-- [[ubiquitous-language]]
-- [[bdd]]
-- [[robert-martin]]
+- [Test First](../concepts/test-first.md)
+- [Good Test Properties](../concepts/good-test-properties.md)
+- [SOLID Principles](../concepts/solid-principles.md)
+- [Refactoring](../concepts/refactoring.md)
+- [TDD Smells](../concepts/tdd-smells.md)
+- [Dependency Injection](../concepts/dependency-injection.md)
+- [Mocking](../concepts/mocking.md)
+- [Ubiquitous Language](../concepts/ubiquitous-language.md)
+- [BDD](../concepts/bdd.md)
+- [Robert C. Martin](../entities/robert-martin.md)

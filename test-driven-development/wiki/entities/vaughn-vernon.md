@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: [raw/Implementing Domain-Driven Design.md]
 ---
 
-Vaughn Vernon is the author of Implementing Domain-Driven Design (2013), the practical companion to [[eric-evans]]' foundational DDD text. He bridges DDD theory and TDD practice, providing explicit test-first workflows for domain objects.
+Vaughn Vernon is the author of Implementing Domain-Driven Design (2013), the practical companion to [Eric Evans](eric-evans.md)' foundational DDD text. He bridges DDD theory and TDD practice, providing explicit test-first workflows for domain objects.
 
 ## Key Contributions
 
@@ -37,7 +37,7 @@ Domain experts should be able to read tests (with developer help) and confirm co
 
 ### Hexagonal Architecture for Testability
 
-Vernon recommends [[ports-and-adapters]] explicitly for testing benefits: in-memory adapters for repositories, test clients for application services, isolation of domain logic from infrastructure.
+Vernon recommends [Ports and Adapters](../concepts/ports-and-adapters.md) explicitly for testing benefits: in-memory adapters for repositories, test clients for application services, isolation of domain logic from infrastructure.
 
 ## Connection to TDD
 
@@ -50,14 +50,14 @@ Vernon is more explicit than Evans about the TDD connection:
 
 ## Related Pages
 
-- [[implementing-ddd-vernon]]
-- [[eric-evans]]
-- [[domain-driven-design-evans]]
-- [[aggregates]]
-- [[domain-events]]
-- [[bounded-context]]
-- [[value-objects]]
-- [[domain-model-testing]]
-- [[ubiquitous-language]]
-- [[ports-and-adapters]]
-- [[test-first]]
+- [Implementing DDD (Vernon)](../sources/implementing-ddd-vernon.md)
+- [Eric Evans](eric-evans.md)
+- [Domain-Driven Design (Evans)](../sources/domain-driven-design-evans.md)
+- [Aggregates](../concepts/aggregates.md)
+- [Domain Events](../concepts/domain-events.md)
+- [Bounded Context](../concepts/bounded-context.md)
+- [Value Objects](../concepts/value-objects.md)
+- [Domain Model Testing](../concepts/domain-model-testing.md)
+- [Ubiquitous Language](../concepts/ubiquitous-language.md)
+- [Ports and Adapters](../concepts/ports-and-adapters.md)
+- [Test First](../concepts/test-first.md)

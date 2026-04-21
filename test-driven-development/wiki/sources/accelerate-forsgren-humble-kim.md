@@ -11,15 +11,15 @@ Accelerate presents four years of DORA research (2014-2017) proving that softwar
 
 ## Book Overview
 
-- **Authors**: Nicole Forsgren (PhD, CEO of DORA), [[jez-humble]] (co-author of Continuous Delivery), Gene Kim (co-author of The Phoenix Project)
+- **Authors**: Nicole Forsgren (PhD, CEO of DORA), [Jez Humble](../entities/jez-humble.md) (co-author of Continuous Delivery), Gene Kim (co-author of The Phoenix Project)
 - **Published**: 2018, IT Revolution Press
 - **Research basis**: 23,000+ survey responses from 2,000+ organizations across four years
 - **Methodology**: Cross-sectional survey design with Likert-type psychometric constructs, cluster analysis, and inferential predictive statistics (not just correlation)
-- **Foreword by**: [[martin-fowler]]
+- **Foreword by**: [Martin Fowler](../entities/martin-fowler.md)
 
 ## The Four Key Metrics (DORA Metrics)
 
-The book defines software delivery performance using four metrics (see [[dora-metrics]]):
+The book defines software delivery performance using four metrics (see [DORA Metrics](../concepts/dora-metrics.md)):
 
 1. **Deployment frequency** -- proxy for batch size
 2. **Lead time for changes** -- code commit to code running in production
@@ -46,12 +46,12 @@ The research identifies 24 capabilities across five categories that drive delive
 ### Continuous Delivery Capabilities
 1. Version control
 2. Deployment automation
-3. **Continuous integration** (see [[continuous-integration]])
+3. **Continuous integration** (see [Continuous Integration](../concepts/continuous-integration.md))
 4. Trunk-based development
-5. **Test automation** (see [[test-automation-at-scale]])
+5. **Test automation** (see [Test Automation at Scale](../concepts/test-automation-at-scale.md))
 6. Test data management
 7. Shift left on security
-8. Continuous delivery (see [[continuous-delivery]])
+8. Continuous delivery (see [Continuous Delivery](../concepts/continuous-delivery.md))
 
 ### Architecture Capabilities
 9. Loosely coupled architecture
@@ -99,11 +99,11 @@ The book provides statistical evidence that test automation predicts delivery pe
 
 ### CI Depends on Fast Tests
 
-[[continuous-integration]] requires that every commit triggers a build with fast automated tests. Without TDD producing fast, reliable unit tests, CI breaks down. The book finds that trunk-based development (branches < 1 day, merged frequently) combined with CI predicts delivery performance -- and this combination requires the kind of test suite that TDD produces.
+[Continuous Integration](../concepts/continuous-integration.md) requires that every commit triggers a build with fast automated tests. Without TDD producing fast, reliable unit tests, CI breaks down. The book finds that trunk-based development (branches < 1 day, merged frequently) combined with CI predicts delivery performance -- and this combination requires the kind of test suite that TDD produces.
 
 ### CD Requires Test Confidence
 
-[[continuous-delivery]] is defined as the ability to deploy on demand with fast feedback on quality. The five CD principles map directly to TDD values:
+[Continuous Delivery](../concepts/continuous-delivery.md) is defined as the ability to deploy on demand with fast feedback on quality. The five CD principles map directly to TDD values:
 1. **Build quality in** (Deming's 3rd point) -- TDD builds quality in rather than inspecting it afterward
 2. **Work in small batches** -- TDD's small red-green-refactor cycles
 3. **Automate repetitive tasks** -- regression testing automated as side effect of TDD
@@ -120,7 +120,7 @@ Two architectural characteristics predict high performance:
 1. **Testability**: "We can do most of our testing without requiring an integrated environment"
 2. **Deployability**: "We can deploy independently of other applications"
 
-These align directly with TDD's emphasis on [[dependency-injection]], [[test-doubles]], and [[ports-and-adapters]] to enable testing in isolation.
+These align directly with TDD's emphasis on [Dependency Injection](../concepts/dependency-injection.md), [Test Doubles](../concepts/test-doubles.md), and [Ports and Adapters](../concepts/ports-and-adapters.md) to enable testing in isolation.
 
 ## Westrum Organizational Culture
 
@@ -132,11 +132,11 @@ A striking finding: external change approval (CABs) is **negatively correlated**
 
 ## Related Pages
 
-- [[dora-metrics]]
-- [[test-automation-at-scale]]
-- [[continuous-integration]]
-- [[continuous-delivery]]
-- [[jez-humble]]
-- [[dave-farley]]
-- [[martin-fowler]]
-- [[extreme-programming]]
+- [DORA Metrics](../concepts/dora-metrics.md)
+- [Test Automation at Scale](../concepts/test-automation-at-scale.md)
+- [Continuous Integration](../concepts/continuous-integration.md)
+- [Continuous Delivery](../concepts/continuous-delivery.md)
+- [Jez Humble](../entities/jez-humble.md)
+- [Dave Farley](../entities/dave-farley.md)
+- [Martin Fowler](../entities/martin-fowler.md)
+- [Extreme Programming](../concepts/extreme-programming.md)

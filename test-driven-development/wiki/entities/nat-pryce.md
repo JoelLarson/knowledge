@@ -15,7 +15,7 @@ Nat Pryce is co-author of [Growing Object-Oriented Software, Guided by Tests](..
 - **jMock / DynaMock** — created the mock objects library that introduced protocol-focused expectations, Hamcrest-style constraints, and expressive failure messages
 - **Protocol-based thinking** — brought emphasis on communication protocols between objects from his PhD work at Imperial College
 - **London XP Day** — founding organizer
-- **2006 Gordon Pask Award** — joint winner with [[steve-freeman]] for contributions to agile development
+- **2006 Gordon Pask Award** — joint winner with [Steve Freeman](steve-freeman.md) for contributions to agile development
 
 ## Background
 
@@ -36,10 +36,10 @@ Nat's Ruby implementation of mock objects (later ported to Java) changed the emp
 
 ## Related Pages
 
-- [[steve-freeman]]
-- [[london-school-tdd]]
-- [[outside-in-tdd]]
-- [[mocking]]
-- [[test-doubles]]
-- [[growing-oo-software-freeman-pryce]]
-- [[kent-beck]]
+- [Steve Freeman](steve-freeman.md)
+- [London School TDD](../concepts/london-school-tdd.md)
+- [Outside-In TDD](../concepts/outside-in-tdd.md)
+- [Mocking](../concepts/mocking.md)
+- [Test Doubles](../concepts/test-doubles.md)
+- [Growing OO Software (Freeman & Pryce)](../sources/growing-oo-software-freeman-pryce.md)
+- [Kent Beck](kent-beck.md)

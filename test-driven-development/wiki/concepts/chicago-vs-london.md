@@ -13,7 +13,7 @@ The two major schools of TDD represent different philosophies about what tests s
 
 | Dimension | Chicago / Classical | London / Mockist |
 |-----------|-------------------|-----------------|
-| **Key figure** | [[kent-beck]] | [[steve-freeman]], [[nat-pryce]] |
+| **Key figure** | [Kent Beck](../entities/kent-beck.md) | [Steve Freeman](../entities/steve-freeman.md), [Nat Pryce](../entities/nat-pryce.md) |
 | **Key text** | *TDD by Example* (2002) | *GOOS* (2009) |
 | **What tests verify** | State and output of the SUT | Messages sent to collaborators |
 | **Collaborators in tests** | Real objects (or fakes for slow deps) | Mocked interfaces |
@@ -29,7 +29,7 @@ The classical approach, as practiced by Beck:
 1. Start with the simplest domain object
 2. Write a test asserting the expected output or state
 3. Use real collaborators wherever practical
-4. Only use [[test-doubles]] for slow/external dependencies (databases, networks)
+4. Only use [Test Doubles](test-doubles.md) for slow/external dependencies (databases, networks)
 5. Build outward from the domain model to the boundaries
 
 **Strength:** Tests are resilient to refactoring. Changing how objects communicate internally doesn't break tests as long as the final state is correct.
@@ -41,7 +41,7 @@ The classical approach, as practiced by Beck:
 The approach codified in [GOOS](london-school-tdd.md):
 
 1. Start with a failing acceptance test at the system boundary
-2. Work inward layer by layer using [[outside-in-tdd]]
+2. Work inward layer by layer using [Outside-In TDD](outside-in-tdd.md)
 3. Mock collaborators that don't exist yet — mock expectations define the interface
 4. Each layer's tests verify the messages sent to the next layer
 5. "Pull" interfaces into existence from client needs
@@ -64,16 +64,16 @@ Fowler himself identifies as a classicist but acknowledges the London school's d
 
 ### Prefer Chicago When:
 - Building domain logic with few external dependencies
-- Working with [[value-objects]] and pure computations
+- Working with [Value Objects](value-objects.md) and pure computations
 - Refactoring frequently and wanting tests that survive internal changes
 - The team is new to TDD (simpler mental model)
 
 ### Prefer London When:
 - Building systems with many collaborating objects and services
 - Wanting to design interfaces from the consumer's perspective
-- Following [[tell-dont-ask]] and information hiding principles
+- Following [Tell, Don't Ask](tell-dont-ask.md) and information hiding principles
 - Working on event-driven or message-passing architectures
-- Using [[outside-in-tdd]] with acceptance tests driving development
+- Using [Outside-In TDD](outside-in-tdd.md) with acceptance tests driving development
 
 ### The Pragmatic Middle
 Most experienced practitioners use both styles situationally:
@@ -89,7 +89,7 @@ Most experienced practitioners use both styles situationally:
 
 ## Khorikov's Argument for the Classical School
 
-[[vladimir-khorikov]] takes an explicit stance favoring the classical (Chicago) school in [Unit Testing: Principles, Practices, and Patterns](../sources/unit-testing-khorikov.md). His argument is built on the [four pillars framework](four-pillars-of-good-tests.md), particularly the pillar of **resistance to refactoring**:
+[Vladimir Khorikov](../entities/vladimir-khorikov.md) takes an explicit stance favoring the classical (Chicago) school in [Unit Testing: Principles, Practices, and Patterns](../sources/unit-testing-khorikov.md). His argument is built on the [four pillars framework](four-pillars-of-good-tests.md), particularly the pillar of **resistance to refactoring**:
 
 1. **The London school doesn't distinguish intra-system from inter-system communications.** It mocks all dependencies except immutable ones, treating internal class collaborations the same as external system interactions.
 2. **Intra-system communications are implementation details.** How classes collaborate internally to achieve a result is not part of observable behavior. Mocking these communications couples tests to implementation details.
@@ -102,17 +102,17 @@ This position extends the Chicago school's argument beyond "prefer state verific
 
 ## Related Pages
 
-- [[london-school-tdd]]
-- [[outside-in-tdd]]
-- [[mocking]]
-- [[test-doubles]]
-- [[tell-dont-ask]]
-- [[red-green-refactor]]
-- [[kent-beck]]
-- [[steve-freeman]]
-- [[nat-pryce]]
-- [[tdd-by-example-kent-beck]]
-- [[growing-oo-software-freeman-pryce]]
-- [[unit-testing-khorikov]]
-- [[four-pillars-of-good-tests]]
-- [[vladimir-khorikov]]
+- [London School TDD](london-school-tdd.md)
+- [Outside-In TDD](outside-in-tdd.md)
+- [Mocking](mocking.md)
+- [Test Doubles](test-doubles.md)
+- [Tell, Don't Ask](tell-dont-ask.md)
+- [Red-Green-Refactor](red-green-refactor.md)
+- [Kent Beck](../entities/kent-beck.md)
+- [Steve Freeman](../entities/steve-freeman.md)
+- [Nat Pryce](../entities/nat-pryce.md)
+- [TDD by Example (Beck)](../sources/tdd-by-example-kent-beck.md)
+- [Growing OO Software (Freeman & Pryce)](../sources/growing-oo-software-freeman-pryce.md)
+- [Unit Testing (Khorikov)](../sources/unit-testing-khorikov.md)
+- [Four Pillars of a Good Test](four-pillars-of-good-tests.md)
+- [Vladimir Khorikov](../entities/vladimir-khorikov.md)

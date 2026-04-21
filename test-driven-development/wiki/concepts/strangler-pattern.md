@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: [raw/dave-farley-302-tdd-and-bdd-design-through-testing/]
 ---
 
-The Strangler Pattern is a migration strategy for [[legacy-code]] where new code gradually replaces old code behind well-defined boundaries, without a risky big-bang rewrite. Named after the strangler vine that grows around a tree and eventually replaces it.
+The Strangler Pattern is a migration strategy for [Legacy Code](legacy-code.md) where new code gradually replaces old code behind well-defined boundaries, without a risky big-bang rewrite. Named after the strangler vine that grows around a tree and eventually replaces it.
 
 ## The Process
 
@@ -44,9 +44,9 @@ The strangler pattern delivers value incrementally — each replaced section wor
 
 ## Related Pages
 
-- [[legacy-code]]
-- [[refactoring]]
-- [[approval-testing]]
-- [[atdd]]
-- [[ports-and-adapters]]
-- [[dave-farley-302-course]]
+- [Legacy Code](legacy-code.md)
+- [Refactoring](refactoring.md)
+- [Approval Testing](approval-testing.md)
+- [ATDD](atdd.md)
+- [Ports and Adapters](ports-and-adapters.md)
+- [Dave Farley 302 Course](../sources/dave-farley-302-course.md)

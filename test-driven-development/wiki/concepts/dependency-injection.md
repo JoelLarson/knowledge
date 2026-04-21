@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: [raw/dave-farley-302-tdd-and-bdd-design-through-testing/, "raw/Growing Object-Oriented Software, Guided by Tests - Steve Freeman, Nat Pryce.md", raw/Working.Effectively.with.Legacy.Code.md]
 ---
 
-A design technique where dependencies are passed into a component rather than created inside it. Essential for testability, loose coupling, and enabling [[mocking]].
+A design technique where dependencies are passed into a component rather than created inside it. Essential for testability, loose coupling, and enabling [Mocking](mocking.md).
 
 ## Core Idea
 
@@ -114,7 +114,7 @@ The "No Getters" rule at Connextra (1999) — the precursor to mock objects — 
 
 ## Feathers' Perspective: DI as Dependency Breaking
 
-In [Working Effectively with Legacy Code](../sources/working-effectively-legacy-code-feathers.md), [Michael Feathers](../entities/michael-feathers.md) shows that dependency injection is the **formalization of creating enabling points for object [[seams]]**. Many of his [[dependency-breaking-techniques]] are essentially ways to introduce DI into code that wasn't designed for it:
+In [Working Effectively with Legacy Code](../sources/working-effectively-legacy-code-feathers.md), [Michael Feathers](../entities/michael-feathers.md) shows that dependency injection is the **formalization of creating enabling points for object [Seams](seams.md)**. Many of his [Dependency-Breaking Techniques](dependency-breaking-techniques.md) are essentially ways to introduce DI into code that wasn't designed for it:
 
 - **Parameterize Constructor** — add a constructor parameter for a dependency that was previously hard-coded internally. Provide a convenience constructor that uses the default. This is the most direct form of introducing DI into legacy code.
 - **Parameterize Method** — add a method parameter for a per-call dependency.
@@ -131,27 +131,27 @@ public InvoiceUpdateResponder(DBConnection connection) { ... }
 public InvoiceUpdateResponder(IDBConnection connection) { ... }
 ```
 
-In legacy contexts, you often can't do "clean" DI from the start. The [[legacy-code-change-algorithm]] uses dependency breaking as step 3 — introduce DI just enough to get tests in place, then improve the design later.
+In legacy contexts, you often can't do "clean" DI from the start. The [Legacy Code Change Algorithm](legacy-code-change-algorithm.md) uses dependency breaking as step 3 — introduce DI just enough to get tests in place, then improve the design later.
 
 > "Move toward interfaces that communicate responsibilities rather than implementation details. This makes code easier to read and easier to maintain." — Michael Feathers
 
 ## Related Pages
 
-- [[mocking]]
-- [[test-doubles]]
-- [[solid-principles]]
-- [[ports-and-adapters]]
-- [[good-test-properties]]
-- [[tdd-smells]]
-- [[refactoring]]
-- [[atdd]]
-- [[london-school-tdd]]
-- [[tell-dont-ask]]
-- [[outside-in-tdd]]
-- [[seams]]
-- [[dependency-breaking-techniques]]
-- [[legacy-code]]
-- [[michael-feathers]]
-- [[working-effectively-legacy-code-feathers]]
-- [[dave-farley-302-course]]
-- [[growing-oo-software-freeman-pryce]]
+- [Mocking](mocking.md)
+- [Test Doubles](test-doubles.md)
+- [SOLID Principles](solid-principles.md)
+- [Ports and Adapters](ports-and-adapters.md)
+- [Good Test Properties](good-test-properties.md)
+- [TDD Smells](tdd-smells.md)
+- [Refactoring](refactoring.md)
+- [ATDD](atdd.md)
+- [London School TDD](london-school-tdd.md)
+- [Tell, Don't Ask](tell-dont-ask.md)
+- [Outside-In TDD](outside-in-tdd.md)
+- [Seams](seams.md)
+- [Dependency-Breaking Techniques](dependency-breaking-techniques.md)
+- [Legacy Code](legacy-code.md)
+- [Michael Feathers](../entities/michael-feathers.md)
+- [Working Effectively with Legacy Code (Feathers)](../sources/working-effectively-legacy-code-feathers.md)
+- [Dave Farley 302 Course](../sources/dave-farley-302-course.md)
+- [Growing OO Software (Freeman & Pryce)](../sources/growing-oo-software-freeman-pryce.md)

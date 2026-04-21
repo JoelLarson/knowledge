@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: [raw/xUnit Test Patterns_ Refactoring Test Code - by Gerard Meszaros - 2007.md]
 ---
 
-Standard vocabulary formalized by [[gerard-meszaros]] in [xUnit Test Patterns](../sources/xunit-test-patterns-meszaros.md) for discussing the structure of any test. SUT is the thing being tested; DOC is anything the SUT depends on.
+Standard vocabulary formalized by [Gerard Meszaros](../entities/gerard-meszaros.md) in [xUnit Test Patterns](../sources/xunit-test-patterns-meszaros.md) for discussing the structure of any test. SUT is the thing being tested; DOC is anything the SUT depends on.
 
 ## System Under Test (SUT)
 
@@ -35,7 +35,7 @@ Test → exercises → SUT → depends on → DOC
                          ← returns  ←
 ```
 
-A unit test isolates the SUT from its DOCs by replacing DOCs with [[test-doubles]]:
+A unit test isolates the SUT from its DOCs by replacing DOCs with [Test Doubles](test-doubles.md):
 - **Test Stub** — controls indirect inputs (what the DOC returns to the SUT)
 - **Mock Object / Test Spy** — observes indirect outputs (what the SUT sends to the DOC)
 - **Dummy Object** — fills a parameter slot when the DOC isn't actually used
@@ -47,7 +47,7 @@ An object is only the SUT with respect to a specific test. In a layered system:
 - Unit1 is a DOC for Unit2's tests (if Unit2 depends on Unit1)
 - Both Unit1 and Unit2 are part of the Component SUT for component-level tests
 
-This is why [[test-doubles]] exist: to isolate each layer so it can be tested independently.
+This is why [Test Doubles](test-doubles.md) exist: to isolate each layer so it can be tested independently.
 
 ## Why This Vocabulary Matters
 
@@ -67,10 +67,10 @@ Calls the SUT makes to its DOCs (method invocations, messages, database writes).
 
 ## Related Pages
 
-- [[test-doubles]]
-- [[four-phase-test]]
-- [[test-fixture-strategies]]
-- [[mocking]]
-- [[dependency-injection]]
-- [[xunit-test-patterns-meszaros]]
-- [[gerard-meszaros]]
+- [Test Doubles](test-doubles.md)
+- [Four-Phase Test](four-phase-test.md)
+- [Test Fixture Strategies](test-fixture-strategies.md)
+- [Mocking](mocking.md)
+- [Dependency Injection](dependency-injection.md)
+- [xUnit Test Patterns (Meszaros)](../sources/xunit-test-patterns-meszaros.md)
+- [Gerard Meszaros](../entities/gerard-meszaros.md)

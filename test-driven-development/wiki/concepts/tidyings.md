@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: [raw/Tidy First.md]
 ---
 
-Tidyings are small, safe structural improvements to code — a strict subset of [[refactoring]] that [[kent-beck]] describes as "the cute, fuzzy little refactorings that nobody could possibly hate on." They are the concrete moves for TDD's refactor step, designed to be individually trivial but collectively powerful through chaining and compounding.
+Tidyings are small, safe structural improvements to code — a strict subset of [Refactoring](refactoring.md) that [Kent Beck](../entities/kent-beck.md) describes as "the cute, fuzzy little refactorings that nobody could possibly hate on." They are the concrete moves for TDD's refactor step, designed to be individually trivial but collectively powerful through chaining and compounding.
 
 ## The Catalog
 
@@ -67,7 +67,7 @@ Beck calls this "avalanches" — small tidyings compound until a large simplific
 
 ## Relationship to TDD's Refactor Step
 
-Tidyings give concrete content to the often-underspecified "refactor" step of [[red-green-refactor]]:
+Tidyings give concrete content to the often-underspecified "refactor" step of [Red-Green-Refactor](red-green-refactor.md):
 
 1. **Red** — write a failing test (behavior intent)
 2. **Green** — make it pass as quickly as possible (behavior implementation)
@@ -94,14 +94,14 @@ Beck frames tidying in terms of two competing economic forces:
 - **Time value of money** — earn sooner, spend later (favors tidy after)
 - **Optionality** — structure creates options; options are more valuable in uncertain environments (favors tidy first)
 
-When `cost(tidying) + cost(change after) < cost(change without tidying)`, always tidy first. When the inequality is reversed, the decision requires judgment about future option value. See [[coupling-and-cohesion]] for how coupling drives the cost of software.
+When `cost(tidying) + cost(change after) < cost(change without tidying)`, always tidy first. When the inequality is reversed, the decision requires judgment about future option value. See [Coupling and Cohesion](coupling-and-cohesion.md) for how coupling drives the cost of software.
 
 ## Related Pages
 
-- [[refactoring]]
-- [[red-green-refactor]]
-- [[simple-design]]
-- [[coupling-and-cohesion]]
-- [[kent-beck]]
-- [[tidy-first-kent-beck]]
-- [[refactoring-martin-fowler]]
+- [Refactoring](refactoring.md)
+- [Red-Green-Refactor](red-green-refactor.md)
+- [Simple Design](simple-design.md)
+- [Coupling and Cohesion](coupling-and-cohesion.md)
+- [Kent Beck](../entities/kent-beck.md)
+- [Tidy First? (Beck)](../sources/tidy-first-kent-beck.md)
+- [Refactoring (Fowler)](../sources/refactoring-martin-fowler.md)

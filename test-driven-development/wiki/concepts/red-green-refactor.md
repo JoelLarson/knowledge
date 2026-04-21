@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: [raw/tdd-by-example-kent-beck-v2.md, raw/dave-farley-302-tdd-and-bdd-design-through-testing/]
 ---
 
-The core TDD cycle: write a failing test (Red), make it pass minimally (Green), then improve the code (Refactor). The "mantra" of TDD according to [[kent-beck]].
+The core TDD cycle: write a failing test (Red), make it pass minimally (Green), then improve the code (Refactor). The "mantra" of TDD according to [Kent Beck](../entities/kent-beck.md).
 
 ## The Three Steps
 
@@ -69,18 +69,18 @@ The refactor step is where the [Modern Software Engineering](../sources/modern-s
 - Refactoring on red (risky; unclear which breakage came from where)
 - Taking too large steps in green (over-designing during the unstable phase)
 
-See also [[tdd-smells]] for anti-patterns.
+See also [TDD Smells](tdd-smells.md) for anti-patterns.
 
 ## Related Pages
 
-- [[test-first]]
-- [[refactoring]]
-- [[tdd-smells]]
-- [[good-test-properties]]
-- [[tdd-vs-unit-testing]]
-- [[tdd-empirical-evidence]] -- empirical research on TDD effectiveness; the cycle's granularity is a key finding
-- [[tdd-process-granularity]] -- Fucci et al.'s evidence that cycle size matters more than strict ordering
-- [[tdd-by-example-kent-beck]]
-- [[simple-design]]
-- [[pair-programming]]
-- [[dave-farley-302-course]]
+- [Test First](test-first.md)
+- [Refactoring](refactoring.md)
+- [TDD Smells](tdd-smells.md)
+- [Good Test Properties](good-test-properties.md)
+- [TDD vs. Unit Testing](tdd-vs-unit-testing.md)
+- [TDD Empirical Evidence](tdd-empirical-evidence.md) -- empirical research on TDD effectiveness; the cycle's granularity is a key finding
+- [TDD Process Granularity](tdd-process-granularity.md) -- Fucci et al.'s evidence that cycle size matters more than strict ordering
+- [TDD by Example (Beck)](../sources/tdd-by-example-kent-beck.md)
+- [Simple Design](simple-design.md)
+- [Pair Programming](pair-programming.md)
+- [Dave Farley 302 Course](../sources/dave-farley-302-course.md)

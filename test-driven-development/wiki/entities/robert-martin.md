@@ -39,16 +39,16 @@ Code is read far more than written. Programmers are authors. Clean code is code 
 
 ## Sources in this Wiki
 
-- [[clean-code-robert-martin]] — comprehensive source summary
+- [Clean Code](../sources/clean-code-robert-martin.md) — comprehensive source summary
 
 ## Related Pages
 
-- [[test-first]]
-- [[good-test-properties]]
-- [[refactoring]]
-- [[solid-principles]]
-- [[kent-beck]]
-- [[dave-farley]]
-- [[martin-fowler]]
-- [[michael-feathers]]
-- [[clean-code-robert-martin]]
+- [Test First](../concepts/test-first.md)
+- [Good Test Properties](../concepts/good-test-properties.md)
+- [Refactoring](../concepts/refactoring.md)
+- [SOLID Principles](../concepts/solid-principles.md)
+- [Kent Beck](kent-beck.md)
+- [Dave Farley](dave-farley.md)
+- [Martin Fowler](martin-fowler.md)
+- [Michael Feathers](michael-feathers.md)
+- [Clean Code](../sources/clean-code-robert-martin.md)

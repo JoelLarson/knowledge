@@ -11,7 +11,7 @@ Emily Bache is a software development consultant and trainer known for creating 
 
 ## Key Contributions
 
-- **Theatrical Players Refactoring Kata** — multi-language kata based on Fowler's _Refactoring_ Ch. 1; includes approval tests; see [[fowler-theatrical-players-kata]]
+- **Theatrical Players Refactoring Kata** — multi-language kata based on Fowler's _Refactoring_ Ch. 1; includes approval tests; see [Theatrical Players Kata](../sources/fowler-theatrical-players-kata.md)
 - **Gilded Rose Kata** — popular refactoring kata with complex legacy code
 - **Tennis Refactoring Kata** — state machine refactoring practice
 - **ApprovalTests library** — contributions to approval testing tooling
@@ -19,11 +19,11 @@ Emily Bache is a software development consultant and trainer known for creating 
 
 ## Role in this Wiki
 
-The source material for the [[fowler-theatrical-players-kata]] was created and maintained by Emily Bache based on [[martin-fowler]]'s Theatrical Players example.
+The source material for the [Theatrical Players Kata](../sources/fowler-theatrical-players-kata.md) was created and maintained by Emily Bache based on [Martin Fowler](martin-fowler.md)'s Theatrical Players example.
 
 ## Related Pages
 
-- [[fowler-theatrical-players-kata]]
-- [[approval-testing]]
-- [[refactoring]]
-- [[martin-fowler]]
+- [Theatrical Players Kata](../sources/fowler-theatrical-players-kata.md)
+- [Approval Testing](../concepts/approval-testing.md)
+- [Refactoring](../concepts/refactoring.md)
+- [Martin Fowler](martin-fowler.md)

@@ -14,7 +14,7 @@ Kent Beck is the primary inventor and proponent of Test-Driven Development, crea
 - **Test-Driven Development** — defined the red-green-refactor cycle; authored [TDD by Example](../sources/tdd-by-example-kent-beck.md) (2002)
 - **Extreme Programming (XP)** — agile methodology; TDD is one of its core practices
 - **xUnit architecture** — the testing framework pattern underlying JUnit, NUnit, pytest, and most modern test frameworks
-- **[Tidy First?](../sources/tidy-first-kent-beck.md)** (2023) — a catalog of small structural improvements ([[tidyings]]) and a decision framework for when to invest in code structure. Connects the refactor step of TDD to economics (discounted cash flows, optionality) and to Yourdon/Constantine's coupling and cohesion theory. First volume in a planned *Empirical Software Design* series.
+- **[Tidy First?](../sources/tidy-first-kent-beck.md)** (2023) — a catalog of small structural improvements ([Tidyings](../concepts/tidyings.md)) and a decision framework for when to invest in code structure. Connects the refactor step of TDD to economics (discounted cash flows, optionality) and to Yourdon/Constantine's coupling and cohesion theory. First volume in a planned *Empirical Software Design* series.
 - **CRC Cards** — technique for collaborative object design
 - **[Ward Cunningham](ward-cunningham.md) collaboration** — TDD grew partly from their Smalltalk work together
 
@@ -41,28 +41,28 @@ Phrase coined by Erich Gamma to describe programmers who, after learning TDD, wr
 From *Tidy First?*: software design is *beneficially relating elements*. Designers can only create/delete elements, create/delete relationships, and increase the benefit of a relationship. Structure doesn't affect behavior but determines the cost of future behavior changes.
 
 ### Constantine's Equivalence
-Beck's formalization: `cost(software) ~= cost(change) ~= cost(big changes) ~= coupling`. The cost of software is approximately equal to its coupling. See [[coupling-and-cohesion]].
+Beck's formalization: `cost(software) ~= cost(change) ~= cost(big changes) ~= coupling`. The cost of software is approximately equal to its coupling. See [Coupling and Cohesion](../concepts/coupling-and-cohesion.md).
 
 ### 3X: Explore/Expand/Extract
 A framework for understanding how software development practices should vary across the lifecycle. In Explore mode, speed matters most; in Extract mode, efficiency matters most.
 
 ## Sources in this Wiki
 
-- [[tdd-by-example-kent-beck]] — the foundational TDD text
-- [[tidy-first-kent-beck]] — tidyings catalog, structure/behavior distinction, coupling economics
-- [[refactoring-martin-fowler]] — contributed to; xUnit patterns drawn from Beck's work
+- [TDD by Example (Beck)](../sources/tdd-by-example-kent-beck.md) — the foundational TDD text
+- [Tidy First? (Beck)](../sources/tidy-first-kent-beck.md) — tidyings catalog, structure/behavior distinction, coupling economics
+- [Refactoring (Fowler)](../sources/refactoring-martin-fowler.md) — contributed to; xUnit patterns drawn from Beck's work
 
 ## Related Pages
 
-- [[red-green-refactor]]
-- [[test-first]]
-- [[xunit]]
-- [[tdd-by-example-kent-beck]]
-- [[martin-fowler]]
-- [[dave-farley]]
-- [[robert-martin]]
-- [[ward-cunningham]]
-- [[extreme-programming]]
-- [[tidyings]]
-- [[coupling-and-cohesion]]
-- [[simple-design]]
+- [Red-Green-Refactor](../concepts/red-green-refactor.md)
+- [Test First](../concepts/test-first.md)
+- [xUnit](xunit.md)
+- [TDD by Example (Beck)](../sources/tdd-by-example-kent-beck.md)
+- [Martin Fowler](martin-fowler.md)
+- [Dave Farley](dave-farley.md)
+- [Robert C. Martin](robert-martin.md)
+- [Ward Cunningham](ward-cunningham.md)
+- [Extreme Programming](../concepts/extreme-programming.md)
+- [Tidyings](../concepts/tidyings.md)
+- [Coupling and Cohesion](../concepts/coupling-and-cohesion.md)
+- [Simple Design](../concepts/simple-design.md)

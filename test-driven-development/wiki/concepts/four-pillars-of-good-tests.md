@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: ["raw/Unit Testing Principles Practices Patterns - Vladimir Khorikov 2020.md"]
 ---
 
-[[vladimir-khorikov]]'s framework for evaluating any automated test. A good test scores well on four attributes; its overall value is the *product* of its scores, so a zero in any one attribute makes the test worthless.
+[Vladimir Khorikov](../entities/vladimir-khorikov.md)'s framework for evaluating any automated test. A good test scores well on four attributes; its overall value is the *product* of its scores, so a zero in any one attribute makes the test worthless.
 
 ## The Four Pillars
 
@@ -29,7 +29,7 @@ How well the test avoids **false positives** (false alarms) — failing when the
 - Developers stop paying attention to test failures and real bugs slip through
 - Teams become afraid to refactor, letting the codebase deteriorate
 
-The sole cause of false positives is **coupling to implementation details**. The remedy is to verify observable behavior (the end result), not the steps the code takes. See [[test-fragility]] for a deeper treatment.
+The sole cause of false positives is **coupling to implementation details**. The remedy is to verify observable behavior (the end result), not the steps the code takes. See [Test Fragility](test-fragility.md) for a deeper treatment.
 
 ### 3. Fast Feedback
 
@@ -89,19 +89,19 @@ Use the four pillars to:
 
 | Framework | Focus | Relationship |
 |---|---|---|
-| [[good-test-properties]] (UMRANGS+F, Farley) | Eight dimensions of test quality | Complementary; maps roughly to Khorikov's pillars |
-| [[good-test-properties]] (F.I.R.S.T., Martin) | Five test properties | Fast/Independent/Repeatable/Self-Validating/Timely |
-| [[good-test-properties]] (Meszaros's Goals) | Test automation goals | Safety net, documentation, defect localization |
+| [Good Test Properties](good-test-properties.md) (UMRANGS+F, Farley) | Eight dimensions of test quality | Complementary; maps roughly to Khorikov's pillars |
+| [Good Test Properties](good-test-properties.md) (F.I.R.S.T., Martin) | Five test properties | Fast/Independent/Repeatable/Self-Validating/Timely |
+| [Good Test Properties](good-test-properties.md) (Meszaros's Goals) | Test automation goals | Safety net, documentation, defect localization |
 
 The four pillars framework is more analytical — it explicitly addresses trade-offs and the impossibility of maximizing all dimensions simultaneously.
 
 ## Related Pages
 
-- [[test-fragility]]
-- [[output-vs-state-vs-communication-testing]]
-- [[good-test-properties]]
-- [[integration-testing]]
-- [[mocking]]
-- [[chicago-vs-london]]
-- [[unit-testing-khorikov]]
-- [[vladimir-khorikov]]
+- [Test Fragility](test-fragility.md)
+- [Output vs State vs Communication Testing](output-vs-state-vs-communication-testing.md)
+- [Good Test Properties](good-test-properties.md)
+- [Integration Testing](integration-testing.md)
+- [Mocking](mocking.md)
+- [Chicago vs. London Schools](chicago-vs-london.md)
+- [Unit Testing (Khorikov)](../sources/unit-testing-khorikov.md)
+- [Vladimir Khorikov](../entities/vladimir-khorikov.md)

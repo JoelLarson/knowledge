@@ -22,12 +22,12 @@ This is useful when you don't know what the "correct" output should be in princi
 ## Primary Use Cases
 
 ### Refactoring Safety Net (Legacy Code)
-When working on code without tests, approval tests let you establish a baseline before you change anything. After a refactoring, if output is identical, the refactoring was behavior-preserving. This is the core use in [[legacy-code]] work.
+When working on code without tests, approval tests let you establish a baseline before you change anything. After a refactoring, if output is identical, the refactoring was behavior-preserving. This is the core use in [Legacy Code](legacy-code.md) work.
 
 > "Approval tests are a great tool that allows us to really start work in a legacy codebase when we don't yet know too well what's going on." — Dave Farley
 
 ### Refactoring Kata
-The [[fowler-theatrical-players-kata]] uses approval tests to provide test coverage for the Theatrical Players billing code before you begin refactoring. You review and approve the output once, then the tests guard your refactoring.
+The [Theatrical Players Kata](../sources/fowler-theatrical-players-kata.md) uses approval tests to provide test coverage for the Theatrical Players billing code before you begin refactoring. You review and approve the output once, then the tests guard your refactoring.
 
 ## Limitations
 
@@ -61,9 +61,9 @@ The [[fowler-theatrical-players-kata]] uses approval tests to provide test cover
 
 ## Related Pages
 
-- [[legacy-code]]
-- [[refactoring]]
-- [[fowler-theatrical-players-kata]]
-- [[atdd]]
-- [[emily-bache]]
-- [[dave-farley-302-course]]
+- [Legacy Code](legacy-code.md)
+- [Refactoring](refactoring.md)
+- [Theatrical Players Kata](../sources/fowler-theatrical-players-kata.md)
+- [ATDD](atdd.md)
+- [Emily Bache](../entities/emily-bache.md)
+- [Dave Farley 302 Course](../sources/dave-farley-302-course.md)

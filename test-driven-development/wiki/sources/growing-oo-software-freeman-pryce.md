@@ -79,24 +79,24 @@ Tim Mackinnon recounts the origin of mock objects at Connextra in London (late 1
 
 ## Relationship to Other Wiki Sources
 
-- **[[tdd-by-example-kent-beck]]** — Beck's book defines the Chicago/Classical school (state-based testing). GOOS defines the London/Mockist school (interaction-based). Beck wrote the foreword acknowledging "a different style" from his own.
-- **[[modern-software-engineering-dave-farley]]** — Farley's emphasis on testability, feedback, and "listening to the code" directly descends from GOOS principles.
-- **[[dave-farley-302-course]]** — Farley's TDD course teaches GOOS concepts (ports and adapters, measurement points, mock-as-design-tool).
-- **[[clean-code-robert-martin]]** — Martin praised GOOS as exposing "the deep symbiosis between TDD and OOD."
-- **[[refactoring-martin-fowler]]** — GOOS uses continuous refactoring; the "walking skeleton" shares the same incremental philosophy.
+- **[TDD by Example (Beck)](tdd-by-example-kent-beck.md)** — Beck's book defines the Chicago/Classical school (state-based testing). GOOS defines the London/Mockist school (interaction-based). Beck wrote the foreword acknowledging "a different style" from his own.
+- **[Modern Software Engineering (Farley)](modern-software-engineering-dave-farley.md)** — Farley's emphasis on testability, feedback, and "listening to the code" directly descends from GOOS principles.
+- **[Dave Farley 302 Course](dave-farley-302-course.md)** — Farley's TDD course teaches GOOS concepts (ports and adapters, measurement points, mock-as-design-tool).
+- **[Clean Code](clean-code-robert-martin.md)** — Martin praised GOOS as exposing "the deep symbiosis between TDD and OOD."
+- **[Refactoring (Fowler)](refactoring-martin-fowler.md)** — GOOS uses continuous refactoring; the "walking skeleton" shares the same incremental philosophy.
 
 ## Related Pages
 
-- [[london-school-tdd]]
-- [[outside-in-tdd]]
-- [[walking-skeleton]]
-- [[tell-dont-ask]]
-- [[ports-and-adapters]]
-- [[mocking]]
-- [[test-doubles]]
-- [[dependency-injection]]
-- [[atdd]]
-- [[red-green-refactor]]
-- [[steve-freeman]]
-- [[nat-pryce]]
-- [[kent-beck]]
+- [London School TDD](../concepts/london-school-tdd.md)
+- [Outside-In TDD](../concepts/outside-in-tdd.md)
+- [Walking Skeleton](../concepts/walking-skeleton.md)
+- [Tell, Don't Ask](../concepts/tell-dont-ask.md)
+- [Ports and Adapters](../concepts/ports-and-adapters.md)
+- [Mocking](../concepts/mocking.md)
+- [Test Doubles](../concepts/test-doubles.md)
+- [Dependency Injection](../concepts/dependency-injection.md)
+- [ATDD](../concepts/atdd.md)
+- [Red-Green-Refactor](../concepts/red-green-refactor.md)
+- [Steve Freeman](../entities/steve-freeman.md)
+- [Nat Pryce](../entities/nat-pryce.md)
+- [Kent Beck](../entities/kent-beck.md)

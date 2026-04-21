@@ -22,7 +22,7 @@ The optimal cycle duration was 5-10 minutes, matching the common practitioner ad
 
 ## Connection to Beck's "Baby Steps"
 
-Kent Beck has always emphasized taking small steps in TDD. His ratchet metaphor in [[red-green-refactor]] captures this: each passing test is a tooth in the ratchet, and "the harder the problem, the finer the teeth should be."
+Kent Beck has always emphasized taking small steps in TDD. His ratchet metaphor in [Red-Green-Refactor](red-green-refactor.md) captures this: each passing test is a tooth in the ratchet, and "the harder the problem, the finer the teeth should be."
 
 What Fucci et al. add is **empirical evidence** that Beck's advice about step size is the mechanism behind TDD's quality benefits. The research suggests that when Beck says "baby steps," he is identifying the active ingredient -- not the test-first ordering, but the small iteration size that the test-first discipline naturally produces.
 
@@ -80,16 +80,16 @@ This is not carte blanche to skip testing or delay it. The key word is "immediat
 
 Pancur & Ciglaric (2011) controlled for granularity between TDD and ITL groups and found no sequencing effect -- an independent confirmation.
 
-Ghafari et al. 2020 identified that much of TDD's apparent superiority in older studies comes from comparison with **coarse-grained** waterfall processes. When TDD is compared with fine-grained ITL, the advantage largely disappears. See [[why-tdd-research-inconclusive-ghafari-2020]].
+Ghafari et al. 2020 identified that much of TDD's apparent superiority in older studies comes from comparison with **coarse-grained** waterfall processes. When TDD is compared with fine-grained ITL, the advantage largely disappears. See [Why TDD Research is Inconclusive (Ghafari 2020)](../sources/why-tdd-research-inconclusive-ghafari-2020.md).
 
 Karac et al. (2019) found that more granular task descriptions improve quality in TDD -- another angle on the granularity theme: not just cycle size but task decomposition matters.
 
 ## Related Pages
 
-- [[tdd-empirical-evidence]] -- the full synthesis of research findings
-- [[dissection-of-tdd-fucci-2017]] -- the source paper
-- [[red-green-refactor]] -- the cycle whose granularity is measured
-- [[test-first]] -- the ordering dimension found to be less important
-- [[why-tdd-research-inconclusive-ghafari-2020]] -- why comparison baselines matter
-- [[tdd-quality-improvement-nagappan-2008]] -- industrial data on defect reduction
-- [[simple-design]] -- small steps connect to XP's simplicity principle
+- [TDD Empirical Evidence](tdd-empirical-evidence.md) -- the full synthesis of research findings
+- [Dissection of TDD (Fucci 2017)](../sources/dissection-of-tdd-fucci-2017.md) -- the source paper
+- [Red-Green-Refactor](red-green-refactor.md) -- the cycle whose granularity is measured
+- [Test First](test-first.md) -- the ordering dimension found to be less important
+- [Why TDD Research is Inconclusive (Ghafari 2020)](../sources/why-tdd-research-inconclusive-ghafari-2020.md) -- why comparison baselines matter
+- [TDD Quality Improvement (Nagappan 2008)](../sources/tdd-quality-improvement-nagappan-2008.md) -- industrial data on defect reduction
+- [Simple Design](simple-design.md) -- small steps connect to XP's simplicity principle

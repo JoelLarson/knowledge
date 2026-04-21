@@ -27,7 +27,7 @@ Outside-in TDD starts from the outermost layer of the system (acceptance tests a
 ```
 
 - The **outer loop** is a failing acceptance test that exercises the system end-to-end. It defines what "done" means for a feature.
-- The **inner loop** is the standard [[red-green-refactor]] cycle at the unit level, driving implementation of each layer until the acceptance test passes.
+- The **inner loop** is the standard [Red-Green-Refactor](red-green-refactor.md) cycle at the unit level, driving implementation of each layer until the acceptance test passes.
 
 ## How It Works
 
@@ -65,25 +65,25 @@ Outside-in TDD gives acceptance tests two distinct roles:
 - **In-progress acceptance tests** — represent work yet to be done; expected to fail
 - **Regression acceptance tests** — represent completed features; must always pass
 
-This separation tracks progress and catches regressions independently. See [[atdd]].
+This separation tracks progress and catches regressions independently. See [ATDD](atdd.md).
 
 ## When Outside-In Works Best
 
 - Systems with clear external boundaries (web apps, APIs, message-driven systems)
 - When the team wants to discover domain interfaces rather than design them up front
-- When end-to-end testing infrastructure exists (from the [[walking-skeleton]])
-- When the [[tell-dont-ask]] style is desired
+- When end-to-end testing infrastructure exists (from the [Walking Skeleton](walking-skeleton.md))
+- When the [Tell, Don't Ask](tell-dont-ask.md) style is desired
 
 ## Related Pages
 
-- [[london-school-tdd]]
-- [[walking-skeleton]]
-- [[atdd]]
-- [[red-green-refactor]]
-- [[mocking]]
-- [[dependency-injection]]
-- [[tell-dont-ask]]
-- [[ports-and-adapters]]
-- [[integration-testing]]
-- [[chicago-vs-london]]
-- [[growing-oo-software-freeman-pryce]]
+- [London School TDD](london-school-tdd.md)
+- [Walking Skeleton](walking-skeleton.md)
+- [ATDD](atdd.md)
+- [Red-Green-Refactor](red-green-refactor.md)
+- [Mocking](mocking.md)
+- [Dependency Injection](dependency-injection.md)
+- [Tell, Don't Ask](tell-dont-ask.md)
+- [Ports and Adapters](ports-and-adapters.md)
+- [Integration Testing](integration-testing.md)
+- [Chicago vs. London Schools](chicago-vs-london.md)
+- [Growing OO Software (Freeman & Pryce)](../sources/growing-oo-software-freeman-pryce.md)

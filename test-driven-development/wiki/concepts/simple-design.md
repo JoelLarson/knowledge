@@ -29,18 +29,18 @@ The red-green-refactor cycle ensures tests always pass after the green step. You
 Writing the test first forces you to name things from the caller's perspective. Test names document intent. The refactor step improves clarity.
 
 ### Rule 3: No Duplication
-The refactor step in [[red-green-refactor]] specifically targets duplication. Beck's "fake it 'til you make it" technique introduces duplication deliberately in green, then removes it in refactor — making duplication visible and forcing its removal.
+The refactor step in [Red-Green-Refactor](red-green-refactor.md) specifically targets duplication. Beck's "fake it 'til you make it" technique introduces duplication deliberately in green, then removes it in refactor — making duplication visible and forcing its removal.
 
 ### Rule 4: Fewest Elements
 TDD's YAGNI discipline (You Aren't Gonna Need It) prevents adding unused classes, methods, or abstractions. You only write code that a test demands.
 
 ## Origins
 
-[[kent-beck]] introduced the rules in the context of [[extreme-programming]]. Ward Cunningham influenced the thinking — the concept connects to his idea of paying down technical debt and keeping code in a state where change is easy.
+[Kent Beck](../entities/kent-beck.md) introduced the rules in the context of [Extreme Programming](extreme-programming.md). Ward Cunningham influenced the thinking — the concept connects to his idea of paying down technical debt and keeping code in a state where change is easy.
 
 ## Martin Fowler's "Is Design Dead?"
 
-Fowler's 2004 essay addressed the concern that XP/TDD meant abandoning design. His conclusion: design isn't dead, but it shifts from up-front prediction to continuous evolutionary improvement. Simple Design + [[refactoring]] + TDD enables this evolutionary approach:
+Fowler's 2004 essay addressed the concern that XP/TDD meant abandoning design. His conclusion: design isn't dead, but it shifts from up-front prediction to continuous evolutionary improvement. Simple Design + [Refactoring](refactoring.md) + TDD enables this evolutionary approach:
 
 - You don't need to predict future requirements
 - You design for today's needs
@@ -71,10 +71,10 @@ A design with many small, well-named functions is simpler than a design with one
 
 ## Connection to Tidyings and Coupling Economics
 
-[[kent-beck]]'s [Tidy First?](../sources/tidy-first-kent-beck.md) (2023) provides the economic foundation that Simple Design implicitly assumes. Beck's argument:
+[Kent Beck](../entities/kent-beck.md)'s [Tidy First?](../sources/tidy-first-kent-beck.md) (2023) provides the economic foundation that Simple Design implicitly assumes. Beck's argument:
 
 ### Tidyings as Simple Design in Practice
-The [[tidyings]] catalog is Simple Design's four rules made into concrete daily moves:
+The [Tidyings](tidyings.md) catalog is Simple Design's four rules made into concrete daily moves:
 - **Rule 2 (Reveals intention)** -> Explaining Variables, Explaining Constants, Explaining Comments, Reading Order
 - **Rule 3 (No duplication)** -> Normalize Symmetries, Extract Helper, Cohesion Order
 - **Rule 4 (Fewest elements)** -> Dead Code, Delete Redundant Comments, One Pile
@@ -93,13 +93,13 @@ Simple Design creates *options* in the financial sense. A system that follows th
 
 ## Related Pages
 
-- [[extreme-programming]]
-- [[red-green-refactor]]
-- [[refactoring]]
-- [[kent-beck]]
-- [[tdd-by-example-kent-beck]]
-- [[tidy-first-kent-beck]]
-- [[tidyings]]
-- [[coupling-and-cohesion]]
-- [[solid-principles]]
-- [[good-test-properties]]
+- [Extreme Programming](extreme-programming.md)
+- [Red-Green-Refactor](red-green-refactor.md)
+- [Refactoring](refactoring.md)
+- [Kent Beck](../entities/kent-beck.md)
+- [TDD by Example (Beck)](../sources/tdd-by-example-kent-beck.md)
+- [Tidy First? (Beck)](../sources/tidy-first-kent-beck.md)
+- [Tidyings](tidyings.md)
+- [Coupling and Cohesion](coupling-and-cohesion.md)
+- [SOLID Principles](solid-principles.md)
+- [Good Test Properties](good-test-properties.md)

@@ -19,17 +19,17 @@ By forcing testability, TDD forces quality. This is why Dave Farley calls TDD a 
 ## The Primary Sources
 
 ### Foundational Texts
-- **Kent Beck, _TDD by Example_ (2002)** — the original definitive text. Two worked examples + patterns catalog. The [[red-green-refactor]] cycle. The ratchet metaphor. Two rules: (1) write code only when a test fails, (2) eliminate duplication.
+- **Kent Beck, _TDD by Example_ (2002)** — the original definitive text. Two worked examples + patterns catalog. The [Red-Green-Refactor](concepts/red-green-refactor.md) cycle. The ratchet metaphor. Two rules: (1) write code only when a test fails, (2) eliminate duplication.
 - **Robert Martin, _Clean Code_ (2009)** — the Three Laws of TDD; F.I.R.S.T. test properties; naming, functions, and design as professionalism.
-- **Steve Freeman & Nat Pryce, _Growing Object-Oriented Software, Guided by Tests_ (2009)** — the defining text of [[london-school-tdd]]. [[outside-in-tdd]], [[walking-skeleton]], mocks as design tools, [[tell-dont-ask]].
-- **Michael Feathers, _Working Effectively with Legacy Code_ (2004)** — how to get untested code under test. [[seams]], [[characterization-tests]], [[legacy-code-change-algorithm]], 24 [[dependency-breaking-techniques]].
-- **Gerard Meszaros, _xUnit Test Patterns_ (2007)** — the definitive pattern catalog for test code. [[four-phase-test]], [[test-fixture-strategies]], [[test-smells-catalog]], [[humble-object]], formalized [[test-doubles]] taxonomy.
+- **Steve Freeman & Nat Pryce, _Growing Object-Oriented Software, Guided by Tests_ (2009)** — the defining text of [London School TDD](concepts/london-school-tdd.md). [Outside-In TDD](concepts/outside-in-tdd.md), [Walking Skeleton](concepts/walking-skeleton.md), mocks as design tools, [Tell, Don't Ask](concepts/tell-dont-ask.md).
+- **Michael Feathers, _Working Effectively with Legacy Code_ (2004)** — how to get untested code under test. [Seams](concepts/seams.md), [Characterization Tests](concepts/characterization-tests.md), [Legacy Code Change Algorithm](concepts/legacy-code-change-algorithm.md), 24 [Dependency-Breaking Techniques](concepts/dependency-breaking-techniques.md).
+- **Gerard Meszaros, _xUnit Test Patterns_ (2007)** — the definitive pattern catalog for test code. [Four-Phase Test](concepts/four-phase-test.md), [Test Fixture Strategies](concepts/test-fixture-strategies.md), [Test Smells Catalog](concepts/test-smells-catalog.md), [Humble Object](concepts/humble-object.md), formalized [Test Doubles](concepts/test-doubles.md) taxonomy.
 
 ### Design Frameworks
 - **Martin Fowler, _Refactoring_ (2019)** — catalog of behavior-preserving changes; Theatrical Players example; the rule that tests must come before refactoring.
 - **Dave Farley, _Modern Software Engineering_ (2022)** — software as empirical, feedback-driven design; the five properties of high-quality software (modular, cohesive, separation of concerns, abstraction, loose coupling).
-- **Eric Evans, _Domain-Driven Design_ (2003)** — [[ubiquitous-language]], [[bounded-context]], [[aggregates]], [[value-objects]] — how domain modeling shapes test design.
-- **Vaughn Vernon, _Implementing Domain-Driven Design_ (2013)** — practical DDD with test-first workflow, [[domain-events]], [[domain-model-testing]], CQRS/ES testing patterns.
+- **Eric Evans, _Domain-Driven Design_ (2003)** — [Ubiquitous Language](concepts/ubiquitous-language.md), [Bounded Context](concepts/bounded-context.md), [Aggregates](concepts/aggregates.md), [Value Objects](concepts/value-objects.md) — how domain modeling shapes test design.
+- **Vaughn Vernon, _Implementing Domain-Driven Design_ (2013)** — practical DDD with test-first workflow, [Domain Events](concepts/domain-events.md), [Domain Model Testing](concepts/domain-model-testing.md), CQRS/ES testing patterns.
 
 ### Course Material
 - **Dave Farley 302: TDD and BDD** — the richest practical synthesis; red-green-refactor at depth; BDD; good test properties; TDD smells; ATDD; legacy systems; mocking; dependency injection.
@@ -117,7 +117,7 @@ Three empirical research papers provide data on TDD's real-world effectiveness:
 - **[Fucci et al. 2017](sources/dissection-of-tdd-fucci-2017.md)** — Analyzed 82 data points from 39 professionals: the *granularity* and *uniformity* of test-code cycles matter more for quality than strict test-first ordering. Confirms Beck's "baby steps" empirically.
 - **[Ghafari et al. 2020](sources/why-tdd-research-inconclusive-ghafari-2020.md)** — Meta-analysis explaining why TDD studies contradict each other: inconsistent definitions, novice participants, synthetic tasks, greenfield bias, and unfair comparison baselines.
 
-The synthesis: TDD-like practices reliably improve code quality. The mechanism is likely fine-grained iteration with fast feedback, not strictly test-first ordering. There is a real time cost (15-35%), offset by reduced maintenance. See [[tdd-empirical-evidence]] for the full analysis and [[tdd-process-granularity]] for the key finding on cycle size.
+The synthesis: TDD-like practices reliably improve code quality. The mechanism is likely fine-grained iteration with fast feedback, not strictly test-first ordering. There is a real time cost (15-35%), offset by reduced maintenance. See [TDD Empirical Evidence](concepts/tdd-empirical-evidence.md) for the full analysis and [TDD Process Granularity](concepts/tdd-process-granularity.md) for the key finding on cycle size.
 
 ## Cross-Cutting Themes
 

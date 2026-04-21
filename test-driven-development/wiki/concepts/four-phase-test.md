@@ -12,7 +12,7 @@ The canonical test structure pattern from [xUnit Test Patterns](../sources/xunit
 ## The Four Phases
 
 ### 1. Setup (Fixture Setup)
-Establish the "before picture" — create the test fixture, configure [[test-doubles]], and put the [SUT](sut-and-doc.md) into the required pre-test state.
+Establish the "before picture" — create the test fixture, configure [Test Doubles](test-doubles.md), and put the [SUT](sut-and-doc.md) into the required pre-test state.
 
 ### 2. Exercise (Exercise SUT)
 Interact with the SUT — call the method or trigger the behavior being tested. This is the single action the test is verifying.
@@ -30,7 +30,7 @@ The test reader must quickly determine what behavior the test is verifying. With
 - Verification mixed with exercise hides what's being asserted
 - Teardown logic obscures the important test logic
 
-Clear phase markers make tests function as documentation (see [[good-test-properties]]).
+Clear phase markers make tests function as documentation (see [Good Test Properties](good-test-properties.md)).
 
 ## Example
 
@@ -81,9 +81,9 @@ The "Arrange-Act-Assert" formulation (common in .NET communities) is equivalent 
 
 ## Related Pages
 
-- [[test-fixture-strategies]]
-- [[sut-and-doc]]
-- [[test-smells-catalog]]
-- [[good-test-properties]]
-- [[red-green-refactor]]
-- [[xunit-test-patterns-meszaros]]
+- [Test Fixture Strategies](test-fixture-strategies.md)
+- [SUT and DOC](sut-and-doc.md)
+- [Test Smells Catalog](test-smells-catalog.md)
+- [Good Test Properties](good-test-properties.md)
+- [Red-Green-Refactor](red-green-refactor.md)
+- [xUnit Test Patterns (Meszaros)](../sources/xunit-test-patterns-meszaros.md)

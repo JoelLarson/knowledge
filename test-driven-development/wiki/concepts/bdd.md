@@ -63,7 +63,7 @@ Both are BDD. The fine-grained level is often more important.
 
 > "Coverage is a good outcome and a poor target." — Dave Farley
 
-A team that chases 80% coverage may produce tests with no assertions. Coverage is automatic when you do test-first correctly. See [[tdd-smells]] (The Liar).
+A team that chases 80% coverage may produce tests with no assertions. Coverage is automatic when you do test-first correctly. See [TDD Smells](tdd-smells.md) (The Liar).
 
 ## Naming Best Practices
 
@@ -88,7 +88,7 @@ Good naming is critical to BDD's value as documentation. From Farley:
 
 ## DDD Connection: Domain Language in Tests
 
-BDD's insistence on domain vocabulary in tests connects directly to DDD's [[ubiquitous-language]]. Evans (2003) established that the team must share a single language used in code, conversations, and specifications. BDD operationalizes this for testing:
+BDD's insistence on domain vocabulary in tests connects directly to DDD's [Ubiquitous Language](ubiquitous-language.md). Evans (2003) established that the team must share a single language used in code, conversations, and specifications. BDD operationalizes this for testing:
 
 - BDD test names use the same terms domain experts use
 - Given/When/Then scenarios read as domain narratives
@@ -97,22 +97,22 @@ BDD's insistence on domain vocabulary in tests connects directly to DDD's [[ubiq
 
 Vernon explicitly connects the two: tests should be demonstrable to domain experts, and "reading the demonstrative clientlike test code must reveal the proper expressiveness using the Ubiquitous Language."
 
-This means BDD is not just a TDD vocabulary improvement — it is the testing expression of DDD's core linguistic discipline. See [[domain-model-testing]] for practical patterns.
+This means BDD is not just a TDD vocabulary improvement — it is the testing expression of DDD's core linguistic discipline. See [Domain Model Testing](domain-model-testing.md) for practical patterns.
 
 ## Related Pages
 
-- [[test-first]]
-- [[atdd]]
-- [[good-test-properties]]
-- [[red-green-refactor]]
-- [[tdd-smells]]
-- [[tdd-vs-unit-testing]]
-- [[ubiquitous-language]]
-- [[domain-model-testing]]
-- [[aggregates]]
-- [[domain-events]]
-- [[dan-north]]
-- [[dave-farley]]
-- [[dave-farley-302-course]]
-- [[domain-driven-design-evans]]
-- [[implementing-ddd-vernon]]
+- [Test First](test-first.md)
+- [ATDD](atdd.md)
+- [Good Test Properties](good-test-properties.md)
+- [Red-Green-Refactor](red-green-refactor.md)
+- [TDD Smells](tdd-smells.md)
+- [TDD vs. Unit Testing](tdd-vs-unit-testing.md)
+- [Ubiquitous Language](ubiquitous-language.md)
+- [Domain Model Testing](domain-model-testing.md)
+- [Aggregates](aggregates.md)
+- [Domain Events](domain-events.md)
+- [Dan North](../entities/dan-north.md)
+- [Dave Farley](../entities/dave-farley.md)
+- [Dave Farley 302 Course](../sources/dave-farley-302-course.md)
+- [Domain-Driven Design (Evans)](../sources/domain-driven-design-evans.md)
+- [Implementing DDD (Vernon)](../sources/implementing-ddd-vernon.md)

@@ -107,10 +107,10 @@ This has practical implications: teams that cannot adopt strict test-first can s
 
 ## Related Pages
 
-- [[tdd-empirical-evidence]] -- synthesis of what research says about TDD effectiveness
-- [[tdd-process-granularity]] -- concept page on cycle size as the key factor
-- [[tdd-quality-improvement-nagappan-2008]] -- complementary industrial case study
-- [[why-tdd-research-inconclusive-ghafari-2020]] -- meta-analysis of study methodology issues
-- [[red-green-refactor]] -- the cycle whose granularity matters
-- [[test-first]] -- the sequencing dimension found to be non-significant
-- [[refactoring]] -- the dimension with a surprising negative association
+- [TDD Empirical Evidence](../concepts/tdd-empirical-evidence.md) -- synthesis of what research says about TDD effectiveness
+- [TDD Process Granularity](../concepts/tdd-process-granularity.md) -- concept page on cycle size as the key factor
+- [TDD Quality Improvement (Nagappan 2008)](tdd-quality-improvement-nagappan-2008.md) -- complementary industrial case study
+- [Why TDD Research is Inconclusive (Ghafari 2020)](why-tdd-research-inconclusive-ghafari-2020.md) -- meta-analysis of study methodology issues
+- [Red-Green-Refactor](../concepts/red-green-refactor.md) -- the cycle whose granularity matters
+- [Test First](../concepts/test-first.md) -- the sequencing dimension found to be non-significant
+- [Refactoring](../concepts/refactoring.md) -- the dimension with a surprising negative association

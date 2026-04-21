@@ -74,12 +74,12 @@ This connects to [Michael Feathers](../entities/michael-feathers.md)' work in _W
 
 ## Related Pages
 
-- [[outside-in-tdd]]
-- [[london-school-tdd]]
-- [[atdd]]
-- [[continuous-delivery]]
-- [[red-green-refactor]]
-- [[growing-oo-software-freeman-pryce]]
-- [[steve-freeman]]
-- [[integration-testing]]
-- [[nat-pryce]]
+- [Outside-In TDD](outside-in-tdd.md)
+- [London School TDD](london-school-tdd.md)
+- [ATDD](atdd.md)
+- [Continuous Delivery](continuous-delivery.md)
+- [Red-Green-Refactor](red-green-refactor.md)
+- [Growing OO Software (Freeman & Pryce)](../sources/growing-oo-software-freeman-pryce.md)
+- [Steve Freeman](../entities/steve-freeman.md)
+- [Integration Testing](integration-testing.md)
+- [Nat Pryce](../entities/nat-pryce.md)

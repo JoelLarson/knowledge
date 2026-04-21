@@ -37,7 +37,7 @@ Errors fixed:
 
 Structural fixes:
 - `art-of-clean-code-mayer.md` was orphan → added inbound links from `refactoring.md` and `good-test-properties.md`
-- `approval-testing.md` → added missing link to `[[emily-bache]]`
+- `approval-testing.md` → added missing link to `[Emily Bache](entities/emily-bache.md)`
 
 Gaps identified (not yet addressed):
 - Missing concept pages: SOLID, XP, Continuous Delivery, Test Doubles, Strangler Pattern, Ports and Adapters, DDD/Ubiquitous Language
@@ -149,8 +149,8 @@ Wiki now has 58 concept pages, 19 entity pages, 19 source pages (96 total).
 
 Errors fixed:
 - `four-pillars-of-good-tests.md`: malformed wikilinks with backslash-pipe (`\|`) → plain `[[wikilink]]` format
-- `accelerate-forsgren-humble-kim.md`: case-mismatch wikilinks `[[Continuous-integration]]` → `[[continuous-integration]]`
-- `continuous-integration.md`: broken `[[trunk-based-development]]` link → replaced with `[[continuous-delivery]]`
+- `accelerate-forsgren-humble-kim.md`: case-mismatch wikilinks `[[Continuous-integration]]` → `[Continuous Integration](concepts/continuous-integration.md)`
+- `continuous-integration.md`: broken `[[trunk-based-development]]` link → replaced with `[Continuous Delivery](concepts/continuous-delivery.md)`
 - `nicole-forsgren.md`: empty sources array → added Accelerate raw source
 - `index.md`: corrected overstated source counts (mocking 6→4, test-doubles 7→5, dependency-injection 5→3)
 

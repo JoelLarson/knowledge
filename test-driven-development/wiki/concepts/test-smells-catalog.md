@@ -26,16 +26,16 @@ The test is hard to understand at a glance. Causes include:
 - **Hard-Coded Test Data** — magic numbers without explanation
 
 ### Conditional Test Logic
-The test contains if/else, loops, or try/catch. Tests should be strictly linear sequences (see [[four-phase-test]]). Conditional logic hides bugs in the test itself.
+The test contains if/else, loops, or try/catch. Tests should be strictly linear sequences (see [Four-Phase Test](four-phase-test.md)). Conditional logic hides bugs in the test itself.
 
 ### Hard-to-Test Code
 The [SUT](sut-and-doc.md) is difficult to get under test. Root causes:
 - Highly coupled code
 - Asynchronous code
 - Code that uses static/global state
-- Code that creates its own dependencies (no [[dependency-injection]])
+- Code that creates its own dependencies (no [Dependency Injection](dependency-injection.md))
 
-**Solution:** Apply [[humble-object]] pattern, introduce Dependency Injection, or use Test-Specific Subclass.
+**Solution:** Apply [Humble Object](humble-object.md) pattern, introduce Dependency Injection, or use Test-Specific Subclass.
 
 ### Test Code Duplication
 Copy-paste test code across multiple tests. Leads to High Test Maintenance Cost when the SUT changes. Solutions include Creation Methods, Custom Assertions, and Parameterized Tests.
@@ -48,7 +48,7 @@ Production code contains logic only needed for testing (e.g., test hooks, specia
 Problems observed when running the tests.
 
 ### Assertion Roulette
-Multiple assertions in a test without Assertion Messages. When the test fails, you cannot tell which assertion failed or why. Related to the "Giant" smell in [[tdd-smells]].
+Multiple assertions in a test without Assertion Messages. When the test fails, you cannot tell which assertion failed or why. Related to the "Giant" smell in [TDD Smells](tdd-smells.md).
 
 ### Erratic Test
 A test that sometimes passes and sometimes fails. Subcategories:
@@ -61,7 +61,7 @@ A test that sometimes passes and sometimes fails. Subcategories:
 - **Test Run War** — parallel test runs interfere with each other
 - **Nondeterministic Test** — async behavior causes sporadic failure
 
-**Solutions:** Use [Fresh Fixtures](test-fixture-strategies.md), isolate tests, control indirect inputs with [[test-doubles]].
+**Solutions:** Use [Fresh Fixtures](test-fixture-strategies.md), isolate tests, control indirect inputs with [Test Doubles](test-doubles.md).
 
 ### Fragile Test
 A test that fails when unrelated functionality changes. Subcategories:
@@ -85,7 +85,7 @@ Tests take too long to run, discouraging frequent execution. Root causes:
 - Testing against real databases/services
 - Too-coarse test granularity
 
-**Solutions:** Use Fresh Fixtures, test through the API (not UI), use [[test-doubles]], apply [[humble-object]].
+**Solutions:** Use Fresh Fixtures, test through the API (not UI), use [Test Doubles](test-doubles.md), apply [Humble Object](humble-object.md).
 
 ## Project Smells
 
@@ -120,11 +120,11 @@ Multiple smells may share a root cause, and a single smell may have multiple pos
 
 ## Related Pages
 
-- [[tdd-smells]] — Farley's complementary smell catalog (Liar, Giant, Mockery, etc.)
-- [[four-phase-test]]
-- [[test-fixture-strategies]]
-- [[test-doubles]]
-- [[humble-object]]
-- [[good-test-properties]]
-- [[xunit-test-patterns-meszaros]]
-- [[gerard-meszaros]]
+- [TDD Smells](tdd-smells.md) — Farley's complementary smell catalog (Liar, Giant, Mockery, etc.)
+- [Four-Phase Test](four-phase-test.md)
+- [Test Fixture Strategies](test-fixture-strategies.md)
+- [Test Doubles](test-doubles.md)
+- [Humble Object](humble-object.md)
+- [Good Test Properties](good-test-properties.md)
+- [xUnit Test Patterns (Meszaros)](../sources/xunit-test-patterns-meszaros.md)
+- [Gerard Meszaros](../entities/gerard-meszaros.md)

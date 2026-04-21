@@ -45,7 +45,7 @@ calc.calculate("1,2");
 verify(mockDisplay).show("1 + 2 = 3");
 ```
 
-The critical step is **injection** — the mock must be passed in, not created inside the code under test. See [[dependency-injection]].
+The critical step is **injection** — the mock must be passed in, not created inside the code under test. See [Dependency Injection](dependency-injection.md).
 
 ## When to Use Mocks
 
@@ -57,7 +57,7 @@ Use mocks to:
 
 ## Anti-Patterns and the Mockery
 
-From [[tdd-smells]]: **The Mockery** — a test that uses so many mocks and stubs that the system under test isn't actually tested at all.
+From [TDD Smells](tdd-smells.md): **The Mockery** — a test that uses so many mocks and stubs that the system under test isn't actually tested at all.
 
 ```java
 // WRONG: mocking both the car AND the engine
@@ -86,7 +86,7 @@ This is Farley's "listening to the code" — the [Excessive Setup](tdd-smells.md
 
 ## Meszaros's Formal Distinction: State vs. Behavior Verification
 
-[[gerard-meszaros]] formalized the distinction between two verification strategies in [xUnit Test Patterns](../sources/xunit-test-patterns-meszaros.md):
+[Gerard Meszaros](../entities/gerard-meszaros.md) formalized the distinction between two verification strategies in [xUnit Test Patterns](../sources/xunit-test-patterns-meszaros.md):
 
 - **State Verification** — inspect the state of the [SUT](sut-and-doc.md) after exercising it and compare to expected state. Does not require mocks. "What is the result?"
 - **Behavior Verification** — capture the indirect outputs (calls the SUT makes to its [DOCs](sut-and-doc.md)) and compare to expected behavior. Requires Mock Objects or Test Spies. "What did the SUT *do*?"
@@ -132,7 +132,7 @@ Difficulty in mocking is design feedback:
 
 ## Khorikov: Only Mock Unmanaged Dependencies
 
-[[vladimir-khorikov]] provides the most precise mocking guidelines in [Unit Testing: Principles, Practices, and Patterns](../sources/unit-testing-khorikov.md), grounded in his [four pillars framework](four-pillars-of-good-tests.md):
+[Vladimir Khorikov](../entities/vladimir-khorikov.md) provides the most precise mocking guidelines in [Unit Testing: Principles, Practices, and Patterns](../sources/unit-testing-khorikov.md), grounded in his [four pillars framework](four-pillars-of-good-tests.md):
 
 ### The Core Rule
 
@@ -167,22 +167,22 @@ The mock/stub distinction maps to the Command Query Separation principle:
 
 ## Related Pages
 
-- [[dependency-injection]]
-- [[test-doubles]]
-- [[tdd-smells]]
-- [[good-test-properties]]
-- [[solid-principles]]
-- [[london-school-tdd]]
-- [[outside-in-tdd]]
-- [[tell-dont-ask]]
-- [[tdd-by-example-kent-beck]]
-- [[dave-farley-302-course]]
-- [[growing-oo-software-freeman-pryce]]
-- [[xunit-test-patterns-meszaros]]
-- [[sut-and-doc]]
-- [[chicago-vs-london]]
-- [[four-pillars-of-good-tests]]
-- [[test-fragility]]
-- [[unit-testing-khorikov]]
-- [[vladimir-khorikov]]
-- [[gerard-meszaros]]
+- [Dependency Injection](dependency-injection.md)
+- [Test Doubles](test-doubles.md)
+- [TDD Smells](tdd-smells.md)
+- [Good Test Properties](good-test-properties.md)
+- [SOLID Principles](solid-principles.md)
+- [London School TDD](london-school-tdd.md)
+- [Outside-In TDD](outside-in-tdd.md)
+- [Tell, Don't Ask](tell-dont-ask.md)
+- [TDD by Example (Beck)](../sources/tdd-by-example-kent-beck.md)
+- [Dave Farley 302 Course](../sources/dave-farley-302-course.md)
+- [Growing OO Software (Freeman & Pryce)](../sources/growing-oo-software-freeman-pryce.md)
+- [xUnit Test Patterns (Meszaros)](../sources/xunit-test-patterns-meszaros.md)
+- [SUT and DOC](sut-and-doc.md)
+- [Chicago vs. London Schools](chicago-vs-london.md)
+- [Four Pillars of a Good Test](four-pillars-of-good-tests.md)
+- [Test Fragility](test-fragility.md)
+- [Unit Testing (Khorikov)](../sources/unit-testing-khorikov.md)
+- [Vladimir Khorikov](../entities/vladimir-khorikov.md)
+- [Gerard Meszaros](../entities/gerard-meszaros.md)

@@ -19,7 +19,7 @@ A fragile test fails not because a bug was introduced, but because the code was 
 
 ## The Single Cause: Coupling to Implementation Details
 
-[[vladimir-khorikov]]'s key insight: **the number of false positives a test produces is directly related to how tightly it couples to the SUT's implementation details.** There is exactly one cause of test fragility and exactly one remedy.
+[Vladimir Khorikov](../entities/vladimir-khorikov.md)'s key insight: **the number of false positives a test produces is directly related to how tightly it couples to the SUT's implementation details.** There is exactly one cause of test fragility and exactly one remedy.
 
 ### What Are Implementation Details?
 
@@ -63,7 +63,7 @@ Mocks are a major source of test fragility when misused:
 - **Mocking inter-system communications** (between your application and external systems) is legitimate because these interactions *are* observable behavior — external systems depend on the communication pattern.
 - **Asserting interactions with stubs** is always wrong. A stub provides input data; how the SUT queries that data is an implementation detail.
 
-Khorikov's rule: **only mock unmanaged dependencies** (SMTP servers, message buses) whose side effects are visible to the external world. See [[mocking]] for more.
+Khorikov's rule: **only mock unmanaged dependencies** (SMTP servers, message buses) whose side effects are visible to the external world. See [Mocking](mocking.md) for more.
 
 ## Connection to the Four Pillars
 
@@ -94,11 +94,11 @@ The [three testing styles](output-vs-state-vs-communication-testing.md) differ i
 
 ## Related Pages
 
-- [[four-pillars-of-good-tests]]
-- [[output-vs-state-vs-communication-testing]]
-- [[mocking]]
-- [[chicago-vs-london]]
-- [[good-test-properties]]
-- [[refactoring]]
-- [[unit-testing-khorikov]]
-- [[vladimir-khorikov]]
+- [Four Pillars of a Good Test](four-pillars-of-good-tests.md)
+- [Output vs State vs Communication Testing](output-vs-state-vs-communication-testing.md)
+- [Mocking](mocking.md)
+- [Chicago vs. London Schools](chicago-vs-london.md)
+- [Good Test Properties](good-test-properties.md)
+- [Refactoring](refactoring.md)
+- [Unit Testing (Khorikov)](../sources/unit-testing-khorikov.md)
+- [Vladimir Khorikov](../entities/vladimir-khorikov.md)

@@ -14,7 +14,7 @@ Integration testing verifies that separately developed components work correctly
 | Dimension | Unit Test | Integration Test |
 |-----------|-----------|-----------------|
 | **Scope** | Single class/function in isolation | Multiple components interacting |
-| **Dependencies** | Replaced with [[test-doubles]] | Real (or near-real) collaborators |
+| **Dependencies** | Replaced with [Test Doubles](test-doubles.md) | Real (or near-real) collaborators |
 | **Speed** | Milliseconds | Seconds to minutes |
 | **Failure diagnosis** | Points directly to the broken unit | Indicates a boundary problem |
 | **What it proves** | Logic correctness | Components connect correctly |
@@ -47,10 +47,10 @@ The pyramid suggests: write many fast unit tests, fewer integration tests, and a
 The relationship between integration testing and TDD is debated:
 
 ### Classical TDD (Chicago School)
-[[kent-beck]]'s approach focuses TDD at the unit level. Integration concerns are handled by separate integration tests that are not strictly part of the red-green-refactor loop. You TDD the logic, then verify integration separately.
+[Kent Beck](../entities/kent-beck.md)'s approach focuses TDD at the unit level. Integration concerns are handled by separate integration tests that are not strictly part of the red-green-refactor loop. You TDD the logic, then verify integration separately.
 
 ### London School / GOOS Approach
-[[outside-in-tdd]] starts with a failing end-to-end acceptance test (which is itself an integration test) and drives development inward. The [[walking-skeleton]] explicitly establishes integration testing infrastructure before any feature work.
+[Outside-In TDD](outside-in-tdd.md) starts with a failing end-to-end acceptance test (which is itself an integration test) and drives development inward. The [Walking Skeleton](walking-skeleton.md) explicitly establishes integration testing infrastructure before any feature work.
 
 ### Dave Farley's Position
 Integration tests should verify that services work at their natural boundaries. Stub out upstream/downstream dependencies. Use contract-based testing to share integration assumptions between teams.
@@ -59,7 +59,7 @@ Integration tests should verify that services work at their natural boundaries. 
 
 When multiple services integrate, each team writes tests encoding their assumptions about the other service's behavior. These contract tests are shared, so both teams know when an assumption is violated. This avoids the combinatorial explosion of testing every service pair end-to-end.
 
-## Integration Tests and [[bounded-context]]
+## Integration Tests and [Bounded Context](bounded-context.md)
 
 In DDD, bounded contexts define natural integration boundaries. Integration tests are most valuable at context boundaries — the anti-corruption layers, published languages, and shared kernels where misunderstandings between teams cause production failures.
 
@@ -85,7 +85,7 @@ The solution is the testing pyramid: push as much verification as possible into 
 
 ## Accelerate's Findings on Test Automation
 
-The DORA research ([[accelerate-forsgren-humble-kim]]) provides statistical evidence on the role of test automation -- including integration tests -- in driving delivery performance:
+The DORA research ([Accelerate](../sources/accelerate-forsgren-humble-kim.md)) provides statistical evidence on the role of test automation -- including integration tests -- in driving delivery performance:
 
 ### Test Automation as Key Capability
 Test automation is one of 24 capabilities that predict software delivery performance. The research found three critical properties of effective test suites:
@@ -97,11 +97,11 @@ Test automation is one of 24 capabilities that predict software delivery perform
 The research found that the ability to "do most of our testing without requiring an integrated environment" predicts high performance. This validates the testing pyramid: push as much verification as possible into fast unit tests, use integration tests specifically for boundary verification, and minimize dependence on expensive integrated test environments.
 
 ### Loosely Coupled Architecture Enables Testing
-In 2017, loosely coupled architecture was the biggest contributor to [[continuous-delivery]] -- even larger than test and deployment automation. Teams that can test independently of other teams achieve better results. This underscores the importance of [[test-doubles]], [[ports-and-adapters]], and [[dependency-injection]] to enable testing at boundaries without full integrated environments.
+In 2017, loosely coupled architecture was the biggest contributor to [Continuous Delivery](continuous-delivery.md) -- even larger than test and deployment automation. Teams that can test independently of other teams achieve better results. This underscores the importance of [Test Doubles](test-doubles.md), [Ports and Adapters](ports-and-adapters.md), and [Dependency Injection](dependency-injection.md) to enable testing at boundaries without full integrated environments.
 
 ## Khorikov's Definition and Guidelines
 
-[[vladimir-khorikov]] provides a precise definition and practical guidelines in [Unit Testing: Principles, Practices, and Patterns](../sources/unit-testing-khorikov.md):
+[Vladimir Khorikov](../entities/vladimir-khorikov.md) provides a precise definition and practical guidelines in [Unit Testing: Principles, Practices, and Patterns](../sources/unit-testing-khorikov.md):
 
 ### Definition
 
@@ -143,22 +143,22 @@ Some edge cases don't need integration tests if incorrect execution immediately 
 
 ## Related Pages
 
-- [[atdd]]
-- [[outside-in-tdd]]
-- [[walking-skeleton]]
-- [[test-doubles]]
-- [[bounded-context]]
-- [[domain-model-testing]]
-- [[ports-and-adapters]]
-- [[continuous-delivery]]
-- [[london-school-tdd]]
-- [[chicago-vs-london]]
-- [[four-pillars-of-good-tests]]
-- [[mocking]]
-- [[humble-object]]
-- [[unit-testing-khorikov]]
-- [[vladimir-khorikov]]
-- [[accelerate-forsgren-humble-kim]]
-- [[dora-metrics]]
-- [[test-automation-at-scale]]
-- [[continuous-integration]]
+- [ATDD](atdd.md)
+- [Outside-In TDD](outside-in-tdd.md)
+- [Walking Skeleton](walking-skeleton.md)
+- [Test Doubles](test-doubles.md)
+- [Bounded Context](bounded-context.md)
+- [Domain Model Testing](domain-model-testing.md)
+- [Ports and Adapters](ports-and-adapters.md)
+- [Continuous Delivery](continuous-delivery.md)
+- [London School TDD](london-school-tdd.md)
+- [Chicago vs. London Schools](chicago-vs-london.md)
+- [Four Pillars of a Good Test](four-pillars-of-good-tests.md)
+- [Mocking](mocking.md)
+- [Humble Object](humble-object.md)
+- [Unit Testing (Khorikov)](../sources/unit-testing-khorikov.md)
+- [Vladimir Khorikov](../entities/vladimir-khorikov.md)
+- [Accelerate](../sources/accelerate-forsgren-humble-kim.md)
+- [DORA Metrics](dora-metrics.md)
+- [Test Automation at Scale](test-automation-at-scale.md)
+- [Continuous Integration](continuous-integration.md)

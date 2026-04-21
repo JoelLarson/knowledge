@@ -119,9 +119,9 @@ The IBM follow-up observation is telling: when team members later "took shortcut
 
 ## Related Pages
 
-- [[tdd-empirical-evidence]] -- synthesis of what research says about TDD effectiveness
-- [[tdd-process-granularity]] -- Fucci et al.'s finding on cycle size vs. ordering
-- [[dissection-of-tdd-fucci-2017]] -- complementary study on process dimensions
-- [[why-tdd-research-inconclusive-ghafari-2020]] -- meta-analysis of study methodology issues
-- [[red-green-refactor]]
-- [[continuous-delivery]]
+- [TDD Empirical Evidence](../concepts/tdd-empirical-evidence.md) -- synthesis of what research says about TDD effectiveness
+- [TDD Process Granularity](../concepts/tdd-process-granularity.md) -- Fucci et al.'s finding on cycle size vs. ordering
+- [Dissection of TDD (Fucci 2017)](dissection-of-tdd-fucci-2017.md) -- complementary study on process dimensions
+- [Why TDD Research is Inconclusive (Ghafari 2020)](why-tdd-research-inconclusive-ghafari-2020.md) -- meta-analysis of study methodology issues
+- [Red-Green-Refactor](../concepts/red-green-refactor.md)
+- [Continuous Delivery](../concepts/continuous-delivery.md)

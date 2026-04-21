@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: [raw/Tidy First.md]
 ---
 
-Kent Beck's 2023 book on small structural improvements ("tidyings") that a programmer can make before, after, or instead of behavior changes. The first volume in a planned series on empirical software design, it connects the refactor step of [[red-green-refactor]] to economics (discounted cash flows, optionality) and to the foundational coupling/cohesion theory from Yourdon and Constantine's *Structured Design*.
+Kent Beck's 2023 book on small structural improvements ("tidyings") that a programmer can make before, after, or instead of behavior changes. The first volume in a planned series on empirical software design, it connects the refactor step of [Red-Green-Refactor](../concepts/red-green-refactor.md) to economics (discounted cash flows, optionality) and to the foundational coupling/cohesion theory from Yourdon and Constantine's *Structured Design*.
 
 ## Core Thesis
 
@@ -111,10 +111,10 @@ The tidyings catalog provides concrete moves for the refactor step that many pra
 
 ## Related Pages
 
-- [[kent-beck]]
-- [[refactoring]]
-- [[red-green-refactor]]
-- [[simple-design]]
-- [[coupling-and-cohesion]]
-- [[tidyings]]
-- [[refactoring-martin-fowler]]
+- [Kent Beck](../entities/kent-beck.md)
+- [Refactoring](../concepts/refactoring.md)
+- [Red-Green-Refactor](../concepts/red-green-refactor.md)
+- [Simple Design](../concepts/simple-design.md)
+- [Coupling and Cohesion](../concepts/coupling-and-cohesion.md)
+- [Tidyings](../concepts/tidyings.md)
+- [Refactoring (Fowler)](refactoring-martin-fowler.md)

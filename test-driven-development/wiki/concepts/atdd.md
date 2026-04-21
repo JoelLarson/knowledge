@@ -70,7 +70,7 @@ Tag tests: destructive, time-travel, hardware-specific. Farm common tests across
 
 Recommended strategy:
 1. Start a new feature by writing acceptance tests that capture user-visible examples
-2. Use [[bdd]]-flavored fine-grained TDD to evolve the code until acceptance tests pass
+2. Use [BDD](bdd.md)-flavored fine-grained TDD to evolve the code until acceptance tests pass
 3. Fine-grained tests provide fast feedback during development; acceptance tests provide functional correctness
 
 Neither alone is as good as both together.
@@ -109,24 +109,24 @@ Acceptance tests use terminology from the application's domain, not underlying t
 This separation clearly tracks progress and catches regressions independently.
 
 ### The Walking Skeleton Connection
-The [[walking-skeleton]] establishes the acceptance test infrastructure. Without it, you cannot write meaningful end-to-end acceptance tests. GOOS solves the "first-feature paradox" by building the thinnest end-to-end slice first.
+The [Walking Skeleton](walking-skeleton.md) establishes the acceptance test infrastructure. Without it, you cannot write meaningful end-to-end acceptance tests. GOOS solves the "first-feature paradox" by building the thinnest end-to-end slice first.
 
 ## Related Pages
 
-- [[bdd]]
-- [[test-first]]
-- [[red-green-refactor]]
-- [[legacy-code]]
-- [[approval-testing]]
-- [[ports-and-adapters]]
-- [[ubiquitous-language]]
-- [[continuous-delivery]]
-- [[dependency-injection]]
-- [[good-test-properties]]
-- [[outside-in-tdd]]
-- [[walking-skeleton]]
-- [[london-school-tdd]]
-- [[dave-farley]]
-- [[dave-farley-302-course]]
-- [[integration-testing]]
-- [[growing-oo-software-freeman-pryce]]
+- [BDD](bdd.md)
+- [Test First](test-first.md)
+- [Red-Green-Refactor](red-green-refactor.md)
+- [Legacy Code](legacy-code.md)
+- [Approval Testing](approval-testing.md)
+- [Ports and Adapters](ports-and-adapters.md)
+- [Ubiquitous Language](ubiquitous-language.md)
+- [Continuous Delivery](continuous-delivery.md)
+- [Dependency Injection](dependency-injection.md)
+- [Good Test Properties](good-test-properties.md)
+- [Outside-In TDD](outside-in-tdd.md)
+- [Walking Skeleton](walking-skeleton.md)
+- [London School TDD](london-school-tdd.md)
+- [Dave Farley](../entities/dave-farley.md)
+- [Dave Farley 302 Course](../sources/dave-farley-302-course.md)
+- [Integration Testing](integration-testing.md)
+- [Growing OO Software (Freeman & Pryce)](../sources/growing-oo-software-freeman-pryce.md)

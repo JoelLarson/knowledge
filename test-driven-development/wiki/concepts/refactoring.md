@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: [raw/refactoring-martin-fowler.md, raw/dave-farley-302-tdd-and-bdd-design-through-testing/, raw/Working.Effectively.with.Legacy.Code.md, raw/Tidy First.md]
 ---
 
-Refactoring is a behavior-preserving code change: improving the internal structure of code without changing its externally observable behavior. The third step of [[red-green-refactor]], and a critical standalone skill.
+Refactoring is a behavior-preserving code change: improving the internal structure of code without changing its externally observable behavior. The third step of [Red-Green-Refactor](red-green-refactor.md), and a critical standalone skill.
 
 ## Definition
 
@@ -22,7 +22,7 @@ Refactoring is about reshaping code to be:
 
 ## Refactoring in the TDD Cycle
 
-In [[red-green-refactor]], refactoring is the third and often most undervalued step. It operates on a stable codebase (tests passing), allowing you to:
+In [Red-Green-Refactor](red-green-refactor.md), refactoring is the third and often most undervalued step. It operates on a stable codebase (tests passing), allowing you to:
 - Fix the "dumb" shortcuts taken in Green
 - Eliminate duplication
 - Make code express its intent clearly
@@ -54,7 +54,7 @@ Name a complex expression; or inline a named variable that adds no clarity.
 Separate code that does two distinct things into two functions/phases.
 
 ### Replace Conditional with Polymorphism
-Replace type-check switch/if-else with polymorphic classes. Used extensively in the [[fowler-theatrical-players-kata]].
+Replace type-check switch/if-else with polymorphic classes. Used extensively in the [Theatrical Players Kata](../sources/fowler-theatrical-players-kata.md).
 
 ### Move Function / Move Field
 Move code to the class or module where it belongs conceptually.
@@ -70,7 +70,7 @@ Each refactoring step should be as small as possible. Large steps create ambigui
 
 ## Refactoring in Legacy Code
 
-Refactoring is doubly important when working with [[legacy-code]]. The strategy:
+Refactoring is doubly important when working with [Legacy Code](legacy-code.md). The strategy:
 1. Establish defensive tests (approval tests or acceptance tests)
 2. Use coverage tools to verify coverage of the area you'll touch
 3. Remove clutter (dead code, useless comments)
@@ -89,19 +89,19 @@ The Single Responsibility Principle guides refactoring: one method does one thin
 
 ## Refactoring in Legacy Code: The Feathers Approach
 
-[[michael-feathers]]' [Working Effectively with Legacy Code](../sources/working-effectively-legacy-code-feathers.md) provides a complementary perspective: refactoring code that has **no existing tests**.
+[Michael Feathers](../entities/michael-feathers.md)' [Working Effectively with Legacy Code](../sources/working-effectively-legacy-code-feathers.md) provides a complementary perspective: refactoring code that has **no existing tests**.
 
 ### The Core Tension
 
 In greenfield TDD, you refactor with confidence because tests already exist. In legacy code, you must first *create* the safety net. Feathers' approach:
 
-1. Use [[dependency-breaking-techniques]] to get code into a test harness (these are themselves refactorings, performed without tests but designed to minimize risk)
-2. Write [[characterization-tests]] to document current behavior
+1. Use [Dependency-Breaking Techniques](dependency-breaking-techniques.md) to get code into a test harness (these are themselves refactorings, performed without tests but designed to minimize risk)
+2. Write [Characterization Tests](characterization-tests.md) to document current behavior
 3. Only then refactor toward better design
 
 ### Dependency-Breaking as Refactoring
 
-The 24 [[dependency-breaking-techniques]] in Feathers' catalog are technically refactorings — they preserve behavior. But unlike Fowler's refactorings, they are designed to be performed **without tests**. They prioritize safety and conservatism over elegance:
+The 24 [Dependency-Breaking Techniques](dependency-breaking-techniques.md) in Feathers' catalog are technically refactorings — they preserve behavior. But unlike Fowler's refactorings, they are designed to be performed **without tests**. They prioritize safety and conservatism over elegance:
 
 > "They are like the incision points in surgery: There might be a scar left in your code after your work, but everything beneath it can get better."
 
@@ -121,7 +121,7 @@ In legacy refactoring, you cannot hold the same aesthetic standards as greenfiel
 
 ## Beck's Tidying Framework (Complement to Fowler's Catalog)
 
-[[kent-beck]]'s [Tidy First?](../sources/tidy-first-kent-beck.md) (2023) introduces [[tidyings]] — a deliberately small subset of refactorings designed for daily, personal-scale use. Where Fowler's catalog provides comprehensive refactoring *moves*, Beck's tidying catalog provides a decision framework for *when* and *how much* to refactor.
+[Kent Beck](../entities/kent-beck.md)'s [Tidy First?](../sources/tidy-first-kent-beck.md) (2023) introduces [Tidyings](tidyings.md) — a deliberately small subset of refactorings designed for daily, personal-scale use. Where Fowler's catalog provides comprehensive refactoring *moves*, Beck's tidying catalog provides a decision framework for *when* and *how much* to refactor.
 
 ### Tidyings as Gateway Refactorings
 
@@ -141,25 +141,25 @@ Beck insists on separate commits for structure changes (tidyings) and behavior c
 
 ### Economic Framing
 
-Where Fowler motivates refactoring through code quality and readability, Beck adds an economic argument: structure creates *options* (in the financial sense). Investing in structure is buying options on future behavior changes. The more volatile the environment, the more valuable these options become. See [[coupling-and-cohesion]] for Beck's Constantine's Equivalence: `cost(software) ~= coupling`.
+Where Fowler motivates refactoring through code quality and readability, Beck adds an economic argument: structure creates *options* (in the financial sense). Investing in structure is buying options on future behavior changes. The more volatile the environment, the more valuable these options become. See [Coupling and Cohesion](coupling-and-cohesion.md) for Beck's Constantine's Equivalence: `cost(software) ~= coupling`.
 
 ## Related Pages
 
-- [[red-green-refactor]]
-- [[legacy-code]]
-- [[legacy-code-change-algorithm]]
-- [[characterization-tests]]
-- [[dependency-breaking-techniques]]
-- [[seams]]
-- [[approval-testing]]
-- [[tdd-smells]]
-- [[fowler-theatrical-players-kata]]
-- [[refactoring-martin-fowler]]
-- [[art-of-clean-code-mayer]]
-- [[michael-feathers]]
-- [[working-effectively-legacy-code-feathers]]
-- [[simple-design]]
-- [[tidyings]]
-- [[tidy-first-kent-beck]]
-- [[coupling-and-cohesion]]
-- [[dave-farley-302-course]]
+- [Red-Green-Refactor](red-green-refactor.md)
+- [Legacy Code](legacy-code.md)
+- [Legacy Code Change Algorithm](legacy-code-change-algorithm.md)
+- [Characterization Tests](characterization-tests.md)
+- [Dependency-Breaking Techniques](dependency-breaking-techniques.md)
+- [Seams](seams.md)
+- [Approval Testing](approval-testing.md)
+- [TDD Smells](tdd-smells.md)
+- [Theatrical Players Kata](../sources/fowler-theatrical-players-kata.md)
+- [Refactoring (Fowler)](../sources/refactoring-martin-fowler.md)
+- [The Art of Clean Code](../sources/art-of-clean-code-mayer.md)
+- [Michael Feathers](../entities/michael-feathers.md)
+- [Working Effectively with Legacy Code (Feathers)](../sources/working-effectively-legacy-code-feathers.md)
+- [Simple Design](simple-design.md)
+- [Tidyings](tidyings.md)
+- [Tidy First? (Beck)](../sources/tidy-first-kent-beck.md)
+- [Coupling and Cohesion](coupling-and-cohesion.md)
+- [Dave Farley 302 Course](../sources/dave-farley-302-course.md)

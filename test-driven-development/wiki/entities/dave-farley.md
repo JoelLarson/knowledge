@@ -11,9 +11,9 @@ Dave Farley is co-author of _Continuous Delivery_, author of _Modern Software En
 
 ## Key Contributions
 
-- **Continuous Delivery** (with [[jez-humble]]) — the foundational CD book; deployment pipelines, trunk-based development. The practices advocated here were later validated with statistical evidence in [[accelerate-forsgren-humble-kim]].
+- **Continuous Delivery** (with [Jez Humble](jez-humble.md)) — the foundational CD book; deployment pipelines, trunk-based development. The practices advocated here were later validated with statistical evidence in [Accelerate](../sources/accelerate-forsgren-humble-kim.md).
 - **Modern Software Engineering** — framework for software as an empirical, feedback-driven design discipline
-- **CD Training courses** — including the [[dave-farley-302-course]] (302: TDD and BDD — Design Through Testing)
+- **CD Training courses** — including the [Dave Farley 302 Course](../sources/dave-farley-302-course.md) (302: TDD and BDD — Design Through Testing)
 - **BDD contribution** — part of the original group (with Dan North and Chris Matts) that developed BDD
 
 ## Central Arguments
@@ -32,18 +32,18 @@ TDD is a hygiene standard for professional software development, analogous to Se
 
 ## Sources in this Wiki
 
-- [[dave-farley-302-course]] — TDD and BDD course material
-- [[modern-software-engineering-dave-farley]] — engineering framework
+- [Dave Farley 302 Course](../sources/dave-farley-302-course.md) — TDD and BDD course material
+- [Modern Software Engineering (Farley)](../sources/modern-software-engineering-dave-farley.md) — engineering framework
 
 ## Related Pages
 
-- [[red-green-refactor]]
-- [[bdd]]
-- [[atdd]]
-- [[good-test-properties]]
-- [[tdd-smells]]
-- [[legacy-code]]
-- [[continuous-delivery]]
-- [[kent-beck]]
-- [[martin-fowler]]
-- [[dan-north]]
+- [Red-Green-Refactor](../concepts/red-green-refactor.md)
+- [BDD](../concepts/bdd.md)
+- [ATDD](../concepts/atdd.md)
+- [Good Test Properties](../concepts/good-test-properties.md)
+- [TDD Smells](../concepts/tdd-smells.md)
+- [Legacy Code](../concepts/legacy-code.md)
+- [Continuous Delivery](../concepts/continuous-delivery.md)
+- [Kent Beck](kent-beck.md)
+- [Martin Fowler](martin-fowler.md)
+- [Dan North](dan-north.md)

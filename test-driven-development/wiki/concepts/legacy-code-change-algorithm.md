@@ -7,14 +7,14 @@ updated: 2026-04-20
 sources: [raw/Working.Effectively.with.Legacy.Code.md]
 ---
 
-The five-step algorithm from [[michael-feathers]]' [Working Effectively with Legacy Code](../sources/working-effectively-legacy-code-feathers.md) for making safe, test-supported changes in legacy systems. The central process of the entire book.
+The five-step algorithm from [Michael Feathers](../entities/michael-feathers.md)' [Working Effectively with Legacy Code](../sources/working-effectively-legacy-code-feathers.md) for making safe, test-supported changes in legacy systems. The central process of the entire book.
 
 ## The Algorithm
 
 1. **Identify change points** — Where in the code do you need to make your change?
 2. **Find test points** — Where can you write tests to cover the change?
-3. **Break dependencies** — Remove obstacles that prevent testing (using [[dependency-breaking-techniques]])
-4. **Write tests** — Write [[characterization-tests]] that document current behavior
+3. **Break dependencies** — Remove obstacles that prevent testing (using [Dependency-Breaking Techniques](dependency-breaking-techniques.md))
+4. **Write tests** — Write [Characterization Tests](characterization-tests.md) that document current behavior
 5. **Make changes and refactor** — Implement the change, then improve the design
 
 ## Philosophy
@@ -46,15 +46,15 @@ The most technically challenging step. Dependencies manifest as:
 - Difficulty instantiating objects in test harnesses
 - Difficulty running methods in test harnesses
 
-Use [[dependency-breaking-techniques]] from the catalog. The key insight: these refactorings are designed to be done **without tests**, in the service of putting tests in place. They must be performed conservatively.
+Use [Dependency-Breaking Techniques](dependency-breaking-techniques.md) from the catalog. The key insight: these refactorings are designed to be done **without tests**, in the service of putting tests in place. They must be performed conservatively.
 
 > "When you break dependencies in legacy code, you often have to suspend your sense of aesthetics a bit. Some dependencies break cleanly; others end up looking less than ideal from a design point of view. They are like the incision points in surgery."
 
 ### 4. Write Tests
 
-Write [[characterization-tests]] — tests that document what the code actually does. Not what it should do. These serve as a safety net for step 5.
+Write [Characterization Tests](characterization-tests.md) — tests that document what the code actually does. Not what it should do. These serve as a safety net for step 5.
 
-Use [[seams]] to substitute dependencies and enable testing without the full runtime environment.
+Use [Seams](seams.md) to substitute dependencies and enable testing without the full runtime environment.
 
 ### 5. Make Changes and Refactor
 
@@ -69,7 +69,7 @@ This circular dependency is why step 3 (break dependencies) exists — you make 
 ## Tactics for Time Pressure
 
 When you can't afford the full algorithm, use safe additive techniques:
-- [[sprout-method]] — write new code in a tested method, call it from old code
+- [Sprout Method](sprout-method.md) — write new code in a tested method, call it from old code
 - Sprout Class — write new code in a tested class
 - Wrap Method — rename old method, create new method that calls old + new
 - Wrap Class — decorator pattern around existing class
@@ -78,11 +78,11 @@ These add tested code without modifying untested code.
 
 ## Related Pages
 
-- [[legacy-code]]
-- [[seams]]
-- [[characterization-tests]]
-- [[dependency-breaking-techniques]]
-- [[sprout-method]]
-- [[refactoring]]
-- [[michael-feathers]]
-- [[working-effectively-legacy-code-feathers]]
+- [Legacy Code](legacy-code.md)
+- [Seams](seams.md)
+- [Characterization Tests](characterization-tests.md)
+- [Dependency-Breaking Techniques](dependency-breaking-techniques.md)
+- [Sprout Method](sprout-method.md)
+- [Refactoring](refactoring.md)
+- [Michael Feathers](../entities/michael-feathers.md)
+- [Working Effectively with Legacy Code (Feathers)](../sources/working-effectively-legacy-code-feathers.md)

@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: [raw/Domain-Driven Design_ Tackling Complexity in the Heart of Software.md]
 ---
 
-The foundational DDD text by [[eric-evans]]. Introduces ubiquitous language, bounded contexts, aggregates, value objects, and refactoring toward deeper insight. Relevant to TDD because it defines the natural boundaries and vocabulary for tests.
+The foundational DDD text by [Eric Evans](../entities/eric-evans.md). Introduces ubiquitous language, bounded contexts, aggregates, value objects, and refactoring toward deeper insight. Relevant to TDD because it defines the natural boundaries and vocabulary for tests.
 
 ## Bibliographic Info
 
@@ -28,7 +28,7 @@ The team (developers + domain experts) must share a single vocabulary used in co
 
 > "Use the model as the backbone of a language. Commit the team to exercising that language relentlessly in all communication within the team and in the code."
 
-See [[ubiquitous-language]].
+See [Ubiquitous Language](../concepts/ubiquitous-language.md).
 
 ### Model-Driven Design
 
@@ -57,7 +57,7 @@ Rules:
 
 ### Bounded Contexts
 
-A [[bounded-context]] defines where a model is consistent. Different contexts can have different models for the same concept. This determines test scope: mock at context boundaries, integrate within them.
+A [Bounded Context](../concepts/bounded-context.md) defines where a model is consistent. Different contexts can have different models for the same concept. This determines test scope: mock at context boundaries, integrate within them.
 
 ### Refactoring Toward Deeper Insight
 
@@ -67,15 +67,15 @@ Evans elevates refactoring beyond mechanical code improvement to model improveme
 3. Code refactoring (supported by tests)
 4. Deeper model emerges
 
-This is the DDD analog of [[red-green-refactor]] — tests enable the courage to reshape the model as understanding deepens.
+This is the DDD analog of [Red-Green-Refactor](../concepts/red-green-refactor.md) — tests enable the courage to reshape the model as understanding deepens.
 
 ### Anti-Corruption Layer
 
-When integrating with external systems, an anti-corruption layer translates between models. This concept maps directly to test architecture: use [[test-doubles]] at anti-corruption layer boundaries to isolate your domain model tests from external systems.
+When integrating with external systems, an anti-corruption layer translates between models. This concept maps directly to test architecture: use [Test Doubles](../concepts/test-doubles.md) at anti-corruption layer boundaries to isolate your domain model tests from external systems.
 
 ### Repositories
 
-Repositories provide the illusion of an in-memory collection of aggregates. Evans explicitly recommends "easy substitution of a dummy implementation, for use in testing (typically using an in-memory collection)." This is the [[ports-and-adapters]] pattern applied to persistence.
+Repositories provide the illusion of an in-memory collection of aggregates. Evans explicitly recommends "easy substitution of a dummy implementation, for use in testing (typically using an in-memory collection)." This is the [Ports and Adapters](../concepts/ports-and-adapters.md) pattern applied to persistence.
 
 ## Structure
 
@@ -95,14 +95,14 @@ Evans explicitly endorses iterative, test-first development. The book assumes Ag
 
 ## Related Pages
 
-- [[eric-evans]]
-- [[implementing-ddd-vernon]]
-- [[ubiquitous-language]]
-- [[bounded-context]]
-- [[aggregates]]
-- [[value-objects]]
-- [[domain-events]]
-- [[domain-model-testing]]
-- [[ports-and-adapters]]
-- [[refactoring]]
-- [[test-doubles]]
+- [Eric Evans](../entities/eric-evans.md)
+- [Implementing DDD (Vernon)](implementing-ddd-vernon.md)
+- [Ubiquitous Language](../concepts/ubiquitous-language.md)
+- [Bounded Context](../concepts/bounded-context.md)
+- [Aggregates](../concepts/aggregates.md)
+- [Value Objects](../concepts/value-objects.md)
+- [Domain Events](../concepts/domain-events.md)
+- [Domain Model Testing](../concepts/domain-model-testing.md)
+- [Ports and Adapters](../concepts/ports-and-adapters.md)
+- [Refactoring](../concepts/refactoring.md)
+- [Test Doubles](../concepts/test-doubles.md)

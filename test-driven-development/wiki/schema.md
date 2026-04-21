@@ -43,7 +43,8 @@ sources: [raw/filename.md]
 
 ## Cross-references
 
-- Use wikilinks (`[[page-name]]`) for internal cross-references between wiki pages.
+- Use standard markdown links for internal cross-references: `[Display Text](relative-path/page-name.md)`.
+- Use relative paths from the current file's directory (e.g., `../concepts/foo.md` from an entity page to a concept page, or `bar.md` between pages in the same directory).
 - Start every page with a 1-2 sentence summary before deeper content.
 - Cite ingested sources as `[source title](../sources/name.md)`.
 

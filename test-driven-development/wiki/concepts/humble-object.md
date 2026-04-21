@@ -23,7 +23,7 @@ Developers faced with this give up on testing, resulting in Production Bugs from
 
 Split the hard-to-test component into two parts:
 1. **Humble Object** — a thin adapter that delegates to the testable component. Contains no logic worth testing. So simple that bugs are unlikely.
-2. **Testable Component** — all the extracted logic, accessible via synchronous method calls. Easy to test with standard [[four-phase-test]] structure.
+2. **Testable Component** — all the extracted logic, accessible via synchronous method calls. Easy to test with standard [Four-Phase Test](four-phase-test.md) structure.
 
 ```
 Framework → Humble Object → Testable Component ← Test
@@ -79,18 +79,18 @@ Apply Humble Object when:
 - You have nontrivial logic in a component that is hard to instantiate
 - The component depends on a framework that's expensive to simulate
 - Code runs asynchronously and tests would need delays/coordination
-- You cannot inject [[test-doubles]] into the component's dependencies
+- You cannot inject [Test Doubles](test-doubles.md) into the component's dependencies
 
 ## Relationship to Other Patterns
 
-- **[[dependency-injection]]** — Humble Object is what you use when DI alone isn't enough (the environment itself is the problem)
-- **[[ports-and-adapters]]** — Humble Object is the adapter in hexagonal architecture
+- **[Dependency Injection](dependency-injection.md)** — Humble Object is what you use when DI alone isn't enough (the environment itself is the problem)
+- **[Ports and Adapters](ports-and-adapters.md)** — Humble Object is the adapter in hexagonal architecture
 - **MVC/MVP/MVVM** — The View is a Humble Object; the Controller/Presenter/ViewModel is the testable component
 - **[Hard-to-Test Code](test-smells-catalog.md)** — Humble Object is the primary cure
 
 ## Khorikov: Humble Object as the Unifying Testability Principle
 
-[[vladimir-khorikov]] generalizes the Humble Object pattern far beyond Meszaros's original scope in [Unit Testing: Principles, Practices, and Patterns](../sources/unit-testing-khorikov.md). He identifies it as the **unifying principle** behind multiple well-known architectural patterns:
+[Vladimir Khorikov](../entities/vladimir-khorikov.md) generalizes the Humble Object pattern far beyond Meszaros's original scope in [Unit Testing: Principles, Practices, and Patterns](../sources/unit-testing-khorikov.md). He identifies it as the **unifying principle** behind multiple well-known architectural patterns:
 
 ### Code Depth vs Code Width
 
@@ -124,14 +124,14 @@ The practical application: use Humble Object to refactor overcomplicated code so
 
 ## Related Pages
 
-- [[test-smells-catalog]]
-- [[four-phase-test]]
-- [[dependency-injection]]
-- [[ports-and-adapters]]
-- [[sut-and-doc]]
-- [[xunit-test-patterns-meszaros]]
-- [[gerard-meszaros]]
-- [[four-pillars-of-good-tests]]
-- [[output-vs-state-vs-communication-testing]]
-- [[unit-testing-khorikov]]
-- [[vladimir-khorikov]]
+- [Test Smells Catalog](test-smells-catalog.md)
+- [Four-Phase Test](four-phase-test.md)
+- [Dependency Injection](dependency-injection.md)
+- [Ports and Adapters](ports-and-adapters.md)
+- [SUT and DOC](sut-and-doc.md)
+- [xUnit Test Patterns (Meszaros)](../sources/xunit-test-patterns-meszaros.md)
+- [Gerard Meszaros](../entities/gerard-meszaros.md)
+- [Four Pillars of a Good Test](four-pillars-of-good-tests.md)
+- [Output vs State vs Communication Testing](output-vs-state-vs-communication-testing.md)
+- [Unit Testing (Khorikov)](../sources/unit-testing-khorikov.md)
+- [Vladimir Khorikov](../entities/vladimir-khorikov.md)

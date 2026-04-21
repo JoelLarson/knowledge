@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: [raw/tdd-by-example-kent-beck-v2.md, raw/dave-farley-302-tdd-and-bdd-design-through-testing/, "raw/Growing Object-Oriented Software, Guided by Tests - Steve Freeman, Nat Pryce.md", raw/xUnit Test Patterns_ Refactoring Test Code - by Gerard Meszaros - 2007.md, raw/Working.Effectively.with.Legacy.Code.md]
 ---
 
-Test doubles are objects that stand in for real dependencies during testing. The umbrella term was formally defined by [[gerard-meszaros]] in [xUnit Test Patterns](../sources/xunit-test-patterns-meszaros.md) (2007), which established the canonical taxonomy: Dummy, Stub, Fake, Mock, and Spy. Before Meszaros, "mock" was used loosely for all kinds of test substitutes.
+Test doubles are objects that stand in for real dependencies during testing. The umbrella term was formally defined by [Gerard Meszaros](../entities/gerard-meszaros.md) in [xUnit Test Patterns](../sources/xunit-test-patterns-meszaros.md) (2007), which established the canonical taxonomy: Dummy, Stub, Fake, Mock, and Spy. Before Meszaros, "mock" was used loosely for all kinds of test substitutes.
 
 ## Taxonomy
 
@@ -31,7 +31,7 @@ Use when the code under test needs a dependency to return specific values. Examp
 Use when the real dependency is too slow or external but you need realistic behavior. Example: an in-memory database instead of PostgreSQL for integration tests.
 
 ### Mock
-Use when you need to verify that the code under test *interacted* with a dependency correctly. Example: verifying that a calculator called `display.show("1 + 2 = 3")`. See [[mocking]].
+Use when you need to verify that the code under test *interacted* with a dependency correctly. Example: verifying that a calculator called `display.show("1 + 2 = 3")`. See [Mocking](mocking.md).
 
 ### Spy
 Use when you want real behavior but also need to observe interactions. Less common than mocks.
@@ -43,7 +43,7 @@ The need for test doubles is a design signal:
 - **Complex mock setup** → tight coupling ([Excessive Setup](tdd-smells.md))
 - **Mocking the thing you're testing** → confused test design ([The Mockery](tdd-smells.md))
 
-Test doubles work through [[dependency-injection]] — the dependency is injected as an interface, and the double implements that interface.
+Test doubles work through [Dependency Injection](dependency-injection.md) — the dependency is injected as an interface, and the double implements that interface.
 
 ## Beck's Patterns
 
@@ -97,7 +97,7 @@ The key distinction: in GOOS, test doubles are not primarily about isolation fro
 
 ## Sensing and Separation (Feathers)
 
-[[michael-feathers]] identifies **two distinct purposes** for test doubles in legacy code work, which he calls _sensing_ and _separation_:
+[Michael Feathers](../entities/michael-feathers.md) identifies **two distinct purposes** for test doubles in legacy code work, which he calls _sensing_ and _separation_:
 
 ### Sensing
 
@@ -127,21 +127,21 @@ For cases where you can't easily introduce a fake: add a temporary variable to t
 
 ## Related Pages
 
-- [[mocking]]
-- [[dependency-injection]]
-- [[tdd-smells]]
-- [[solid-principles]]
-- [[london-school-tdd]]
-- [[tell-dont-ask]]
-- [[seams]]
-- [[dependency-breaking-techniques]]
-- [[legacy-code]]
-- [[michael-feathers]]
-- [[working-effectively-legacy-code-feathers]]
-- [[tdd-by-example-kent-beck]]
-- [[dave-farley-302-course]]
-- [[growing-oo-software-freeman-pryce]]
-- [[xunit-test-patterns-meszaros]]
-- [[sut-and-doc]]
-- [[chicago-vs-london]]
-- [[gerard-meszaros]]
+- [Mocking](mocking.md)
+- [Dependency Injection](dependency-injection.md)
+- [TDD Smells](tdd-smells.md)
+- [SOLID Principles](solid-principles.md)
+- [London School TDD](london-school-tdd.md)
+- [Tell, Don't Ask](tell-dont-ask.md)
+- [Seams](seams.md)
+- [Dependency-Breaking Techniques](dependency-breaking-techniques.md)
+- [Legacy Code](legacy-code.md)
+- [Michael Feathers](../entities/michael-feathers.md)
+- [Working Effectively with Legacy Code (Feathers)](../sources/working-effectively-legacy-code-feathers.md)
+- [TDD by Example (Beck)](../sources/tdd-by-example-kent-beck.md)
+- [Dave Farley 302 Course](../sources/dave-farley-302-course.md)
+- [Growing OO Software (Freeman & Pryce)](../sources/growing-oo-software-freeman-pryce.md)
+- [xUnit Test Patterns (Meszaros)](../sources/xunit-test-patterns-meszaros.md)
+- [SUT and DOC](sut-and-doc.md)
+- [Chicago vs. London Schools](chicago-vs-london.md)
+- [Gerard Meszaros](../entities/gerard-meszaros.md)

@@ -11,7 +11,7 @@ Domain Events are first-class model elements representing something significant 
 
 ## Core Concept
 
-A domain event captures a state change that domain experts care about. It is named as a past-tense verb phrase in the [[ubiquitous-language]]:
+A domain event captures a state change that domain experts care about. It is named as a past-tense verb phrase in the [Ubiquitous Language](ubiquitous-language.md):
 - `TenantProvisioned`
 - `OrderPlaced`
 - `BacklogItemCommitted`
@@ -31,7 +31,7 @@ backlogItem.commitToSprint(sprint)
 assertPublished(BacklogItemCommitted(backlogItemId, sprintId))
 ```
 
-This tests behavior (what happened) rather than state (what it looks like inside), aligning with [[bdd]] principles.
+This tests behavior (what happened) rather than state (what it looks like inside), aligning with [BDD](bdd.md) principles.
 
 ### Decoupled Integration Testing
 
@@ -56,7 +56,7 @@ When using Event Sourcing (persisting events instead of current state):
 - **When** a command is executed
 - **Then** new events are produced
 
-This maps perfectly to Given/When/Then ([[bdd]]) and makes tests highly readable.
+This maps perfectly to Given/When/Then ([BDD](bdd.md)) and makes tests highly readable.
 
 ## Domain Events in Architecture (Vernon)
 
@@ -98,16 +98,16 @@ Domain events provide natural assertion points that are:
 - Readable (named in domain language)
 - Composable (test complex workflows step-by-step)
 
-They bridge [[aggregates]] (which publish events) and [[bounded-context]] integration (which consumes events), providing testable contracts at every boundary.
+They bridge [Aggregates](aggregates.md) (which publish events) and [Bounded Context](bounded-context.md) integration (which consumes events), providing testable contracts at every boundary.
 
 ## Related Pages
 
-- [[aggregates]]
-- [[bounded-context]]
-- [[domain-model-testing]]
-- [[value-objects]]
-- [[ubiquitous-language]]
-- [[bdd]]
-- [[ports-and-adapters]]
-- [[implementing-ddd-vernon]]
-- [[domain-driven-design-evans]]
+- [Aggregates](aggregates.md)
+- [Bounded Context](bounded-context.md)
+- [Domain Model Testing](domain-model-testing.md)
+- [Value Objects](value-objects.md)
+- [Ubiquitous Language](ubiquitous-language.md)
+- [BDD](bdd.md)
+- [Ports and Adapters](ports-and-adapters.md)
+- [Implementing DDD (Vernon)](../sources/implementing-ddd-vernon.md)
+- [Domain-Driven Design (Evans)](../sources/domain-driven-design-evans.md)

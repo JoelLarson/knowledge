@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: [raw/modern-software-engineering-dave-farley.md, raw/dave-farley-302-tdd-and-bdd-design-through-testing/, "raw/Accelerate The Science of Lean Software and DevOps Building and Scaling High Performing Technology Organizations by Nicole Forsgren Jez Humble Gene Kim.md"]
 ---
 
-Continuous Delivery is the practice of keeping software always in a releasable state through automated pipelines. Co-authored by [[dave-farley]] and [[jez-humble]]. TDD is a foundational practice enabling CD. The DORA research ([[accelerate-forsgren-humble-kim]]) provides statistical evidence that CD predicts delivery performance, organizational performance, and generative culture.
+Continuous Delivery is the practice of keeping software always in a releasable state through automated pipelines. Co-authored by [Dave Farley](../entities/dave-farley.md) and [Jez Humble](../entities/jez-humble.md). TDD is a foundational practice enabling CD. The DORA research ([Accelerate](../sources/accelerate-forsgren-humble-kim.md)) provides statistical evidence that CD predicts delivery performance, organizational performance, and generative culture.
 
 ## Core Idea
 
@@ -19,7 +19,7 @@ The key constraint: if the pipeline is red, the team's top priority is fixing it
 
 TDD is a prerequisite for effective CD:
 
-1. **Fast feedback** — [[red-green-refactor]] gives developers immediate local feedback. CI gives team-level feedback within minutes.
+1. **Fast feedback** — [Red-Green-Refactor](red-green-refactor.md) gives developers immediate local feedback. CI gives team-level feedback within minutes.
 2. **Test confidence** — CD requires automated tests that actually verify correctness. TDD produces these as a side effect.
 3. **Small commits** — TDD's small steps produce small, focused commits ideal for CI pipelines.
 4. **Commit on green** — Farley's advice to commit at the end of each RGR cycle aligns perfectly with trunk-based development.
@@ -50,11 +50,11 @@ A deployment pipeline without good tests is a "testing theater" — it provides 
 
 ## Accelerate's Statistical Evidence
 
-The DORA research program (2014-2017, published in [[accelerate-forsgren-humble-kim]]) measured CD as both a set of component capabilities and as a first-order construct. The findings provide rigorous statistical evidence for what practitioners had long observed:
+The DORA research program (2014-2017, published in [Accelerate](../sources/accelerate-forsgren-humble-kim.md)) measured CD as both a set of component capabilities and as a first-order construct. The findings provide rigorous statistical evidence for what practitioners had long observed:
 
 ### CD Drives Performance
 Teams practicing CD achieve:
-- Higher software delivery performance across all [[dora-metrics]] (lead time, deployment frequency, MTTR)
+- Higher software delivery performance across all [DORA Metrics](dora-metrics.md) (lead time, deployment frequency, MTTR)
 - Lower change failure rates
 - A generative, performance-oriented Westrum culture
 
@@ -70,7 +70,7 @@ The research found that CD practices reduce:
 Accelerate identifies eight capabilities that drive CD:
 1. Version control (including system and application config)
 2. Deployment automation
-3. [[continuous-integration]] (trunk-based development, short-lived branches)
+3. [Continuous Integration](continuous-integration.md) (trunk-based development, short-lived branches)
 4. Trunk-based development (branches < 1 day)
 5. [Test automation](test-automation-at-scale.md) (reliable, developer-owned)
 6. Test data management
@@ -85,15 +85,15 @@ External change approval boards (CABs) are negatively correlated with delivery p
 
 ## Related Pages
 
-- [[dave-farley]]
-- [[jez-humble]]
-- [[atdd]]
-- [[red-green-refactor]]
-- [[test-first]]
-- [[extreme-programming]]
-- [[modern-software-engineering-dave-farley]]
-- [[dave-farley-302-course]]
-- [[accelerate-forsgren-humble-kim]]
-- [[dora-metrics]]
-- [[continuous-integration]]
-- [[test-automation-at-scale]]
+- [Dave Farley](../entities/dave-farley.md)
+- [Jez Humble](../entities/jez-humble.md)
+- [ATDD](atdd.md)
+- [Red-Green-Refactor](red-green-refactor.md)
+- [Test First](test-first.md)
+- [Extreme Programming](extreme-programming.md)
+- [Modern Software Engineering (Farley)](../sources/modern-software-engineering-dave-farley.md)
+- [Dave Farley 302 Course](../sources/dave-farley-302-course.md)
+- [Accelerate](../sources/accelerate-forsgren-humble-kim.md)
+- [DORA Metrics](dora-metrics.md)
+- [Continuous Integration](continuous-integration.md)
+- [Test Automation at Scale](test-automation-at-scale.md)

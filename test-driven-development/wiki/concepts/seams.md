@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: [raw/Working.Effectively.with.Legacy.Code.md]
 ---
 
-A seam is a place where you can alter behavior in your program without editing in that place. The key concept from [[michael-feathers]]' [Working Effectively with Legacy Code](../sources/working-effectively-legacy-code-feathers.md) for getting untestable code under test.
+A seam is a place where you can alter behavior in your program without editing in that place. The key concept from [Michael Feathers](../entities/michael-feathers.md)' [Working Effectively with Legacy Code](../sources/working-effectively-legacy-code-feathers.md) for getting untestable code under test.
 
 ## Definition
 
@@ -78,7 +78,7 @@ Available in C and C++ where a macro preprocessor runs before compilation. You c
 Object seams are the best default choice in OO languages because they are:
 - **Explicit** — visible in the source code
 - **Maintainable** — tests that use them are easy to understand
-- **Composable** — work naturally with [[dependency-injection]] and [[test-doubles]]
+- **Composable** — work naturally with [Dependency Injection](dependency-injection.md) and [Test Doubles](test-doubles.md)
 
 Preprocessing and link seams should be reserved for cases where dependencies are pervasive and no object seam is available.
 
@@ -92,22 +92,22 @@ Not every method call is an object seam. A call is an object seam only if you ca
 
 ## Connection to Other Concepts
 
-Seams are the mechanism underlying many [[dependency-breaking-techniques]]:
+Seams are the mechanism underlying many [Dependency-Breaking Techniques](dependency-breaking-techniques.md):
 - **Extract Interface** creates object seams
 - **Subclass and Override Method** exploits object seams
 - **Parameterize Constructor** creates enabling points for object seams
 - **Link Substitution** exploits link seams
 - **Definition Completion** exploits link seams in C++
 
-Seams also connect to [[dependency-injection]] — constructor injection is essentially the formalization of creating enabling points for object seams.
+Seams also connect to [Dependency Injection](dependency-injection.md) — constructor injection is essentially the formalization of creating enabling points for object seams.
 
 ## Related Pages
 
-- [[legacy-code]]
-- [[legacy-code-change-algorithm]]
-- [[dependency-breaking-techniques]]
-- [[characterization-tests]]
-- [[test-doubles]]
-- [[dependency-injection]]
-- [[michael-feathers]]
-- [[working-effectively-legacy-code-feathers]]
+- [Legacy Code](legacy-code.md)
+- [Legacy Code Change Algorithm](legacy-code-change-algorithm.md)
+- [Dependency-Breaking Techniques](dependency-breaking-techniques.md)
+- [Characterization Tests](characterization-tests.md)
+- [Test Doubles](test-doubles.md)
+- [Dependency Injection](dependency-injection.md)
+- [Michael Feathers](../entities/michael-feathers.md)
+- [Working Effectively with Legacy Code (Feathers)](../sources/working-effectively-legacy-code-feathers.md)

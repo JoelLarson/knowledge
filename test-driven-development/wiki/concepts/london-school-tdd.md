@@ -31,7 +31,7 @@ Mocks are not merely for isolating slow dependencies. They are a technique for *
 Following Alan Kay's vision of OO as "messaging," the London school tests what messages objects send to each other. This drives designs where objects have clear responsibilities expressed through narrow interfaces.
 
 ### 3. Outside-In Development
-Start with a failing end-to-end acceptance test, then drive implementation inward layer by layer, using mocks to stand in for undiscovered collaborators. See [[outside-in-tdd]].
+Start with a failing end-to-end acceptance test, then drive implementation inward layer by layer, using mocks to stand in for undiscovered collaborators. See [Outside-In TDD](outside-in-tdd.md).
 
 ### 4. Interface Discovery
 When implementing an object, you discover it needs a service. You create an interface, mock it in your test, and later provide a real implementation. The test drives the interface into existence from the client's perspective.
@@ -43,8 +43,8 @@ Don't mock third-party APIs directly. Write adapter layers that translate betwee
 
 The London school emerged from the London Extreme Tuesday Club (XTC) in the late 1990s-early 2000s. Key figures:
 - **Tim Mackinnon** — originated the "No Getters" rule and the concept of mock objects at Connextra (1999)
-- **[[steve-freeman]]** — recognized the paper-worthy nature of the technique; co-wrote the XP2000 paper
-- **[[nat-pryce]]** — brought protocol-focused thinking from his PhD work; built DynaMock/jMock
+- **[Steve Freeman](../entities/steve-freeman.md)** — recognized the paper-worthy nature of the technique; co-wrote the XP2000 paper
+- **[Nat Pryce](../entities/nat-pryce.md)** — brought protocol-focused thinking from his PhD work; built DynaMock/jMock
 - **Joe Walnes** — coined "Only mock types you own"; saw mocks as interface design drivers
 
 ## When to Use London Style
@@ -52,7 +52,7 @@ The London school emerged from the London Extreme Tuesday Club (XTC) in the late
 - Object-oriented systems with clear communication patterns
 - Event-driven or message-passing architectures
 - When you want to design interfaces from the consumer's perspective
-- When you want to enforce [[tell-dont-ask]] and information hiding
+- When you want to enforce [Tell, Don't Ask](tell-dont-ask.md) and information hiding
 
 ## Criticisms and Tradeoffs
 
@@ -63,17 +63,17 @@ The London school emerged from the London Extreme Tuesday Club (XTC) in the late
 
 ## Related Pages
 
-- [[outside-in-tdd]]
-- [[walking-skeleton]]
-- [[tell-dont-ask]]
-- [[mocking]]
-- [[test-doubles]]
-- [[dependency-injection]]
-- [[ports-and-adapters]]
-- [[tdd-vs-unit-testing]]
-- [[red-green-refactor]]
-- [[steve-freeman]]
-- [[nat-pryce]]
-- [[kent-beck]]
-- [[chicago-vs-london]]
-- [[growing-oo-software-freeman-pryce]]
+- [Outside-In TDD](outside-in-tdd.md)
+- [Walking Skeleton](walking-skeleton.md)
+- [Tell, Don't Ask](tell-dont-ask.md)
+- [Mocking](mocking.md)
+- [Test Doubles](test-doubles.md)
+- [Dependency Injection](dependency-injection.md)
+- [Ports and Adapters](ports-and-adapters.md)
+- [TDD vs. Unit Testing](tdd-vs-unit-testing.md)
+- [Red-Green-Refactor](red-green-refactor.md)
+- [Steve Freeman](../entities/steve-freeman.md)
+- [Nat Pryce](../entities/nat-pryce.md)
+- [Kent Beck](../entities/kent-beck.md)
+- [Chicago vs. London Schools](chicago-vs-london.md)
+- [Growing OO Software (Freeman & Pryce)](../sources/growing-oo-software-freeman-pryce.md)

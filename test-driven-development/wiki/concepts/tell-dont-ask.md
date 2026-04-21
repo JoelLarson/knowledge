@@ -66,11 +66,11 @@ Tell, Don't Ask is closely related to the Law of Demeter ("only talk to your imm
 
 ## Related Pages
 
-- [[london-school-tdd]]
-- [[mocking]]
-- [[dependency-injection]]
-- [[solid-principles]]
-- [[outside-in-tdd]]
-- [[ports-and-adapters]]
-- [[chicago-vs-london]]
-- [[growing-oo-software-freeman-pryce]]
+- [London School TDD](london-school-tdd.md)
+- [Mocking](mocking.md)
+- [Dependency Injection](dependency-injection.md)
+- [SOLID Principles](solid-principles.md)
+- [Outside-In TDD](outside-in-tdd.md)
+- [Ports and Adapters](ports-and-adapters.md)
+- [Chicago vs. London Schools](chicago-vs-london.md)
+- [Growing OO Software (Freeman & Pryce)](../sources/growing-oo-software-freeman-pryce.md)

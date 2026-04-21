@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: [raw/Working.Effectively.with.Legacy.Code.md]
 ---
 
-A characterization test is a test that characterizes the actual behavior of a piece of code — not what code *should* do, but what it *does*. Used to create a safety net before refactoring [[legacy-code]].
+A characterization test is a test that characterizes the actual behavior of a piece of code — not what code *should* do, but what it *does*. Used to create a safety net before refactoring [Legacy Code](legacy-code.md).
 
 ## Core Idea
 
@@ -39,7 +39,7 @@ void testGenerator() {
 
 ## When to Write Characterization Tests
 
-Characterization tests are the **fourth step** of the [[legacy-code-change-algorithm]]:
+Characterization tests are the **fourth step** of the [Legacy Code Change Algorithm](legacy-code-change-algorithm.md):
 1. Identify change points
 2. Find test points
 3. Break dependencies
@@ -95,11 +95,11 @@ Characterization tests are **not** TDD — they document existing behavior rathe
 
 ## Related Pages
 
-- [[legacy-code]]
-- [[legacy-code-change-algorithm]]
-- [[approval-testing]]
-- [[seams]]
-- [[dependency-breaking-techniques]]
-- [[refactoring]]
-- [[michael-feathers]]
-- [[working-effectively-legacy-code-feathers]]
+- [Legacy Code](legacy-code.md)
+- [Legacy Code Change Algorithm](legacy-code-change-algorithm.md)
+- [Approval Testing](approval-testing.md)
+- [Seams](seams.md)
+- [Dependency-Breaking Techniques](dependency-breaking-techniques.md)
+- [Refactoring](refactoring.md)
+- [Michael Feathers](../entities/michael-feathers.md)
+- [Working Effectively with Legacy Code (Feathers)](../sources/working-effectively-legacy-code-feathers.md)

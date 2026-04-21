@@ -16,7 +16,7 @@ Domain model testing is the practice of testing a rich domain model through its 
 The [aggregate root](aggregates.md) is the only public entry point. Tests should:
 - Create aggregates through factories or constructors
 - Invoke behavior through the root's command methods
-- Assert invariants and published [[domain-events]]
+- Assert invariants and published [Domain Events](domain-events.md)
 - Never reach into internal entities or directly manipulate internal state
 
 ### 2. Use the Ubiquitous Language in Test Names
@@ -35,7 +35,7 @@ testEventFired()
 testSetValueUpdatesField()
 ```
 
-See [[ubiquitous-language]] and [[bdd]].
+See [Ubiquitous Language](ubiquitous-language.md) and [BDD](bdd.md).
 
 ### 3. Assert Invariants, Not Implementation
 
@@ -72,7 +72,7 @@ Both Evans and Vernon recommend in-memory repository implementations for testing
 - Same interface as production repositories
 - Backed by a simple collection (HashMap, List)
 - No database, no I/O, instant execution
-- See [[ports-and-adapters]]
+- See [Ports and Adapters](ports-and-adapters.md)
 
 ### The Test-First DDD Workflow (Vernon)
 
@@ -115,7 +115,7 @@ when(order.addItem(anotherProduct, qty=1))
 then(ItemAdded(orderId, anotherProductId, qty=1))
 ```
 
-This maps perfectly to [[bdd]]'s Given/When/Then structure.
+This maps perfectly to [BDD](bdd.md)'s Given/When/Then structure.
 
 ## CQRS Testing
 
@@ -139,18 +139,18 @@ With CQRS, test command and query sides independently:
 
 ## Related Pages
 
-- [[aggregates]]
-- [[value-objects]]
-- [[domain-events]]
-- [[bounded-context]]
-- [[ubiquitous-language]]
-- [[bdd]]
-- [[test-first]]
-- [[red-green-refactor]]
-- [[good-test-properties]]
-- [[ports-and-adapters]]
-- [[test-doubles]]
-- [[domain-driven-design-evans]]
-- [[integration-testing]]
-- [[property-based-testing]]
-- [[implementing-ddd-vernon]]
+- [Aggregates](aggregates.md)
+- [Value Objects](value-objects.md)
+- [Domain Events](domain-events.md)
+- [Bounded Context](bounded-context.md)
+- [Ubiquitous Language](ubiquitous-language.md)
+- [BDD](bdd.md)
+- [Test First](test-first.md)
+- [Red-Green-Refactor](red-green-refactor.md)
+- [Good Test Properties](good-test-properties.md)
+- [Ports and Adapters](ports-and-adapters.md)
+- [Test Doubles](test-doubles.md)
+- [Domain-Driven Design (Evans)](../sources/domain-driven-design-evans.md)
+- [Integration Testing](integration-testing.md)
+- [Property-Based Testing](property-based-testing.md)
+- [Implementing DDD (Vernon)](../sources/implementing-ddd-vernon.md)

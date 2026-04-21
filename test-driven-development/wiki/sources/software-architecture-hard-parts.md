@@ -101,15 +101,15 @@ The book's meta-lesson for architects:
 The book connects to TDD through several threads:
 - **Fitness functions as architectural TDD** — the same red-green-refactor discipline applied to architecture characteristics rather than domain behavior
 - **Testability as a modularity driver** — architectural decisions that improve testability also improve test-driven development workflows
-- **Coupling analysis** — the same coupling/cohesion forces that Beck describes at the code level (in [[tidy-first-kent-beck]]) operate at the architecture level
+- **Coupling analysis** — the same coupling/cohesion forces that Beck describes at the code level (in [Tidy First? (Beck)](tidy-first-kent-beck.md)) operate at the architecture level
 - **ADRs as documentation** — parallel to how TDD tests document intended behavior, ADRs document intended architecture
 
 ## Related Pages
 
-- [[neal-ford]]
-- [[fitness-functions]]
-- [[coupling-and-cohesion]]
-- [[bounded-context]]
-- [[ports-and-adapters]]
-- [[continuous-delivery]]
-- [[tidy-first-kent-beck]]
+- [Neal Ford](../entities/neal-ford.md)
+- [Fitness Functions](../concepts/fitness-functions.md)
+- [Coupling and Cohesion](../concepts/coupling-and-cohesion.md)
+- [Bounded Context](../concepts/bounded-context.md)
+- [Ports and Adapters](../concepts/ports-and-adapters.md)
+- [Continuous Delivery](../concepts/continuous-delivery.md)
+- [Tidy First? (Beck)](tidy-first-kent-beck.md)

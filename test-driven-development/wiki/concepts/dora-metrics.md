@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: ["raw/Accelerate The Science of Lean Software and DevOps Building and Scaling High Performing Technology Organizations by Nicole Forsgren Jez Humble Gene Kim.md"]
 ---
 
-The four DORA metrics -- deployment frequency, lead time for changes, mean time to restore (MTTR), and change failure rate -- are the statistically validated measures of software delivery performance identified by the DORA research program (2014-2017) and published in [[accelerate-forsgren-humble-kim]].
+The four DORA metrics -- deployment frequency, lead time for changes, mean time to restore (MTTR), and change failure rate -- are the statistically validated measures of software delivery performance identified by the DORA research program (2014-2017) and published in [Accelerate](../sources/accelerate-forsgren-humble-kim.md).
 
 ## The Four Metrics
 
@@ -52,7 +52,7 @@ Test automation -- the natural output of TDD practice -- enables improvement acr
 TDD produces a comprehensive, fast test suite. This suite gives teams confidence to deploy frequently because regressions are caught automatically. Without this safety net, teams deploy less often to reduce risk.
 
 ### Lead Time for Changes
-The [[red-green-refactor]] cycle produces small, tested increments that flow through CI pipelines quickly. Fast automated tests mean the commit-to-production pipeline completes in minutes, not days.
+The [Red-Green-Refactor](red-green-refactor.md) cycle produces small, tested increments that flow through CI pipelines quickly. Fast automated tests mean the commit-to-production pipeline completes in minutes, not days.
 
 ### MTTR
 When something breaks, a strong test suite helps teams:
@@ -84,10 +84,10 @@ The DORA metrics avoid these traps by focusing on **global outcomes** (not indiv
 
 ## Related Pages
 
-- [[accelerate-forsgren-humble-kim]]
-- [[continuous-delivery]]
-- [[continuous-integration]]
-- [[test-automation-at-scale]]
-- [[red-green-refactor]]
-- [[jez-humble]]
-- [[nicole-forsgren]] -- co-creator of the DORA metrics and lead researcher of the program
+- [Accelerate](../sources/accelerate-forsgren-humble-kim.md)
+- [Continuous Delivery](continuous-delivery.md)
+- [Continuous Integration](continuous-integration.md)
+- [Test Automation at Scale](test-automation-at-scale.md)
+- [Red-Green-Refactor](red-green-refactor.md)
+- [Jez Humble](../entities/jez-humble.md)
+- [Nicole Forsgren](../entities/nicole-forsgren.md) -- co-creator of the DORA metrics and lead researcher of the program

@@ -73,9 +73,9 @@ When a mutant survives, investigate:
 
 ## Related Pages
 
-- [[good-test-properties]]
-- [[tdd-smells]]
-- [[red-green-refactor]]
-- [[test-first]]
-- [[continuous-delivery]]
-- [[tdd-vs-unit-testing]]
+- [Good Test Properties](good-test-properties.md)
+- [TDD Smells](tdd-smells.md)
+- [Red-Green-Refactor](red-green-refactor.md)
+- [Test First](test-first.md)
+- [Continuous Delivery](continuous-delivery.md)
+- [TDD vs. Unit Testing](tdd-vs-unit-testing.md)

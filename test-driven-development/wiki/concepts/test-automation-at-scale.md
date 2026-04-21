@@ -7,7 +7,7 @@ updated: 2026-04-20
 sources: ["raw/Accelerate The Science of Lean Software and DevOps Building and Scaling High Performing Technology Organizations by Nicole Forsgren Jez Humble Gene Kim.md"]
 ---
 
-Test automation is one of the 24 key capabilities identified by the DORA research ([[accelerate-forsgren-humble-kim]]) as driving software delivery performance. The research provides statistical evidence that reliable, developer-owned test suites predict elite performance across all four [[dora-metrics]].
+Test automation is one of the 24 key capabilities identified by the DORA research ([Accelerate](../sources/accelerate-forsgren-humble-kim.md)) as driving software delivery performance. The research provides statistical evidence that reliable, developer-owned test suites predict elite performance across all four [DORA Metrics](dora-metrics.md).
 
 ## What the Research Found
 
@@ -43,17 +43,17 @@ TDD is the practice that most naturally produces the kind of test suite Accelera
 |----------------------|---------------------|
 | Reliable test suite | Tests written first are inherently tied to behavior, not implementation details |
 | Developer-owned tests | TDD means developers write tests as core workflow, not afterthought |
-| Tests on every commit | [[red-green-refactor]] produces small commits, each with passing tests |
+| Tests on every commit | [Red-Green-Refactor](red-green-refactor.md) produces small commits, each with passing tests |
 | Fast feedback | TDD's tight cycle demands fast tests; slow tests break the rhythm |
-| Testable design | Writing tests first forces [[dependency-injection]], [[ports-and-adapters]], loose coupling |
+| Testable design | Writing tests first forces [Dependency Injection](dependency-injection.md), [Ports and Adapters](ports-and-adapters.md), loose coupling |
 
 ## Test Automation and the Other Capabilities
 
 Test automation interacts with several other DORA capabilities:
 
-- **[[continuous-integration]]**: CI requires fast automated tests on every commit. Without reliable tests, CI is just automated compilation.
+- **[Continuous Integration](continuous-integration.md)**: CI requires fast automated tests on every commit. Without reliable tests, CI is just automated compilation.
 - **Trunk-based development**: Short-lived branches (< 1 day) are only feasible when a comprehensive test suite catches integration problems immediately.
-- **[[continuous-delivery]]**: The deployment pipeline depends on automated tests at every stage -- unit, acceptance, performance. TDD produces the first layer; [[atdd]] and [[integration-testing]] complete the pyramid.
+- **[Continuous Delivery](continuous-delivery.md)**: The deployment pipeline depends on automated tests at every stage -- unit, acceptance, performance. TDD produces the first layer; [ATDD](atdd.md) and [Integration Testing](integration-testing.md) complete the pyramid.
 - **Loosely coupled architecture**: Testability ("we can do most of our testing without an integrated environment") is one of two architectural characteristics that predict high performance. This requires test doubles, dependency injection, and ports-and-adapters -- all naturally produced by TDD.
 
 ## Test Data Management
@@ -80,12 +80,12 @@ The shift is from testers writing all automated tests to testers collaborating w
 
 ## Related Pages
 
-- [[accelerate-forsgren-humble-kim]]
-- [[dora-metrics]]
-- [[continuous-integration]]
-- [[continuous-delivery]]
-- [[red-green-refactor]]
-- [[test-first]]
-- [[good-test-properties]]
-- [[integration-testing]]
-- [[atdd]]
+- [Accelerate](../sources/accelerate-forsgren-humble-kim.md)
+- [DORA Metrics](dora-metrics.md)
+- [Continuous Integration](continuous-integration.md)
+- [Continuous Delivery](continuous-delivery.md)
+- [Red-Green-Refactor](red-green-refactor.md)
+- [Test First](test-first.md)
+- [Good Test Properties](good-test-properties.md)
+- [Integration Testing](integration-testing.md)
+- [ATDD](atdd.md)

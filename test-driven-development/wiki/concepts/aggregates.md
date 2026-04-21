@@ -62,7 +62,7 @@ Only cluster objects that genuinely must be consistent within a single transacti
 
 ### Use Domain Events Between Aggregates
 
-When consistency between aggregates can be eventual rather than immediate, use [[domain-events]] to communicate. Test the event publication from one aggregate and the event handling in another, independently.
+When consistency between aggregates can be eventual rather than immediate, use [Domain Events](domain-events.md) to communicate. Test the event publication from one aggregate and the event handling in another, independently.
 
 ## Testing Patterns for Aggregates
 
@@ -70,7 +70,7 @@ When consistency between aggregates can be eventual rather than immediate, use [
 Test that the aggregate rejects invalid state transitions and maintains consistency rules.
 
 ### Event-Based Testing
-Assert that command methods publish the correct [[domain-events]]:
+Assert that command methods publish the correct [Domain Events](domain-events.md):
 ```
 backlogItem.commitToSprint(sprint)
 assertPublished(BacklogItemCommitted(backlogItemId, sprintId))
@@ -80,7 +80,7 @@ assertPublished(BacklogItemCommitted(backlogItemId, sprintId))
 Aggregates often have factory methods on the root for creating internal entities. Test that these enforce aggregate rules.
 
 ### Repository-Based Testing
-Use in-memory repository implementations to test aggregate persistence round-trips without infrastructure. See [[ports-and-adapters]].
+Use in-memory repository implementations to test aggregate persistence round-trips without infrastructure. See [Ports and Adapters](ports-and-adapters.md).
 
 ## Connection to TDD Workflow
 
@@ -89,17 +89,17 @@ Vernon prescribes test-first development of aggregates:
 2. Create minimal code to compile
 3. Refactor until the test represents proper domain usage
 4. Implement until the test passes
-5. Verify with domain experts that the [[ubiquitous-language]] is correct
+5. Verify with domain experts that the [Ubiquitous Language](ubiquitous-language.md) is correct
 
 ## Related Pages
 
-- [[domain-model-testing]]
-- [[domain-events]]
-- [[value-objects]]
-- [[bounded-context]]
-- [[ubiquitous-language]]
-- [[ports-and-adapters]]
-- [[test-first]]
-- [[red-green-refactor]]
-- [[domain-driven-design-evans]]
-- [[implementing-ddd-vernon]]
+- [Domain Model Testing](domain-model-testing.md)
+- [Domain Events](domain-events.md)
+- [Value Objects](value-objects.md)
+- [Bounded Context](bounded-context.md)
+- [Ubiquitous Language](ubiquitous-language.md)
+- [Ports and Adapters](ports-and-adapters.md)
+- [Test First](test-first.md)
+- [Red-Green-Refactor](red-green-refactor.md)
+- [Domain-Driven Design (Evans)](../sources/domain-driven-design-evans.md)
+- [Implementing DDD (Vernon)](../sources/implementing-ddd-vernon.md)

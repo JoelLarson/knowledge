@@ -22,7 +22,7 @@ Forsgren's DORA research identified four metrics that distinguish high-performin
 4. **Mean time to recovery (MTTR)** -- how quickly the team recovers from failures
 
 ### _Accelerate_ (2018)
-Co-authored with Jez Humble and Gene Kim. The book synthesizes four years of DORA research covering 23,000+ survey responses. Key finding: speed and stability are **not** a tradeoff -- high performers excel at both. Practices that drive performance include [[continuous-delivery]], test automation, trunk-based development, and loosely coupled architecture.
+Co-authored with Jez Humble and Gene Kim. The book synthesizes four years of DORA research covering 23,000+ survey responses. Key finding: speed and stability are **not** a tradeoff -- high performers excel at both. Practices that drive performance include [Continuous Delivery](../concepts/continuous-delivery.md), test automation, trunk-based development, and loosely coupled architecture.
 
 ### Statistical Methodology
 Forsgren brought rigorous statistical methods (cluster analysis, structural equation modeling) to software engineering research, which had historically relied on anecdotal evidence and case studies. This rigor is what gives DORA's conclusions their weight.
@@ -45,6 +45,6 @@ While Forsgren's research does not isolate TDD specifically, it establishes the 
 
 ## Related Pages
 
-- [[continuous-delivery]] -- a core DORA capability that TDD enables
-- [[tdd-empirical-evidence]] -- empirical evidence specifically about TDD
-- [[extreme-programming]] -- the agile methodology where TDD and CI were born
+- [Continuous Delivery](../concepts/continuous-delivery.md) -- a core DORA capability that TDD enables
+- [TDD Empirical Evidence](../concepts/tdd-empirical-evidence.md) -- empirical evidence specifically about TDD
+- [Extreme Programming](../concepts/extreme-programming.md) -- the agile methodology where TDD and CI were born

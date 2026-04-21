@@ -11,7 +11,7 @@ A Bounded Context is a boundary within which a domain model is internally consis
 
 ## Core Concept
 
-Within a bounded context, one [[ubiquitous-language]] applies. The same word (e.g., "Account") can mean entirely different things in different contexts (billing vs. authentication). Each context has its own model, its own code, and its own tests.
+Within a bounded context, one [Ubiquitous Language](ubiquitous-language.md) applies. The same word (e.g., "Account") can mean entirely different things in different contexts (billing vs. authentication). Each context has its own model, its own code, and its own tests.
 
 > "Explicitly define the context within which a model applies... Name each Bounded Context, and make the names part of the UBIQUITOUS LANGUAGE." — Evans
 
@@ -20,7 +20,7 @@ Within a bounded context, one [[ubiquitous-language]] applies. The same word (e.
 ### Defining Test Scope
 
 - **Within a context:** Full integration tests are appropriate. Objects share a consistent model and can be tested together.
-- **Across contexts:** Use [[test-doubles]] (mocks, stubs) at the boundary. Never let one context's tests depend on another context's internals.
+- **Across contexts:** Use [Test Doubles](test-doubles.md) (mocks, stubs) at the boundary. Never let one context's tests depend on another context's internals.
 
 ### What to Mock vs. Integrate
 
@@ -37,7 +37,7 @@ The bounded context boundary is the clearest answer to "what should I mock?"
 When Context A consumes Context B, an anti-corruption layer translates between their models. This layer is a natural [test seam](test-doubles.md):
 - Stub the ACL to test Context A in isolation
 - Contract-test the ACL against Context B's API
-- See [[ports-and-adapters]]
+- See [Ports and Adapters](ports-and-adapters.md)
 
 ## Context Relationships (from Evans)
 
@@ -69,15 +69,15 @@ Evans recommends XP-style continuous integration within a single bounded context
 
 ## Related Pages
 
-- [[ubiquitous-language]]
-- [[aggregates]]
-- [[domain-events]]
-- [[ports-and-adapters]]
-- [[domain-model-testing]]
-- [[test-doubles]]
-- [[strangler-pattern]]
-- [[domain-driven-design-evans]]
-- [[implementing-ddd-vernon]]
-- [[eric-evans]]
-- [[integration-testing]]
-- [[vaughn-vernon]]
+- [Ubiquitous Language](ubiquitous-language.md)
+- [Aggregates](aggregates.md)
+- [Domain Events](domain-events.md)
+- [Ports and Adapters](ports-and-adapters.md)
+- [Domain Model Testing](domain-model-testing.md)
+- [Test Doubles](test-doubles.md)
+- [Strangler Pattern](strangler-pattern.md)
+- [Domain-Driven Design (Evans)](../sources/domain-driven-design-evans.md)
+- [Implementing DDD (Vernon)](../sources/implementing-ddd-vernon.md)
+- [Eric Evans](../entities/eric-evans.md)
+- [Integration Testing](integration-testing.md)
+- [Vaughn Vernon](../entities/vaughn-vernon.md)
