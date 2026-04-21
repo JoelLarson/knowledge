@@ -3,7 +3,7 @@ title: Overview — Test-Driven Development
 type: overview
 tags: [tdd, overview, synthesis]
 created: 2026-04-19
-updated: 2026-04-20
+updated: 2026-04-21
 sources: [raw/tdd-by-example-kent-beck-v2.md, raw/refactoring-martin-fowler.md, raw/modern-software-engineering-dave-farley.md, raw/clean-code-robert-martin.md, raw/art-of-clean-code.md, raw/dave-farley-302-tdd-and-bdd-design-through-testing/, raw/code-samples/fowler-theatrical-players/, "raw/Growing Object-Oriented Software, Guided by Tests - Steve Freeman, Nat Pryce.md", raw/Working.Effectively.with.Legacy.Code.md, "raw/xUnit Test Patterns_ Refactoring Test Code - by Gerard Meszaros - 2007.md", "raw/Domain-Driven Design_ Tackling Complexity in the Heart of Software.md", raw/Implementing Domain-Driven Design.md, "raw/Realizing Quality Improvement Through TDD - Nagappan et al 2008.md", "raw/Dissection of TDD - Fucci et al 2017.md", "raw/Why Research on TDD is Inconclusive - Ghafari 2020.md", "raw/Accelerate The Science of Lean Software and DevOps Building and Scaling High Performing Technology Organizations by Nicole Forsgren Jez Humble Gene Kim.md", "raw/Unit Testing Principles Practices Patterns - Vladimir Khorikov 2020.md", raw/Tidy First.md, "raw/Software Architecture_ The Hard Parts.md"]
 ---
 
@@ -48,8 +48,8 @@ TDD
 │   └── Refactor = behavior-preserving improvement
 │
 ├── Schools of TDD
-│   ├── Chicago/Classical: state-based, inside-out, real collaborators
-│   └── London/Mockist: interaction-based, outside-in, mock collaborators
+│   ├── Chicago/Classical: state-based, inside-out, real collaborators ← wiki default
+│   └── London/Mockist: interaction-based, outside-in, mock collaborators ← boundaries only
 │
 ├── Test Quality
 │   ├── Properties: UMRANGS+F (Farley) + Goals of Test Automation (Meszaros)
@@ -87,6 +87,22 @@ TDD
     └── Ubiquitous Language = test naming vocabulary
 ```
 
+## Author's Editorial Positions
+
+This wiki is opinionated. The following positions are established across concept pages and inform the editorial voice throughout:
+
+1. **Chicago school is the default; London is containment.** Mocking intra-system communications is an anti-pattern — it couples tests to implementation details. London-style mocking belongs only at external boundaries (SMTP, message buses, third-party APIs). Preference hierarchy: real collaborators > fakes > test-specific implementations > mocks. See [Chicago vs. London — Author's Position](concepts/chicago-vs-london.md#authors-position-chicago-as-default-london-as-containment).
+
+2. **Test-first is worth preserving despite Fucci.** The empirical finding that granularity matters more than ordering is accepted, but the research metrics didn't capture test-first's primary benefits: the cognitive discipline of thinking about behavior before implementation, and the red-phase safety mechanism that proves your test can fail. See [Test First — Author's Position](concepts/test-first.md#authors-position-test-first-is-worth-preserving).
+
+3. **Refactoring is building, not a separate ticket.** [Tidyings](concepts/tidyings.md) are the concrete content of the refactor step. Refactoring tickets are professional negligence — with one exception: brownfield systems that lack a test harness may need a dedicated effort to establish the safety net. See [Refactoring — Author's Position](concepts/refactoring.md#authors-position-refactoring-is-building-not-a-separate-activity).
+
+4. **Acceptance tests are critical-flow smoke tests.** [Outside-In TDD](concepts/outside-in-tdd.md) is the default workflow. Full ATDD ceremony (DSL, translation layer) is reserved for UI decoupling scenarios. Acceptance tests should be few, covering flows where a production failure would be an emergency. See [ATDD — Author's Position](concepts/atdd.md#authors-position-acceptance-tests-as-critical-flow-smoke-tests).
+
+5. **TDD is not a substitute for thinking critically.** Having taste, exercising software craftsmanship, and making good design decisions are skills that TDD supports but does not replace.
+
+6. **The empirical research provides weaker signals, not definitive answers.** Small effect sizes, proxy metrics, and short task environments mean findings should be interpreted cautiously. See [TDD Empirical Evidence — Author's Note](concepts/tdd-empirical-evidence.md#authors-note-on-research-methodology).
+
 ## Points of Consensus Across All Sources
 
 1. **Tests come first.** All sources agree: test-before-code produces better code and better tests.
@@ -118,7 +134,7 @@ Three empirical research papers provide data on TDD's real-world effectiveness:
 - **[Fucci et al. 2017](sources/dissection-of-tdd-fucci-2017.md)** — Analyzed 82 data points from 39 professionals: the *granularity* and *uniformity* of test-code cycles matter more for quality than strict test-first ordering. Confirms Beck's "baby steps" empirically.
 - **[Ghafari et al. 2020](sources/why-tdd-research-inconclusive-ghafari-2020.md)** — Meta-analysis explaining why TDD studies contradict each other: inconsistent definitions, novice participants, synthetic tasks, greenfield bias, and unfair comparison baselines.
 
-The synthesis: TDD-like practices reliably improve code quality. The mechanism is likely fine-grained iteration with fast feedback, not strictly test-first ordering. There is a real time cost (15-35%), offset by reduced maintenance. See [TDD Empirical Evidence](concepts/tdd-empirical-evidence.md) for the full analysis and [TDD Process Granularity](concepts/tdd-process-granularity.md) for the key finding on cycle size.
+The synthesis: TDD-like practices reliably improve code quality. Fine-grained iteration with fast feedback is the measurable mechanism, but test-first ordering may work *through* granularity rather than independently of it — and provides cognitive and safety benefits the research instruments didn't capture (see Author's Editorial Positions above). There is a real time cost (15-35%), offset by reduced maintenance. See [TDD Empirical Evidence](concepts/tdd-empirical-evidence.md) for the full analysis and [TDD Process Granularity](concepts/tdd-process-granularity.md) for the key finding on cycle size.
 
 ## Cross-Cutting Themes
 

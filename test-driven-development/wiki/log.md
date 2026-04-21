@@ -271,7 +271,7 @@ Wiki now has 60 concept pages, 19 entity pages, 19 source pages (98 total).
 
 Question: Is there a single phrase that embraces behavior-first, unit, integration, and acceptance tests and when each should be applied?
 
-Answer synthesized from 8 wiki pages: [BDD](../concepts/bdd.md), [ATDD](../concepts/atdd.md), [Outside-In TDD](../concepts/outside-in-tdd.md), [TDD vs. Unit Testing](../concepts/tdd-vs-unit-testing.md), [Integration Testing](../concepts/integration-testing.md), [Test First](../concepts/test-first.md), [Choosing Test Levels](../guides/choosing-test-levels.md), [Dan North](../entities/dan-north.md), [Chicago vs. London](../concepts/chicago-vs-london.md).
+Answer synthesized from 8 wiki pages: [BDD](concepts/bdd.md), [ATDD](concepts/atdd.md), [Outside-In TDD](concepts/outside-in-tdd.md), [TDD vs. Unit Testing](concepts/tdd-vs-unit-testing.md), [Integration Testing](concepts/integration-testing.md), [Test First](concepts/test-first.md), [Choosing Test Levels](guides/choosing-test-levels.md), [Dan North](entities/dan-north.md), [Chicago vs. London](concepts/chicago-vs-london.md).
 
 Key finding: BDD was intended to be the umbrella term but got narrowed to mean Cucumber/Gherkin tooling. The complete practice is a composition: BDD (philosophy) + ATDD (feature level) + Outside-In TDD (workflow) + TDD (unit level) + integration testing (boundaries). Best candidate umbrella terms: "specification-first development" or "outside-in specification."
 
@@ -286,6 +286,19 @@ Pages changed:
 - `concepts/london-school-tdd.md` — new "Author's Position" section; revised "When to Use" to emphasize external boundaries and duck-typed language exception
 - `concepts/mocking.md` — new "Author's Position: Prefer Alternatives to Mocks" section with preference hierarchy; narrowed "When to Use" to unmanaged external dependencies only
 - `concepts/bdd.md` — new "BDD Implies Chicago-Style Verification" section connecting behavioral specification to state/output verification
+
+## [2026-04-21] lint | Post-refinement health check
+
+Findings:
+- **Broken links (fixed):** 9 links in `log.md` line 274 had erroneous `../` prefix; corrected to root-relative paths
+- **Orphan pages:** none found
+- **Author's positions:** 10 sections across 10 files, all internally consistent, no contradictions
+- **Overview.md (fixed):** was purely neutral; added "Author's Editorial Positions" section summarizing all 6 stances with links to detailed pages; updated empirical evidence synthesis; annotated concept map
+- **Missing concept pages (reported):** contract-based testing, CQRS, event sourcing, need-driven development, arrange-act-assert (top 5)
+
+Pages changed:
+- `log.md` — fixed 9 broken links (removed `../` prefix)
+- `overview.md` — new "Author's Editorial Positions" section, updated empirical synthesis, annotated concept map
 
 ## [2026-04-21] refine | Author's position on refactoring, craftsmanship, and research methodology
 
