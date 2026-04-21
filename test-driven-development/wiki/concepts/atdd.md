@@ -115,6 +115,18 @@ This separation clearly tracks progress and catches regressions independently.
 ### The Walking Skeleton Connection
 The [Walking Skeleton](walking-skeleton.md) establishes the acceptance test infrastructure. Without it, you cannot write meaningful end-to-end acceptance tests. GOOS solves the "first-feature paradox" by building the thinnest end-to-end slice first.
 
+## Author's Position: Acceptance Tests as Critical-Flow Smoke Tests
+
+This wiki's default workflow is [Outside-In TDD](outside-in-tdd.md) with simple acceptance tests at the API/system boundary — not full ATDD ceremony with a four-layer architecture and custom DSL.
+
+**Acceptance tests earn their place as smoke tests for important flows.** They should be few in number, covering the critical paths that must work for the system to deliver value. They are not comprehensive coverage — that belongs at the unit and integration levels. Think of them as the answer to: "if this specific flow broke in production, would it be an emergency?"
+
+**The professionalism argument extends ATDD's applicability beyond "high-stakes domains."** Any professionally written software should do exactly what it's expected to do. You wouldn't expect an engineer to cut corners because the structure is "just a kids' treehouse." The question is not whether correctness matters — it always does — but whether the cost of full ATDD infrastructure is the best way to achieve it. For most teams, outside-in TDD with simple acceptance tests achieves the same correctness at lower cost.
+
+**The collaboration model works differently than the theory suggests.** In practice, product owners don't write scenarios. The value of acceptance tests is that *engineers encode their understanding of the customer and the business* into executable specifications. The tests prove the engineer understood the requirement, not that the product owner learned to write Gherkin. When an acceptance test breaks, it's a signal to re-evaluate with the product owner — not just a test to fix.
+
+**When the DSL/translation layer earns its keep: UI decoupling.** The four-layer architecture has genuine value when it decouples tests from UI implementation. Tests should describe what the person is *doing* (the action/behavior), and the DSL provides the implementation details for how the UI performs that action. If the DSL breaks because the UI changed, that's not a test maintenance problem — it's a signal that the UI interaction model changed and needs re-evaluation with the product owner or customer. This decoupling is where ATDD's infrastructure investment pays back, but it's a specific architectural benefit, not a universal one.
+
 ## Limitations and When Not to Use
 
 ATDD carries significant infrastructure cost. The four-layer architecture (test cases, DSL, translation layer, system under test) requires building and maintaining a custom domain-specific language and its translation machinery before you write a single meaningful test. On small or simple projects -- a CRUD app with straightforward requirements, an internal tool with a handful of users -- this investment rarely pays back. The overhead of designing and maintaining the DSL exceeds the value of the executable specifications it produces.

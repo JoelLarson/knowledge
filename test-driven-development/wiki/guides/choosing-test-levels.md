@@ -148,7 +148,7 @@ The pyramid is a default, not a dogma. Some situations warrant different proport
 
 **No acceptance tests because "unit tests are enough."** Unit tests verify pieces work in isolation. They can all pass while the system is broken because the pieces don't connect correctly. The acceptance test is the only test that verifies the feature works from the user's perspective.
 
-**Too many acceptance tests.** Acceptance tests are slow and expensive to maintain. Use them for the golden path and critical edge cases. Push all other verification down to unit and integration levels. See the [ATDD limitations](../concepts/atdd.md#limitations-and-when-not-to-use) section.
+**Too many acceptance tests.** Acceptance tests are slow and expensive to maintain. Use them as **smoke tests for critical flows** — the paths where a production failure would be an emergency. They are not for edge-case coverage; push that down to unit and integration levels. See the [Author's Position on ATDD](../concepts/atdd.md#authors-position-acceptance-tests-as-critical-flow-smoke-tests).
 
 ## Related Pages
 

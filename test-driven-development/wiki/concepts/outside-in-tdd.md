@@ -69,6 +69,10 @@ Outside-in TDD gives acceptance tests two distinct roles:
 
 This separation tracks progress and catches regressions independently. See [ATDD](atdd.md).
 
+## Author's Position: Outside-In TDD as the Default Workflow
+
+This wiki treats outside-in TDD as the standard development workflow. The double loop — a failing acceptance test driving unit-level TDD cycles — provides the "acceptance test defines done" benefit without requiring the full [ATDD](atdd.md) ceremony (custom DSL, translation layer, four-layer architecture). A simple acceptance test at the API or system boundary (`client.get("/cart/total")`) is enough to anchor the outer loop. See the [Author's Position on ATDD](atdd.md#authors-position-acceptance-tests-as-critical-flow-smoke-tests) for when full ATDD infrastructure earns its keep.
+
 ## When Outside-In Works Best
 
 - Systems with clear external boundaries (web apps, APIs, message-driven systems)
