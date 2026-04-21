@@ -11,6 +11,17 @@ Content catalog for the Test-Driven Development wiki. Each entry links to a page
 
 ---
 
+## Guides
+
+Opinionated learning paths through the wiki, sequenced for different starting points.
+
+- [Greenfield: Your First Tests](guides/greenfield.md) — Zero to TDD on a new project: first test, katas, walking skeleton, outside-in development
+- [Brownfield: Testing an Existing Codebase](guides/brownfield.md) — Introducing TDD to an untested monolith or microservice: characterization tests, dependency breaking, incremental coverage
+- [Why Testing Matters](guides/why-testing-matters.md) — The case for automated testing for programmers new to the practice: evidence, design feedback, documentation, safety
+- [Choosing Test Levels](guides/choosing-test-levels.md) — Unit vs. integration vs. acceptance: decision heuristics, the testing pyramid, and the acceptance-first workflow
+
+---
+
 ## Concepts
 
 ### TDD Core

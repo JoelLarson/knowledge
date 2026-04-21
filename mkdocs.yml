@@ -63,6 +63,12 @@ nav:
     - Overview: test-driven-development/overview.md
     - Schema: test-driven-development/schema.md
     - Log: test-driven-development/log.md
+    - Guides:
+      - test-driven-development/guides/index.md
+      - "Greenfield: Your First Tests": test-driven-development/guides/greenfield.md
+      - "Brownfield: Testing an Existing Codebase": test-driven-development/guides/brownfield.md
+      - Why Testing Matters: test-driven-development/guides/why-testing-matters.md
+      - Choosing Test Levels: test-driven-development/guides/choosing-test-levels.md
     - Concepts:
       - TDD Core:
         - Red-Green-Refactor: test-driven-development/concepts/red-green-refactor.md
