@@ -111,6 +111,14 @@ This separation clearly tracks progress and catches regressions independently.
 ### The Walking Skeleton Connection
 The [Walking Skeleton](walking-skeleton.md) establishes the acceptance test infrastructure. Without it, you cannot write meaningful end-to-end acceptance tests. GOOS solves the "first-feature paradox" by building the thinnest end-to-end slice first.
 
+## Limitations and When Not to Use
+
+ATDD carries significant infrastructure cost. The four-layer architecture (test cases, DSL, translation layer, system under test) requires building and maintaining a custom domain-specific language and its translation machinery before you write a single meaningful test. On small or simple projects -- a CRUD app with straightforward requirements, an internal tool with a handful of users -- this investment rarely pays back. The overhead of designing and maintaining the DSL exceeds the value of the executable specifications it produces.
+
+As features evolve, acceptance tests become a maintenance burden. Every change to user-facing behavior can cascade through the DSL and translation layer. Teams that lack discipline in keeping the translation layer thin end up with brittle test suites that break on routine refactors. Slow acceptance test suites compound the problem: if end-to-end tests take 30+ minutes, they block CI pipelines and erode the fast feedback loop that TDD depends on. Parallel execution and tagging help, but they add yet more infrastructure to maintain.
+
+The coordination overhead between developers and product stakeholders is real. Acceptance tests are most valuable when product owners contribute to defining scenarios, but in practice this collaboration is difficult to sustain. Product teams context-switch away, leaving developers to write and maintain both the scenarios and the code, which removes much of the "shared understanding" benefit ATDD promises. If your team cannot sustain cross-role collaboration on test scenarios, the practice degrades into developers writing acceptance tests alone -- at which point simpler [integration testing](integration-testing.md) approaches deliver equivalent confidence with less ceremony.
+
 ## Related Pages
 
 - [BDD](bdd.md)

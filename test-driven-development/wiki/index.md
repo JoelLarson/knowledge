@@ -93,6 +93,11 @@ Content catalog for the Test-Driven Development wiki. Each entry links to a page
 - [Value Objects](concepts/value-objects.md) — Immutable, identity-less objects; trivially testable, ideal for property-based testing
 - [Domain Model Testing](concepts/domain-model-testing.md) — Testing rich domain models: aggregate invariants, event assertions, domain language in tests
 
+### Adoption & Context
+
+- [TDD Adoption Path](concepts/tdd-adoption-path.md) — Phased path from untested legacy code to a well-tested system: safety net → break deps → TDD new code → architecture → scale
+- [TDD by Context](concepts/tdd-by-context.md) — How TDD practices adapt across domains (web, embedded, data), language families, and team maturity levels
+
 ### Engineering Practices
 
 - [Extreme Programming (XP)](concepts/extreme-programming.md) — The agile methodology where TDD was born; pair programming, CI, simple design

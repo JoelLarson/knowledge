@@ -103,3 +103,141 @@ Characterization tests are **not** TDD — they document existing behavior rathe
 - [Refactoring](refactoring.md)
 - [Michael Feathers](../entities/michael-feathers.md)
 - [Working Effectively with Legacy Code (Feathers)](../sources/working-effectively-legacy-code-feathers.md)
+
+## Worked Example: Characterizing a Legacy Pricing Function
+
+Imagine you have inherited the following pricing function. There is no specification, no comments, and no existing tests. You need to modify it, so you must first characterize what it actually does.
+
+```python
+# legacy_pricing.py  (do NOT edit yet -- characterize first)
+
+def compute_price(base, qty, customer_type, promo_code):
+    price = base * qty
+    if customer_type == "wholesale":
+        price = price * 0.80
+    elif customer_type == "employee":
+        price = price * 0.50
+    if promo_code == "SAVE10":
+        price = price - 10
+    if price < 0:
+        price = 0
+    return round(price, 2)
+```
+
+We follow Feathers' algorithm: write an assertion we **know** is wrong, let the failure reveal the real behavior, then fix the assertion. Repeat until we have covered the paths we care about.
+
+### Iteration 1: Discover baseline behavior for a regular customer
+
+```python
+# test_compute_price.py
+
+from legacy_pricing import compute_price
+
+def test_regular_customer_no_promo():
+    # Step 1 — deliberately wrong assertion
+    result = compute_price(base=25.00, qty=2, customer_type="regular", promo_code=None)
+    assert result == 0  # we expect this to fail
+```
+
+Run the test:
+
+```
+AssertionError: assert 50.0 == 0
+```
+
+The failure tells us the actual behavior: `25.00 * 2 = 50.0`, no discount applied. Encode it:
+
+```python
+def test_regular_customer_no_promo():
+    result = compute_price(base=25.00, qty=2, customer_type="regular", promo_code=None)
+    assert result == 50.0  # characterized: base * qty, no discount
+```
+
+### Iteration 2: Discover the wholesale discount
+
+```python
+def test_wholesale_customer():
+    result = compute_price(base=25.00, qty=2, customer_type="wholesale", promo_code=None)
+    assert result == 0  # deliberately wrong
+```
+
+```
+AssertionError: assert 40.0 == 0
+```
+
+Actual behavior: `50.0 * 0.80 = 40.0`. Encode:
+
+```python
+def test_wholesale_customer():
+    result = compute_price(base=25.00, qty=2, customer_type="wholesale", promo_code=None)
+    assert result == 40.0  # characterized: 20% wholesale discount
+```
+
+### Iteration 3: Discover promo code stacking with employee discount
+
+```python
+def test_employee_with_promo():
+    result = compute_price(base=25.00, qty=2, customer_type="employee", promo_code="SAVE10")
+    assert result == 0  # deliberately wrong
+```
+
+```
+AssertionError: assert 15.0 == 0
+```
+
+Actual behavior: `50.0 * 0.50 = 25.0`, then `25.0 - 10 = 15.0`. The promo is applied **after** the employee discount and it subtracts a flat amount, not a percentage. Encode:
+
+```python
+def test_employee_with_promo():
+    result = compute_price(base=25.00, qty=2, customer_type="employee", promo_code="SAVE10")
+    assert result == 15.0  # characterized: employee 50% then flat $10 promo
+```
+
+### Iteration 4: Discover the floor behavior
+
+```python
+def test_price_floor_at_zero():
+    result = compute_price(base=3.00, qty=1, customer_type="employee", promo_code="SAVE10")
+    assert result == -8.50  # deliberately wrong — does it go negative?
+```
+
+```
+AssertionError: assert 0 == -8.50
+```
+
+Actual behavior: `3.00 * 0.50 = 1.50`, then `1.50 - 10 = -8.50`, but the `if price < 0` guard clamps to `0`. Encode:
+
+```python
+def test_price_floor_at_zero():
+    result = compute_price(base=3.00, qty=1, customer_type="employee", promo_code="SAVE10")
+    assert result == 0  # characterized: price is floored at zero
+```
+
+### Final Characterization Suite
+
+```python
+from legacy_pricing import compute_price
+
+class TestComputePrice:
+    """Characterization tests — documents actual behavior, not desired behavior."""
+
+    def test_regular_customer_no_promo(self):
+        assert compute_price(25.00, 2, "regular", None) == 50.0
+
+    def test_wholesale_discount(self):
+        assert compute_price(25.00, 2, "wholesale", None) == 40.0
+
+    def test_employee_discount(self):
+        assert compute_price(25.00, 2, "employee", None) == 25.0
+
+    def test_employee_with_promo_stacks(self):
+        assert compute_price(25.00, 2, "employee", "SAVE10") == 15.0
+
+    def test_price_floor_at_zero(self):
+        assert compute_price(3.00, 1, "employee", "SAVE10") == 0
+
+    def test_unknown_promo_code_ignored(self):
+        assert compute_price(25.00, 2, "regular", "BOGUS") == 50.0
+```
+
+With this safety net in place, any future edit to `compute_price` that changes its observable behavior will immediately break one of these tests. We can now confidently proceed to step 5 of the [Legacy Code Change Algorithm](legacy-code-change-algorithm.md): make changes and refactor.

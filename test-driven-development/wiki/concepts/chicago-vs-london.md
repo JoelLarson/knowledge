@@ -100,6 +100,168 @@ Khorikov acknowledges the classical school is not perfect either — it can also
 
 This position extends the Chicago school's argument beyond "prefer state verification" to a principled framework: the reason classical tests are better is that they produce fewer false positives and thus maintain higher test accuracy over the project's lifetime.
 
+## Worked Example: Same Feature, Two Schools
+
+Consider a simple feature: **placing an order sends a confirmation email**. The system has an `OrderService` that coordinates between an `Inventory`, a `PriceCalculator`, and an `EmailSender`. The same feature, tested two different ways, reveals the core trade-offs.
+
+### The Domain Objects (Shared by Both Approaches)
+
+```python
+class Product:
+    def __init__(self, name: str, price: float, stock: int):
+        self.name = name
+        self.price = price
+        self.stock = stock
+
+
+class Order:
+    def __init__(self, product: Product, quantity: int, total: float):
+        self.product = product
+        self.quantity = quantity
+        self.total = total
+        self.confirmed = False
+```
+
+### Chicago Approach: Real Collaborators, Assert on State
+
+The Chicago test uses real objects for `Inventory` and `PriceCalculator`. Only the
+`EmailSender` is faked, because it hits an external system (a network call). The test
+asserts on the **final state** of the order and inventory — it does not care *how* the
+service arrived at that state internally.
+
+```python
+# --- Production code ---
+
+class Inventory:
+    def __init__(self):
+        self._products: dict[str, Product] = {}
+
+    def add(self, product: Product):
+        self._products[product.name] = product
+
+    def reserve(self, product_name: str, quantity: int) -> Product:
+        product = self._products[product_name]
+        if product.stock < quantity:
+            raise ValueError("Insufficient stock")
+        product.stock -= quantity
+        return product
+
+
+class PriceCalculator:
+    def total(self, price: float, quantity: int) -> float:
+        discount = 0.10 if quantity >= 10 else 0.0
+        return round(price * quantity * (1 - discount), 2)
+
+
+class EmailSender:
+    def send_confirmation(self, order: Order) -> None:
+        ...  # real implementation sends over the network
+
+
+class OrderService:
+    def __init__(self, inventory: Inventory, calculator: PriceCalculator,
+                 email_sender: EmailSender):
+        self.inventory = inventory
+        self.calculator = calculator
+        self.email_sender = email_sender
+
+    def place_order(self, product_name: str, quantity: int) -> Order:
+        product = self.inventory.reserve(product_name, quantity)
+        total = self.calculator.total(product.price, quantity)
+        order = Order(product, quantity, total)
+        order.confirmed = True
+        self.email_sender.send_confirmation(order)
+        return order
+
+
+# --- Chicago-style test ---
+
+class FakeEmailSender(EmailSender):
+    """Fake only the external dependency — keeps a log for later assertion."""
+    def __init__(self):
+        self.sent_orders: list[Order] = []
+
+    def send_confirmation(self, order: Order) -> None:
+        self.sent_orders.append(order)
+
+
+def test_place_order_chicago():
+    # Arrange — real collaborators, fake only the network boundary
+    inventory = Inventory()
+    inventory.add(Product("Widget", price=25.00, stock=100))
+    calculator = PriceCalculator()
+    email = FakeEmailSender()
+    service = OrderService(inventory, calculator, email)
+
+    # Act
+    order = service.place_order("Widget", quantity=3)
+
+    # Assert on STATE — what happened, not how
+    assert order.confirmed is True
+    assert order.total == 75.00          # 25 * 3, no discount
+    assert order.product.stock == 97     # 100 - 3
+    assert len(email.sent_orders) == 1   # email was sent (state of the fake)
+```
+
+Notice: the test never mentions `PriceCalculator` or `Inventory` by name in its
+assertions. If you later merged them into a single object or changed the internal call
+order, this test would still pass. **Refactoring resilience** is the Chicago payoff.
+
+### London Approach: Mock Collaborators, Verify Interactions
+
+The London test mocks every collaborator. Each mock carries **expectations** — the test
+verifies that `OrderService` sent the right messages to the right objects in the right
+order. This makes the communication design explicit and testable.
+
+```python
+from unittest.mock import Mock, call
+
+def test_place_order_london():
+    # Arrange — mock every collaborator
+    inventory = Mock()
+    calculator = Mock()
+    email_sender = Mock()
+
+    fake_product = Product("Widget", price=25.00, stock=100)
+    inventory.reserve.return_value = fake_product
+    calculator.total.return_value = 75.00
+
+    service = OrderService(inventory, calculator, email_sender)
+
+    # Act
+    order = service.place_order("Widget", quantity=3)
+
+    # Assert on INTERACTIONS — which messages were sent
+    inventory.reserve.assert_called_once_with("Widget", 3)
+    calculator.total.assert_called_once_with(25.00, 3)
+    email_sender.send_confirmation.assert_called_once()
+
+    # The order itself is still checked for correctness
+    assert order.confirmed is True
+    assert order.total == 75.00
+```
+
+Notice: the test spells out the exact calls `OrderService` must make. This is
+**interface documentation** — you can read the test to learn how the service interacts
+with its collaborators. But if you refactor `OrderService` to call `calculator.total`
+with a `Product` instead of a raw price, the test breaks even though behavior is
+preserved. **Coupling to implementation** is the London trade-off.
+
+### Side-by-Side Trade-off Summary
+
+| What happens when you...               | Chicago test        | London test         |
+|-----------------------------------------|---------------------|---------------------|
+| Rename an internal method               | Passes              | Breaks              |
+| Change collaborator call order          | Passes              | Breaks              |
+| Introduce a bug in `PriceCalculator`    | Fails (catches it)  | Passes (mock hides it) |
+| Add a new collaborator internally       | Passes              | Needs updating      |
+| Read the test to understand design      | Shows outcomes       | Shows communication |
+
+The Chicago test catches integration bugs because it uses the real `PriceCalculator`.
+The London test documents the design but can miss bugs hidden behind mocks. Most
+experienced practitioners combine both styles: London at architectural boundaries,
+Chicago for domain logic. See [the pragmatic middle](#the-pragmatic-middle) above.
+
 ## Related Pages
 
 - [London School TDD](london-school-tdd.md)

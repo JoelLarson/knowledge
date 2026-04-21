@@ -111,3 +111,97 @@ Seams also connect to [Dependency Injection](dependency-injection.md) — constr
 - [Dependency Injection](dependency-injection.md)
 - [Michael Feathers](../entities/michael-feathers.md)
 - [Working Effectively with Legacy Code (Feathers)](../sources/working-effectively-legacy-code-feathers.md)
+
+## Worked Example: From Untestable to Testable via Object Seam
+
+Consider a function that calculates overdue fees for a library account. It directly instantiates a database connection, making it impossible to test without a real database.
+
+### Step 1: The Untestable Code
+
+```python
+import psycopg2
+
+class OverdueFeeCalculator:
+    def calculate(self, account_id: str) -> float:
+        conn = psycopg2.connect("dbname=library host=prod-db")
+        cursor = conn.cursor()
+        cursor.execute(
+            "SELECT due_date, return_date, daily_rate "
+            "FROM loans WHERE account_id = %s AND return_date > due_date",
+            (account_id,),
+        )
+        total = 0.0
+        for due_date, return_date, daily_rate in cursor.fetchall():
+            overdue_days = (return_date - due_date).days
+            total += overdue_days * float(daily_rate)
+        conn.close()
+        return total
+```
+
+The problem: `psycopg2.connect(...)` is called **inside** `calculate()`. There is no seam here -- the behavior of the database call cannot be altered without editing the method itself. Every test would need a running PostgreSQL instance with the correct schema and data.
+
+### Step 2: Identify the Object Seam
+
+The hardcoded `psycopg2.connect(...)` call is the dependency we need to break. If we extract the data-fetching responsibility behind an object boundary, the *call site* inside `calculate()` becomes an object seam. The enabling point will be the constructor, where we choose which object to supply.
+
+### Step 3: Extract via Dependency Injection
+
+```python
+from dataclasses import dataclass
+from typing import Protocol
+
+@dataclass
+class LoanRecord:
+    overdue_days: int
+    daily_rate: float
+
+class LoanRepository(Protocol):
+    """Interface — the seam boundary."""
+    def overdue_loans(self, account_id: str) -> list[LoanRecord]: ...
+
+class OverdueFeeCalculator:
+    def __init__(self, loans: LoanRepository) -> None:   # <-- enabling point
+        self._loans = loans
+
+    def calculate(self, account_id: str) -> float:
+        total = 0.0
+        for record in self._loans.overdue_loans(account_id):  # <-- object seam
+            total += record.overdue_days * record.daily_rate
+        return total
+```
+
+Now the call `self._loans.overdue_loans(account_id)` is an **object seam**. Which method actually executes depends on the runtime type of `self._loans`. The enabling point is the `__init__` parameter -- in production we pass the real repository; in tests we pass a [test double](test-doubles.md).
+
+### Step 4: Write a Test with a Test Double
+
+```python
+import pytest
+
+class FakeLoanRepository:
+    """Test double that stands in for the real database."""
+    def __init__(self, records: list[LoanRecord]) -> None:
+        self._records = records
+
+    def overdue_loans(self, account_id: str) -> list[LoanRecord]:
+        return self._records
+
+class TestOverdueFeeCalculator:
+    def test_no_overdue_loans_returns_zero(self):
+        calculator = OverdueFeeCalculator(loans=FakeLoanRepository([]))
+        assert calculator.calculate("ACCT-1") == 0.0
+
+    def test_single_overdue_loan(self):
+        records = [LoanRecord(overdue_days=5, daily_rate=0.25)]
+        calculator = OverdueFeeCalculator(loans=FakeLoanRepository(records))
+        assert calculator.calculate("ACCT-1") == 1.25
+
+    def test_multiple_overdue_loans_are_summed(self):
+        records = [
+            LoanRecord(overdue_days=3, daily_rate=0.50),
+            LoanRecord(overdue_days=10, daily_rate=0.25),
+        ]
+        calculator = OverdueFeeCalculator(loans=FakeLoanRepository(records))
+        assert calculator.calculate("ACCT-1") == 4.00  # (3*0.50) + (10*0.25)
+```
+
+No database, no network, no setup scripts. The tests run in milliseconds because the object seam lets us substitute a fake at the enabling point. The production code and the test code call the exact same `calculate()` method -- we altered its behavior without editing it.

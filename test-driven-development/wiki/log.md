@@ -201,3 +201,37 @@ Suggested new questions to explore:
 - What is the relationship between TDD cycle size and developer experience level?
 - How should TDD practices adapt for AI-assisted development?
 - What is the optimal test pyramid shape for microservices vs monoliths?
+
+## [2026-04-20] refine | Wiki-wide concept refinement (7 priorities)
+
+Changes across 16 files implementing review-identified improvements:
+
+New pages (2):
+- `concepts/tdd-adoption-path.md` — phased path from untested legacy to well-tested system (5 phases + pitfalls)
+- `concepts/tdd-by-context.md` — domain, language family, and team maturity adaptation guide
+
+Worked code examples added (5 pages, Python):
+- `concepts/seams.md` — hardcoded DB call → extracted dependency via object seam
+- `concepts/characterization-tests.md` — 4-iteration Feathers algorithm on `compute_price`
+- `concepts/aggregates.md` — full Order aggregate with test-first workflow (invariant, event, factory tests)
+- `concepts/chicago-vs-london.md` — same order-placing feature implemented both schools
+- `concepts/outside-in-tdd.md` — double-loop shopping cart API (1 outer + 3 inner cycles)
+
+Limitations sections added (4 pages):
+- `concepts/atdd.md` — infrastructure cost, maintenance burden, CI blocking
+- `concepts/walking-skeleton.md` — upfront cost, over-engineering risk
+- `concepts/mocking.md` — false confidence, Mockery smell, when integration tests are better
+- `concepts/london-school-tdd.md` — fragility, mock maintenance, learning curve
+
+Citations audit (3 pages):
+- `concepts/red-green-refactor.md` — attributed "experts take smaller steps," Fake It pattern, refactor-on-green rule
+- `concepts/test-first.md` — sourced comparison table and courage framing
+- `concepts/bounded-context.md` — distinguished Evans Ch. 14 vs Vernon Part 2 claims
+
+Overlap resolution and tradeoff guidance (3 pages):
+- `concepts/london-school-tdd.md` — sharpened to focus on interface discovery workflow; removed duplicate comparison content
+- `concepts/four-pillars-of-good-tests.md` — added "Pillar Priorities by Context" table (startup, regulated, legacy, microservices)
+- `concepts/good-test-properties.md` — compressed redundant four-pillars recap; added "How These Frameworks Differ" section
+
+Updated `index.md` and `mkdocs.yml` with new pages.
+Wiki now has 60 concept pages, 19 entity pages, 19 source pages (98 total).

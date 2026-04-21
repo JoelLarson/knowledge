@@ -96,18 +96,9 @@ This is the cost of missing simple, granular, fast test coverage.
 
 These goals complement Farley's UMRANGS+F and Martin's F.I.R.S.T. with a more systematic framework that connects quality properties to the patterns that achieve them and the smells that indicate violations.
 
-## Khorikov's Four Pillars (Alternative Framework)
+## Khorikov's Four Pillars — Cross-Framework Mapping
 
-[Vladimir Khorikov](../entities/vladimir-khorikov.md) offers a different analytical framework in [Unit Testing: Principles, Practices, and Patterns](../sources/unit-testing-khorikov.md) — the [four pillars of a good test](four-pillars-of-good-tests.md):
-
-1. **Protection against regressions** — how well the test catches bugs
-2. **Resistance to refactoring** — how few false positives (false alarms) the test produces
-3. **Fast feedback** — how quickly the test executes
-4. **Maintainability** — how easy the test is to understand and run
-
-The key insight that distinguishes this from other frameworks: the test's value is the **product** of its scores. Zero in any pillar means zero value. Furthermore, the first three pillars are **mutually exclusive** — you can maximize only two at the expense of the third.
-
-Khorikov argues that **resistance to refactoring is non-negotiable** because it is mostly binary (a test either couples to implementation details or it doesn't). The practical trade-off therefore reduces to choosing between protection against regressions and fast feedback — which is exactly what the Test Pyramid encodes.
+Khorikov's [four pillars of a good test](four-pillars-of-good-tests.md) offer a complementary analytical lens. Rather than re-explain them here (see the [dedicated page](four-pillars-of-good-tests.md) for the full framework, trade-offs, and context-specific guidance), the unique value of this page is showing how the frameworks map onto each other.
 
 ### Mapping Between Frameworks
 
@@ -118,7 +109,15 @@ Khorikov argues that **resistance to refactoring is non-negotiable** because it 
 | Fast feedback | Fast | Fast | No Harm |
 | Maintainability | Understandable | — | Simple Test, Expressive Tests |
 
-The four pillars framework is more analytical: it explicitly models the trade-offs between dimensions and explains *why* you can't have it all, rather than listing desirable properties.
+### How These Frameworks Differ
+
+The mapping above is approximate — the concepts rhyme but are not identical.
+
+The clearest divergence is around **maintainability**. Farley's "Maintainable" is about *test-to-production coupling*: a maintainable test breaks only when requirements change, not when you refactor internals. Khorikov's "Maintainability" is about *test code quality*: how small the test is, how few assertions it contains, and how expensive its out-of-process dependencies are to operate. Both matter, but they diagnose different problems. A test can be perfectly decoupled from implementation (Farley-maintainable) yet still be a 200-line setup nightmare (Khorikov-unmaintainable), or vice versa.
+
+Similarly, Farley's "Necessary" means every test must *demand* production code — a TDD-rooted idea. Khorikov's "Protection against regressions" is outcome-focused: how much complex, domain-significant code does the test actually exercise? A test can be necessary (it drove a design decision) yet provide weak regression protection if it only covers trivial logic.
+
+Finally, UMRANGS+F and F.I.R.S.T. treat their properties as a checklist of desirable qualities, while Khorikov models the first three pillars as a **zero-sum trade-off** — you cannot maximize all three simultaneously. This trade-off analysis is the four pillars framework's distinctive contribution.
 
 ## Related Pages
 

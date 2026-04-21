@@ -72,6 +72,16 @@ For existing systems without tests:
 
 This connects to [Michael Feathers](../entities/michael-feathers.md)' work in _Working Effectively with Legacy Code_.
 
+## Limitations and When Not to Use
+
+The walking skeleton demands significant upfront investment before delivering any business value. You spend days or weeks wiring together build automation, deployment pipelines, and end-to-end test infrastructure for a feature so trivial it is "obvious and uninteresting." Stakeholders who expect visible progress can lose patience, and on projects with hard deadlines this front-loading of infrastructure work is a genuine risk.
+
+If your team already has a mature CI/CD pipeline and deployment automation from a previous project or shared platform, building a walking skeleton from scratch is redundant. The skeleton's primary purpose is to establish that infrastructure; when it already exists, you can skip straight to writing your first [acceptance test](atdd.md) against the existing pipeline.
+
+Small or throwaway projects -- prototypes, spike solutions, short-lived scripts, proof-of-concept demos -- do not benefit from a walking skeleton. The infrastructure outlives the project's useful life, making the effort pure waste.
+
+There is also a real risk of over-engineering the skeleton itself. Teams can spend weeks perfecting deployment automation, multi-environment configuration, and monitoring before writing a line of business logic. The skeleton should be the thinnest possible slice, not a production-hardened platform. When requirements are too unclear to define even one meaningful end-to-end path through the system -- for example, during early discovery when the team does not yet know what the product is -- the walking skeleton has nothing to walk. In that situation, focus on [discovery and spikes](../sources/growing-oo-software-freeman-pryce.md) first, then build the skeleton once a concrete slice emerges.
+
 ## Related Pages
 
 - [Outside-In TDD](outside-in-tdd.md)

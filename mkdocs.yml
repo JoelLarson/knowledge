@@ -109,6 +109,9 @@ nav:
         - Domain Events: test-driven-development/concepts/domain-events.md
         - Value Objects: test-driven-development/concepts/value-objects.md
         - Domain Model Testing: test-driven-development/concepts/domain-model-testing.md
+      - Adoption & Context:
+        - TDD Adoption Path: test-driven-development/concepts/tdd-adoption-path.md
+        - TDD by Context: test-driven-development/concepts/tdd-by-context.md
       - Engineering Practices:
         - Extreme Programming: test-driven-development/concepts/extreme-programming.md
         - Pair Programming: test-driven-development/concepts/pair-programming.md

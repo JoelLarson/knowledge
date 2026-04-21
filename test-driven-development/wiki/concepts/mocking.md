@@ -165,6 +165,16 @@ The mock/stub distinction maps to the Command Query Separation principle:
 - Commands (side effects, no return value) -> Mocks
 - Queries (return value, no side effects) -> Stubs
 
+## Limitations and When Not to Use
+
+Mocks introduce a maintenance burden that scales with interface churn. Every time a collaborator's interface changes -- a method renamed, a parameter added -- every mock of that interface must be updated. In codebases with rapidly evolving internal APIs, this cost compounds quickly and produces noise in diffs that obscures the actual behavioral change.
+
+Mock-heavy test suites create false confidence. Tests pass because the mocks behave as programmed, but the real collaborators may not. A mocked database repository returns exactly what you told it to; the actual SQL query might return rows in a different order, fail on edge-case data, or perform unacceptably slowly. Mocks hide performance problems entirely -- a test that mocks an HTTP client cannot reveal that the real call takes three seconds.
+
+The [Mockery smell](tdd-smells.md) deserves special emphasis as a limitation, not just an anti-pattern. When developers reach for mocks reflexively, over-mocking masks design problems rather than surfacing them. Newcomers to TDD are especially vulnerable: without experience, it is difficult to distinguish which dependencies warrant mocking and which should use real implementations or fakes. The result is tests that verify wiring rather than behavior.
+
+For certain categories of work, [integration tests](integration-testing.md) are simply better. Database queries with complex joins, file I/O with encoding or locking semantics, and message broker interactions all have behavior that is impossible to replicate faithfully with mocks. In these cases, test against real instances (or realistic fakes like testcontainers) and accept slower execution as the price of meaningful coverage.
+
 ## Related Pages
 
 - [Dependency Injection](dependency-injection.md)

@@ -39,30 +39,32 @@ When Context A consumes Context B, an anti-corruption layer translates between t
 - Contract-test the ACL against Context B's API
 - See [Ports and Adapters](ports-and-adapters.md)
 
-## Context Relationships (from Evans)
+## Context Relationships
+
+The following relationship patterns are defined by Evans (Evans, [DDD](../sources/domain-driven-design-evans.md), Ch. 14):
 
 - **Shared Kernel** — two contexts share a subset of the model. Requires coordinated testing.
 - **Customer-Supplier** — upstream supplies what downstream needs. Integration tests verify the contract.
 - **Conformist** — downstream conforms to upstream's model. Tests verify translation.
 - **Anti-Corruption Layer** — downstream protects itself with a translation layer.
-- **Open Host Service / Published Language** — upstream provides a well-defined API. Test with contract tests.
+- **Open Host Service / Published Language** — upstream provides a well-defined API (Evans, [DDD](../sources/domain-driven-design-evans.md), Ch. 14). Test with contract tests.
 
 ## Implementation (from Vernon)
 
-Vernon's SaaSOvation example uses three bounded contexts:
+Vernon's SaaSOvation example (Vernon, [Implementing DDD](../sources/implementing-ddd-vernon.md), Part 2) uses three bounded contexts:
 - Identity and Access Context
 - Collaboration Context
 - Agile Project Management Context
 
-Each has its own domain model, repository implementations, and test suite. Integration happens via REST APIs (Open Host Service) with Anti-Corruption Layers on the downstream side.
+Each has its own domain model, repository implementations, and test suite. Integration happens via REST APIs (Open Host Service) with Anti-Corruption Layers on the downstream side. The practical guidance on integration testing across these boundaries — stubbing the ACL, using contract tests at REST endpoints — comes from Vernon's treatment (Vernon, [Implementing DDD](../sources/implementing-ddd-vernon.md)).
 
 ## Bounded Contexts Are Not Modules
 
-Evans explicitly distinguishes bounded contexts from code modules. A bounded context may span multiple modules or even multiple applications. The boundary is linguistic and conceptual, not just a package structure.
+Evans explicitly distinguishes bounded contexts from code modules (Evans, [DDD](../sources/domain-driven-design-evans.md), Ch. 14). A bounded context may span multiple modules or even multiple applications. The boundary is linguistic and conceptual, not just a package structure.
 
 ## Continuous Integration Within a Context
 
-Evans recommends XP-style continuous integration within a single bounded context to prevent model fragmentation. Automated tests are the primary mechanism:
+Evans recommends XP-style continuous integration within a single bounded context to prevent model fragmentation (Evans, [DDD](../sources/domain-driven-design-evans.md), Ch. 14). Automated tests are the primary mechanism:
 - Merge frequently
 - Run all tests on every merge
 - Maintain model consistency through shared test suites

@@ -66,6 +66,19 @@ Therefore, the practical trade-off reduces to a slider between **protection agai
 
 This trade-off is what the [Test Pyramid](integration-testing.md) encodes: many fast unit tests at the base, fewer integration tests in the middle, very few end-to-end tests at the top. All layers should maximize resistance to refactoring.
 
+## Pillar Priorities by Context
+
+The four pillars matter everywhere, but different environments shift the *weighting* between the three that trade off against each other (regression protection, fast feedback, and refactoring resistance). Resistance to refactoring remains non-negotiable in principle, but in practice some contexts tolerate temporary coupling to implementation details while others cannot afford a single missed regression.
+
+| Context | Primary emphasis | Secondary emphasis | Rationale |
+|---|---|---|---|
+| **Startup / prototype** | Fast feedback | Regression protection | The design is still in flux. You need sub-second test runs so you can iterate quickly. Heavy integration suites slow you down for code that may be thrown away next week. |
+| **Regulated / financial system** | Regression protection | Refactoring resistance | Correctness is non-negotiable: a missed bug can mean compliance failures, financial loss, or safety incidents. Invest in thorough integration and end-to-end tests even if they are slower. |
+| **Legacy rescue** | Refactoring resistance | Fast feedback | You need the freedom to restructure safely. Tests that break on every rename or extract-method are worse than no tests at all. Characterization tests that verify observable behavior give you a safety net for large-scale refactoring. |
+| **Microservices** | Regression protection (at boundaries) | Fast feedback (internally) | Each service is small enough for fast unit tests internally, but the real risk lives at service boundaries. Contract tests and integration tests at the edges protect against regressions; fast unit tests keep inner development tight. |
+
+These are starting positions, not permanent configurations. A startup that reaches product-market fit should shift toward regression protection. A legacy rescue that stabilizes its architecture can start optimizing for speed. Re-evaluate the weighting as the codebase and business context evolve.
+
 ## The Multiplication Rule
 
 A test's value is the product of all four scores:

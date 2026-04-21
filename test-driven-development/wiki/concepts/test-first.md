@@ -29,7 +29,7 @@ When you write the test first, you have no code yet. This forces you to think fr
 - More discoverable behavior
 
 ### Better Tests
-Tests written first are structurally different from tests written after:
+Tests written first are structurally different from tests written after (Farley, [302 Course](../sources/dave-farley-302-course.md); Beck, [TDD by Example](../sources/tdd-by-example-kent-beck.md)):
 
 | Property | Test First | Test After |
 |----------|-----------|------------|
@@ -55,7 +55,7 @@ Coverage is a result of test-first development, not a target:
 Teams that chase coverage as a metric often produce tests with no assertions ("liars"). See [TDD Smells](tdd-smells.md).
 
 ## Test First and Courage (Beck)
-TDD is a way of managing fear. Fear of complex problems makes programmers tentative, uncommunicative, avoidant of feedback. Test-first development converts:
+TDD is a way of managing fear (Beck, [TDD by Example](../sources/tdd-by-example-kent-beck.md), Preface). Fear of complex problems makes programmers tentative, uncommunicative, avoidant of feedback. Test-first development converts (Farley, [302 Course](../sources/dave-farley-302-course.md)):
 - Tentativeness → concrete learning quickly
 - Clamming up → clearer communication
 - Avoiding feedback → seeking helpful feedback

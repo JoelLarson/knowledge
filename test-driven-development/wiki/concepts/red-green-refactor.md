@@ -26,7 +26,7 @@ Write the minimum code to make the test pass — even if it means hard-coding re
 
 > "Make the test work quickly, committing whatever sins necessary in the process." — Kent Beck
 
-**Why dumb code is okay here:** The system is in an unstable state. The single goal is to return to stability. Elegant code comes in Refactor. Hard-coded returns ("fake it 'til you make it") are a legitimate step.
+**Why dumb code is okay here:** The system is in an unstable state. The single goal is to return to stability. Elegant code comes in Refactor. Hard-coded returns ("fake it 'til you make it") are a legitimate step — Beck calls this the "Fake It" pattern (Beck, [TDD by Example](../sources/tdd-by-example-kent-beck.md), Ch. 1).
 
 **Mindset:** Single-minded path to passing the test. Fastest route to green.
 
@@ -41,9 +41,9 @@ Goals:
 - Improve modularity, cohesion, separation of concerns
 - Keep both code and test as expressive as possible
 
-Work in tiny steps. Run tests after each micro-change. Experts take smaller steps than beginners — this is the key distinguishing characteristic.
+Work in tiny steps. Run tests after each micro-change. Experts take smaller steps than beginners — this is the key distinguishing characteristic (Farley, [302 Course](../sources/dave-farley-302-course.md)).
 
-**Rule:** Always refactor on Green, never on Red. If you notice a refactoring opportunity while writing a new test, pause the new test, do the refactoring while passing tests hold, then re-enable the new failing test.
+**Rule:** Always refactor on Green, never on Red (Beck, [TDD by Example](../sources/tdd-by-example-kent-beck.md); Farley, [302 Course](../sources/dave-farley-302-course.md)). If you notice a refactoring opportunity while writing a new test, pause the new test, do the refactoring while passing tests hold, then re-enable the new failing test.
 
 ## Commit Point
 
