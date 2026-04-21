@@ -19,8 +19,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
       - uses: astral-sh/setup-uv@v5
-      - run: uv run mkdocs build
+      - run: uv run python -m mkdocs build --strict
       - uses: actions/upload-pages-artifact@v5
         with:
           path: site
