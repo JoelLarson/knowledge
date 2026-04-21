@@ -20,6 +20,8 @@ Write a test before any production code exists. Run it and see it fail. This ste
 - Tests the test itself (a passing test that was never red may not be asserting anything)
 - Acts as a mini experiment in interface design: if the test is painful to write, the interface design is poor
 
+**Why red is non-negotiable:** The red phase is not ceremony — it is *proof that your test can fail*. A test that was never red might pass for the wrong reason: it could assert the wrong thing, hit a default return value, or exercise a code path that already existed. Without seeing red first, you cannot know whether the green phase means "my code works" or "my test doesn't test what I think it tests." The red phase is the precondition for the green phase meaning anything.
+
 **Mindset:** Focus exclusively on (1) the desired behavioral outcome and (2) the ideal public interface design. Do not think about implementation yet.
 
 ### GREEN — Make It Pass (Simply)

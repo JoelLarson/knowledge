@@ -286,3 +286,13 @@ Pages changed:
 - `concepts/london-school-tdd.md` — new "Author's Position" section; revised "When to Use" to emphasize external boundaries and duck-typed language exception
 - `concepts/mocking.md` — new "Author's Position: Prefer Alternatives to Mocks" section with preference hierarchy; narrowed "When to Use" to unmanaged external dependencies only
 - `concepts/bdd.md` — new "BDD Implies Chicago-Style Verification" section connecting behavioral specification to state/output verification
+
+## [2026-04-21] refine | Author's position on test-first ordering and the red phase
+
+Added author's opinion across 4 pages: test-first ordering is valuable as a thinking discipline and safety mechanism, even though Fucci et al. found ordering wasn't a significant predictor. The red phase is non-negotiable because it proves the test can fail.
+
+Pages changed:
+- `concepts/tdd-process-granularity.md` — new "Author's Position" section; nuanced the ITL section from "most of TDD's benefits" to "some"
+- `concepts/test-first.md` — new "Author's Position: Test-First Is Worth Preserving" replacing the hedge; three arguments (thinking discipline, red-phase safety, empirical gap)
+- `concepts/red-green-refactor.md` — new "Why red is non-negotiable" paragraph in the RED section
+- `concepts/tdd-empirical-evidence.md` — nuanced synthesis point 2 to acknowledge test-first may work *through* granularity rather than independently

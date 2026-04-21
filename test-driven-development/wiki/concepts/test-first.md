@@ -73,9 +73,19 @@ This creates a tight cycle: seconds between each law, not minutes or hours.
 
 ## Empirical Evidence on Test-First Ordering
 
-Fucci et al. 2017 found that strict test-first sequencing was **not a significant predictor** of quality or productivity in their regression models. The granularity and uniformity of cycles mattered more. This challenges the dogma that the test must come literally before the code -- the discipline of small, consistent cycles may be the actual mechanism. See [TDD Process Granularity](tdd-process-granularity.md) for the full treatment and [TDD Empirical Evidence](tdd-empirical-evidence.md) for the broader research synthesis.
+Fucci et al. 2017 found that strict test-first sequencing was **not a significant predictor** of quality or productivity in their regression models. The granularity and uniformity of cycles mattered more. See [TDD Process Granularity](tdd-process-granularity.md) for the full treatment and [TDD Empirical Evidence](tdd-empirical-evidence.md) for the broader research synthesis.
 
-This does not invalidate test-first as a practice. Test-first may provide long-term benefits (requirements discovery, design formalization, courage) that short-term studies cannot capture. But it suggests that teams struggling with strict test-first should focus on step size rather than ordering.
+## Author's Position: Test-First Is Worth Preserving
+
+This wiki acknowledges the Fucci finding but holds that test-first ordering is valuable for reasons the research did not measure:
+
+**Test-first is primarily a thinking discipline.** It forces you to articulate desired behavior before implementing it. You cannot write a test for nonexistent code without deciding what that code should do — from the consumer's perspective, in behavioral terms. This cognitive shift is what transforms a developer's approach to problem decomposition. Once you have internalized behavior-first thinking, you may find it easier to take larger steps or occasionally write code before a test. But the discipline is what built the habit in the first place, and continuing to practice it reinforces rather than replaces the mindset.
+
+**The red phase prevents false confidence.** A test that was never red might pass for the wrong reason — it could assert the wrong thing, hit a default return value, or exercise a code path that already existed. The red phase is proof that your test *can* fail, which is the precondition for the green phase meaning anything. Skipping it means you don't know whether your spec actually specifies. See [Red-Green-Refactor](red-green-refactor.md).
+
+**The empirical gap.** Fucci et al. measured quality as "acceptance assertions passing" and productivity as "assertions per minute." Neither metric captures whether the developer thought about behavior before implementation, or whether their tests were meaningful rather than coincidentally green. The finding that granularity matters most is compatible with test-first being the best mechanism to *achieve* fine-grained cycles — the ordering may be non-significant in the model precisely because it works *through* granularity rather than independently of it.
+
+Teams struggling with strict test-first should focus on step size — but as a way to make test-first easier, not as an alternative to it.
 
 ## Related Pages
 

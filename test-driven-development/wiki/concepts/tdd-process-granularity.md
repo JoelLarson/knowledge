@@ -62,7 +62,7 @@ Focus training on **step size discipline** rather than dogmatic test-first order
 - Monitor cycle consistency -- erratic rhythm signals confusion or overreach.
 
 ### For Teams That Cannot Adopt Strict Test-First
-The finding suggests you can capture most of TDD's benefits with disciplined iterative test-last (ITL):
+The finding suggests you can capture *some* of TDD's benefits with disciplined iterative test-last (ITL):
 
 - Write a small piece of code (5-10 minutes)
 - Immediately write or update tests
@@ -77,6 +77,16 @@ This is not carte blanche to skip testing or delay it. The key word is "immediat
 - It does **not** mean testing is optional
 - It does **not** mean you can write large blocks of code and test later
 - Fucci et al. note that test-first may provide long-term advantages (requirements discovery, design formalization) not captured in their short-term study
+
+## Author's Position: Granularity Matters, But Test-First Matters Too
+
+This wiki accepts Fucci et al.'s empirical finding on granularity and uniformity, but holds that test-first ordering provides two benefits the research did not measure:
+
+**1. Test-first is a thinking discipline.** Writing a test before code forces you to think about desired behavior before implementation. You cannot write a test for code that doesn't exist without deciding what the code should do. This cognitive shift — designing from the consumer's perspective, decomposing problems into behavioral increments — is the primary benefit of test-first, and it does not show up in metrics like "acceptance assertions passing."
+
+**2. The red phase is a safety mechanism.** Skipping red — writing code first, then a test that happens to pass — is dangerous because you never learn whether the test actually exercises the code path you intended. A test that was never red might be asserting the wrong thing, hitting a default return value, or testing a path that already existed. The red phase is proof that your test *can* fail, which is the precondition for the green phase meaning anything. See [Red-Green-Refactor](red-green-refactor.md).
+
+As practitioners internalize behavior-first thinking and small-step discipline, the strict ordering may feel less essential. But the risk of skipping red remains regardless of experience — and the thinking discipline is reinforced, not replaced, by the practice. The empirical finding that granularity matters most is compatible with test-first being the best way to *achieve* fine-grained cycles in the first place.
 
 ## Connection to Other Research
 

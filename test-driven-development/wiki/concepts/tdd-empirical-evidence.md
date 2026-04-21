@@ -92,7 +92,7 @@ Pancur & Ciglaric speculate that "studies showing the superiority of TDD over a 
 
 1. **TDD-like practices improve code quality.** This is the most robust finding. The defect reduction is real and substantial in industrial settings.
 
-2. **The mechanism is likely fine-grained iteration, not strict test-first ordering.** Working in small, consistent cycles with frequent test feedback produces the quality benefit. Whether the test comes literally first or immediately after a small code change may not matter as much as commonly believed.
+2. **Fine-grained iteration is the measurable mechanism, but test-first ordering may work *through* it.** Working in small, consistent cycles with frequent test feedback produces the measurable quality benefit. Whether the test comes literally first or immediately after a small code change did not show as a significant predictor in Fucci et al.'s models — but their metrics (acceptance assertions passing, assertions per minute) did not capture the cognitive benefit of thinking about behavior before implementation, or the safety of verifying that a test can fail before making it pass. Test-first may be non-significant in the model precisely because it achieves its effect *via* granularity rather than independently of it.
 
 3. **There is a real time cost upfront.** 15-35% more development time is a consistent finding. Teams should expect this and plan for it, with the understanding that maintenance costs are reduced downstream.
 
