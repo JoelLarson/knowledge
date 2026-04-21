@@ -183,6 +183,18 @@ Hooks live in your repo, require no packaging or entry points, and are ideal for
 
 - **`uv run mkdocs` can resolve to a global tool install.** If you've previously run `uv tool install mkdocs`, the `uv run mkdocs` command may resolve to the tool's isolated environment instead of the project's virtual environment. Plugins installed as project dependencies won't be found, producing confusing "plugin is not installed" errors even though `uv pip list` shows them. Use `uv run python -m mkdocs` to guarantee the project venv is used. This applies to both local development and CI.
 
+- **Add a `Makefile` to wrap local invocations.** Rather than typing `uv run python -m mkdocs build --strict` every time, a two-target `Makefile` gives you `make build` and `make serve` as shorthands — the same ergonomic pattern as `npm run build`/`npm run dev` in JS projects:
+
+    ```makefile
+    .PHONY: build serve
+
+    build:
+        uv run python -m mkdocs build --strict
+
+    serve:
+        uv run python -m mkdocs serve
+    ```
+
 ---
 
 ## 3. Improving Readability and Ease of Use
