@@ -87,4 +87,5 @@ The "Arrange-Act-Assert" formulation (common in .NET communities) is equivalent 
 - [Test Smells Catalog](test-smells-catalog.md)
 - [Good Test Properties](good-test-properties.md)
 - [Red-Green-Refactor](red-green-refactor.md)
+- [Arrange-Act-Assert (AAA)](arrange-act-assert.md)
 - [xUnit Test Patterns (Meszaros)](../sources/xunit-test-patterns-meszaros.md)

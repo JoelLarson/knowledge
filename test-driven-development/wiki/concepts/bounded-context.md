@@ -85,4 +85,5 @@ Evans recommends XP-style continuous integration within a single bounded context
 - [Implementing DDD (Vernon)](../sources/implementing-ddd-vernon.md)
 - [Eric Evans](../entities/eric-evans.md)
 - [Integration Testing](integration-testing.md)
+- [Contract-Based Testing](contract-testing.md)
 - [Vaughn Vernon](../entities/vaughn-vernon.md)

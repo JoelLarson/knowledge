@@ -165,3 +165,4 @@ Some edge cases don't need integration tests if incorrect execution immediately 
 - [DORA Metrics](dora-metrics.md)
 - [Test Automation at Scale](test-automation-at-scale.md)
 - [Continuous Integration](continuous-integration.md)
+- [Contract-Based Testing](contract-testing.md)

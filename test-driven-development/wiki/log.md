@@ -287,6 +287,18 @@ Pages changed:
 - `concepts/mocking.md` — new "Author's Position: Prefer Alternatives to Mocks" section with preference hierarchy; narrowed "When to Use" to unmanaged external dependencies only
 - `concepts/bdd.md` — new "BDD Implies Chicago-Style Verification" section connecting behavioral specification to state/output verification
 
+## [2026-04-21] expand | 5 new concept pages filling lint-identified gaps
+
+New pages:
+- `concepts/contract-testing.md` — consumer-driven contracts, relationship to integration testing and bounded contexts, Khorikov's unmanaged dependency connection
+- `concepts/cqrs.md` — command/query separation at architectural level, distinct testing strategies for each side, CQS connection
+- `concepts/event-sourcing.md` — persisting aggregates as event sequences, Given/When/Then maps to event-sourced testing, projection testing
+- `concepts/need-driven-development.md` — Freeman & Pryce's design philosophy, interfaces from client needs, author's note on separating the insight from London-school mocking
+- `concepts/arrange-act-assert.md` — equivalence to Four-Phase Test and Given/When/Then, Khorikov's guidelines
+
+Cross-references added to: integration-testing.md, four-phase-test.md, domain-events.md, london-school-tdd.md, bounded-context.md.
+Updated `index.md` with all 5 new pages.
+
 ## [2026-04-21] lint | Post-refinement health check
 
 Findings:

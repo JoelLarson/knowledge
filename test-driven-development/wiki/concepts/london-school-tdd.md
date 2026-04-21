@@ -91,4 +91,5 @@ The London school is powerful for interface-rich, collaborator-heavy designs, bu
 - [Nat Pryce](../entities/nat-pryce.md)
 - [Kent Beck](../entities/kent-beck.md)
 - [Chicago vs. London Schools](chicago-vs-london.md)
+- [Need-Driven Development](need-driven-development.md)
 - [Growing OO Software (Freeman & Pryce)](../sources/growing-oo-software-freeman-pryce.md)

@@ -118,4 +118,6 @@ They bridge [Aggregates](aggregates.md) (which publish events) and [Bounded Cont
 - [BDD](bdd.md)
 - [Ports and Adapters](ports-and-adapters.md)
 - [Implementing DDD (Vernon)](../sources/implementing-ddd-vernon.md)
+- [CQRS](cqrs.md)
+- [Event Sourcing](event-sourcing.md)
 - [Domain-Driven Design (Evans)](../sources/domain-driven-design-evans.md)

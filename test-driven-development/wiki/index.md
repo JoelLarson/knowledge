@@ -41,6 +41,7 @@ Opinionated learning paths through the wiki, sequenced for different starting po
 - [BDD (Behaviour-Driven Development)](concepts/bdd.md) — Better vocabulary for TDD: specs not tests, "should" naming, Given/When/Then
 - [ATDD (Acceptance Test Driven Development)](concepts/atdd.md) — TDD at the feature level; executable definition of done; four-layer architecture
 - [Walking Skeleton](concepts/walking-skeleton.md) — Thinnest end-to-end slice to bootstrap build/deploy/test infrastructure
+- [Need-Driven Development](concepts/need-driven-development.md) — Interfaces shaped by client needs, not implementor capabilities; the design philosophy behind London school
 - [TDD in Functional Programming](concepts/tdd-in-functional-programming.md) — Pure functions, no mocking, property-based testing as natural complement
 
 ### Test Design & Quality
@@ -48,6 +49,7 @@ Opinionated learning paths through the wiki, sequenced for different starting po
 - [Good Test Properties (UMRANGS+F)](concepts/good-test-properties.md) — Eight dimensions of test quality; how TDD produces superior tests vs. test-after
 - [Four Pillars of a Good Test](concepts/four-pillars-of-good-tests.md) — Khorikov's framework: protection against regressions, resistance to refactoring, fast feedback, maintainability
 - [Output vs State vs Communication Testing](concepts/output-vs-state-vs-communication-testing.md) — Khorikov's taxonomy: output-based (best), state-based, communication-based (worst)
+- [Arrange-Act-Assert (AAA)](concepts/arrange-act-assert.md) — The most widely used test structure formulation; equivalent to Four-Phase Test and Given/When/Then
 - [Four-Phase Test](concepts/four-phase-test.md) — Canonical test structure: Setup, Exercise, Verify, Teardown
 - [Test Fixture Strategies](concepts/test-fixture-strategies.md) — Fresh vs Shared Fixture, setup patterns, teardown approaches
 - [Test Organization Patterns](concepts/test-organization-patterns.md) — Testcase Class strategies, naming, suites, code reuse
@@ -71,6 +73,7 @@ Opinionated learning paths through the wiki, sequenced for different starting po
 ### Testing at Scale
 
 - [Integration Testing](concepts/integration-testing.md) — Testing component boundaries and external dependencies; the testing pyramid
+- [Contract-Based Testing](concepts/contract-testing.md) — Verifying service-to-service assumptions independently; consumer-driven contracts
 - [Property-Based Testing](concepts/property-based-testing.md) — Generating random inputs to verify invariants; QuickCheck, Hypothesis, fast-check
 - [Mutation Testing](concepts/mutation-testing.md) — Evaluating test suite quality by introducing code mutants and checking detection
 - [Approval Testing](concepts/approval-testing.md) — Capturing current behavior as baseline; the safety net for refactoring legacy code
@@ -103,6 +106,8 @@ Opinionated learning paths through the wiki, sequenced for different starting po
 - [Domain Events](concepts/domain-events.md) — Events as first-class model elements; enable event-driven testing and temporal assertions
 - [Value Objects](concepts/value-objects.md) — Immutable, identity-less objects; trivially testable, ideal for property-based testing
 - [Domain Model Testing](concepts/domain-model-testing.md) — Testing rich domain models: aggregate invariants, event assertions, domain language in tests
+- [CQRS](concepts/cqrs.md) — Command Query Responsibility Segregation: separate read/write models with distinct testing strategies
+- [Event Sourcing](concepts/event-sourcing.md) — Persisting aggregates as event sequences; Given/When/Then maps naturally to event-sourced testing
 
 ### Adoption & Context
 
