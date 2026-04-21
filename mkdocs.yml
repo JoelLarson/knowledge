@@ -6,25 +6,42 @@ repo_name: joellarson/knowledge
 theme:
   name: material
   palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: black
+      accent: amber
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+    - scheme: default
+      primary: black
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  font:
+    text: JetBrains Mono
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
   features:
     - navigation.sections
     - navigation.indexes
     - navigation.top
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.path
+    - navigation.expand
     - search.suggest
     - search.highlight
+    - search.share
     - content.code.copy
+    - content.code.select
+
+extra_css:
+  - stylesheets/custom.css
+
+extra_javascript:
+  - javascripts/sidebar-toggle.js
 
 markdown_extensions:
   - toc:
