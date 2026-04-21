@@ -573,6 +573,22 @@ body.sidebar-hidden .md-typeset {
 /* Footer */
 [data-md-color-scheme="default"] .md-footer {
   border-top: 1px solid #d5cbb5;
+  --md-footer-fg-color: #5a4828;
+  --md-footer-fg-color--light: #6a5d48;
+  --md-footer-fg-color--lighter: #8a7a60;
+  color: #5a4828;
+}
+
+[data-md-color-scheme="default"] .md-footer-meta {
+  color: #5a4828;
+}
+
+[data-md-color-scheme="default"] .md-footer .md-copyright {
+  color: #5a4828;
+}
+
+[data-md-color-scheme="default"] .md-footer .md-copyright a {
+  color: #7a5000;
 }
 
 /* Scrollbar */
