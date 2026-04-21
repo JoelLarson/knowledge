@@ -82,11 +82,29 @@ Most experienced practitioners use both styles situationally:
 - Chicago style for domain logic, value objects, and pure computations
 - Acceptance tests (a London school idea) wrapping Chicago-style unit tests
 
+## Author's Position: Chicago as Default, London as Containment
+
+This wiki takes the position that **the Chicago school should be the default, and the London school should be contained to external boundaries.**
+
+Mocking intra-system communications is an anti-pattern. How classes collaborate internally to produce a result is an implementation detail — not behavior. Tests that verify internal message-passing become change detectors that break on refactoring, producing the false positives Khorikov warns against. The cost is not theoretical: teams that mock aggressively spend more time maintaining test wiring than writing meaningful specifications.
+
+**Where London-style mocking belongs:** at the outer boundaries of the system, where your code talks to unmanaged dependencies (SMTP, message buses, third-party APIs). Here the communication pattern *is* the contract, and mocking it is legitimate. This is containment, not endorsement — use the technique for the 10-20% of code that faces outward and avoid it everywhere else.
+
+**Where London-style mocking has a stronger case:** in duck-typed languages like Ruby that lack explicit interfaces. Without compile-time interface enforcement, mock expectations can serve as a lightweight way to document the protocol between collaborators. But even here the technique has limits — the fragility and false-confidence problems remain, and test-specific implementations (fakes) are often a better choice when practical.
+
+**The preference hierarchy for test doubles:**
+1. Real collaborators (best — highest confidence, no mock maintenance)
+2. Fakes (in-memory implementations — real behavior, fast execution)
+3. Test-specific implementations (implement the interface with minimal logic)
+4. Mocks (last resort — only for unmanaged external boundaries)
+
+The outside-in *workflow* (acceptance test driving unit tests inward) does not require London-style *mocking*. You can develop outside-in using fakes and real collaborators at each layer. The workflow is independent of the mocking question.
+
 ## The Key Insight From Each School
 
 **From Chicago:** Tests should verify *what* the system does (outcomes), not *how* it does it (implementation). This makes tests resilient.
 
-**From London:** The communication patterns between objects *are* the design. Making them explicit through mock expectations is itself valuable design documentation.
+**From London:** The communication patterns between objects *are* the design. Making them explicit through mock expectations is itself valuable design documentation — but this documentation value rarely justifies the maintenance cost for intra-system communications.
 
 ## Khorikov's Argument for the Classical School
 

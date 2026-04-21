@@ -48,14 +48,24 @@ verify(mockDisplay).show("1 + 2 = 3");
 
 The critical step is **injection** — the mock must be passed in, not created inside the code under test. See [Dependency Injection](dependency-injection.md).
 
+## Author's Position: Prefer Alternatives to Mocks
+
+This wiki takes the position that mocks should be a last resort, not a default. The preference hierarchy for test doubles:
+
+1. **Real collaborators** — highest confidence, no mock maintenance
+2. **Fakes** — in-memory implementations with real behavior, fast execution
+3. **Test-specific implementations** — implement the interface with minimal logic for the test scenario
+4. **Mocks** — only for unmanaged external boundaries (SMTP, message buses, third-party APIs)
+
+Mocking intra-system communications is an anti-pattern — it couples tests to implementation details and produces false positives on refactoring. Even when a test requires an interface implementation and defining a test-specific one feels like overhead, the resulting test is more resilient and meaningful than one built on mock expectations. See [Chicago vs. London — Author's Position](chicago-vs-london.md#authors-position-chicago-as-default-london-as-containment) for the full rationale.
+
 ## When to Use Mocks
 
 Use mocks to:
 
-- Verify interactions with collaborating objects (not just outputs)
-- Isolate the code under test from slow or unpredictable dependencies
-- Test edge cases that are hard to trigger with real implementations
-- Create [measurement points](dependency-injection.md) to observe code behavior
+- Verify communication contracts with **unmanaged external dependencies** whose side effects are visible to other systems
+- Isolate the code under test from slow or unpredictable external services
+- Test edge cases in external interactions that are hard to trigger with real implementations
 
 ## Anti-Patterns and the Mockery
 

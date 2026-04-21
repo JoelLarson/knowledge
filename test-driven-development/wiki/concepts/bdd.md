@@ -85,6 +85,12 @@ Good naming is critical to BDD's value as documentation. From Farley:
 ### Good Names
 `Customer`, `LineItem`, `OrderBook`, `shouldAddTwoNumbers`, `placeOrderForBook`.
 
+## BDD Implies Chicago-Style Verification
+
+BDD's insistence on behavioral outcomes is inherently aligned with the [Chicago school](chicago-vs-london.md). When a spec says "should return the total price," it describes *what* the system produces — an output or state change — not *which internal methods get called*. The [London school](london-school-tdd.md)'s interaction verification ("assert that service X was called with arguments Y") specifies implementation, which is precisely what BDD's vocabulary shift was designed to move away from.
+
+This means that a team practicing BDD consistently — writing specs as behavioral outcomes at every level — will naturally arrive at state/output verification for intra-system tests and reserve mocking for external boundary contracts. See [Author's Position on Chicago vs. London](chicago-vs-london.md#authors-position-chicago-as-default-london-as-containment).
+
 ## BDD vs ATDD
 
 [Acceptance Test Driven Development](atdd.md) (ATDD) is the application of BDD principles at the feature/story level, typically written before development begins and owned by the whole team. BDD is the philosophy; ATDD is an application of it at scale.

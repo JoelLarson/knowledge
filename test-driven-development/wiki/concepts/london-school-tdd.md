@@ -49,12 +49,18 @@ The London school emerged from the London Extreme Tuesday Club (XTC) in the late
 - **[Nat Pryce](../entities/nat-pryce.md)** — brought protocol-focused thinking from his PhD work on interaction patterns; built DynaMock and jMock (Freeman & Pryce, GOOS Ch. 1).
 - **Joe Walnes** — coined "Only mock types you own" and articulated how mocks serve as interface design drivers rather than mere test isolation tools.
 
+## Author's Position
+
+This wiki documents the London school for its historical importance and genuine insights about interface discovery, but takes the position that **London-style mocking should be avoided for intra-system communications and contained to external boundaries.** Mocking how classes talk to each other internally couples tests to implementation details, producing fragile tests that break on refactoring without catching bugs. The Chicago school's state/output verification is the default for this wiki. See [Chicago vs. London — Author's Position](chicago-vs-london.md#authors-position-chicago-as-default-london-as-containment) for the full rationale and preference hierarchy.
+
+**Exception:** In duck-typed languages (Ruby, Python, JavaScript) that lack explicit interfaces, London-style mock expectations can serve as lightweight protocol documentation. Even here, the technique should be applied sparingly — fakes and test-specific implementations are preferred when practical, and the fragility costs remain.
+
 ## When to Use London Style
 
-- Object-oriented systems with clear communication patterns between collaborating objects
-- Event-driven or message-passing architectures
-- When you want to design interfaces from the consumer's perspective
-- When you want to enforce [Tell, Don't Ask](tell-dont-ask.md) and information hiding
+- Verifying communication with **unmanaged external dependencies** (SMTP, message buses, third-party APIs) where the message pattern is the contract
+- Duck-typed languages where mock expectations serve as interface documentation (with the caveats above)
+- Event-driven or message-passing architectures at service boundaries
+- When you want to design interfaces from the consumer's perspective (but consider using fakes instead of mocks once the interface is discovered)
 
 ## Limitations and When Not to Use
 

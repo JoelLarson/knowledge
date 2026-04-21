@@ -266,3 +266,23 @@ Overlap resolution and tradeoff guidance (3 pages):
 
 Updated `index.md` and `mkdocs.yml` with new pages.
 Wiki now has 60 concept pages, 19 entity pages, 19 source pages (98 total).
+
+## [2026-04-21] query | Is TDD the right name for the umbrella discipline?
+
+Question: Is there a single phrase that embraces behavior-first, unit, integration, and acceptance tests and when each should be applied?
+
+Answer synthesized from 8 wiki pages: [BDD](../concepts/bdd.md), [ATDD](../concepts/atdd.md), [Outside-In TDD](../concepts/outside-in-tdd.md), [TDD vs. Unit Testing](../concepts/tdd-vs-unit-testing.md), [Integration Testing](../concepts/integration-testing.md), [Test First](../concepts/test-first.md), [Choosing Test Levels](../guides/choosing-test-levels.md), [Dan North](../entities/dan-north.md), [Chicago vs. London](../concepts/chicago-vs-london.md).
+
+Key finding: BDD was intended to be the umbrella term but got narrowed to mean Cucumber/Gherkin tooling. The complete practice is a composition: BDD (philosophy) + ATDD (feature level) + Outside-In TDD (workflow) + TDD (unit level) + integration testing (boundaries). Best candidate umbrella terms: "specification-first development" or "outside-in specification."
+
+Filed as: `queries/naming-the-umbrella-discipline.md`
+
+## [2026-04-21] refine | Author's position on London school and mocking
+
+Added author's opinion across 4 pages: London-style mocking is an anti-pattern for intra-system communications and should be contained to external boundaries. Chicago school is the default.
+
+Pages changed:
+- `concepts/chicago-vs-london.md` — new "Author's Position: Chicago as Default, London as Containment" section with preference hierarchy (real > fakes > test-specific > mocks), duck-typed language exception, outside-in workflow independence
+- `concepts/london-school-tdd.md` — new "Author's Position" section; revised "When to Use" to emphasize external boundaries and duck-typed language exception
+- `concepts/mocking.md` — new "Author's Position: Prefer Alternatives to Mocks" section with preference hierarchy; narrowed "When to Use" to unmanaged external dependencies only
+- `concepts/bdd.md` — new "BDD Implies Chicago-Style Verification" section connecting behavioral specification to state/output verification

@@ -164,3 +164,9 @@ Opinionated learning paths through the wiki, sequenced for different starting po
 - [Realizing Quality Improvement Through TDD — Nagappan et al. 2008](sources/tdd-quality-improvement-nagappan-2008.md) — Industrial case study: 40-90% defect reduction at Microsoft/IBM with 15-35% time increase
 - [A Dissection of the Test-Driven Development Process — Fucci et al. 2017](sources/dissection-of-tdd-fucci-2017.md) — Granularity and uniformity of cycles matter more than test-first ordering
 - [Why Research on TDD is Inconclusive — Ghafari et al. 2020](sources/why-tdd-research-inconclusive-ghafari-2020.md) — Five categories of factors explaining contradictory TDD study results
+
+---
+
+## Queries
+
+- [Is TDD the Right Name? Naming the Umbrella Discipline](queries/naming-the-umbrella-discipline.md) — Why no single term covers TDD+BDD+ATDD; candidate umbrella terms; "specification-first development" as synthesis (2026-04-21)
