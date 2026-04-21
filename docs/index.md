@@ -4,6 +4,7 @@ A collection of topic wikis — deep-dive references built from books, courses, 
 
 ## Topics
 
+- [Getting Things Done](topics/getting-things-done/index.md) — Concepts, entities, and sources covering GTD from first principles to practice
 - [Test-Driven Development](topics/test-driven-development/index.md) — Concepts, entities, and sources covering TDD from first principles to empirical research
 
 ## Best Practices
