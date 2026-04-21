@@ -39,6 +39,7 @@ Use when you want real behavior but also need to observe interactions. Less comm
 ## Test Doubles and Design
 
 The need for test doubles is a design signal:
+
 - **Too many doubles needed** → the unit has too many dependencies ([SRP violation](solid-principles.md))
 - **Complex mock setup** → tight coupling ([Excessive Setup](tdd-smells.md))
 - **Mocking the thing you're testing** → confused test design ([The Mockery](tdd-smells.md))
@@ -48,6 +49,7 @@ Test doubles work through [Dependency Injection](dependency-injection.md) — th
 ## Beck's Patterns
 
 In [TDD by Example](../sources/tdd-by-example-kent-beck.md), Beck describes several related patterns:
+
 - **Mock Object** — fake version of expensive/complex dependency
 - **Self Shunt** — the test class itself implements the interface and records interactions
 - **Log String** — record a log of method calls for later assertion
@@ -70,6 +72,7 @@ In [xUnit Test Patterns](../sources/xunit-test-patterns-meszaros.md), Meszaros d
 
 ### Installation Methods
 The test double must be installed in place of the real DOC. Meszaros documents three approaches:
+
 1. **[Dependency Injection](dependency-injection.md)** — the client provides the DOC to the SUT
 2. **Dependency Lookup** — the SUT asks a registry/factory for the DOC; the test replaces the registry entry
 3. **Test-Specific Subclass** — override a factory method in the SUT that creates the DOC

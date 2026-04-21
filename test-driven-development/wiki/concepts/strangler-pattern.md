@@ -24,6 +24,7 @@ The Strangler Pattern is a migration strategy for [Legacy Code](legacy-code.md) 
 ## Anti-Corruption Layer
 
 The anti-corruption layer is borrowed from Domain-Driven Design. It:
+
 - Translates between the old system's internal models and the new system's models
 - Prevents legacy concepts from leaking into new code
 - Provides a stable interface for testing
@@ -31,6 +32,7 @@ The anti-corruption layer is borrowed from Domain-Driven Design. It:
 ## Why Not Big-Bang Rewrite?
 
 Big rewrites fail because:
+
 - You must reimplement everything before you can ship anything
 - Requirements continue to change during the rewrite
 - The old system has implicit behavior that's never documented

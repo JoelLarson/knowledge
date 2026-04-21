@@ -45,10 +45,12 @@ This is the theoretical foundation of [Dependency Injection](dependency-injectio
 ## SOLID and Testability
 
 The relationship is circular and reinforcing:
+
 - SOLID code is easier to test → TDD succeeds
 - TDD pressure forces SOLID design → code quality improves
 
 When tests are hard to write, it's usually a SOLID violation:
+
 - Hard to isolate → DIP/DI violation
 - Complex setup → SRP violation
 - Fragile to changes → OCP violation

@@ -13,6 +13,7 @@ The core TDD cycle: write a failing test (Red), make it pass minimally (Green), 
 
 ### RED — Write a Failing Test
 Write a test before any production code exists. Run it and see it fail. This step:
+
 - Forces you to think about what you actually want the code to do
 - Designs the public interface from the consumer's perspective
 - Verifies that the test infrastructure works
@@ -36,6 +37,7 @@ With the test passing, improve both the code and the test. Refactoring is specif
 > "If it changes the behavior of your system, it wasn't refactoring."
 
 Goals:
+
 - Eliminate duplication introduced in Green
 - Make code simpler, more readable, more concise, more general
 - Improve modularity, cohesion, separation of concerns
@@ -56,6 +58,7 @@ Tests are the teeth of a ratchet. Once a test works, it is always working. Each 
 ## Relationship to Design Quality
 
 The refactor step is where the [Modern Software Engineering](../sources/modern-software-engineering-dave-farley.md) design principles get applied:
+
 - Modularity
 - Cohesion
 - Separation of Concerns

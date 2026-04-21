@@ -77,6 +77,7 @@ Fowler himself identifies as a classicist but acknowledges the London school's d
 
 ### The Pragmatic Middle
 Most experienced practitioners use both styles situationally:
+
 - London style at architectural boundaries and for service interactions
 - Chicago style for domain logic, value objects, and pure computations
 - Acceptance tests (a London school idea) wrapping Chicago-style unit tests

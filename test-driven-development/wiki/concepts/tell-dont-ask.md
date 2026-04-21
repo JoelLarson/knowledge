@@ -52,6 +52,7 @@ Their answer: **mock objects**. Replace collaborators with mocks that verify the
 ## But Sometimes Ask
 
 The principle is a guideline, not an absolute rule:
+
 - **Values and collections** — ask for data from immutable values
 - **Factories** — ask for new objects
 - **Searching/filtering** — sometimes you must query

@@ -14,6 +14,7 @@ Refactoring is a behavior-preserving code change: improving the internal structu
 > "A behavior preserving change. If your code does something different after you've refactored it, it wasn't refactoring." — Dave Farley
 
 Refactoring is about reshaping code to be:
+
 - Simpler
 - More readable
 - More concise
@@ -23,6 +24,7 @@ Refactoring is about reshaping code to be:
 ## Refactoring in the TDD Cycle
 
 In [Red-Green-Refactor](red-green-refactor.md), refactoring is the third and often most undervalued step. It operates on a stable codebase (tests passing), allowing you to:
+
 - Fix the "dumb" shortcuts taken in Green
 - Eliminate duplication
 - Make code express its intent clearly
@@ -33,6 +35,7 @@ In [Red-Green-Refactor](red-green-refactor.md), refactoring is the third and oft
 ## The Three Mindsets (Farley)
 
 Red, Green, Refactor require distinct mindsets:
+
 - **Red:** What do I want the code to do? What's the best interface design?
 - **Green:** What is the fastest path to passing tests?
 - **Refactor:** How can I make this clearer, simpler, more correct?
@@ -71,6 +74,7 @@ Each refactoring step should be as small as possible. Large steps create ambigui
 ## Refactoring in Legacy Code
 
 Refactoring is doubly important when working with [Legacy Code](legacy-code.md). The strategy:
+
 1. Establish defensive tests (approval tests or acceptance tests)
 2. Use coverage tools to verify coverage of the area you'll touch
 3. Remove clutter (dead code, useless comments)
@@ -114,6 +118,7 @@ A technique for understanding legacy code: refactor freely to learn the structur
 ### The "Surgery" Mindset
 
 In legacy refactoring, you cannot hold the same aesthetic standards as greenfield work. Accept that:
+
 - Dependencies may break cleanly or leave "scars"
 - Some steps temporarily make design uglier
 - Beauty comes later, once tests are in place
@@ -130,6 +135,7 @@ Beck calls tidyings "gateway refactorings" — they are intentionally tiny (guar
 ### The "Tidy First?" Decision
 
 Beck adds a timing dimension that Fowler's catalog lacks:
+
 - **Tidy First** — when it pays off immediately in comprehension or cheaper behavior changes
 - **Tidy After** — when you'll change this area again soon and it's cheaper to tidy now
 - **Tidy Later** — when there's a big batch without immediate payoff (the "Fun List")

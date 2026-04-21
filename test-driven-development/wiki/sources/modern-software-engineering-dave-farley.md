@@ -23,6 +23,7 @@ Software engineering is design engineering, not production engineering. Unlike m
 
 ### Engineering != Craft
 Software development has historically operated more as craft than engineering. Engineering requires:
+
 - Repeatability and accuracy of measurement
 - Managing complexity at scale
 - Precision in specifications
@@ -30,6 +31,7 @@ Software development has historically operated more as craft than engineering. E
 
 ### Managing Complexity
 The central challenge of software is complexity. Techniques for managing complexity:
+
 - **Modularity** — divide into comprehensible pieces
 - **Cohesion** — related things together, unrelated things apart
 - **Separation of Concerns** — each piece focused on one role
@@ -38,6 +40,7 @@ The central challenge of software is complexity. Techniques for managing complex
 
 ### Iterative, Feedback-Driven Development
 Software engineering must optimize for learning. The faster the feedback loop, the faster we learn and correct mistakes. This is why:
+
 - TDD (fast test feedback) improves code quality
 - Continuous integration and delivery close feedback loops
 - Small, frequent deployments reduce risk

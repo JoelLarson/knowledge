@@ -56,6 +56,7 @@ The [Red-Green-Refactor](red-green-refactor.md) cycle produces small, tested inc
 
 ### MTTR
 When something breaks, a strong test suite helps teams:
+
 - Quickly identify what changed (small commits from TDD)
 - Write a failing test that reproduces the bug
 - Fix forward with confidence
@@ -67,6 +68,7 @@ TDD directly reduces change failure rate by catching defects at the point of cre
 ## How to Measure
 
 The DORA metrics can be measured by:
+
 1. **Surveying teams** using Likert-type scales (as in the original research)
 2. **Instrumenting delivery pipelines** to capture timestamps at each stage
 3. **Tracking incidents** for MTTR and change failure rate
@@ -76,6 +78,7 @@ The Accelerate authors recommend using these metrics carefully: "In pathological
 ## Anti-Patterns in Measurement
 
 The book explicitly rejects several common productivity metrics:
+
 - **Lines of code** -- rewards bloated software
 - **Velocity** -- a capacity planning tool, not a productivity metric; gaming it destroys its value
 - **Utilization** -- high utilization eliminates slack, causing lead times to approach infinity (queue theory)

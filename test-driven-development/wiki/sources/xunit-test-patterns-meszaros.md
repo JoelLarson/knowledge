@@ -26,12 +26,14 @@ Narrative introductions to key topics: test smells, goals of test automation, ph
 
 ### Part II — The Test Smells (Chapters 15–17)
 Comprehensive smell catalog organized into three categories:
+
 - **Code Smells** (Ch. 15): Obscure Test, Conditional Test Logic, Hard-to-Test Code, Test Code Duplication, Test Logic in Production
 - **Behavior Smells** (Ch. 16): Assertion Roulette, Erratic Test, Fragile Test, Frequent Debugging, Manual Intervention, Slow Tests
 - **Project Smells** (Ch. 17): Buggy Tests, Developers Not Writing Tests, High Test Maintenance Cost, Production Bugs
 
 ### Part III — The Patterns (Chapters 18–27)
 The pattern catalog, organized by concern:
+
 - **Test Strategy Patterns** (Ch. 18): Recorded Test, Scripted Test, Data-Driven Test, Test Automation Framework, Minimal Fixture, Standard Fixture, Fresh Fixture, Shared Fixture, Back Door Manipulation, Layer Test
 - **xUnit Basics Patterns** (Ch. 19): Test Method, [Four-Phase Test](../concepts/four-phase-test.md), Assertion Method/Message, Testcase Class, Test Runner, Test Suite Object, Test Discovery, Test Enumeration, Test Selection
 - **Fixture Setup Patterns** (Ch. 20): In-line Setup, Delegated Setup, Creation Method, Implicit Setup, Prebuilt Fixture, Lazy Setup, Suite Fixture Setup, Setup Decorator, Chained Tests
@@ -69,6 +71,7 @@ Comprehensive treatment of [Test Fixture Strategies](../concepts/test-fixture-st
 ## Philosophy
 
 Meszaros advocates:
+
 - **Write the Tests First** — TDD produces more testable designs
 - **Isolate the SUT** — test one thing at a time
 - **Verify One Condition per Test** — single-condition tests for defect localization

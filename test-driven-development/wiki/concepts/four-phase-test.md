@@ -26,6 +26,7 @@ Put the world back into the state in which you found it. Clean up persistent res
 ## Why Four Phases?
 
 The test reader must quickly determine what behavior the test is verifying. Without clear phase separation:
+
 - Setup and exercise become interleaved, obscuring intent
 - Verification mixed with exercise hides what's being asserted
 - Teardown logic obscures the important test logic

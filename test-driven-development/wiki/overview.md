@@ -12,6 +12,7 @@ Test-Driven Development is a software development approach in which automated te
 ## The Core Insight
 
 TDD is not fundamentally about having tests. It is about using tests to drive better design. The properties that make code *testable* are exactly the properties that make code *high quality*:
+
 - Modular, loosely coupled, cohesive, separated concerns, information hiding
 
 By forcing testability, TDD forces quality. This is why Dave Farley calls TDD a "talent amplifier."

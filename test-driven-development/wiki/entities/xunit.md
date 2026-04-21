@@ -16,6 +16,7 @@ Kent Beck created SUnit for Smalltalk. With Erich Gamma, he ported it to Java as
 ## Part II of TDD by Example
 
 [TDD by Example](../sources/tdd-by-example-kent-beck.md) uses building a test framework (xUnit) as its second worked example. This demonstrates:
+
 - TDD at smaller step sizes than the Money Example
 - Self-referential systems (using TDD to build TDD infrastructure)
 - Reflection and exceptions in testing
@@ -23,6 +24,7 @@ Kent Beck created SUnit for Smalltalk. With Erich Gamma, he ported it to Java as
 ## Core Architecture
 
 The xUnit architecture defines:
+
 - **Test Method** — a method that asserts something about a unit of behavior
 - **Fixture** — shared setup for a group of tests (setUp/tearDown)
 - **Test Case** — a class containing test methods and a fixture

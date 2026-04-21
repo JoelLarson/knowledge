@@ -58,6 +58,7 @@ Some mutants don't actually change behavior (e.g., changing the order of indepen
 ## Practical Usage
 
 Mutation testing is too slow to run on every commit for large codebases. Common strategies:
+
 - Run on changed files only (incremental mutation testing)
 - Run nightly or weekly on the full codebase
 - Run on critical modules where correctness matters most
@@ -66,6 +67,7 @@ Mutation testing is too slow to run on every commit for large codebases. Common 
 ## What Surviving Mutants Reveal
 
 When a mutant survives, investigate:
+
 - **Missing assertion** — the test exercises the code but doesn't check the result
 - **Missing test case** — no test covers this specific behavior
 - **Dead code** — the mutated code isn't actually needed (consider removing it)

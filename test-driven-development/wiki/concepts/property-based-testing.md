@@ -29,6 +29,7 @@ The framework generates hundreds or thousands of random (a, b) pairs and checks 
 
 ### Properties (Invariants)
 A property is a statement that should hold for all valid inputs:
+
 - **Commutativity**: `f(a, b) == f(b, a)`
 - **Associativity**: `f(f(a, b), c) == f(a, f(b, c))`
 - **Idempotency**: `f(f(x)) == f(x)`
@@ -67,6 +68,7 @@ The TDD cycle remains example-driven because examples are concrete and guide int
 
 ### [Value Objects](value-objects.md)
 Value objects are ideal for property-based testing because they are immutable and have algebraic properties:
+
 - Money addition is commutative and associative
 - Creating a value object from its components and extracting them back yields the same components
 - Equality is reflexive, symmetric, and transitive

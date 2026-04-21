@@ -14,6 +14,7 @@ Domain model testing is the practice of testing a rich domain model through its 
 ### 1. Test Through the Aggregate Root
 
 The [aggregate root](aggregates.md) is the only public entry point. Tests should:
+
 - Create aggregates through factories or constructors
 - Invoke behavior through the root's command methods
 - Assert invariants and published [Domain Events](domain-events.md)
@@ -69,6 +70,7 @@ assertPublished(CustomerAddressChanged(customerId, newAddress))
 ### In-Memory Repositories
 
 Both Evans and Vernon recommend in-memory repository implementations for testing:
+
 - Same interface as production repositories
 - Backed by a simple collection (HashMap, List)
 - No database, no I/O, instant execution
@@ -122,10 +124,12 @@ This maps perfectly to [BDD](bdd.md)'s Given/When/Then structure.
 With CQRS, test command and query sides independently:
 
 **Command side:**
+
 - Test aggregate behavior and event publication
 - No read model concerns
 
 **Query side (projections):**
+
 - Given a stream of events, assert the read model state
 - Test denormalization logic in isolation
 

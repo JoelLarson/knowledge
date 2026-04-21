@@ -12,6 +12,7 @@ Mocking is the use of fake objects that record interactions for later verificati
 ## What Is a Mock?
 
 A mock object:
+
 1. Mimics the behavior of a real object in a controlled way
 2. Records all interactions (method calls, arguments) while being used
 3. Allows post-hoc verification: "did the code call the mock as expected?"
@@ -50,6 +51,7 @@ The critical step is **injection** — the mock must be passed in, not created i
 ## When to Use Mocks
 
 Use mocks to:
+
 - Verify interactions with collaborating objects (not just outputs)
 - Isolate the code under test from slow or unpredictable dependencies
 - Test edge cases that are hard to trigger with real implementations
@@ -69,6 +71,7 @@ when(mockCar.start()).thenAnswer(/* ... */);
 ```
 
 The Mockery is caused by:
+
 - Excessive setup (poor separation of concerns)
 - Tightly coupled design
 - Testing implementations rather than behavior
@@ -78,6 +81,7 @@ The Mockery is caused by:
 ## Mocks as Design Signals
 
 If you need many mocks to test something simple, the design is telling you something:
+
 - The unit under test has too many dependencies (low cohesion)
 - Dependencies are too tightly coupled (hard to isolate)
 - The interface boundaries are wrong
@@ -92,6 +96,7 @@ This is Farley's "listening to the code" — the [Excessive Setup](tdd-smells.md
 - **Behavior Verification** — capture the indirect outputs (calls the SUT makes to its [DOCs](sut-and-doc.md)) and compare to expected behavior. Requires Mock Objects or Test Spies. "What did the SUT *do*?"
 
 In Meszaros's taxonomy, a **Mock Object** is specifically a test double with pre-programmed expectations that verifies calls during or after exercise. A **Test Spy** records calls passively for later assertion by the test. Both support Behavior Verification but differ in when verification occurs:
+
 - Mock: expectations set *before* exercise; verified automatically
 - Spy: calls recorded *during* exercise; asserted *after* in the Verify phase
 
@@ -103,6 +108,7 @@ This distinction helps choose the right tool: use State Verification (simpler, l
 
 ### Interface Discovery
 When implementing an object, you discover it needs a service. Rather than building the service first, you:
+
 1. Define an interface for the service (from the client's perspective)
 2. Mock that interface in the unit test
 3. Write expectations for how the object will communicate with the mock
@@ -112,6 +118,7 @@ The mock expectations become the **specification of the protocol** between objec
 
 ### "Only Mock Types You Own"
 Don't mock third-party APIs. Instead, write thin adapter layers that translate between your domain and external code. Mock your own adapter interfaces. This prevents:
+
 - Tests coupled to poorly-understood external behavior
 - Complex test setups to get third-party code into the right state
 - Tests that break on library upgrades
@@ -124,6 +131,7 @@ Values are immutable and have no identity. Just create instances and use them. I
 
 ### Listening to the Tests
 Difficulty in mocking is design feedback:
+
 - **Too many mocks** → object has too many responsibilities
 - **Complex mock setup** → hidden dependencies or tight coupling
 - **Can't mock without magic** → singleton/global dependency (extract and inject it)
@@ -162,6 +170,7 @@ Khorikov simplifies Meszaros's five-type taxonomy into two categories:
 ### Connection to CQS
 
 The mock/stub distinction maps to the Command Query Separation principle:
+
 - Commands (side effects, no return value) -> Mocks
 - Queries (return value, no side effects) -> Stubs
 

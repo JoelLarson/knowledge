@@ -82,6 +82,7 @@ The research identifies 24 capabilities across five categories that drive delive
 The DORA research uses **inferential predictive analysis** -- theory-driven hypotheses tested with statistical methods (multiple linear regression, partial least squares). This goes beyond correlation to prediction: the research can say that capabilities *drive* or *predict* outcomes, not merely that they co-occur.
 
 Key methodological features:
+
 - **Latent constructs**: Multiple Likert-type questions per concept, validated for discriminant validity, convergent validity, and reliability
 - **Cluster analysis**: Data-driven grouping of performers (no a priori bias toward "good" or "bad")
 - **Capabilities model, not maturity model**: Continuous improvement rather than static levels
@@ -104,6 +105,7 @@ The book provides statistical evidence that test automation predicts delivery pe
 ### CD Requires Test Confidence
 
 [Continuous Delivery](../concepts/continuous-delivery.md) is defined as the ability to deploy on demand with fast feedback on quality. The five CD principles map directly to TDD values:
+
 1. **Build quality in** (Deming's 3rd point) -- TDD builds quality in rather than inspecting it afterward
 2. **Work in small batches** -- TDD's small red-green-refactor cycles
 3. **Automate repetitive tasks** -- regression testing automated as side effect of TDD
@@ -117,6 +119,7 @@ High performers spend 49% of time on new work vs. 38% for low performers. Low pe
 ### Architecture and Testability
 
 Two architectural characteristics predict high performance:
+
 1. **Testability**: "We can do most of our testing without requiring an integrated environment"
 2. **Deployability**: "We can deploy independently of other applications"
 

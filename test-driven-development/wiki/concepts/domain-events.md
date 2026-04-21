@@ -12,6 +12,7 @@ Domain Events are first-class model elements representing something significant 
 ## Core Concept
 
 A domain event captures a state change that domain experts care about. It is named as a past-tense verb phrase in the [Ubiquitous Language](ubiquitous-language.md):
+
 - `TenantProvisioned`
 - `OrderPlaced`
 - `BacklogItemCommitted`
@@ -36,6 +37,7 @@ This tests behavior (what happened) rather than state (what it looks like inside
 ### Decoupled Integration Testing
 
 Events decouple bounded contexts. Test each side independently:
+
 1. **Publisher side:** Assert the aggregate publishes the right event with correct data
 2. **Subscriber side:** Given an event, assert the receiving context handles it correctly
 
@@ -44,6 +46,7 @@ No need to wire two contexts together in a unit test.
 ### Temporal and Audit Testing
 
 Events carry timestamps and capture the full history of state changes. Tests can verify:
+
 - Correct ordering of events
 - Time-based business rules
 - Complete audit trails
@@ -52,6 +55,7 @@ Events carry timestamps and capture the full history of state changes. Tests can
 ### Event Sourcing Testing
 
 When using Event Sourcing (persisting events instead of current state):
+
 - **Given** a stream of past events
 - **When** a command is executed
 - **Then** new events are produced
@@ -63,6 +67,7 @@ This maps perfectly to Given/When/Then ([BDD](bdd.md)) and makes tests highly re
 ### CQRS Integration
 
 With CQRS, the command model publishes events and the query model subscribes:
+
 - Command-side tests: verify event publication
 - Query-side tests: given events, verify projection/view updates
 - Tests for each side are independent and fast
@@ -70,6 +75,7 @@ With CQRS, the command model publishes events and the query model subscribes:
 ### Pipes and Filters
 
 Events flow through processing pipelines. Each filter:
+
 - Receives an event
 - Processes it
 - Publishes a new event
@@ -79,6 +85,7 @@ Each filter is testable in isolation with simple input/output assertions.
 ### Long-Running Processes (Sagas)
 
 Multi-step business processes are orchestrated via events. Test each step independently:
+
 - Step receives event, performs action, publishes next event
 - Saga completion is verifiable by asserting all expected events were published
 
@@ -93,6 +100,7 @@ Multi-step business processes are orchestrated via events. Test each step indepe
 ## Connection to TDD Practice
 
 Domain events provide natural assertion points that are:
+
 - Behavioral (what happened, not how)
 - Decoupled (no need to inspect internal state)
 - Readable (named in domain language)

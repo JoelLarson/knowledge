@@ -69,12 +69,14 @@ An observational study overlaid on top of quasi-experiments comparing TDD with I
 ### Regression Models (After Feature Selection)
 
 **Quality model (adjusted R-squared = 0.12, p = 0.003):**
+
 - GRA: negative coefficient (p = 0.04) -- finer granularity improves quality
 - UNI: negative coefficient (p = 0.09) -- more uniformity improves quality
 - REF: negative coefficient (p = 0.03) -- more refactoring associated with *worse* quality
 - **SEQ dropped from model** -- sequencing does not explain quality
 
 **Productivity model (adjusted R-squared = 0.10, p = 0.008):**
+
 - GRA: negative coefficient (p = 0.11)
 - UNI: negative coefficient (p = 0.08)
 - REF: negative coefficient (p = 0.02) -- more refactoring associated with lower productivity
@@ -88,6 +90,7 @@ Refactoring effort was negatively associated with both outcomes. The authors att
 > "The claimed benefits of TDD may not be due to its distinctive test-first dynamic, but rather due to the fact that TDD-like processes encourage fine-grained, steady steps that improve focus and flow."
 
 The paper operationalizes this as:
+
 1. **Granularity and uniformity are the most important factors** -- emphasize breaking work into small, consistent steps
 2. **Test-first vs. test-last ordering does not appear important** as long as the process is iterative, granular, and uniform
 3. ITL and TDD may be equally effective when performed at the same granularity and uniformity

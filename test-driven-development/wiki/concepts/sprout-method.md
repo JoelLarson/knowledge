@@ -74,6 +74,7 @@ When dependencies in the class make it impossible to instantiate in a test harne
 When the entire class is untestable (too many creational or hidden dependencies), create a **new class** to hold the new behavior. Develop it with TDD, then instantiate and call it from the old code.
 
 Steps for Sprout Class:
+
 1. Identify where you need the change
 2. Design a class that could do the work; write code to create and call it (commented out)
 3. Local variables needed become constructor arguments

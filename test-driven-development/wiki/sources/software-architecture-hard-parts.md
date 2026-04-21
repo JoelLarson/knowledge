@@ -20,6 +20,7 @@ Architecture has no "best practices" — only trade-offs. The architect's job is
 Defined in *Building Evolutionary Architectures* (Ford, Parsons, Kua, 2017) as: **any mechanism that performs an objective integrity assessment of some architecture characteristic or combination of architecture characteristics.**
 
 Key properties:
+
 - **Any mechanism** — tests, monitors, chaos engineering, static analysis, linters
 - **Objective** — must be measurable, not subjective ("high performance" is not a fitness function; "p99 latency < 200ms" is)
 - **Atomic** — tests a single characteristic (e.g., no component cycles)
@@ -28,12 +29,14 @@ Key properties:
 Fitness functions are essentially **TDD for architecture**: automated, continuously running checks that verify structural and operational properties the way unit tests verify behavioral properties. The separation guideline: "Is domain knowledge required to execute this test?" If yes, use a unit/functional test; if no, use a fitness function.
 
 Examples from the book:
+
 - **JDepend cycle detection** — fails the build if component dependency cycles exist
 - **ArchUnit layer enforcement** — verifies that `Controller` cannot access `Persistence` directly
 - **NetArchTest** — .NET equivalent for namespace dependency rules
 - **Zero-day exploit scanning** — security fitness function inserted into every team's deployment pipeline
 
 Fitness functions should be:
+
 - Automated and run continuously in CI/CD
 - Treated like a checklist (per *The Checklist Manifesto*), not an ivory-tower governance tool
 - Not overused — important but not urgent concerns only
@@ -64,6 +67,7 @@ On testability specifically: architectural modularity "significantly reduces the
 ### Coupling Analysis Framework
 
 The book distinguishes:
+
 - **Static coupling** — how things are wired together (dependencies, databases, contracts)
 - **Dynamic coupling** — how things call each other at runtime (sync/async, orchestrated/choreographed, atomic/eventual)
 
@@ -72,6 +76,7 @@ Dynamic coupling has three dimensions: communication (sync/async), consistency (
 ### Component-Based Decomposition Patterns
 
 Six patterns for pulling a monolith apart, each with associated fitness functions:
+
 1. **Identify and Size Components** — fitness functions for component size limits
 2. **Gather Common Domain Components** — consolidate shared logic
 3. **Flatten Components** — remove unnecessary nesting
@@ -90,6 +95,7 @@ Covers reuse patterns (shared libraries vs. shared services vs. sidecars), distr
 ## Trade-Off Analysis Framework
 
 The book's meta-lesson for architects:
+
 1. Find entangled dimensions
 2. Analyze coupling points
 3. Assess trade-offs using MECE lists, qualitative/quantitative analysis, and domain case modeling
@@ -99,6 +105,7 @@ The book's meta-lesson for architects:
 ## Connection to TDD
 
 The book connects to TDD through several threads:
+
 - **Fitness functions as architectural TDD** — the same red-green-refactor discipline applied to architecture characteristics rather than domain behavior
 - **Testability as a modularity driver** — architectural decisions that improve testability also improve test-driven development workflows
 - **Coupling analysis** — the same coupling/cohesion forces that Beck describes at the code level (in [Tidy First? (Beck)](tidy-first-kent-beck.md)) operate at the architecture level

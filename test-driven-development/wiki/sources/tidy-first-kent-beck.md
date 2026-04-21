@@ -70,6 +70,7 @@ Software creates value through behavior (what it does today) and options (what i
 
 ### Economics: Time Value and Optionality
 Two financial forces in tension:
+
 - **Time value of money** — earn sooner, spend later (favors tidy after)
 - **Optionality** — options are more valuable in volatile environments (favors tidy first)
 
@@ -86,6 +87,7 @@ The cost of software is approximately the cost of its coupling. Big changes (whi
 
 ### Coupling
 Two elements are coupled with respect to a particular change if changing one necessitates changing the other. Key properties:
+
 - **1-N**: one element can be coupled to many others
 - **Cascading**: changes propagate through chains of coupling
 - Coupling cannot be assessed by looking at code alone — you must know which changes are likely
@@ -95,6 +97,7 @@ Decoupling isn't free. Reducing coupling for one class of changes can increase c
 
 ### Cohesion
 Coupled elements should be subelements of the same container. Two approaches:
+
 1. Extract coupled elements into their own cohesive subelement
 2. Move uncoupled elements elsewhere
 
@@ -104,6 +107,7 @@ Structure changes are generally reversible (unlike behavior changes like sending
 ## Connection to TDD
 
 Beck explicitly connects tidying to TDD's refactor step: "Tidyings are gateway refactorings." The test suite provides the safety net that makes tidying safe. The red-green-refactor cycle is the micro-scale of what Tidy First describes at slightly larger scale:
+
 - **Red-Green** = behavior change
 - **Refactor** = tidying
 

@@ -32,11 +32,13 @@ The first version cannot be tested without instantiating the real `ConcreteDispl
 ## Why It Matters for TDD
 
 Dependency injection is the mechanism that makes code **testable in isolation**. Without it:
+
 - Tests must instantiate real dependencies (databases, file systems, network)
 - Tests become slow, flaky, and hard to set up
 - The [Excessive Setup](tdd-smells.md) smell appears
 
 With it:
+
 - Dependencies can be replaced with fakes or [mocks](mocking.md) in tests
 - Tests run in isolation, fast and repeatably
 - You can test edge cases that are impossible with real dependencies
@@ -61,6 +63,7 @@ Dependencies set after construction. Less preferred — leaves object in incompl
 ## DI and Interface Design
 
 Good dependency injection drives good interface design:
+
 - Dependencies should be expressed as **interfaces** (or abstract types), not concrete classes
 - The interface expresses what the component needs, not what it gets
 - This is the "ports and adapters" or hexagonal architecture pattern
@@ -84,6 +87,7 @@ The `Display` interface is an abstraction that both the production display and t
 ## Connection to Design Quality
 
 Dependency injection is a consequence of striving for:
+
 - **Loose coupling** — the component doesn't know which implementation it gets
 - **Separation of concerns** — the component does its job; the display does its job
 - **Information hiding** — the component knows only the Display interface
@@ -101,6 +105,7 @@ These are core [Modern Software Engineering](../sources/modern-software-engineer
 
 ### Connection to Mock Objects
 In the [London school](london-school-tdd.md), DI is the mechanism that enables **interface discovery**:
+
 1. To test an object, you must pass in its dependencies
 2. This forces dependencies to be explicit (visible in the constructor)
 3. Each dependency is expressed as an interface (a "port")

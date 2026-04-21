@@ -20,6 +20,7 @@ Despite two decades of TDD research, results are contradictory. Some studies sho
 ## Methodology
 
 Three-step literature study:
+
 1. **Secondary studies:** Analyzed nine systematic reviews and meta-analyses on TDD (Karac & Turhan 2018, Bissi et al. 2016, Munir et al. 2014, Rafique & Misic 2013, Causevic et al. 2011, Shull et al. 2010, Turhan et al. 2010, Kollanus 2010, Siniaalto 2006)
 2. **Primary studies (2009-2017):** Backward snowballing from secondary studies; iterative analysis with saturation criterion; 10 primary studies analyzed in depth
 3. **Recent studies (2018-2020):** Manual search of top SE venues; 10 additional papers
@@ -30,6 +31,7 @@ Three-step literature study:
 **Problem:** There is no commonly shared definition of TDD. Most studies reduce TDD to "writing tests before production code" and neglect other characteristics.
 
 Key observations:
+
 - Two common styles: classical TDD (no upfront design, tests drive everything) vs. design-aware TDD (design known before development)
 - Refactoring is supposedly key to TDD, but some studies measure it explicitly while others ignore it entirely
 - Beller et al. (2019) observed 2,443 developers over 2.5 years: only **2.2% of test execution sessions** contained strict TDD patterns
@@ -78,6 +80,7 @@ A critical insight: **much of TDD's apparent superiority in older studies comes 
 ## Outcomes Under Study
 
 The paper notes that TDD research examines:
+
 - **External code quality:** functional correctness, requirements coverage (user stories implemented)
 - **Internal code quality:** coupling, cohesion, complexity -- mixed results across studies
 - **Test quality:** mutation scores, code coverage -- Tosun et al. (2018) found TDD tests have higher mutation score and branch coverage than ITL tests

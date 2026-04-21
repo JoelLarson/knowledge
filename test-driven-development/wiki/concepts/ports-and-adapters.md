@@ -29,6 +29,7 @@ Ports and Adapters (also called Hexagonal Architecture, coined by [Alistair Cock
 ## Why It Matters for TDD
 
 The pattern makes code testable by construction:
+
 - The application core depends only on ports (interfaces), not on concrete adapters
 - Tests inject test doubles (mocks, stubs, fakes) through the same ports
 - No test needs a real database, filesystem, or network
@@ -60,6 +61,7 @@ See [SOLID Principles](solid-principles.md).
 
 ### "Only Mock Types You Own"
 This is the key GOOS heuristic for ports and adapters:
+
 - Never mock third-party APIs directly (you don't fully understand their behavior)
 - Write adapter objects that implement your domain interfaces using the third-party API
 - Keep adapters **thin** to minimize hard-to-test code
@@ -68,6 +70,7 @@ This is the key GOOS heuristic for ports and adapters:
 
 ### Adapter Objects for Events
 When external libraries deliver events (callbacks), the adapter:
+
 1. Receives external events in the library's format
 2. Translates them into domain events
 3. Calls back to application objects through domain-defined interfaces
@@ -86,6 +89,7 @@ Evans defines it as "a mechanism that translates conceptual objects and actions 
 ### Testing Implications
 
 The ACL is a natural test seam:
+
 - **Stub the ACL** to test your domain model in complete isolation from external contexts
 - **Contract-test the ACL** against the remote system's API to verify the translation
 - **Integration-test through the ACL** to verify end-to-end communication

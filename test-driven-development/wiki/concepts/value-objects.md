@@ -14,6 +14,7 @@ Value Objects are immutable domain objects defined entirely by their attributes,
 > "When you care only about the attributes of an element of the model, classify it as a VALUE OBJECT. Make it express the meaning of the attributes it conveys and give it related functionality. Treat the VALUE OBJECT as immutable."
 
 Key characteristics:
+
 - **Immutable** — once created, never changed
 - **Equality by value** — two value objects are equal if all their attributes are equal
 - **No identity** — no ID field, no "who"; only "what"
@@ -42,6 +43,7 @@ Testing equality is straightforward — compare attributes. No identity confusio
 ### Property-Based Testing
 
 Value objects are ideal candidates for property-based testing because:
+
 - Commutativity: `a.add(b) == b.add(a)` for Money
 - Immutability: `operation(vo)` never changes `vo`
 - Idempotency: creating the same VO twice produces equal objects
@@ -83,6 +85,7 @@ Testing the value object separately keeps aggregate tests focused on aggregate-l
 ## Connection to TDD Practice
 
 Value objects are often the first things you TDD in a domain model because:
+
 1. They have no dependencies — no setup complexity
 2. They have clear, expressible behavior — easy to name tests
 3. They form a foundation other objects build upon

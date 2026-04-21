@@ -23,6 +23,7 @@ Vaughn Vernon is the author of Implementing Domain-Driven Design (2013), the pra
 ### Test-First Development of Domain Objects
 
 Vernon prescribes a workflow that combines TDD and DDD:
+
 1. Write a test demonstrating client usage
 2. Create minimal domain object
 3. Refactor until test shows proper domain usage
@@ -42,6 +43,7 @@ Vernon recommends [Ports and Adapters](../concepts/ports-and-adapters.md) explic
 ## Connection to TDD
 
 Vernon is more explicit than Evans about the TDD connection:
+
 - DDD "promotes lightweight development" and fits agile/XP
 - Tests are the first artifact produced when designing domain objects
 - Domain events provide clear assertion points for behavioral testing

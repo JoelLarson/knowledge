@@ -52,6 +52,7 @@ The most important dimension — the distinguishing characteristic of TDD vs. un
 ## F.I.R.S.T. (Robert Martin)
 
 Clean Code's formulation:
+
 - **Fast** — tests must run quickly
 - **Independent** — tests must not depend on each other
 - **Repeatable** — tests must work in any environment
@@ -61,6 +62,7 @@ Clean Code's formulation:
 ## How TDD Produces Better Tests
 
 The key insight: the properties that make code *testable* are exactly the same properties that make code *high quality*:
+
 - Modular → testable (need boundaries)
 - Loosely coupled → testable (need isolation)
 - Cohesive → testable (avoid assembling many pieces for one test)
@@ -80,6 +82,7 @@ This is the cost of missing simple, granular, fast test coverage.
 [Gerard Meszaros](../entities/gerard-meszaros.md) frames test quality as a set of goals in [xUnit Test Patterns](../sources/xunit-test-patterns-meszaros.md):
 
 **Project Goals:**
+
 - Tests as Specification — executable definition of behavior
 - Tests as Documentation — readable description of what the SUT does
 - Tests as Safety Net — catch regressions early (Bug Repellent)
@@ -87,6 +90,7 @@ This is the cost of missing simple, granular, fast test coverage.
 - No Harm — tests must not introduce risk or slow the team down
 
 **Test Writing Goals:**
+
 - Fully Automated and Self-Checking
 - Repeatable Test — same result every time
 - Robust Test — doesn't break for irrelevant reasons

@@ -40,6 +40,7 @@ void testGenerator() {
 ## When to Write Characterization Tests
 
 Characterization tests are the **fourth step** of the [Legacy Code Change Algorithm](legacy-code-change-algorithm.md):
+
 1. Identify change points
 2. Find test points
 3. Break dependencies
@@ -51,6 +52,7 @@ Write them before you modify code to ensure your modifications don't accidentall
 ## Characterization Tests vs. Approval Tests
 
 Characterization tests and [approval tests](approval-testing.md) are closely related:
+
 - **Characterization tests** (Feathers): typically unit-level, written by hand, using standard assertions
 - **Approval tests**: often capture larger output snapshots (strings, files) and compare against a saved "approved" version
 
@@ -76,6 +78,7 @@ Both share the same philosophy: capture existing behavior as a baseline for dete
 ## Targeted Testing
 
 After writing general characterization tests, focus on the specific code you'll change:
+
 - Verify the branch you're modifying is actually exercised by at least one test
 - Use sensing variables or debugger to confirm path coverage
 - Pick input values that exercise conversions (e.g., avoid values where int-to-double truncation is invisible)

@@ -26,6 +26,7 @@ Freeman and Pryce describe the connection in GOOS:
 > "We write interfaces to describe its relationships with the outside world in its terminology (Cockburn's ports). Then we write bridges between the application core and each technical domain (Cockburn's adapters)."
 
 This makes Cockburn's pattern the architectural foundation for:
+
 - [Dependency Injection](../concepts/dependency-injection.md) at the system level
 - The "only mock types you own" heuristic from [London School TDD](../concepts/london-school-tdd.md)
 - [Test Doubles](../concepts/test-doubles.md) substitution through ports

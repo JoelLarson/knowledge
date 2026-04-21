@@ -19,6 +19,7 @@ Neal Ford is a software architect at Thoughtworks and co-author of *Software Arc
 ## Relevance to TDD
 
 Ford's work bridges the gap between code-level TDD and architecture-level governance:
+
 - [Fitness Functions](../concepts/fitness-functions.md) are TDD for architecture — automated, continuous, objective verification
 - Modularity drivers (maintainability, testability, deployability) connect architectural decisions directly to testability
 - The architecture quantum concept clarifies what can be tested and deployed independently

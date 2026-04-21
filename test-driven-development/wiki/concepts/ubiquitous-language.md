@@ -14,6 +14,7 @@ Ubiquitous Language is a concept from [Eric Evans](../entities/eric-evans.md)'s 
 > "Use the model as the backbone of a language. Commit the team to exercising that language relentlessly in all communication within the team and in the code."
 
 The vocabulary includes:
+
 - Names of classes and prominent operations
 - Terms for rules made explicit in the model
 - High-level organizing principles (context maps, large-scale structures)
@@ -22,6 +23,7 @@ The vocabulary includes:
 > "Recognize that a change in the UBIQUITOUS LANGUAGE is a change to the model."
 
 When a trader says "place an order" and the code says `createNewOrderRequest()`, there's a translation gap. When the code also says `placeOrder()`, the gap closes. This has compounding benefits:
+
 - Non-technical stakeholders can read tests and verify correctness
 - New team members onboard faster
 - Bugs in requirements surface earlier (domain experts can spot naming mismatches)
@@ -33,6 +35,7 @@ When a trader says "place an order" and the code says `createNewOrderRequest()`,
 > "A project faces serious problems when its language is fractured. Domain experts use their jargon while technical team members have their own language tuned for discussing the domain in terms of design."
 
 The consequences of fractured language:
+
 - Translation muddles model concepts
 - Different team members use terms differently without realizing it
 - Destructive refactoring of code results
@@ -47,6 +50,7 @@ Vernon extends Evans' concept directly into testing practice:
 > "Reading the demonstrative clientlike test code must reveal the proper expressiveness using the Ubiquitous Language. Domain experts who are nontechnical should be able, with the help of a developer, to read the code well enough to get a clear impression that the model has achieved the goal of the team."
 
 Key practices:
+
 - Test names use domain vocabulary, not technical vocabulary
 - Test data must be realistic and domain-meaningful (not `"test123"`)
 - Both the software and its tests "capture and adhere to this Language"

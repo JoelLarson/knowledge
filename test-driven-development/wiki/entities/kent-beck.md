@@ -29,6 +29,7 @@ TDD is a way of managing fear during programming. Fear makes programmers tentati
 
 ### "Clean Code That Works"
 From Ron Jeffries' phrase — the goal of TDD. "Clean code that works" because:
+
 - It's predictable to develop
 - It lets you learn all the lessons the code can teach you
 - It improves users' lives

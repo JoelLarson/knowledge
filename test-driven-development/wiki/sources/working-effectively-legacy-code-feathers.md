@@ -82,6 +82,7 @@ The most important distinction: **adding new behavior** vs. **changing old behav
 ## Unit Test Qualities (Feathers' Definition)
 
 A test is NOT a unit test if it:
+
 - Talks to a database
 - Communicates across a network
 - Touches the file system

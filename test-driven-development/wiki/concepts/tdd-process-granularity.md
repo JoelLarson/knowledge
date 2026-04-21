@@ -56,12 +56,14 @@ The ratchet works because of the tooth spacing and the consistency of the mechan
 
 ### For Teams Adopting TDD
 Focus training on **step size discipline** rather than dogmatic test-first ordering:
+
 - Set a timer for 5-10 minutes. If a cycle is not complete, the step was too large.
 - Break down user stories into sub-tasks small enough to implement in one cycle.
 - Monitor cycle consistency -- erratic rhythm signals confusion or overreach.
 
 ### For Teams That Cannot Adopt Strict Test-First
 The finding suggests you can capture most of TDD's benefits with disciplined iterative test-last (ITL):
+
 - Write a small piece of code (5-10 minutes)
 - Immediately write or update tests
 - Run all tests

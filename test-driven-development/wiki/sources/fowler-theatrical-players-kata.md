@@ -16,12 +16,14 @@ Martin Fowler's book uses a Theatrical Players billing system as the worked exam
 ## The Problem Domain
 
 A company of theatrical players charges customers for performances. The starting code is a monolithic `statement()` function that:
+
 - Reads plays (JSON: `plays.json`)
 - Reads invoice/performances data (JSON: `invoices.json`)
 - Computes charges based on play type (tragedy/comedy) and audience size
 - Returns a formatted plain-text billing statement
 
 **What to change:**
+
 1. Add HTML output capability (alongside existing plain-text)
 2. Add new play types (history, pastoral, etc.)
 
@@ -36,6 +38,7 @@ statement()        — monolithic function with switch on play type
 ## Testing Approach: Approval Testing
 
 Fowler notes that the first step in refactoring is always establishing tests. Emily Bache used [Approval Testing](../concepts/approval-testing.md) for this kata. Approval tests:
+
 - Capture a "golden" output for the current code
 - Re-run and compare on every change
 - Pass if output is identical; fail if anything changes

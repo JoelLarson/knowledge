@@ -35,6 +35,7 @@ cost(software) ~= cost(change) ~= cost(big changes) ~= coupling
 ```
 
 The cost of software is approximately the cost of its coupling. This is because:
+
 1. Most software cost is in changing it (not building it originally)
 2. Change costs follow a power law — a few big changes dominate
 3. Big changes are expensive because of cascading coupling
@@ -42,6 +43,7 @@ The cost of software is approximately the cost of its coupling. This is because:
 ### Coupling at Architecture Scale
 
 [Software Architecture: The Hard Parts](../sources/software-architecture-hard-parts.md) distinguishes:
+
 - **Static coupling** — how things are wired together (dependencies, databases, frameworks). Measurable at compile time.
 - **Dynamic coupling** — how things call each other at runtime. Three dimensions: communication (sync/async), consistency (atomic/eventual), coordination (orchestrated/choreographed).
 
@@ -79,6 +81,7 @@ TDD's discipline of writing the test first forces you to experience coupling pai
 Decoupling isn't free. Beck observes: "The more you reduce coupling for one class of changes, the greater the coupling becomes for other classes of changes." The practical implication: don't squeeze out every last bit of coupling.
 
 The trade-off space:
+
 - **Cost of coupling** — cascading changes, big expensive modifications, accidental breakage
 - **Cost of decoupling** — indirection, complexity, abstraction overhead
 - The right point on the continuum depends on which changes are likely
@@ -86,6 +89,7 @@ The trade-off space:
 ## Economic Framing (Tidy First)
 
 Beck connects coupling to economics through two forces:
+
 - **Time value of money** — coupling is fine if changes won't happen soon (defer decoupling)
 - **Optionality** — decoupling creates options for future behavior changes (invest in decoupling)
 
@@ -94,6 +98,7 @@ When the environment is volatile and uncertain, options are more valuable, so de
 ## Connection to Simple Design
 
 [Simple Design](simple-design.md)'s four rules attack coupling and cohesion:
+
 1. **Passes tests** — tests expose coupling
 2. **Reveals intention** — good names create cohesive abstractions
 3. **No duplication** — duplication is coupling (change one, must change the other)
@@ -102,6 +107,7 @@ When the environment is volatile and uncertain, options are more valuable, so de
 ## Connection to Tidyings
 
 Several [Tidyings](tidyings.md) directly address coupling and cohesion:
+
 - **Cohesion Order** — move coupled elements closer together
 - **Extract Helper** — create cohesive subelements
 - **One Pile** — collapse over-fragmented code to find better cohesion boundaries

@@ -67,6 +67,7 @@ The same TDD discipline applies: the mob writes a failing test together, then ma
 ## Pairing and TDD Reinforcement
 
 Pair programming reinforces TDD discipline because:
+
 - It's harder to skip tests when someone is watching
 - The navigator catches when the driver takes too large a step
 - Ping-pong pairing makes the red-green-refactor cycle explicit and shared

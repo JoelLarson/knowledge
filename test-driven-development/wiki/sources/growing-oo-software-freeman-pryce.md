@@ -44,6 +44,7 @@ The definitive text on the London/Mockist school of TDD. Demonstrates how mock o
 
 ### Part III: A Worked Example (Ch 9-19)
 An extended example building an "Auction Sniper" (online bidding agent) demonstrating:
+
 - End-to-end acceptance tests driving development
 - Incremental feature addition with the double loop
 - Interface discovery through mock-driven unit tests

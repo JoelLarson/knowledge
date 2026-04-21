@@ -44,6 +44,7 @@ This example directly spawned Emily Bache's [Theatrical Players Refactoring Kata
 ## Catalog of Refactorings
 
 The book contains an extensive catalog of named refactorings including:
+
 - Extract Function / Inline Function
 - Extract Variable / Inline Variable
 - Rename Variable/Function/Class

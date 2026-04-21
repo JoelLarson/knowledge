@@ -38,6 +38,7 @@ Production            → deployment (manual gate or fully automated)
 ## Continuous Delivery Principles (from the 302 course)
 
 Farley's Module 2 starts with CD principles as the broader context for TDD:
+
 - Work in small batches
 - Automate everything
 - Build quality in (not inspect it in afterward)
@@ -54,6 +55,7 @@ The DORA research program (2014-2017, published in [Accelerate](../sources/accel
 
 ### CD Drives Performance
 Teams practicing CD achieve:
+
 - Higher software delivery performance across all [DORA Metrics](dora-metrics.md) (lead time, deployment frequency, MTTR)
 - Lower change failure rates
 - A generative, performance-oriented Westrum culture
@@ -63,11 +65,13 @@ High performers (who practice CD) spend 49% of their time on new work vs. 38% fo
 
 ### CD Makes Work Sustainable
 The research found that CD practices reduce:
+
 - **Deployment pain** -- deployments become routine, not feared events
 - **Team burnout** -- investments in technology are investments in people
 
 ### The 8 CD Capabilities
 Accelerate identifies eight capabilities that drive CD:
+
 1. Version control (including system and application config)
 2. Deployment automation
 3. [Continuous Integration](continuous-integration.md) (trunk-based development, short-lived branches)

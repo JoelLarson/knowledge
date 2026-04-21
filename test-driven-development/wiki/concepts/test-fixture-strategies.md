@@ -12,6 +12,7 @@ Fixture strategy patterns from [xUnit Test Patterns](../sources/xunit-test-patte
 ## What Is a Fixture?
 
 The fixture consists of all objects, data, and state required to run a test. This includes:
+
 - The SUT itself
 - Any [DOCs](sut-and-doc.md) (real or [Test Doubles](test-doubles.md))
 - Database records, files, configurations

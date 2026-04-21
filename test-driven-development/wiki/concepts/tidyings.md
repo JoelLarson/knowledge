@@ -56,6 +56,7 @@ When facing messy code that needs a behavior change, ask:
 ## Chaining: How Tidyings Compound
 
 Tidyings set up further tidyings:
+
 - Guard clause -> explaining helper or explaining variable
 - Dead code removal -> reading order or cohesion order becomes visible
 - Normalize symmetries -> reading order (parallel code groups naturally)
@@ -77,6 +78,7 @@ The test suite is the safety net that makes tidying safe. Without tests, tidying
 
 ### Separate Structure from Behavior
 Beck insists on separate commits/PRs for tidyings and behavior changes. This mirrors TDD's discipline of never changing structure and behavior in the same step. In the TDD cycle:
+
 - Green -> Refactor is a structure change (tests still pass)
 - Refactor -> Red is a behavior change (new failing test)
 
@@ -91,6 +93,7 @@ Tidying is a minutes-to-an-hour activity. More than an hour suggests scope creep
 ## Economic Foundation
 
 Beck frames tidying in terms of two competing economic forces:
+
 - **Time value of money** — earn sooner, spend later (favors tidy after)
 - **Optionality** — structure creates options; options are more valuable in uncertain environments (favors tidy first)
 

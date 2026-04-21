@@ -20,6 +20,7 @@ This is a **multi-case study**, not a controlled experiment. Four teams that had
 ### Context Variables
 
 The four teams varied across multiple dimensions (see figure in original paper):
+
 - **Programming languages:** Java, C/C++, C++/C#, C#
 - **Team sizes:** 5-9 developers
 - **Team location:** distributed (IBM) vs. collocated (Microsoft)
@@ -82,6 +83,7 @@ These are **subjective management estimates**, not measured data. The paper argu
 ## TDD Implementation Details
 
 All teams used a **hybrid TDD** approach:
+
 - Microsoft teams had detailed requirements documents, design meetings, and review sessions
 - They did not use other agile practices except TDD
 - IBM team used UML class and sequence diagrams alongside TDD
@@ -92,6 +94,7 @@ This is important context: the "TDD" studied here is not pure Beck-style TDD but
 ## Threats to Validity
 
 The authors acknowledge several limitations:
+
 1. **Motivation bias:** TDD developers trying a new process might be more motivated (partially mitigated by the fact they didn't know they were being studied)
 2. **Project comparability:** TDD projects might have been inherently easier; mitigated by comparing within same organization under same management
 3. **New vs. legacy:** TDD teams worked on new projects vs. legacy enhancements; cuts both ways (legacy may have higher defect density from cascading issues, or lower from prior field exposure)
@@ -100,6 +103,7 @@ The authors acknowledge several limitations:
 ## Lessons Learned
 
 The paper distills practical recommendations:
+
 1. Start TDD from the beginning of projects -- do not retrofit mid-project
 2. Introduce automated build-test integration in the second third of development
 3. Add new tests every time a problem is found, regardless of when

@@ -16,6 +16,7 @@ Co-founded and led the research program that produced the annual State of DevOps
 
 ### The Four Key Metrics
 Forsgren's DORA research identified four metrics that distinguish high-performing software delivery teams:
+
 1. **Lead time** -- time from commit to production
 2. **Deployment frequency** -- how often the team deploys to production
 3. **Change failure rate** -- percentage of deployments causing failures
@@ -30,6 +31,7 @@ Forsgren brought rigorous statistical methods (cluster analysis, structural equa
 ## Relevance to TDD
 
 Forsgren's work provides the organizational-level evidence for practices that TDD enables:
+
 - **Test automation** is one of DORA's key technical capabilities. TDD is the most disciplined form of test automation.
 - **Continuous delivery** requires comprehensive automated tests as a prerequisite. TDD naturally produces these.
 - The finding that speed and stability coexist echoes the [TDD research finding](../concepts/tdd-empirical-evidence.md) that quality improvement (defect reduction) is worth the modest time investment.

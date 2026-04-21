@@ -15,6 +15,7 @@ The definitive summary of what empirical research actually says about TDD effect
 The strongest empirical finding across TDD research is that TDD-like practices reduce defect rates compared to ad-hoc or traditional development processes.
 
 **Nagappan et al. 2008** studied four industrial teams at Microsoft and IBM:
+
 - 40% defect reduction (IBM device drivers)
 - 62% defect reduction (Microsoft Windows networking)
 - 76% defect reduction (Microsoft MSN web services)
@@ -23,12 +24,14 @@ The strongest empirical finding across TDD research is that TDD-like practices r
 These are large effects. However, the comparison baseline was traditional development (not iterative test-last), and the study design was case study, not controlled experiment. See [TDD Quality Improvement (Nagappan 2008)](../sources/tdd-quality-improvement-nagappan-2008.md) for details.
 
 Multiple systematic reviews confirm a positive quality effect:
+
 - Turhan et al. (2010): moderate positive effect on external quality
 - Munir et al. (2014): improvement in external quality for high-rigor studies
 - Rafique & Misic (2013): small quality improvement, more pronounced in industry
 
 ### Small, Consistent Iteration Cycles Improve Outcomes
 **Fucci et al. 2017** found that two process dimensions matter most:
+
 - **Granularity:** shorter cycles (5-10 minutes) correlate with higher quality
 - **Uniformity:** keeping a consistent rhythm correlates with higher quality
 
@@ -50,6 +53,7 @@ Pancur & Ciglaric (2011) controlled for granularity between TDD and ITL groups a
 
 ### Productivity Impact
 Productivity results are the most inconsistent across TDD literature:
+
 - Some studies show small productivity gains
 - Some show losses (typically 15-35%)
 - Systematic reviews consistently rate productivity findings as "inconclusive"
@@ -77,6 +81,7 @@ Greenfield projects dominate the research. Brownfield/legacy projects are barely
 
 ### 5. Comparison Baseline
 The choice of what TDD is compared against determines results:
+
 - **TDD vs. waterfall:** TDD looks very good (but the comparison is unfair -- any iterative process would beat waterfall)
 - **TDD vs. iterative test-last (ITL):** Results become inconclusive
 - **TDD vs. "your way":** Results are noisy and hard to interpret

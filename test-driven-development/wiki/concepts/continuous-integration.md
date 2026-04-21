@@ -23,6 +23,7 @@ As defined in Accelerate, CI requires:
 The DORA research found that trunk-based development combined with CI predicts higher software delivery performance. These results held independent of team size, organization size, or industry.
 
 Specific findings:
+
 - Teams with branches living less than one day and integration periods less than one day perform significantly better
 - Long-lived branches discourage both refactoring and intra-team communication
 - The "GitHub Flow" workflow (developing on branches, periodically merging) is suitable for open-source contributors who aren't full-time, but not for teams practicing CI
@@ -42,6 +43,7 @@ TDD provides exactly what CI needs:
 | Developer ownership | Developers write and maintain their own tests as a natural part of the workflow |
 
 Without fast tests, the feedback loop breaks:
+
 - Slow tests (minutes, hours) make developers avoid running them
 - Developers batch up changes to avoid waiting
 - Larger batches mean more merge conflicts
@@ -66,6 +68,7 @@ The commit stage (CI proper) must complete in minutes -- [Dave Farley](../entiti
 ## CI and Refactoring
 
 Long-lived branches discourage [Refactoring](refactoring.md) because:
+
 - Refactoring touches many files, increasing merge conflict probability
 - The longer a branch lives, the more the trunk has diverged
 - Developers avoid refactoring to minimize merge pain
@@ -75,6 +78,7 @@ Trunk-based development with CI removes this obstacle. Small refactorings merge 
 ## CI and Architecture
 
 The Accelerate research found that loosely coupled architecture is the biggest contributor to continuous delivery (even larger than test and deployment automation). Teams that can test and deploy independently achieve better CI because:
+
 - Tests run in isolation (no integrated test environment needed)
 - Deploys don't require coordinating with other teams
 - Failures are localized and quickly diagnosed

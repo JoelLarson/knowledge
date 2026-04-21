@@ -52,6 +52,7 @@ Exploit the linking phase of compilation. By providing alternative implementatio
 **Enabling point:** The build script, classpath, or linker configuration.
 
 **Examples:**
+
 - In C/C++: Create a stub library with empty implementations of graphics functions, link it instead of the real library during tests
 - In Java: Manipulate the classpath to provide a different implementation of a class
 
@@ -76,6 +77,7 @@ Available in C and C++ where a macro preprocessor runs before compilation. You c
 ## Choosing a Seam Type
 
 Object seams are the best default choice in OO languages because they are:
+
 - **Explicit** — visible in the source code
 - **Maintainable** — tests that use them are easy to understand
 - **Composable** — work naturally with [Dependency Injection](dependency-injection.md) and [Test Doubles](test-doubles.md)
@@ -93,6 +95,7 @@ Not every method call is an object seam. A call is an object seam only if you ca
 ## Connection to Other Concepts
 
 Seams are the mechanism underlying many [Dependency-Breaking Techniques](dependency-breaking-techniques.md):
+
 - **Extract Interface** creates object seams
 - **Subclass and Override Method** exploits object seams
 - **Parameterize Constructor** creates enabling points for object seams

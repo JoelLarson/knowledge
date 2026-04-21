@@ -37,12 +37,14 @@ The model and implementation must be the same artifact. Code is the model. This 
 ### Aggregates as Test Units
 
 An [Aggregate](../concepts/aggregates.md) is a cluster of objects treated as a single unit for data changes. The aggregate root is the only entry point. This makes aggregates the natural unit of testing:
+
 - Test invariants through the aggregate root's interface
 - All state changes go through the root
 - Transaction boundaries align with aggregate boundaries
 - A delete removes the entire aggregate
 
 Rules:
+
 - Nothing outside the aggregate can reference internal objects (except transiently)
 - Only aggregate roots are retrieved from repositories
 - Invariants within an aggregate are enforced on every transaction
@@ -50,6 +52,7 @@ Rules:
 ### Value Objects
 
 [Value Objects](../concepts/value-objects.md) are immutable, identity-less objects defined purely by their attributes. They are trivially testable because:
+
 - No mutable state to manage
 - Equality by value, not reference
 - Side-effect-free operations
@@ -62,6 +65,7 @@ A [Bounded Context](../concepts/bounded-context.md) defines where a model is con
 ### Refactoring Toward Deeper Insight
 
 Evans elevates refactoring beyond mechanical code improvement to model improvement. "A suite of automated unit tests allows relatively safe experimentation with the code." The iterative cycle is:
+
 1. Knowledge crunching with domain experts
 2. Model refinement
 3. Code refactoring (supported by tests)
@@ -87,6 +91,7 @@ Repositories provide the illusion of an in-memory collection of aggregates. Evan
 ## Connection to TDD Practice
 
 Evans explicitly endorses iterative, test-first development. The book assumes Agile/XP practices including automated testing. Key connections:
+
 - Aggregate invariants define what to assert in tests
 - Ubiquitous language defines how to name tests
 - Bounded contexts define what to mock vs. integrate

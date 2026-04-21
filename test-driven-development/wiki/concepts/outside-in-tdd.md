@@ -43,6 +43,7 @@ Outside-in TDD starts from the outermost layer of the system (acceptance tests a
 > "We start developing a feature by considering the events coming into the system that will trigger the new behavior... we work our way through the system: from the objects that receive external events, through the intermediate layers, to the central domain model, and then on to other boundary objects." — Freeman & Pryce
 
 This contrasts with starting at the domain model and trying to hook it into the system later, which risks:
+
 - Building unnecessary functionality
 - Integration problems discovered late
 - Wrong feedback driving design decisions
@@ -62,6 +63,7 @@ This "pulls" interfaces into existence from client needs rather than "pushing" f
 ## Relationship to Acceptance Tests
 
 Outside-in TDD gives acceptance tests two distinct roles:
+
 - **In-progress acceptance tests** — represent work yet to be done; expected to fail
 - **Regression acceptance tests** — represent completed features; must always pass
 

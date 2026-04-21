@@ -35,6 +35,7 @@ The bounded context boundary is the clearest answer to "what should I mock?"
 ### Anti-Corruption Layer as Test Seam
 
 When Context A consumes Context B, an anti-corruption layer translates between their models. This layer is a natural [test seam](test-doubles.md):
+
 - Stub the ACL to test Context A in isolation
 - Contract-test the ACL against Context B's API
 - See [Ports and Adapters](ports-and-adapters.md)
@@ -52,6 +53,7 @@ The following relationship patterns are defined by Evans (Evans, [DDD](../source
 ## Implementation (from Vernon)
 
 Vernon's SaaSOvation example (Vernon, [Implementing DDD](../sources/implementing-ddd-vernon.md), Part 2) uses three bounded contexts:
+
 - Identity and Access Context
 - Collaboration Context
 - Agile Project Management Context
@@ -65,6 +67,7 @@ Evans explicitly distinguishes bounded contexts from code modules (Evans, [DDD](
 ## Continuous Integration Within a Context
 
 Evans recommends XP-style continuous integration within a single bounded context to prevent model fragmentation (Evans, [DDD](../sources/domain-driven-design-evans.md), Ch. 14). Automated tests are the primary mechanism:
+
 - Merge frequently
 - Run all tests on every merge
 - Maintain model consistency through shared test suites

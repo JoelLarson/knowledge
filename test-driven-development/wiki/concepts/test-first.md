@@ -23,6 +23,7 @@ Writing tests before code is not just procedure — it fundamentally changes wha
 
 ### Design from the Outside In
 When you write the test first, you have no code yet. This forces you to think from the perspective of a consumer of the code. The test specifies the interface, not the implementation. This leads to:
+
 - Better-named APIs
 - Simpler interfaces
 - Fewer unnecessary parameters
@@ -56,12 +57,14 @@ Teams that chase coverage as a metric often produce tests with no assertions ("l
 
 ## Test First and Courage (Beck)
 TDD is a way of managing fear (Beck, [TDD by Example](../sources/tdd-by-example-kent-beck.md), Preface). Fear of complex problems makes programmers tentative, uncommunicative, avoidant of feedback. Test-first development converts (Farley, [302 Course](../sources/dave-farley-302-course.md)):
+
 - Tentativeness → concrete learning quickly
 - Clamming up → clearer communication
 - Avoiding feedback → seeking helpful feedback
 
 ## Robert Martin's Three Laws
 The strongest formulation of test-first:
+
 1. No production code without a failing test
 2. Write only enough test code to fail
 3. Write only enough production code to pass

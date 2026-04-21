@@ -64,6 +64,7 @@ Rainsberger simplified the four rules to two: "Remove duplication and improve na
 ## Simple Design vs. Easy Design
 
 Simple design is not the same as easy or obvious design:
+
 - **Easy** = familiar, comfortable, requires little thought
 - **Simple** = few concepts, few moving parts, orthogonal components
 
@@ -75,6 +76,7 @@ A design with many small, well-named functions is simpler than a design with one
 
 ### Tidyings as Simple Design in Practice
 The [Tidyings](tidyings.md) catalog is Simple Design's four rules made into concrete daily moves:
+
 - **Rule 2 (Reveals intention)** -> Explaining Variables, Explaining Constants, Explaining Comments, Reading Order
 - **Rule 3 (No duplication)** -> Normalize Symmetries, Extract Helper, Cohesion Order
 - **Rule 4 (Fewest elements)** -> Dead Code, Delete Redundant Comments, One Pile
@@ -83,6 +85,7 @@ Rule 1 (Passes tests) is the prerequisite that makes all tidyings safe.
 
 ### Coupling Economics
 Beck frames Simple Design's value through [Constantine's Equivalence](coupling-and-cohesion.md): `cost(software) ~= coupling`. The four rules systematically reduce coupling:
+
 - Tests reveal coupling (hard-to-test code is over-coupled)
 - Clear intention reduces *cognitive* coupling (readers don't need external context)
 - No duplication eliminates *change* coupling (change one place, not two)

@@ -19,6 +19,7 @@ Three specific practices predict IT performance:
 When automated tests pass, teams must be confident their software is releasable. When tests fail, teams must be confident the failure indicates a real defect. Flaky, unreliable test suites destroy both forms of confidence.
 
 Strategies for reliability:
+
 - Quarantine unreliable tests into a separate suite run independently
 - Delete flaky tests (they're version-controlled; you can get them back)
 - Invest ongoing effort in maintaining suite reliability
@@ -27,6 +28,7 @@ Strategies for reliability:
 The research found that automated tests **primarily created and maintained by developers** are correlated with IT performance. Tests created and maintained by separate QA teams or outsourced parties showed **no correlation** with performance.
 
 Two effects explain this:
+
 - **Code becomes more testable** when developers write tests. This is explicitly why TDD matters: "Test-driven development (TDD) is an important practice -- it forces developers to create more testable designs."
 - **Developers invest more** in maintaining tests they own. When quality is someone else's problem, test suites rot.
 
@@ -63,6 +65,7 @@ A related capability: successful teams have adequate test data to run fully auto
 ## Quality Impact
 
 The research found that continuous delivery (enabled by test automation) predicts:
+
 - Lower change failure rates
 - Less time spent on unplanned rework (21% for high performers vs. 27% for low performers)
 - More time spent on new work (49% vs. 38%)
@@ -72,6 +75,7 @@ The research found that continuous delivery (enabled by test automation) predict
 ## Testers Still Matter
 
 The book is explicit: eliminating QA is not the goal. Testers serve essential roles:
+
 - Performing **exploratory testing** against latest builds
 - Conducting **usability and acceptance testing**
 - **Helping create and evolve** automated test suites by working alongside developers

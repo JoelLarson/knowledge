@@ -25,6 +25,7 @@ The skeleton's application functionality should be so simple that it's "obvious 
 ## What "End-to-End" Means
 
 For GOOS, end-to-end includes the **process**, not just the system:
+
 - Check out latest code
 - Compile and unit-test
 - Integrate and package
@@ -32,6 +33,7 @@ For GOOS, end-to-end includes the **process**, not just the system:
 - Exercise through external access points
 
 The deployment step is critical because:
+
 - It forces automation of error-prone manual steps
 - It exposes organizational dependencies (operations, vendors, signatures)
 - It provides realistic feedback earlier
@@ -39,6 +41,7 @@ The deployment step is critical because:
 ## Walking Skeleton vs. BDUF
 
 A walking skeleton is NOT Big Design Up Front. It involves:
+
 - Whiteboard-level architecture decisions only
 - The minimum structure to support the first acceptance test
 - Reserving the right to change everything later
@@ -58,6 +61,7 @@ The walking skeleton kick-starts the [double-loop TDD](outside-in-tdd.md) proces
 ## In Practice
 
 From the GOOS Auction Sniper example:
+
 - The skeleton displayed a single value in the UI and sent just a handshake message to the server
 - It proved the Swing UI, XMPP messaging, and end-to-end test infrastructure all worked together
 - Only then did the authors start implementing real bidding behavior
@@ -65,6 +69,7 @@ From the GOOS Auction Sniper example:
 ## Brownfield Adaptation
 
 For existing systems without tests:
+
 1. Automate the build and deploy process
 2. Add end-to-end tests covering the areas you need to change
 3. Start with the simplest path through the system (like a walking skeleton for legacy)

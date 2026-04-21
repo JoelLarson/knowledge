@@ -13,6 +13,7 @@ TDD in functional programming leverages pure functions, immutable data, and alge
 
 ### Pure Functions Are Ideal Test Subjects
 A pure function's output depends only on its inputs and produces no side effects. This means:
+
 - No test setup required (no mutable state to configure)
 - No teardown needed (nothing to clean up)
 - Tests are perfectly [repeatable](good-test-properties.md) — same inputs always give same outputs
@@ -21,6 +22,7 @@ A pure function's output depends only on its inputs and produces no side effects
 
 ### No Mocking Needed
 In OO TDD, much complexity comes from replacing collaborators with [Test Doubles](test-doubles.md). In FP:
+
 - Functions take data in, return data out — no collaborators to mock
 - Side effects are pushed to the edges (IO boundaries)
 - Core logic is pure and testable without any doubles
@@ -28,6 +30,7 @@ In OO TDD, much complexity comes from replacing collaborators with [Test Doubles
 
 ### Immutable Data Eliminates Aliasing Bugs
 When data cannot be mutated, you never need to worry about:
+
 - Another test modifying shared state
 - Temporal coupling between setup and assertion
 - Defensive copying in test fixtures
@@ -46,6 +49,7 @@ When data cannot be mutated, you never need to worry about:
 ## The Chicago/London Debate Dissolves
 
 In functional programming, the [Chicago vs. London Schools](chicago-vs-london.md) distinction largely disappears:
+
 - No objects means no "communication between objects" to test (London concern)
 - No mutable state means state verification is just comparing return values (Chicago concern)
 - The test simply calls a function and asserts on the result
@@ -54,6 +58,7 @@ In functional programming, the [Chicago vs. London Schools](chicago-vs-london.md
 ## Property-Based Testing as Natural Complement
 
 [Property-Based Testing](property-based-testing.md) is particularly natural in FP because:
+
 - Pure functions have mathematical properties (commutativity, associativity, idempotency)
 - Algebraic data types provide natural generators
 - Equational reasoning is built into the programming model
@@ -62,6 +67,7 @@ In functional programming, the [Chicago vs. London Schools](chicago-vs-london.md
 ## REPL-Driven Development
 
 Many FP practitioners use REPL-driven development as a complement to TDD:
+
 - Explore ideas interactively in the REPL
 - Formalize discoveries as tests
 - The REPL serves as a fast inner loop; tests serve as the permanent record

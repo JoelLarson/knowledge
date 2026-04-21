@@ -20,6 +20,7 @@ Both questions are necessary. Neither alone is sufficient.
 ## Acceptance Tests as Executable Specifications
 
 Acceptance tests are:
+
 - Written before development begins (test-first, at feature level)
 - Expressed in the language of the problem domain
 - Treated as an **automated definition of done**
@@ -30,6 +31,7 @@ Acceptance tests are:
 ## Developers Must Own Acceptance Tests
 
 A common anti-pattern is having a separate QA team own acceptance tests. This doesn't work:
+
 - QA teams cannot affect the changes that break tests
 - Developers who commit breaking changes cannot fix them quickly
 - The feedback loop is broken
@@ -69,6 +71,7 @@ Tag tests: destructive, time-travel, hardware-specific. Farm common tests across
 ## ATDD + Fine-Grained TDD Together
 
 Recommended strategy:
+
 1. Start a new feature by writing acceptance tests that capture user-visible examples
 2. Use [BDD](bdd.md)-flavored fine-grained TDD to evolve the code until acceptance tests pass
 3. Fine-grained tests provide fast feedback during development; acceptance tests provide functional correctness
@@ -98,6 +101,7 @@ GOOS insists acceptance tests should exercise the **full deployed system** throu
 
 ### Domain Language Only
 Acceptance tests use terminology from the application's domain, not underlying technologies. This:
+
 - Shields tests from infrastructure changes (FTP to web services)
 - Forces the team to understand what users actually need
 - Keeps tests as living documentation

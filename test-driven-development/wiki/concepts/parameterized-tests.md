@@ -44,6 +44,7 @@ In xUnit Test Patterns, the Parameterized Test pattern is formalized as:
 > "We store all the information needed for each test (including the expected results) in a data structure and write the test to iterate over the entries, calling the SUT for each data entry."
 
 Key characteristics:
+
 - Test data can be inline (annotations) or external (CSV, JSON, database)
 - Each row is effectively an independent test case
 - Framework reports each row's pass/fail separately (not just one aggregate result)
@@ -51,12 +52,14 @@ Key characteristics:
 ## When to Use Parameterized Tests
 
 **Good fit:**
+
 - Testing the same logic with many boundary values
 - Validating formatting/parsing rules across many inputs
 - Testing business rules that differ only in parameters (tax rates by country, pricing tiers)
 - Verifying error messages for various invalid inputs
 
 **Poor fit:**
+
 - Tests that need significantly different setup per case
 - Tests where the assertion logic changes per case
 - Exploratory edge cases that each have a unique story (give them individual names)
@@ -99,6 +102,7 @@ A good heuristic: if you find yourself copy-pasting a test and only changing dat
 ## Connection to [Property-Based Testing](property-based-testing.md)
 
 Parameterized tests and property-based tests both reduce duplication but differ fundamentally:
+
 - Parameterized: developer chooses specific cases (known requirements)
 - Property-based: framework generates random cases (unknown edge cases)
 

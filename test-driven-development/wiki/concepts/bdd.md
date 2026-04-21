@@ -29,6 +29,7 @@ Dan North and Chris Matts drove the key ideas: **TDD was right, but using the wr
 ## Given / When / Then
 
 The BDD structure for expressing a test as a scenario:
+
 - **Given** — the initial context / pre-conditions
 - **When** — the action or event
 - **Then** — the expected outcome
@@ -38,6 +39,7 @@ This structure forces behavioral thinking. It separates setup, stimulus, and ass
 ## The "Should" Prefix
 
 Starting a test name with "should" forces a behavioral, outcome-focused statement:
+
 - `should_return_zero_for_empty_string` (behavioral)
 - `testEmptyString` (implementation)
 
@@ -68,6 +70,7 @@ A team that chases 80% coverage may produce tests with no assertions. Coverage i
 ## Naming Best Practices
 
 Good naming is critical to BDD's value as documentation. From Farley:
+
 - Be explicit — say what the code does
 - Pick clear names, avoid abbreviations unless widely understood
 - Avoid jargon from outside the problem domain

@@ -66,6 +66,7 @@ In DDD, bounded contexts define natural integration boundaries. Integration test
 ## When Integration Tests Fail
 
 Integration test failures typically indicate:
+
 - A contract change that wasn't communicated
 - An environment configuration problem
 - A missing migration or schema change
@@ -76,6 +77,7 @@ Unlike unit test failures which point to a specific line, integration failures r
 ## Avoiding the Integration Test Trap
 
 Over-reliance on integration tests leads to:
+
 - Slow feedback loops (minutes instead of seconds)
 - Flaky tests due to network/timing/state issues
 - Difficult diagnosis when tests fail
@@ -89,6 +91,7 @@ The DORA research ([Accelerate](../sources/accelerate-forsgren-humble-kim.md)) p
 
 ### Test Automation as Key Capability
 Test automation is one of 24 capabilities that predict software delivery performance. The research found three critical properties of effective test suites:
+
 1. **Reliability** -- when tests pass, teams are confident software is releasable; flaky tests (common in integration testing) destroy this confidence
 2. **Developer ownership** -- tests created by developers (not separate QA) correlate with performance; outsourced or QA-only testing shows no correlation
 3. **Continuous execution** -- every commit triggers automated tests; comprehensive acceptance tests run daily

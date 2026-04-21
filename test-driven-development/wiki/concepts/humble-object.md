@@ -12,6 +12,7 @@ A design-for-testability pattern from [xUnit Test Patterns](../sources/xunit-tes
 ## The Problem
 
 Some code is tightly coupled to frameworks, threading, or infrastructure that makes testing expensive or impossible:
+
 - GUI widgets tied to a presentation framework
 - Active objects running in their own thread
 - Code inside application containers (EJBs, servlets)
@@ -22,6 +23,7 @@ Developers faced with this give up on testing, resulting in Production Bugs from
 ## The Solution
 
 Split the hard-to-test component into two parts:
+
 1. **Humble Object** — a thin adapter that delegates to the testable component. Contains no logic worth testing. So simple that bugs are unlikely.
 2. **Testable Component** — all the extracted logic, accessible via synchronous method calls. Easy to test with standard [Four-Phase Test](four-phase-test.md) structure.
 
@@ -76,6 +78,7 @@ Use inheritance to separate framework-dependent code from logic. The framework-d
 ## When to Use It
 
 Apply Humble Object when:
+
 - You have nontrivial logic in a component that is hard to instantiate
 - The component depends on a framework that's expensive to simulate
 - Code runs asynchronously and tests would need delays/coordination

@@ -26,6 +26,7 @@ These enforce a tighter loop than Beck's formulation: seconds, not minutes, betw
 ## F.I.R.S.T. Test Properties
 
 From Chapter 9 of Clean Code:
+
 - **Fast** — tests must run quickly
 - **Independent** — tests must not depend on each other
 - **Repeatable** — tests must work in any environment

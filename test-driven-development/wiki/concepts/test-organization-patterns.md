@@ -42,6 +42,7 @@ These strategies can be combined: different levels of testing may use different 
 ## Test Naming Conventions
 
 The combination of package + Testcase Class + Test Method name should convey:
+
 - The SUT class name
 - The method or feature being exercised
 - Important input characteristics

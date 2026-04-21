@@ -22,6 +22,7 @@ Eric Evans is the creator of Domain-Driven Design and author of the foundational
 ## Connection to TDD
 
 Evans explicitly assumes Agile/XP practices and automated testing:
+
 - "A suite of automated unit tests allows relatively safe experimentation with the code"
 - Repositories should allow "easy substitution of a dummy implementation, for use in testing"
 - The iterative cycle of knowledge crunching, model refinement, and code refactoring depends on test safety nets
@@ -30,6 +31,7 @@ Evans explicitly assumes Agile/XP practices and automated testing:
 ## Legacy
 
 Evans' work influenced:
+
 - [Vaughn Vernon](vaughn-vernon.md)'s [Implementing DDD](../sources/implementing-ddd-vernon.md) (2013) — the practical companion
 - [BDD](../concepts/bdd.md) — BDD's emphasis on domain language in tests traces directly to ubiquitous language
 - Hexagonal Architecture / [Ports and Adapters](../concepts/ports-and-adapters.md) — Evans' separation of domain from infrastructure

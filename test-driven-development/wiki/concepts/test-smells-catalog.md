@@ -19,6 +19,7 @@ Problems visible in the test source code itself.
 
 ### Obscure Test
 The test is hard to understand at a glance. Causes include:
+
 - **Eager Test** — verifies too much functionality in one test
 - **Mystery Guest** — test depends on external resources not visible in the test
 - **General Fixture** — fixture contains objects not needed by this specific test
@@ -30,6 +31,7 @@ The test contains if/else, loops, or try/catch. Tests should be strictly linear 
 
 ### Hard-to-Test Code
 The [SUT](sut-and-doc.md) is difficult to get under test. Root causes:
+
 - Highly coupled code
 - Asynchronous code
 - Code that uses static/global state
@@ -52,6 +54,7 @@ Multiple assertions in a test without Assertion Messages. When the test fails, y
 
 ### Erratic Test
 A test that sometimes passes and sometimes fails. Subcategories:
+
 - **Interacting Tests** — tests affect each other through shared state
 - **Interacting Test Suites** — test suites interfere with each other
 - **Lonely Test** — passes alone but fails in suite (or vice versa)
@@ -65,6 +68,7 @@ A test that sometimes passes and sometimes fails. Subcategories:
 
 ### Fragile Test
 A test that fails when unrelated functionality changes. Subcategories:
+
 - **Interface Sensitivity** — test breaks when the SUT's API changes in irrelevant ways
 - **Behavior Sensitivity** — test breaks when unrelated SUT behavior changes
 - **Data Sensitivity** — test breaks when test data changes
@@ -80,6 +84,7 @@ Tests require human action to run (setting up databases, starting servers, readi
 
 ### Slow Tests
 Tests take too long to run, discouraging frequent execution. Root causes:
+
 - Shared Fixtures with slow setup
 - Testing through the UI
 - Testing against real databases/services
@@ -99,12 +104,14 @@ The team has abandoned testing. Usually caused by High Test Maintenance Cost or 
 
 ### High Test Maintenance Cost
 Excessive time spent modifying existing tests to accommodate changes. The symptom that motivated Meszaros to write the book. Root causes:
+
 - Fragile Tests (especially interface/data sensitivity)
 - Test Code Duplication
 - Obscure Tests (hard to understand what needs changing)
 
 ### Production Bugs
 Bugs escape to production despite having tests. Caused by:
+
 - Untested Code (never wrote the test)
 - Untested Requirements (test doesn't cover the scenario)
 - Buggy Tests (test doesn't verify what it claims)
@@ -112,6 +119,7 @@ Bugs escape to production despite having tests. Caused by:
 ## The Smell–Cause–Solution Relationship
 
 Meszaros emphasizes that smells are symptoms, not root causes. The process is:
+
 1. **Detect** the smell (symptom)
 2. **Diagnose** the root cause
 3. **Apply** the appropriate pattern (solution)

@@ -14,6 +14,7 @@ TDD and unit testing are not the same thing. Both produce small automated tests,
 > "Test driven development is often confused with unit testing, but they're not the same thing." — Dave Farley
 
 The outputs of TDD are things we might call unit tests. But:
+
 - **Unit testing** = testing small pieces of code (often after writing them)
 - **TDD** = using tests to drive design; Red-Green-Refactor; always writing tests before code
 
@@ -52,6 +53,7 @@ See [TDD Smells](tdd-smells.md) (The Liar).
 Both test-first and test-after produce tests. But test-first also produces better **code**:
 
 The properties that make code testable are the same properties that make code high quality:
+
 - Modular → testable
 - Loosely coupled → testable
 - Cohesive → testable

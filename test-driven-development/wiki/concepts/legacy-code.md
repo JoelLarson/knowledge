@@ -40,6 +40,7 @@ A [seam](seams.md) is a place where you can alter behavior without editing code 
 ### Sensing and Separation
 
 Two reasons to break dependencies:
+
 - **Sensing** — you can't access values your code computes (need to observe effects)
 - **Separation** — you can't even get code into a test harness to run
 
@@ -63,6 +64,7 @@ These ensure all new code is tested even when you can't test the existing code y
 > "It's almost never worth going for full coverage in legacy code. Cost versus benefit doesn't work in our favour." — Dave Farley
 
 Instead, make **tactical decisions**:
+
 - Focus on areas where you want to do new work
 - Be led by business value
 - Treat the "adding tests" project as improving the design in valuable areas
@@ -111,6 +113,7 @@ You won't end up with a beautiful system. You may end up with a workable one.
 > "Unit tests are hard to retrofit to pre-existing code, so don't." — Dave Farley
 
 [Acceptance tests](atdd.md) are more effective as a defensive strategy:
+
 - They test at the boundary of visible behavior (not internal structure)
 - They survive major internal refactoring
 - They confirm that refactoring preserved user-visible behavior

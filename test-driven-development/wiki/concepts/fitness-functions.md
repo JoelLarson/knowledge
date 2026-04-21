@@ -13,6 +13,7 @@ Architecture fitness functions are automated checks that verify architectural ch
 
 ### Any Mechanism
 Fitness functions can be implemented as:
+
 - Unit-test-style assertions (JDepend, ArchUnit, NetArchTest)
 - Monitors and metrics (performance thresholds, error rates)
 - Chaos engineering experiments (resilience, fault tolerance)
@@ -69,6 +70,7 @@ When a zero-day exploit is discovered, insert a fitness function into every team
 ## Connection to DORA Metrics
 
 Fitness functions support the four DORA metrics:
+
 - **Deployment frequency** — fitness functions in CI enable confident, frequent deployment
 - **Lead time for changes** — automated governance replaces slow manual review boards
 - **Change failure rate** — catching architectural violations before production
@@ -85,6 +87,7 @@ Fitness functions support the four DORA metrics:
 ## Connection to TDD Practice
 
 Fitness functions extend the TDD mindset beyond unit and acceptance tests:
+
 - [Red-Green-Refactor](red-green-refactor.md) governs code-level design
 - Fitness functions govern architecture-level design
 - Both use fast automated feedback to prevent drift

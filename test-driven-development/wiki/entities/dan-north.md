@@ -23,6 +23,7 @@ Dan North is the primary creator of Behaviour-Driven Development (BDD), alongsid
 The problem wasn't that TDD was wrong. The problem was that the word "test" led practitioners to focus on checking existing code rather than specifying desired behavior before writing code.
 
 North and Matts proposed:
+
 - **Specification** instead of test
 - **Scenario** instead of test case
 - **Should** prefix to force behavioral framing
@@ -30,6 +31,7 @@ North and Matts proposed:
 ## Relationship to TDD
 
 BDD is a refinement of TDD, not a replacement:
+
 - Fine-grained BDD = TDD with better naming conventions
 - Large-scale BDD = acceptance testing with domain language (Cucumber, SpecFlow)
 - Both levels apply the same principle: focus on behavioral outcomes

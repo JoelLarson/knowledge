@@ -22,6 +22,7 @@ Assert.Equal(0.02m, discount);
 ```
 
 **Characteristics:**
+
 - Only applicable to pure functions (no side effects)
 - Tests are short and concise — supply input, check output
 - No out-of-process dependencies
@@ -38,6 +39,7 @@ Assert.Equal(product, sut.Products[0]);
 ```
 
 **Characteristics:**
+
 - Verifies state after an operation rather than just the return value
 - Assertions tend to be larger (multiple properties to check)
 - More API surface area means more chance of coupling to implementation details
@@ -55,6 +57,7 @@ emailGatewayMock.Verify(
 ```
 
 **Characteristics:**
+
 - Requires setting up test doubles and interaction assertions
 - Most prone to [false positives](test-fragility.md) because it couples to how objects communicate
 - Highest maintenance cost due to mock setup complexity
@@ -106,6 +109,7 @@ The functional core becomes testable with output-based style. The controllers (t
 ### Limitations
 
 Functional architecture is not always feasible:
+
 - **Performance** — pushing all reads/writes to the edges may cause unnecessary I/O
 - **Code size** — the separation adds boilerplate
 - **Not all domains are pure** — some business logic inherently involves side effects

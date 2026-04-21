@@ -29,6 +29,7 @@ These generate [Red-Green-Refactor](../concepts/red-green-refactor.md): Red → 
 
 ### TDD as Courage
 TDD is a way of managing fear. Fear makes programmers tentative, uncommunicative, avoidant of feedback. TDD counters fear by:
+
 - Starting learning concretely as quickly as possible
 - Communicating more clearly
 - Seeking helpful, concrete feedback
@@ -55,6 +56,7 @@ Building a testing framework using TDD. Even smaller steps. Introduces xUnit arc
 
 ### Part III: Patterns for TDD
 Comprehensive catalog including:
+
 - **TDD Patterns:** Isolated Test, Test List, Test First, Assert First, Test Data, Evident Data
 - **Red Bar Patterns:** One Step Test, Starter Test, Learning Test, Regression Test
 - **Testing Patterns:** Child Test, Mock Object, Self Shunt, Log String, Crash Test Dummy
@@ -65,6 +67,7 @@ Comprehensive catalog including:
 ## Chapter 32: Mastering TDD
 
 Key questions addressed:
+
 - How large should your steps be? (As small as needed to stay comfortable)
 - What don't you have to test? (Code you don't write)
 - How do you know if you have good tests? (They tell you things you don't know)

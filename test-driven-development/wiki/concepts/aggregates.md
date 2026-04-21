@@ -36,6 +36,7 @@ assertThrows(() => order.addLineItem(expensiveProduct))
 ### Root as Test Entry Point
 
 All interaction goes through the aggregate root. This means:
+
 - Tests have a single, clear entry point
 - Internal structure is encapsulated (tests don't depend on internals)
 - The public API of the root defines the test surface
@@ -51,6 +52,7 @@ Each test operates on one aggregate transaction. Test setup creates the aggregat
 > "Smaller Aggregates not only perform and scale better, they are also biased toward transactional success."
 
 Small aggregates are easier to test:
+
 - Less setup required
 - Fewer states to cover
 - Invariants are clearer
@@ -85,6 +87,7 @@ Use in-memory repository implementations to test aggregate persistence round-tri
 ## Connection to TDD Workflow
 
 Vernon prescribes test-first development of aggregates:
+
 1. Write a test showing how a client uses the aggregate
 2. Create minimal code to compile
 3. Refactor until the test represents proper domain usage

@@ -37,6 +37,7 @@ Vernon explicitly prescribes a TDD workflow for developing domain objects:
 ### Testing Aggregates
 
 [Aggregates](../concepts/aggregates.md) are the primary test subjects. Vernon emphasizes:
+
 - Design aggregates to protect true business invariants (not false ones)
 - Prefer small aggregates — they "perform and scale better" and are "biased toward transactional success"
 - Test invariants at aggregate boundaries
@@ -45,6 +46,7 @@ Vernon explicitly prescribes a TDD workflow for developing domain objects:
 ### Domain Events
 
 [Domain Events](../concepts/domain-events.md) are first-class building blocks alongside Entities and Value Objects. They:
+
 - Are published when aggregate command operations cause state changes
 - Are modeled as past-tense nouns+verbs: `TenantProvisioned`, `BacklogItemCommitted`
 - Enable event-driven testing: assert that correct events are published
@@ -54,6 +56,7 @@ Vernon explicitly prescribes a TDD workflow for developing domain objects:
 ### CQRS (Command-Query Responsibility Segregation)
 
 Separates the write model (aggregates with command methods only) from the read model (denormalized views). Testing implications:
+
 - Command side: test aggregate invariants and event publication
 - Query side: test that events correctly update read model projections
 - The two models can be tested independently
@@ -62,6 +65,7 @@ Separates the write model (aggregates with command methods only) from the read m
 ### Event Sourcing
 
 Rather than persisting current state, persist the stream of domain events. Testing benefits:
+
 - Full audit trail — assert the complete history
 - Replay events to verify state reconstruction
 - Test projections by replaying event streams
@@ -70,6 +74,7 @@ Rather than persisting current state, persist the stream of domain events. Testi
 ### Bounded Context Integration
 
 Vernon uses three SaaSOvation contexts (Identity/Access, Collaboration, Agile PM) to demonstrate:
+
 - **Anti-Corruption Layer (ACL):** Domain Service that translates between contexts. Test in isolation with stubs for the remote context.
 - **Open Host Service / Published Language:** REST APIs with well-defined contracts. Test with contract tests.
 - **Context Maps:** Document relationships. Integration tests verify the map.
@@ -105,6 +110,7 @@ Domain experts should be able to read test code (with developer help) and verify
 ## Connection to TDD Practice
 
 Vernon bridges DDD and TDD more explicitly than Evans:
+
 - Prescribes test-first development of domain objects
 - Tests serve as living documentation of the ubiquitous language
 - Domain events provide clear assertion points

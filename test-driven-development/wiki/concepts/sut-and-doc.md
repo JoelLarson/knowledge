@@ -25,6 +25,7 @@ The SUT is always defined *relative to a specific test*. The same class can be t
 ## Depended-On Component (DOC)
 
 A DOC is any component that the SUT calls or depends on during the test. DOCs are part of the test fixture. They provide:
+
 - **Indirect inputs** — values returned to the SUT (via method returns, callbacks)
 - **Indirect outputs** — calls the SUT makes to the DOC (method invocations, messages sent)
 
@@ -36,6 +37,7 @@ Test → exercises → SUT → depends on → DOC
 ```
 
 A unit test isolates the SUT from its DOCs by replacing DOCs with [Test Doubles](test-doubles.md):
+
 - **Test Stub** — controls indirect inputs (what the DOC returns to the SUT)
 - **Mock Object / Test Spy** — observes indirect outputs (what the SUT sends to the DOC)
 - **Dummy Object** — fills a parameter slot when the DOC isn't actually used
@@ -43,6 +45,7 @@ A unit test isolates the SUT from its DOCs by replacing DOCs with [Test Doubles]
 ## Nested SUT/DOC Relationships
 
 An object is only the SUT with respect to a specific test. In a layered system:
+
 - Unit1 is the SUT for Unit1's tests
 - Unit1 is a DOC for Unit2's tests (if Unit2 depends on Unit1)
 - Both Unit1 and Unit2 are part of the Component SUT for component-level tests
@@ -52,6 +55,7 @@ This is why [Test Doubles](test-doubles.md) exist: to isolate each layer so it c
 ## Why This Vocabulary Matters
 
 Before Meszaros, authors used inconsistent terminology:
+
 - "object under test," "class under test," "module under test"
 - "collaborator," "dependency," "mock target"
 

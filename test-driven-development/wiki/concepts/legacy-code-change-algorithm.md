@@ -20,6 +20,7 @@ The five-step algorithm from [Michael Feathers](../entities/michael-feathers.md)
 ## Philosophy
 
 The day-to-day goal is to make functional changes that deliver value **while bringing more of the system under test**. After each programming episode, you should be able to point to:
+
 - Code that provides a new feature
 - Tests for that code
 
@@ -30,6 +31,7 @@ The day-to-day goal is to make functional changes that deliver value **while bri
 ### 1. Identify Change Points
 
 Understand where in the architecture the change belongs. If you don't understand the design well enough, use techniques like:
+
 - Scratch refactoring (refactor to understand, then discard)
 - Notes and sketching
 - Telling the story of the system
@@ -37,12 +39,14 @@ Understand where in the architecture the change belongs. If you don't understand
 ### 2. Find Test Points
 
 Determine where to write tests that will cover your change. This requires understanding effect propagation — how changes in one place affect observable behavior in another. Key concepts:
+
 - **Interception points** — places where you can detect effects of a change
 - **Pinch points** — narrow places in effect flow where a single test can cover many changes
 
 ### 3. Break Dependencies
 
 The most technically challenging step. Dependencies manifest as:
+
 - Difficulty instantiating objects in test harnesses
 - Difficulty running methods in test harnesses
 
@@ -69,6 +73,7 @@ This circular dependency is why step 3 (break dependencies) exists — you make 
 ## Tactics for Time Pressure
 
 When you can't afford the full algorithm, use safe additive techniques:
+
 - [Sprout Method](sprout-method.md) — write new code in a tested method, call it from old code
 - Sprout Class — write new code in a tested class
 - Wrap Method — rename old method, create new method that calls old + new
