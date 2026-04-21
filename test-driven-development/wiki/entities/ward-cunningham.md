@@ -4,7 +4,7 @@ type: entity
 tags: [person, xp, pioneer]
 created: 2026-04-20
 updated: 2026-04-20
-sources: []
+sources: [raw/tdd-by-example-kent-beck-v2.md]
 ---
 
 Ward Cunningham is the inventor of the wiki (WikiWikiWeb), co-creator of Extreme Programming with [[kent-beck]], and the person who coined the "technical debt" metaphor. His collaborative work with Beck in Smalltalk directly contributed to the emergence of TDD.

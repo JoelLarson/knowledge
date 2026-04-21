@@ -162,3 +162,42 @@ Structural health:
 Suggestions (not addressed):
 - Missing concept pages: trunk-based-development, technical debt, code coverage, test pyramid
 - Open question: TDD with AI assistants
+
+## [2026-04-20] lint | Full health check (19 sources, 96 pages)
+
+Errors fixed:
+- `overview.md`: frontmatter `sources` only listed 12 of 19 raw sources → added missing 7 (research papers, Accelerate, Unit Testing, Tidy First, Software Architecture)
+- `entities/ward-cunningham.md`: empty `sources` array → added `raw/tdd-by-example-kent-beck-v2.md`
+
+Structural health:
+- 0 broken wikilinks in content pages (4 meta-references in log.md/schema.md are documentation examples, not real links)
+- 0 orphan pages — all 96 pages have inbound links
+- index.md perfectly synchronized with files on disk
+- All 96 page frontmatter valid (correct types, dates, fields)
+- All 19 raw sources ingested — no uningest backlog
+- `unprocessed-books/` contains PDFs matching ingested sources + 1 unidentified file (`books-library.net-07192142Kn9I3.pdf`)
+
+Gaps identified (not yet addressed):
+- Missing concept pages for frequently-mentioned terms:
+  - **fake** (14 file mentions) — covered within test-doubles.md but no dedicated page
+  - **mock object** (13 mentions) — covered within mocking.md but no dedicated page
+  - **trunk-based development** (7 mentions) — referenced across CI/CD pages
+  - **code coverage** (5 mentions) — referenced in empirical evidence pages
+  - **spy** (5 mentions) — covered within test-doubles.md
+  - **test pyramid** (4 mentions) — referenced in integration testing and test quality pages
+  - **technical debt** (4 mentions) — referenced in Ward Cunningham and simple design pages
+  - **code smell** (4 mentions) — referenced in test smells pages
+  - **design patterns** (3 mentions) — referenced across pattern pages
+- Open question: TDD with AI assistants (still unaddressed)
+
+Suggested new sources to investigate:
+- _Test-Driven Development: A Practical Guide_ — David Astels (early TDD practice text)
+- _The Art of Unit Testing_ — Roy Osherove (complements Khorikov's perspective)
+- _Specification by Example_ — Gojko Adzic (deepens ATDD/BDD coverage)
+- _Continuous Delivery_ — Humble & Farley (the CD book itself, not just Accelerate)
+
+Suggested new questions to explore:
+- How do the Chicago and London schools perform differently on legacy code vs greenfield?
+- What is the relationship between TDD cycle size and developer experience level?
+- How should TDD practices adapt for AI-assisted development?
+- What is the optimal test pyramid shape for microservices vs monoliths?
