@@ -20,6 +20,11 @@
   max-width: 70ch;
 }
 
+/* Widen content when sidebar is hidden */
+body.sidebar-hidden .md-typeset {
+  max-width: 90ch;
+}
+
 /* --- Content max-width --- */
 .md-grid {
   max-width: 1400px;
