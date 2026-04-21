@@ -1,0 +1,11 @@
+# Source materials (copyrighted books, papers, course transcripts)
+raw/
+unprocessed-books/
+
+# MkDocs build output
+site/
+
+# Python
+__pycache__/
+.venv/
+*.pyc
