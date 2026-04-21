@@ -9,6 +9,16 @@ sources: [raw/refactoring-martin-fowler.md, raw/dave-farley-302-tdd-and-bdd-desi
 
 Refactoring is a behavior-preserving code change: improving the internal structure of code without changing its externally observable behavior. The third step of [Red-Green-Refactor](red-green-refactor.md), and a critical standalone skill.
 
+## Author's Position: Refactoring Is Building, Not a Separate Activity
+
+Refactoring should be part of your building process, not a separate ticket. When you identify a problem, code smell, or insight, that knowledge should be incorporated into your codebase immediately — during the refactor step of [Red-Green-Refactor](red-green-refactor.md). The advantage of working this way under a test harness is that your codebase compiles and works as expected at any given time, and is within ~10 minutes of the last known-working state. Experiments are cheap and extremely low-risk with easy git rollback.
+
+[Tidyings](tidyings.md) are exactly the right kind of improvement for TDD's refactor step — small, safe, individually trivial structural changes that compound into significant design improvements.
+
+Dave Farley frames separate refactoring tickets as professional negligence. This wiki largely agrees, with one exception: **brownfield systems not yet under a test harness.** When making changes to untested legacy code is expensive and risky, a dedicated effort to establish the safety net ([characterization tests](characterization-tests.md), [dependency-breaking](dependency-breaking-techniques.md)) may genuinely need its own ticket — not because refactoring should be separate, but because the prerequisite (tests) doesn't exist yet. Once the test harness is in place, refactoring returns to being part of every development cycle. See [Legacy Code](legacy-code.md).
+
+**TDD is not a substitute for thinking critically.** Having taste, exercising software craftsmanship, and making good design decisions are skills that TDD supports but does not replace. The refactor step is where judgment matters most — and where the wrong abstraction can do real damage despite green tests.
+
 ## Definition
 
 > "A behavior preserving change. If your code does something different after you've refactored it, it wasn't refactoring." — Dave Farley

@@ -102,6 +102,12 @@ Pancur & Ciglaric speculate that "studies showing the superiority of TDD over a 
 
 6. **Write tests regardless.** Even if strict test-first ordering is not the critical factor, all evidence points to the value of comprehensive automated tests written in close proximity to the code they exercise. The worst outcome is no tests at all.
 
+## Author's Note on Research Methodology
+
+The empirical studies in this wiki — particularly Fucci et al. 2017 — provide useful signals but should be interpreted cautiously. The metrics used (acceptance assertions passing, assertions per minute) are proxies for quality and productivity, not direct measurements. The study designs are observational or quasi-experimental, not controlled experiments with the rigor of the scientific method. Effect sizes are small (R-squared ~0.10-0.12, meaning 85%+ of variance is unexplained), sample sizes are modest, and the task environments (short coding exercises in workshops) bear limited resemblance to professional software development over months and years.
+
+These are insights derived from weaker signals — valuable for identifying patterns worth investigating, but insufficient to make definitive claims about causal mechanisms. The finding that "sequencing was dropped from the model" is not the same as "sequencing doesn't matter" — it means the effect was not detectable with this methodology, these metrics, and this sample. The cognitive and safety benefits of test-first ([thinking discipline](test-first.md#authors-position-test-first-is-worth-preserving), [red-phase verification](red-green-refactor.md)) may be real and significant without being capturable by these instruments.
+
 ## The Quality-Speed Tradeoff
 
 The Nagappan et al. data provides the clearest picture of this tradeoff:

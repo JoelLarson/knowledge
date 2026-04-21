@@ -128,6 +128,12 @@ From Clean Code: "Leave the campground cleaner than you found it." Applied to le
 
 Small, continuous improvements compound. Don't attempt to fix everything at once.
 
+## Author's Note: The One Exception for Refactoring Tickets
+
+This wiki holds that [refactoring should be part of every development cycle, not a separate ticket](refactoring.md#authors-position-refactoring-is-building-not-a-separate-activity). Legacy code is the one context where a dedicated refactoring effort may be justified — not because refactoring should be separate from building, but because the prerequisite for safe refactoring (a test harness) doesn't exist yet.
+
+Establishing characterization tests, breaking dependencies, and creating seams in untested code is expensive, risky work that may genuinely need its own ticket to secure time and focus. Once the safety net is in place, refactoring returns to being embedded in every development cycle via [Tidyings](tidyings.md) and Red-Green-Refactor. The goal of the dedicated effort is to *eliminate the need for future dedicated efforts*.
+
 ## Related Pages
 
 - [Legacy Code Change Algorithm](legacy-code-change-algorithm.md)

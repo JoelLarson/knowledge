@@ -76,6 +76,8 @@ Tidyings give concrete content to the often-underspecified "refactor" step of [R
 
 The test suite is the safety net that makes tidying safe. Without tests, tidyings carry risk of accidental behavior change. With tests, each tidying can be verified instantly.
 
+**Author's note:** Tidyings are exactly the right description of what the "refactor" in Red-Green-Refactor was always meant to be. They make the refactor step concrete and actionable rather than vague. This is why [refactoring should never be a separate ticket](refactoring.md#authors-position-refactoring-is-building-not-a-separate-activity) — tidyings are small enough to do in every cycle, and they compound.
+
 ### Separate Structure from Behavior
 Beck insists on separate commits/PRs for tidyings and behavior changes. This mirrors TDD's discipline of never changing structure and behavior in the same step. In the TDD cycle:
 

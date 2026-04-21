@@ -287,6 +287,16 @@ Pages changed:
 - `concepts/mocking.md` — new "Author's Position: Prefer Alternatives to Mocks" section with preference hierarchy; narrowed "When to Use" to unmanaged external dependencies only
 - `concepts/bdd.md` — new "BDD Implies Chicago-Style Verification" section connecting behavioral specification to state/output verification
 
+## [2026-04-21] refine | Author's position on refactoring, craftsmanship, and research methodology
+
+Added author's opinion across 4 pages: refactoring is part of building, not a separate ticket (with brownfield exception). TDD is not a substitute for critical thinking and taste. Tidyings are exactly the refactor step. Empirical research methodology concerns noted.
+
+Pages changed:
+- `concepts/refactoring.md` — new "Author's Position: Refactoring Is Building, Not a Separate Activity" with brownfield exception, craftsmanship note
+- `concepts/tidyings.md` — author's note connecting tidyings as the concrete description of RGR's refactor step
+- `concepts/tdd-empirical-evidence.md` — new "Author's Note on Research Methodology" section questioning Fucci et al.'s metrics as weaker signals, not scientific method rigor
+- `concepts/legacy-code.md` — new "Author's Note: The One Exception for Refactoring Tickets" section
+
 ## [2026-04-21] refine | Author's position on ATDD and acceptance tests
 
 Added author's opinion across 3 pages: acceptance tests are critical-flow smoke tests, not comprehensive coverage. Outside-in TDD is the default workflow; full ATDD ceremony is reserved for UI decoupling scenarios.
