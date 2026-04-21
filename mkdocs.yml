@@ -102,6 +102,41 @@ watch:
 nav:
   - Home: index.md
   - Topics:
+    - Getting Things Done:
+      - topics/getting-things-done/index.md
+      - Overview: topics/getting-things-done/overview.md
+      - Schema: topics/getting-things-done/schema.md
+      - Log: topics/getting-things-done/log.md
+      - Concepts:
+        - topics/getting-things-done/concepts/gtd.md
+        - Capture-Clarify-Organize-Reflect-Engage: topics/getting-things-done/concepts/capture-clarify-organize-reflect-engage.md
+        - Next Actions: topics/getting-things-done/concepts/next-actions.md
+        - Projects: topics/getting-things-done/concepts/projects.md
+        - Review: topics/getting-things-done/concepts/review.md
+        - Setup Guides: topics/getting-things-done/concepts/setup-guides.md
+        - Someday/Maybe: topics/getting-things-done/concepts/someday-maybe.md
+        - Trusted System: topics/getting-things-done/concepts/trusted-system.md
+        - Waiting For: topics/getting-things-done/concepts/waiting-for.md
+        - Weekly Review Checklist: topics/getting-things-done/concepts/weekly-review-checklist.md
+        - ADHD and GTD: topics/getting-things-done/concepts/adhd-and-gtd.md
+      - Entities:
+        - David Allen: topics/getting-things-done/entities/david-allen.md
+        - Getting Things Done (book): topics/getting-things-done/entities/getting-things-done-book.md
+      - Queries:
+        - GTD and ADHD: topics/getting-things-done/queries/gtd-and-adhd.md
+      - Sources:
+        - Getting Things Done Book (Calibre 2021): topics/getting-things-done/sources/getting-things-done-book-calibre-2021.md
+        - Getting Things Done Book (Calibre 2023): topics/getting-things-done/sources/getting-things-done-book-calibre-2023.md
+        - Getting Things Done Book (PDFDrive 2019): topics/getting-things-done/sources/getting-things-done-book-pdfdrive-2019.md
+        - Getting Things Done Wikipedia: topics/getting-things-done/sources/getting-things-done-wikipedia.md
+        - GTD Asset Corpus 2026-04-08: topics/getting-things-done/sources/gtd-asset-corpus-2026-04-08.md
+        - GTD Installation Setup Guide: topics/getting-things-done/sources/gtd-installation-setup-guide-page.md
+        - GTD Podcast (VitalSmarts) Transcript: topics/getting-things-done/sources/gtd-podcast-from-vitalsmarts-transcript-corpus.md
+        - GTD Resource Manifest 2026-04-08: topics/getting-things-done/sources/gtd-resource-manifest-2026-04-08.md
+        - GTD Weekly Review Checklist: topics/getting-things-done/sources/gtd-weekly-review-checklist.md
+        - GTD Workflow Map: topics/getting-things-done/sources/gtd-workflow-map.md
+        - GTD YouTube Transcript Corpus: topics/getting-things-done/sources/gtd-youtube-transcript-corpus.md
+        - Guided GTD Weekly Review: topics/getting-things-done/sources/guided-gtd-weekly-review.md
     - Test-Driven Development:
       - topics/test-driven-development/index.md
       - Overview: topics/test-driven-development/overview.md
