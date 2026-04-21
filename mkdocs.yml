@@ -19,7 +19,7 @@ theme:
         icon: material/brightness-7
         name: Switch to dark mode
   font:
-    text: JetBrains Mono
+    text: Lexend
     code: JetBrains Mono
   icon:
     repo: fontawesome/brands/github
@@ -60,7 +60,7 @@ nav:
   - Home: index.md
   - Test-Driven Development:
     - Overview: test-driven-development/index.md
-    - Synthesis: test-driven-development/overview.md
+    - Overview: test-driven-development/overview.md
     - Schema: test-driven-development/schema.md
     - Log: test-driven-development/log.md
     - Concepts:
