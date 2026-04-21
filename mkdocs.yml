@@ -83,6 +83,9 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
 
+exclude_docs: |
+  /test-driven-development/
+
 plugins:
   - search
   - git-revision-date-localized
@@ -90,6 +93,7 @@ plugins:
 
 hooks:
   - hooks/validate_frontmatter.py
+  - hooks/redirect_old_paths.py
 
 watch:
   - hooks/
@@ -97,134 +101,134 @@ watch:
 nav:
   - Home: index.md
   - Test-Driven Development:
-    - test-driven-development/index.md
-    - Overview: test-driven-development/overview.md
-    - Schema: test-driven-development/schema.md
-    - Log: test-driven-development/log.md
+    - topics/test-driven-development/index.md
+    - Overview: topics/test-driven-development/overview.md
+    - Schema: topics/test-driven-development/schema.md
+    - Log: topics/test-driven-development/log.md
     - Guides:
-      - test-driven-development/guides/index.md
-      - "Greenfield: Your First Tests": test-driven-development/guides/greenfield.md
-      - "Brownfield: Testing an Existing Codebase": test-driven-development/guides/brownfield.md
-      - Why Testing Matters: test-driven-development/guides/why-testing-matters.md
-      - Choosing Test Levels: test-driven-development/guides/choosing-test-levels.md
+      - topics/test-driven-development/guides/index.md
+      - "Greenfield: Your First Tests": topics/test-driven-development/guides/greenfield.md
+      - "Brownfield: Testing an Existing Codebase": topics/test-driven-development/guides/brownfield.md
+      - Why Testing Matters: topics/test-driven-development/guides/why-testing-matters.md
+      - Choosing Test Levels: topics/test-driven-development/guides/choosing-test-levels.md
     - Concepts:
       - TDD Core:
-        - Red-Green-Refactor: test-driven-development/concepts/red-green-refactor.md
-        - Test First: test-driven-development/concepts/test-first.md
-        - TDD vs Unit Testing: test-driven-development/concepts/tdd-vs-unit-testing.md
-        - TDD Process Granularity: test-driven-development/concepts/tdd-process-granularity.md
-        - Simple Design: test-driven-development/concepts/simple-design.md
-        - TDD Empirical Evidence: test-driven-development/concepts/tdd-empirical-evidence.md
+        - Red-Green-Refactor: topics/test-driven-development/concepts/red-green-refactor.md
+        - Test First: topics/test-driven-development/concepts/test-first.md
+        - TDD vs Unit Testing: topics/test-driven-development/concepts/tdd-vs-unit-testing.md
+        - TDD Process Granularity: topics/test-driven-development/concepts/tdd-process-granularity.md
+        - Simple Design: topics/test-driven-development/concepts/simple-design.md
+        - TDD Empirical Evidence: topics/test-driven-development/concepts/tdd-empirical-evidence.md
       - Schools & Approaches:
-        - Chicago vs London Schools: test-driven-development/concepts/chicago-vs-london.md
-        - London School TDD: test-driven-development/concepts/london-school-tdd.md
-        - Outside-In TDD: test-driven-development/concepts/outside-in-tdd.md
-        - BDD: test-driven-development/concepts/bdd.md
-        - ATDD: test-driven-development/concepts/atdd.md
-        - Walking Skeleton: test-driven-development/concepts/walking-skeleton.md
-        - Need-Driven Development: test-driven-development/concepts/need-driven-development.md
-        - TDD in Functional Programming: test-driven-development/concepts/tdd-in-functional-programming.md
+        - Chicago vs London Schools: topics/test-driven-development/concepts/chicago-vs-london.md
+        - London School TDD: topics/test-driven-development/concepts/london-school-tdd.md
+        - Outside-In TDD: topics/test-driven-development/concepts/outside-in-tdd.md
+        - BDD: topics/test-driven-development/concepts/bdd.md
+        - ATDD: topics/test-driven-development/concepts/atdd.md
+        - Walking Skeleton: topics/test-driven-development/concepts/walking-skeleton.md
+        - Need-Driven Development: topics/test-driven-development/concepts/need-driven-development.md
+        - TDD in Functional Programming: topics/test-driven-development/concepts/tdd-in-functional-programming.md
       - Test Design & Quality:
-        - Good Test Properties: test-driven-development/concepts/good-test-properties.md
-        - Four Pillars of Good Tests: test-driven-development/concepts/four-pillars-of-good-tests.md
-        - Output vs State vs Communication: test-driven-development/concepts/output-vs-state-vs-communication-testing.md
-        - Four-Phase Test: test-driven-development/concepts/four-phase-test.md
-        - Test Fixture Strategies: test-driven-development/concepts/test-fixture-strategies.md
-        - Test Organization Patterns: test-driven-development/concepts/test-organization-patterns.md
-        - Parameterized Tests: test-driven-development/concepts/parameterized-tests.md
-        - Arrange-Act-Assert: test-driven-development/concepts/arrange-act-assert.md
-        - SUT and DOC: test-driven-development/concepts/sut-and-doc.md
+        - Good Test Properties: topics/test-driven-development/concepts/good-test-properties.md
+        - Four Pillars of Good Tests: topics/test-driven-development/concepts/four-pillars-of-good-tests.md
+        - Output vs State vs Communication: topics/test-driven-development/concepts/output-vs-state-vs-communication-testing.md
+        - Four-Phase Test: topics/test-driven-development/concepts/four-phase-test.md
+        - Test Fixture Strategies: topics/test-driven-development/concepts/test-fixture-strategies.md
+        - Test Organization Patterns: topics/test-driven-development/concepts/test-organization-patterns.md
+        - Parameterized Tests: topics/test-driven-development/concepts/parameterized-tests.md
+        - Arrange-Act-Assert: topics/test-driven-development/concepts/arrange-act-assert.md
+        - SUT and DOC: topics/test-driven-development/concepts/sut-and-doc.md
       - Test Doubles & Isolation:
-        - Test Doubles: test-driven-development/concepts/test-doubles.md
-        - Mocking: test-driven-development/concepts/mocking.md
-        - Dependency Injection: test-driven-development/concepts/dependency-injection.md
-        - Humble Object: test-driven-development/concepts/humble-object.md
-        - Tell Don't Ask: test-driven-development/concepts/tell-dont-ask.md
+        - Test Doubles: topics/test-driven-development/concepts/test-doubles.md
+        - Mocking: topics/test-driven-development/concepts/mocking.md
+        - Dependency Injection: topics/test-driven-development/concepts/dependency-injection.md
+        - Humble Object: topics/test-driven-development/concepts/humble-object.md
+        - Tell Don't Ask: topics/test-driven-development/concepts/tell-dont-ask.md
       - Test Smells & Fragility:
-        - Test Fragility: test-driven-development/concepts/test-fragility.md
-        - TDD Smells: test-driven-development/concepts/tdd-smells.md
-        - Test Smells Catalog: test-driven-development/concepts/test-smells-catalog.md
+        - Test Fragility: topics/test-driven-development/concepts/test-fragility.md
+        - TDD Smells: topics/test-driven-development/concepts/tdd-smells.md
+        - Test Smells Catalog: topics/test-driven-development/concepts/test-smells-catalog.md
       - Testing at Scale:
-        - Integration Testing: test-driven-development/concepts/integration-testing.md
-        - Property-Based Testing: test-driven-development/concepts/property-based-testing.md
-        - Mutation Testing: test-driven-development/concepts/mutation-testing.md
-        - Approval Testing: test-driven-development/concepts/approval-testing.md
-        - Contract Testing: test-driven-development/concepts/contract-testing.md
-        - Test Automation at Scale: test-driven-development/concepts/test-automation-at-scale.md
+        - Integration Testing: topics/test-driven-development/concepts/integration-testing.md
+        - Property-Based Testing: topics/test-driven-development/concepts/property-based-testing.md
+        - Mutation Testing: topics/test-driven-development/concepts/mutation-testing.md
+        - Approval Testing: topics/test-driven-development/concepts/approval-testing.md
+        - Contract Testing: topics/test-driven-development/concepts/contract-testing.md
+        - Test Automation at Scale: topics/test-driven-development/concepts/test-automation-at-scale.md
       - Refactoring & Legacy Code:
-        - Refactoring: test-driven-development/concepts/refactoring.md
-        - Tidyings: test-driven-development/concepts/tidyings.md
-        - Legacy Code: test-driven-development/concepts/legacy-code.md
-        - Legacy Code Change Algorithm: test-driven-development/concepts/legacy-code-change-algorithm.md
-        - Characterization Tests: test-driven-development/concepts/characterization-tests.md
-        - Seams: test-driven-development/concepts/seams.md
-        - Sprout Method: test-driven-development/concepts/sprout-method.md
-        - Dependency-Breaking Techniques: test-driven-development/concepts/dependency-breaking-techniques.md
-        - Strangler Pattern: test-driven-development/concepts/strangler-pattern.md
+        - Refactoring: topics/test-driven-development/concepts/refactoring.md
+        - Tidyings: topics/test-driven-development/concepts/tidyings.md
+        - Legacy Code: topics/test-driven-development/concepts/legacy-code.md
+        - Legacy Code Change Algorithm: topics/test-driven-development/concepts/legacy-code-change-algorithm.md
+        - Characterization Tests: topics/test-driven-development/concepts/characterization-tests.md
+        - Seams: topics/test-driven-development/concepts/seams.md
+        - Sprout Method: topics/test-driven-development/concepts/sprout-method.md
+        - Dependency-Breaking Techniques: topics/test-driven-development/concepts/dependency-breaking-techniques.md
+        - Strangler Pattern: topics/test-driven-development/concepts/strangler-pattern.md
       - Design Principles:
-        - SOLID Principles: test-driven-development/concepts/solid-principles.md
-        - Ports and Adapters: test-driven-development/concepts/ports-and-adapters.md
-        - Coupling and Cohesion: test-driven-development/concepts/coupling-and-cohesion.md
-        - Fitness Functions: test-driven-development/concepts/fitness-functions.md
-        - CQRS: test-driven-development/concepts/cqrs.md
+        - SOLID Principles: topics/test-driven-development/concepts/solid-principles.md
+        - Ports and Adapters: topics/test-driven-development/concepts/ports-and-adapters.md
+        - Coupling and Cohesion: topics/test-driven-development/concepts/coupling-and-cohesion.md
+        - Fitness Functions: topics/test-driven-development/concepts/fitness-functions.md
+        - CQRS: topics/test-driven-development/concepts/cqrs.md
       - Domain-Driven Design:
-        - Ubiquitous Language: test-driven-development/concepts/ubiquitous-language.md
-        - Bounded Context: test-driven-development/concepts/bounded-context.md
-        - Aggregates: test-driven-development/concepts/aggregates.md
-        - Domain Events: test-driven-development/concepts/domain-events.md
-        - Value Objects: test-driven-development/concepts/value-objects.md
-        - Event Sourcing: test-driven-development/concepts/event-sourcing.md
-        - Domain Model Testing: test-driven-development/concepts/domain-model-testing.md
+        - Ubiquitous Language: topics/test-driven-development/concepts/ubiquitous-language.md
+        - Bounded Context: topics/test-driven-development/concepts/bounded-context.md
+        - Aggregates: topics/test-driven-development/concepts/aggregates.md
+        - Domain Events: topics/test-driven-development/concepts/domain-events.md
+        - Value Objects: topics/test-driven-development/concepts/value-objects.md
+        - Event Sourcing: topics/test-driven-development/concepts/event-sourcing.md
+        - Domain Model Testing: topics/test-driven-development/concepts/domain-model-testing.md
       - Adoption & Context:
-        - TDD Adoption Path: test-driven-development/concepts/tdd-adoption-path.md
-        - TDD by Context: test-driven-development/concepts/tdd-by-context.md
+        - TDD Adoption Path: topics/test-driven-development/concepts/tdd-adoption-path.md
+        - TDD by Context: topics/test-driven-development/concepts/tdd-by-context.md
       - Engineering Practices:
-        - Extreme Programming: test-driven-development/concepts/extreme-programming.md
-        - Pair Programming: test-driven-development/concepts/pair-programming.md
-        - Continuous Integration: test-driven-development/concepts/continuous-integration.md
-        - Continuous Delivery: test-driven-development/concepts/continuous-delivery.md
-        - DORA Metrics: test-driven-development/concepts/dora-metrics.md
+        - Extreme Programming: topics/test-driven-development/concepts/extreme-programming.md
+        - Pair Programming: topics/test-driven-development/concepts/pair-programming.md
+        - Continuous Integration: topics/test-driven-development/concepts/continuous-integration.md
+        - Continuous Delivery: topics/test-driven-development/concepts/continuous-delivery.md
+        - DORA Metrics: topics/test-driven-development/concepts/dora-metrics.md
     - Entities:
-      - Alistair Cockburn: test-driven-development/entities/alistair-cockburn.md
-      - Dan North: test-driven-development/entities/dan-north.md
-      - Dave Farley: test-driven-development/entities/dave-farley.md
-      - Emily Bache: test-driven-development/entities/emily-bache.md
-      - Eric Evans: test-driven-development/entities/eric-evans.md
-      - Gerard Meszaros: test-driven-development/entities/gerard-meszaros.md
-      - Jez Humble: test-driven-development/entities/jez-humble.md
-      - Kent Beck: test-driven-development/entities/kent-beck.md
-      - Martin Fowler: test-driven-development/entities/martin-fowler.md
-      - Michael Feathers: test-driven-development/entities/michael-feathers.md
-      - Nat Pryce: test-driven-development/entities/nat-pryce.md
-      - Neal Ford: test-driven-development/entities/neal-ford.md
-      - Nicole Forsgren: test-driven-development/entities/nicole-forsgren.md
-      - Robert C. Martin: test-driven-development/entities/robert-martin.md
-      - Steve Freeman: test-driven-development/entities/steve-freeman.md
-      - Vaughn Vernon: test-driven-development/entities/vaughn-vernon.md
-      - Vladimir Khorikov: test-driven-development/entities/vladimir-khorikov.md
-      - Ward Cunningham: test-driven-development/entities/ward-cunningham.md
-      - xUnit: test-driven-development/entities/xunit.md
+      - Alistair Cockburn: topics/test-driven-development/entities/alistair-cockburn.md
+      - Dan North: topics/test-driven-development/entities/dan-north.md
+      - Dave Farley: topics/test-driven-development/entities/dave-farley.md
+      - Emily Bache: topics/test-driven-development/entities/emily-bache.md
+      - Eric Evans: topics/test-driven-development/entities/eric-evans.md
+      - Gerard Meszaros: topics/test-driven-development/entities/gerard-meszaros.md
+      - Jez Humble: topics/test-driven-development/entities/jez-humble.md
+      - Kent Beck: topics/test-driven-development/entities/kent-beck.md
+      - Martin Fowler: topics/test-driven-development/entities/martin-fowler.md
+      - Michael Feathers: topics/test-driven-development/entities/michael-feathers.md
+      - Nat Pryce: topics/test-driven-development/entities/nat-pryce.md
+      - Neal Ford: topics/test-driven-development/entities/neal-ford.md
+      - Nicole Forsgren: topics/test-driven-development/entities/nicole-forsgren.md
+      - Robert C. Martin: topics/test-driven-development/entities/robert-martin.md
+      - Steve Freeman: topics/test-driven-development/entities/steve-freeman.md
+      - Vaughn Vernon: topics/test-driven-development/entities/vaughn-vernon.md
+      - Vladimir Khorikov: topics/test-driven-development/entities/vladimir-khorikov.md
+      - Ward Cunningham: topics/test-driven-development/entities/ward-cunningham.md
+      - xUnit: topics/test-driven-development/entities/xunit.md
     - Queries:
-      - "Naming the Umbrella Discipline": test-driven-development/queries/naming-the-umbrella-discipline.md
+      - "Naming the Umbrella Discipline": topics/test-driven-development/queries/naming-the-umbrella-discipline.md
     - Sources:
-      - Accelerate — Forsgren, Humble, Kim: test-driven-development/sources/accelerate-forsgren-humble-kim.md
-      - Art of Clean Code — Mayer: test-driven-development/sources/art-of-clean-code-mayer.md
-      - Clean Code — Robert Martin: test-driven-development/sources/clean-code-robert-martin.md
-      - Dave Farley 302 Course: test-driven-development/sources/dave-farley-302-course.md
-      - Dissection of TDD — Fucci 2017: test-driven-development/sources/dissection-of-tdd-fucci-2017.md
-      - Domain-Driven Design — Evans: test-driven-development/sources/domain-driven-design-evans.md
-      - Fowler Theatrical Players Kata: test-driven-development/sources/fowler-theatrical-players-kata.md
-      - Growing OO Software — Freeman & Pryce: test-driven-development/sources/growing-oo-software-freeman-pryce.md
-      - Implementing DDD — Vernon: test-driven-development/sources/implementing-ddd-vernon.md
-      - Modern Software Engineering — Farley: test-driven-development/sources/modern-software-engineering-dave-farley.md
-      - Refactoring — Fowler: test-driven-development/sources/refactoring-martin-fowler.md
-      - Software Architecture Hard Parts: test-driven-development/sources/software-architecture-hard-parts.md
-      - TDD by Example — Kent Beck: test-driven-development/sources/tdd-by-example-kent-beck.md
-      - TDD Quality Improvement — Nagappan 2008: test-driven-development/sources/tdd-quality-improvement-nagappan-2008.md
-      - Tidy First? — Kent Beck: test-driven-development/sources/tidy-first-kent-beck.md
-      - Unit Testing — Khorikov: test-driven-development/sources/unit-testing-khorikov.md
-      - Why TDD Research Inconclusive — Ghafari 2020: test-driven-development/sources/why-tdd-research-inconclusive-ghafari-2020.md
-      - Working Effectively with Legacy Code — Feathers: test-driven-development/sources/working-effectively-legacy-code-feathers.md
-      - xUnit Test Patterns — Meszaros: test-driven-development/sources/xunit-test-patterns-meszaros.md
+      - Accelerate — Forsgren, Humble, Kim: topics/test-driven-development/sources/accelerate-forsgren-humble-kim.md
+      - Art of Clean Code — Mayer: topics/test-driven-development/sources/art-of-clean-code-mayer.md
+      - Clean Code — Robert Martin: topics/test-driven-development/sources/clean-code-robert-martin.md
+      - Dave Farley 302 Course: topics/test-driven-development/sources/dave-farley-302-course.md
+      - Dissection of TDD — Fucci 2017: topics/test-driven-development/sources/dissection-of-tdd-fucci-2017.md
+      - Domain-Driven Design — Evans: topics/test-driven-development/sources/domain-driven-design-evans.md
+      - Fowler Theatrical Players Kata: topics/test-driven-development/sources/fowler-theatrical-players-kata.md
+      - Growing OO Software — Freeman & Pryce: topics/test-driven-development/sources/growing-oo-software-freeman-pryce.md
+      - Implementing DDD — Vernon: topics/test-driven-development/sources/implementing-ddd-vernon.md
+      - Modern Software Engineering — Farley: topics/test-driven-development/sources/modern-software-engineering-dave-farley.md
+      - Refactoring — Fowler: topics/test-driven-development/sources/refactoring-martin-fowler.md
+      - Software Architecture Hard Parts: topics/test-driven-development/sources/software-architecture-hard-parts.md
+      - TDD by Example — Kent Beck: topics/test-driven-development/sources/tdd-by-example-kent-beck.md
+      - TDD Quality Improvement — Nagappan 2008: topics/test-driven-development/sources/tdd-quality-improvement-nagappan-2008.md
+      - Tidy First? — Kent Beck: topics/test-driven-development/sources/tidy-first-kent-beck.md
+      - Unit Testing — Khorikov: topics/test-driven-development/sources/unit-testing-khorikov.md
+      - Why TDD Research Inconclusive — Ghafari 2020: topics/test-driven-development/sources/why-tdd-research-inconclusive-ghafari-2020.md
+      - Working Effectively with Legacy Code — Feathers: topics/test-driven-development/sources/working-effectively-legacy-code-feathers.md
+      - xUnit Test Patterns — Meszaros: topics/test-driven-development/sources/xunit-test-patterns-meszaros.md
   - Best Practices:
     - MkDocs: best-practices/mkdocs.md

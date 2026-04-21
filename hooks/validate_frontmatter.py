@@ -10,7 +10,7 @@ def on_page_markdown(markdown, page, config, files):
     src = page.file.src_path
 
     # Only validate pages under test-driven-development/
-    if not src.startswith("test-driven-development/"):
+    if not src.startswith("topics/test-driven-development/"):
         return markdown
 
     # Skip section indexes and logs
