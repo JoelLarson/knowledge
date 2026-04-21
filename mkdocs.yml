@@ -231,6 +231,6 @@ nav:
         - Unit Testing — Khorikov: topics/test-driven-development/sources/unit-testing-khorikov.md
         - Why TDD Research Inconclusive — Ghafari 2020: topics/test-driven-development/sources/why-tdd-research-inconclusive-ghafari-2020.md
         - Working Effectively with Legacy Code — Feathers: topics/test-driven-development/sources/working-effectively-legacy-code-feathers.md
-      - xUnit Test Patterns — Meszaros: topics/test-driven-development/sources/xunit-test-patterns-meszaros.md
+        - xUnit Test Patterns — Meszaros: topics/test-driven-development/sources/xunit-test-patterns-meszaros.md
   - Best Practices:
     - MkDocs: best-practices/mkdocs.md
